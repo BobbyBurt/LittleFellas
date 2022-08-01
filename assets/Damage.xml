@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:10f2b0d4ca08e90a8e267efd5f2136bd:058bf1beb3a5578634a84c81631f2a17:7b72646900ba9c5bed06e3bb259b962b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Damage.png" width="978" height="530">
+    <sprite n="Damage/0000" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0001" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0002" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0003" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0004" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0005" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0006" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0007" x="675" y="1" w="302" h="301" oX="117" oY="51" oW="550" oH="400"/>
+    <sprite n="Damage/0008" x="370" y="1" w="303" h="279" oX="110" oY="49" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0009" x="370" y="1" w="303" h="279" oX="110" oY="49" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0010" x="370" y="1" w="303" h="279" oX="110" oY="49" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0011" x="1" y="1" w="367" h="277" oX="103" oY="76" oW="550" oH="400"/>
+    <sprite n="Damage/0012" x="1" y="280" w="270" h="237" oX="105" oY="86" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0013" x="1" y="280" w="270" h="237" oX="105" oY="86" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0014" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0015" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0016" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0017" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0018" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0019" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0020" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0021" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0022" x="273" y="282" w="272" h="233" oX="103" oY="85" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0023" x="547" y="304" w="272" h="225" oX="133" oY="83" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0024" x="547" y="304" w="272" h="225" oX="133" oY="83" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0025" x="370" y="1" w="303" h="279" oX="110" oY="49" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0026" x="370" y="1" w="303" h="279" oX="110" oY="49" oW="550" oH="400" r="y"/>
+    <sprite n="Damage/0027" x="370" y="1" w="303" h="279" oX="110" oY="49" oW="550" oH="400" r="y"/>
+</TextureAtlas>

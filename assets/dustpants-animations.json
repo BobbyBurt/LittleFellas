@@ -1,0 +1,78 @@
+{
+    "anims": [
+        {
+            "key": "run",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "dustpants",
+                    "frame": "Dustpants/0009",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    }
+}

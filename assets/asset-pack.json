@@ -1,0 +1,75 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "src/components/AlignOffsets.js",
+                "type": "script",
+                "key": "AlignOffsets"
+            },
+            {
+                "url": "src/components/Animation.js",
+                "type": "script",
+                "key": "Animation"
+            },
+            {
+                "url": "assets/Damage.png",
+                "type": "image",
+                "key": "Damage"
+            },
+            {
+                "atlasURL": "assets/Damage.xml",
+                "textureURL": "assets/Damage.png",
+                "type": "atlasXML",
+                "key": "Damage_1"
+            },
+            {
+                "url": "src/components/DeviceDependentActivation.js",
+                "type": "script",
+                "key": "DeviceDependentActivation"
+            },
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "url": "assets/dustforce-SS-5.png",
+                "type": "image",
+                "key": "dustforce-SS-5"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/dustpants.json",
+                "path": "assets",
+                "key": "dustpants"
+            },
+            {
+                "url": "assets/dustpants-animations.json",
+                "type": "animation",
+                "key": "dustpants-animations"
+            },
+            {
+                "url": "src/InputWrapper.js",
+                "type": "script",
+                "key": "InputWrapper"
+            },
+            {
+                "url": "assets/practice-dustman.png",
+                "type": "image",
+                "key": "practice-dustman"
+            },
+            {
+                "url": "src/components/SimpleButton.js",
+                "type": "script",
+                "key": "SimpleButton"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

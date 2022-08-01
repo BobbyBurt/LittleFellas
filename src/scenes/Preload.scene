@@ -1,0 +1,67 @@
+{
+    "id": "04331fb6-ed91-4d74-b6e9-4bfe0fcfb457",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "starter-template-basic-typescript/assets/asset-pack.json"
+        ],
+        "createMethodName": "editorCreate",
+        "sceneKey": "preload",
+        "borderX": -1266,
+        "borderY": -510,
+        "borderWidth": 2532,
+        "borderHeight": 1020
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "e413cbbf-ce25-4dad-a117-b7cf0791f655",
+            "label": "guapen",
+            "components": [],
+            "texture": {
+                "key": "guapen"
+            },
+            "scaleX": 0.5,
+            "scaleY": 0.5
+        },
+        {
+            "type": "Text",
+            "id": "2ce42443-5227-4c9b-b498-e81f9a21cde3",
+            "label": "progress",
+            "scope": "CLASS",
+            "components": [
+                "PreloadText"
+            ],
+            "y": 136,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "0%",
+            "fontFamily": "Arial",
+            "fontSize": "30px"
+        },
+        {
+            "type": "Text",
+            "id": "411264a7-c1ad-42c7-bc41-7b2472e39699",
+            "label": "startText",
+            "components": [
+                "OnLoadAppear"
+            ],
+            "y": 192,
+            "originX": 0.5,
+            "originY": 0.5,
+            "visible": false,
+            "text": "Click / tap to start",
+            "align": "center",
+            "fontFamily": "Arial",
+            "fontSize": "30px"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

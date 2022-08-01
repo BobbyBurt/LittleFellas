@@ -1,0 +1,36 @@
+{
+    "components": [
+        {
+            "name": "AlignOffsets",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": [
+                {
+                    "name": "x",
+                    "label": "x",
+                    "tooltip": "x offset if this object is in a left/right align list",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "y",
+                    "label": "y",
+                    "tooltip": "y offset if this object is in a top/bottom align list",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Object Script Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}
