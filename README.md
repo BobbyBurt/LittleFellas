@@ -1,10 +1,4 @@
 # little Fellas
 
-### TODO
-- [x] fix white space on top of mobile view / scrollability
-
-### CONSIDERATIONS
-- To scale the align gameobjects code to span mutliple scenes, how could I make that code exist as it's own class?
-
-### IDEAS
-- what if a game mechanic had to do with mode switching my flipping the orientation, which I can check upon resize? Like different screens the player has to switch between.
+[Brainstorming doc](https://docs.google.com/document/d/19n-ml0TKguYE0PrPC5kYycIr7pbs8SALPjUFkuNVtsw/edit)
+[Newgrounds project](https://www.newgrounds.com/projects/games/1920192/preview)
