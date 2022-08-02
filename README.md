@@ -16,5 +16,4 @@ I should do this in order
 - [ ] Test ideal size of sprites
 - [ ] Test how many animated sprites can exist on screen
 
-- [ ] Set up Newgrounds.io
-  - LEFTOFF: current class is set up as a module, but this project isn't structured that way
+- [x] Set up Newgrounds.io
