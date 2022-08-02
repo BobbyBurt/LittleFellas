@@ -1,3 +1,5 @@
+// import newgroundsio from "./scenes/Newgroundsio";
+
 window.addEventListener('load', function () {
 
 	var game = new Phaser.Game({
@@ -23,6 +25,7 @@ window.addEventListener('load', function () {
 	
 	game.scene.add("preload", Preload);
 	game.scene.add("level", Level);
+	// game.scene.add("newgroundsio", newgroundsio);
 	game.scene.add("boot", Boot, true);
 });
 
