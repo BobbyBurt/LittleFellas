@@ -54,6 +54,11 @@
                 "key": "InputWrapper"
             },
             {
+                "url": "src/scenes/prefabs/PantsPrefab.js",
+                "type": "script",
+                "key": "PantsPrefab"
+            },
+            {
                 "url": "assets/practice-dustman.png",
                 "type": "image",
                 "key": "practice-dustman"

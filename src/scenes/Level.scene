@@ -10,98 +10,6 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "08a66ded-d3e5-4358-9992-1be2ba4fc1c0",
-            "label": "dustforce_SS",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "dustforce-SS-5"
-            },
-            "x": 1302,
-            "originX": 0,
-            "originY": 0,
-            "flipX": true
-        },
-        {
-            "type": "Image",
-            "id": "11220dcc-011e-4a2a-a45d-2b823810530b",
-            "label": "dustforce_SS_5",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "dustforce-SS-5"
-            },
-            "x": -617,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "5580e12b-7b58-45b3-b51e-da68b049eda5",
-            "label": "practice_dustman",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "practice-dustman"
-            },
-            "x": 1174,
-            "y": 464
-        },
-        {
-            "type": "Image",
-            "id": "92cd63e7-2fc4-42d3-8918-9755fe9599d6",
-            "label": "dino_1",
-            "components": [
-                "AlignOffsets"
-            ],
-            "texture": {
-                "key": "dino"
-            },
-            "x": 1326,
-            "y": 99,
-            "originY": 0
-        },
-        {
-            "type": "Sprite",
-            "id": "47df38a7-35c2-472b-b70a-5fd230032780",
-            "label": "pants",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "texture": {
-                "key": "dino"
-            },
-            "x": 813,
-            "y": 724
-        },
-        {
-            "type": "Rectangle",
-            "id": "d020e235-617a-49cf-b2e0-52cca654d2c2",
-            "label": "buttonTest",
-            "scope": "CLASS",
-            "components": [
-                "AlignOffsets",
-                "SimpleButton",
-                "DeviceDependentActivation"
-            ],
-            "AlignOffsets.x": 100,
-            "AlignOffsets.y": -100,
-            "SimpleButton.bindButton": "left",
-            "DeviceDependentActivation.ifMobile": true,
-            "x": 79,
-            "y": 962,
-            "scaleX": 3.992183120085278,
-            "scaleY": 1.8500935500799485,
-            "originX": 0,
-            "originY": 1,
-            "isFilled": true,
-            "fillColor": "#3c4dea",
-            "width": 128,
-            "height": 128
-        },
-        {
             "type": "Rectangle",
             "id": "3b1a0172-dca2-4b67-a007-96c343a003dc",
             "label": "buttonTest2",
@@ -139,77 +47,6 @@
         },
         {
             "type": "Container",
-            "id": "6a9423ea-0f78-4871-8109-e9cf46bcfa76",
-            "label": "containerTest",
-            "components": [],
-            "x": 1269,
-            "y": -162,
-            "list": [
-                {
-                    "type": "Rectangle",
-                    "id": "50b14a34-7dc9-41ae-810f-642ef4e6adb7",
-                    "label": "rectangle_1",
-                    "components": [],
-                    "x": -2.849671494613318,
-                    "y": 1.624822833873509,
-                    "scaleX": 2.4564956310317054,
-                    "scaleY": 1.7663375896109639,
-                    "isFilled": true,
-                    "fillColor": "#cfcfcf",
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "0fdf0078-008d-4a9e-9a44-8572dfecbe31",
-                    "label": "rectangle_2",
-                    "components": [],
-                    "x": 4.389161020926281,
-                    "y": 64.0585196911436,
-                    "scaleX": 2.112951121688286,
-                    "scaleY": 0.3517941570690122,
-                    "isFilled": true,
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Ellipse",
-                    "id": "75d96f10-0b5d-4812-902b-3a0d70a20fff",
-                    "label": "ellipse_1",
-                    "components": [],
-                    "x": -78.61083897907372,
-                    "y": -20.9414803088564,
-                    "scaleX": 0.6985519488058136,
-                    "scaleY": 0.7111560534682945,
-                    "isFilled": true,
-                    "fillColor": "#484848",
-                    "strokeColor": "#fefefe",
-                    "lineWidth": 25,
-                    "isStroked": true,
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Ellipse",
-                    "id": "4df3e93f-495d-41a1-8ca9-b134e848ce5a",
-                    "label": "ellipse",
-                    "components": [],
-                    "x": 67.38916102092628,
-                    "y": -26.9414803088564,
-                    "scaleX": 0.6985519488058136,
-                    "scaleY": 0.7111560534682945,
-                    "isFilled": true,
-                    "fillColor": "#484848",
-                    "strokeColor": "#fefefe",
-                    "lineWidth": 25,
-                    "isStroked": true,
-                    "width": 128,
-                    "height": 128
-                }
-            ]
-        },
-        {
-            "type": "Container",
             "id": "c98729eb-4ce6-40d8-a05c-629d20728e98",
             "label": "MobileTextcontainer",
             "components": [
@@ -223,8 +60,8 @@
                     "id": "ed4c9e6f-5b96-46c3-952a-d59b6bd18c24",
                     "label": "rectangle_3",
                     "components": [],
-                    "scaleX": 1.2031249781092408,
-                    "scaleY": 0.47656251661110416,
+                    "scaleX": 1.402470438441591,
+                    "scaleY": 0.6945006767374393,
                     "originX": 0,
                     "originY": 0,
                     "isFilled": true,
@@ -244,8 +81,73 @@
                     "text": "Mobile: ????",
                     "fontFamily": "Arial",
                     "fontSize": "20px"
+                },
+                {
+                    "type": "Text",
+                    "id": "16fa4b30-11e4-45b6-b52e-398e26f5a7e2",
+                    "label": "spriteCountText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 20,
+                    "y": 50,
+                    "text": "sprites: 0",
+                    "fontFamily": "Arial",
+                    "fontSize": "20px"
                 }
             ]
+        },
+        {
+            "type": "Container",
+            "id": "0d69dca6-81ad-4795-80c8-69e9ba4f62d6",
+            "label": "MobileTextcontainer_1",
+            "components": [
+                "AlignOffsets"
+            ],
+            "AlignOffsets.x": 20,
+            "AlignOffsets.y": -20,
+            "x": 2,
+            "y": 1021,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "5903418e-797e-4f8c-a5e3-d61e07ea190d",
+                    "label": "rectangle",
+                    "components": [],
+                    "y": -60.68319434475234,
+                    "scaleX": 3.2396598487299233,
+                    "scaleY": 0.47656251661110416,
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#2c2c2c",
+                    "fillAlpha": 0.5,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "53b27df1-2cba-4f26-84f3-fc166da3dc39",
+                    "label": "mobileText_1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 20,
+                    "y": -40.68319434475234,
+                    "text": "Use the right button to spawn more sprites",
+                    "fontFamily": "Arial",
+                    "fontSize": "20px"
+                }
+            ]
+        },
+        {
+            "type": "Rectangle",
+            "id": "432ab50a-83da-4193-84f3-e0fa7a44a9b6",
+            "label": "testTween",
+            "components": [],
+            "x": 407,
+            "y": 262,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -260,8 +162,8 @@
             "id": "f2f9c22e-4501-4251-98db-2c79babb2f2d",
             "label": "alignToCameraLeft",
             "objectIds": [
-                "d020e235-617a-49cf-b2e0-52cca654d2c2",
-                "c98729eb-4ce6-40d8-a05c-629d20728e98"
+                "c98729eb-4ce6-40d8-a05c-629d20728e98",
+                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
             ]
         },
         {
@@ -275,25 +177,20 @@
             "id": "f1f47867-753f-4517-8759-6b2666dd431d",
             "label": "alignToCameraTop",
             "objectIds": [
-                "c98729eb-4ce6-40d8-a05c-629d20728e98",
-                "92cd63e7-2fc4-42d3-8918-9755fe9599d6"
+                "c98729eb-4ce6-40d8-a05c-629d20728e98"
             ]
         },
         {
             "id": "ec7674b1-a078-4483-982b-537b138460c5",
             "label": "alignToCameraBottom",
             "objectIds": [
-                "d020e235-617a-49cf-b2e0-52cca654d2c2",
-                "3b1a0172-dca2-4b67-a007-96c343a003dc"
+                "3b1a0172-dca2-4b67-a007-96c343a003dc",
+                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
             ]
         },
         {
             "id": "9abf394a-9109-49fc-9f1c-d2411cffb3a2",
-            "label": "resizeScale",
-            "objectIds": [
-                "92cd63e7-2fc4-42d3-8918-9755fe9599d6",
-                "6a9423ea-0f78-4871-8109-e9cf46bcfa76"
-            ]
+            "label": "resizeScale"
         },
         {
             "id": "71012bf3-4f2c-4bfb-b490-a6a38253d3b3",
@@ -301,10 +198,7 @@
         },
         {
             "id": "2178f94b-3199-4295-b1f2-5a789fbcb3f3",
-            "label": "alignToCameraCenter",
-            "objectIds": [
-                "92cd63e7-2fc4-42d3-8918-9755fe9599d6"
-            ]
+            "label": "alignToCameraCenter"
         }
     ]
 }

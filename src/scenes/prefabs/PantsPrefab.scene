@@ -1,0 +1,32 @@
+{
+    "id": "aaee1bf3-080c-473b-8c02-212522d2608c",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 2532,
+        "borderHeight": 1020
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "ee1e3d5c-3b40-423a-b0ca-189af8a20b62",
+            "label": "pants",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "texture": {
+                "key": "dino"
+            }
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
