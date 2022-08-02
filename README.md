@@ -17,3 +17,4 @@ I should do this in order
 - [ ] Test how many animated sprites can exist on screen
 
 - [x] Set up Newgrounds.io
+- [ ] uhh can I call NGio.js functions the way it's set up?
