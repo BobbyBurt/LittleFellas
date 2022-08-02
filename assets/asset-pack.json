@@ -64,6 +64,11 @@
                 "key": "practice-dustman"
             },
             {
+                "url": "src/components/randomMove.js",
+                "type": "script",
+                "key": "randomMove"
+            },
+            {
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"

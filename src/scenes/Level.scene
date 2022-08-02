@@ -61,7 +61,7 @@
                     "label": "rectangle_3",
                     "components": [],
                     "scaleX": 1.402470438441591,
-                    "scaleY": 0.6945006767374393,
+                    "scaleY": 0.9012382160764663,
                     "originX": 0,
                     "originY": 0,
                     "isFilled": true,
@@ -91,6 +91,18 @@
                     "x": 20,
                     "y": 50,
                     "text": "sprites: 0",
+                    "fontFamily": "Arial",
+                    "fontSize": "20px"
+                },
+                {
+                    "type": "Text",
+                    "id": "a977ccbb-dac5-423d-8344-ec4c80a0f61f",
+                    "label": "fpsText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 20,
+                    "y": 80,
+                    "text": "FPS: ??",
                     "fontFamily": "Arial",
                     "fontSize": "20px"
                 }
@@ -140,12 +152,26 @@
         },
         {
             "type": "Rectangle",
-            "id": "432ab50a-83da-4193-84f3-e0fa7a44a9b6",
-            "label": "testTween",
-            "components": [],
-            "x": 407,
-            "y": 262,
+            "id": "cb26b570-9996-4ba2-9ee1-c9e95aa17922",
+            "label": "buttonTest",
+            "scope": "CLASS",
+            "components": [
+                "AlignOffsets",
+                "SimpleButton",
+                "DeviceDependentActivation"
+            ],
+            "AlignOffsets.x": 450,
+            "AlignOffsets.y": -100,
+            "SimpleButton.bindButton": "left",
+            "DeviceDependentActivation.ifMobile": true,
+            "x": 466,
+            "y": 981,
+            "scaleX": 2.4726917897363947,
+            "scaleY": 1.8500935500799485,
+            "originX": 0,
+            "originY": 1,
             "isFilled": true,
+            "fillColor": "#3c96ea",
             "width": 128,
             "height": 128
         }
@@ -163,7 +189,8 @@
             "label": "alignToCameraLeft",
             "objectIds": [
                 "c98729eb-4ce6-40d8-a05c-629d20728e98",
-                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
+                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6",
+                "cb26b570-9996-4ba2-9ee1-c9e95aa17922"
             ]
         },
         {
@@ -185,7 +212,8 @@
             "label": "alignToCameraBottom",
             "objectIds": [
                 "3b1a0172-dca2-4b67-a007-96c343a003dc",
-                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
+                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6",
+                "cb26b570-9996-4ba2-9ee1-c9e95aa17922"
             ]
         },
         {
@@ -199,6 +227,10 @@
         {
             "id": "2178f94b-3199-4295-b1f2-5a789fbcb3f3",
             "label": "alignToCameraCenter"
+        },
+        {
+            "id": "2f99fc8b-5f51-49e7-bd81-da41c2d0a59a",
+            "label": "pantsTest"
         }
     ]
 }

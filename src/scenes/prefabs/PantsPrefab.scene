@@ -15,7 +15,8 @@
             "label": "pants",
             "scope": "CLASS",
             "components": [
-                "Animation"
+                "Animation",
+                "randomMove"
             ],
             "texture": {
                 "key": "dino"

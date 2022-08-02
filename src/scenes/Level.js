@@ -36,7 +36,7 @@ class Level extends Phaser.Scene {
 		// rectangle_3
 		const rectangle_3 = this.add.rectangle(0, 0, 128, 128);
 		rectangle_3.scaleX = 1.402470438441591;
-		rectangle_3.scaleY = 0.6945006767374393;
+		rectangle_3.scaleY = 0.9012382160764663;
 		rectangle_3.setOrigin(0, 0);
 		rectangle_3.isFilled = true;
 		rectangle_3.fillColor = 2894892;
@@ -54,6 +54,12 @@ class Level extends Phaser.Scene {
 		spriteCountText.text = "sprites: 0";
 		spriteCountText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer.add(spriteCountText);
+
+		// fpsText
+		const fpsText = this.add.text(20, 80, "", {});
+		fpsText.text = "FPS: ??";
+		fpsText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
+		mobileTextcontainer.add(fpsText);
 
 		// MobileTextcontainer_1
 		const mobileTextcontainer_1 = this.add.container(2, 1021);
@@ -74,18 +80,23 @@ class Level extends Phaser.Scene {
 		mobileText_1.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer_1.add(mobileText_1);
 
-		// testTween
-		const testTween = this.add.rectangle(407, 262, 128, 128);
-		testTween.isFilled = true;
+		// buttonTest
+		const buttonTest = this.add.rectangle(466, 981, 128, 128);
+		buttonTest.scaleX = 2.4726917897363947;
+		buttonTest.scaleY = 1.8500935500799485;
+		buttonTest.setOrigin(0, 1);
+		buttonTest.isFilled = true;
+		buttonTest.fillColor = 3970794;
 
 		// lists
-		const alignToCameraLeft = [mobileTextcontainer, mobileTextcontainer_1];
+		const alignToCameraLeft = [mobileTextcontainer, mobileTextcontainer_1, buttonTest];
 		const alignToCameraRight = [buttonTest2];
 		const alignToCameraTop = [mobileTextcontainer];
-		const alignToCameraBottom = [buttonTest2, mobileTextcontainer_1];
+		const alignToCameraBottom = [buttonTest2, mobileTextcontainer_1, buttonTest];
 		const resizeScale = [];
 		const alignToCameraMiddle = [];
 		const alignToCameraCenter = [];
+		const pantsTest = [];
 
 		// buttonTest2 (components)
 		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
@@ -106,10 +117,21 @@ class Level extends Phaser.Scene {
 		mobileTextcontainer_1AlignOffsets.x = 20;
 		mobileTextcontainer_1AlignOffsets.y = -20;
 
+		// buttonTest (components)
+		const buttonTestAlignOffsets = new AlignOffsets(buttonTest);
+		buttonTestAlignOffsets.x = 450;
+		buttonTestAlignOffsets.y = -100;
+		const buttonTestSimpleButton = new SimpleButton(buttonTest);
+		buttonTestSimpleButton.bindButton = "left";
+		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
+		buttonTestDeviceDependentActivation.ifMobile = true;
+
 		this.buttonTest2 = buttonTest2;
 		this.mobileText = mobileText;
 		this.spriteCountText = spriteCountText;
+		this.fpsText = fpsText;
 		this.mobileText_1 = mobileText_1;
+		this.buttonTest = buttonTest;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -117,6 +139,7 @@ class Level extends Phaser.Scene {
 		this.resizeScale = resizeScale;
 		this.alignToCameraMiddle = alignToCameraMiddle;
 		this.alignToCameraCenter = alignToCameraCenter;
+		this.pantsTest = pantsTest;
 
 		this.events.emit("scene-awake");
 	}
@@ -128,8 +151,12 @@ class Level extends Phaser.Scene {
 	/** @type {Phaser.GameObjects.Text} */
 	spriteCountText;
 	/** @type {Phaser.GameObjects.Text} */
+	fpsText;
+	/** @type {Phaser.GameObjects.Text} */
 	mobileText_1;
-	/** @type {Phaser.GameObjects.Container[]} */
+	/** @type {Phaser.GameObjects.Rectangle} */
+	buttonTest;
+	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
 	/** @type {Phaser.GameObjects.Rectangle[]} */
 	alignToCameraRight;
@@ -143,6 +170,8 @@ class Level extends Phaser.Scene {
 	alignToCameraMiddle;
 	/** @type {Array<any>} */
 	alignToCameraCenter;
+	/** @type {Array<any>} */
+	pantsTest;
 
 	/* START-USER-CODE */
 
@@ -167,7 +196,7 @@ class Level extends Phaser.Scene {
 		this.controls.bindKey('left', keys.left_1);
 		this.controls.bindKey('right', keys.right_1);
 
-		// this.controls.bindButton(SimpleButton.getComponent(this.buttonTest).bindButton, SimpleButton.getComponent(this.buttonTest));
+		this.controls.bindButton(SimpleButton.getComponent(this.buttonTest).bindButton, SimpleButton.getComponent(this.buttonTest));
 		this.controls.bindButton(SimpleButton.getComponent(this.buttonTest2).bindButton, SimpleButton.getComponent(this.buttonTest2));
 		// since the button to bind this to is a property, this could be a loop of all buttons
 
@@ -176,16 +205,19 @@ class Level extends Phaser.Scene {
 
 		});
 
-		this.spriteCount = 0;
-
+		// spawning sprites
 		this.controls.onPress('right', () => {
 
-			const pantsPrefab_0 = new PantsPrefab(this, Phaser.Math.RND.between(0, this.scale.width), Phaser.Math.RND.between(150, this.scale.height - 100));
-			this.add.existing(pantsPrefab_0);
+			for (let i = 0; i < 10; i++) {
 
-			// update sprite count
-			this.spriteCount++;
-			this.spriteCountText.setText('sprites: ' + this.spriteCount);
+				const pantsPrefab_0 = new PantsPrefab(this, Phaser.Math.RND.between(0, this.scale.width), Phaser.Math.RND.between(150, this.scale.height - 100));
+				this.add.existing(pantsPrefab_0);
+				this.pantsTest.push(pantsPrefab_0);
+
+				// update sprite count
+				this.spriteCount++;
+				this.spriteCountText.setText('sprites: ' + this.pantsTest.length);
+			}
 		});
 
 		// CAMERA SETTINGS
@@ -195,7 +227,6 @@ class Level extends Phaser.Scene {
 
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 
-
 		this.resize();
 	}
 
@@ -203,10 +234,16 @@ class Level extends Phaser.Scene {
 
 		if (this.controls.isDown('left')) {
 
+			this.cameras.main.scrollX--;
+			// this.cameras.main.zoom += .005;
 		}
 		else if (this.controls.isDown('right')) {
 
+			this.cameras.main.scrollX++;
+			// this.cameras.main.zoom -= .005;
 		}
+
+		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
 	}
 
 	/** scene specific resizing adjustments

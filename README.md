@@ -14,7 +14,11 @@ I should do this in order
   - NG window on desktop will be 960 x 540, if the others want to change that later then it will be easy to
 
 - [ ] Test ideal size of sprites
-- [ ] Test how many animated sprites can exist on screen
+- [x] Test how many animated sprites can exist on screen
+- [ ] Test how many sprites of various animations, bigger animations, each with movement code
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
+
+### Notes
+- camera zoom messes with objects that should stay in place with a scroll factor of 0. I may have to render that stuff in a parallel scene

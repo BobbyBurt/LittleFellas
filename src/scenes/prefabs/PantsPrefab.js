@@ -10,15 +10,14 @@ class PantsPrefab extends Phaser.GameObjects.Sprite {
 
 		// this (components)
 		new Animation(this);
+		new randomMove(this);
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+
 		/* END-USER-CTR-CODE */
 	}
 
 	/* START-USER-CODE */
-
-	// Write your code here.
 
 	/* END-USER-CODE */
 }
