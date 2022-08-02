@@ -20,5 +20,7 @@ I should do this in order
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
 
+- [ ] Impliment Psychogoldfish's audio hack for safari
+
 ### Notes
 - camera zoom messes with objects that should stay in place with a scroll factor of 0. I may have to render that stuff in a parallel scene

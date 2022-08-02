@@ -234,13 +234,13 @@ class Level extends Phaser.Scene {
 
 		if (this.controls.isDown('left')) {
 
-			this.cameras.main.scrollX--;
-			// this.cameras.main.zoom += .005;
+			// this.cameras.main.scrollX--;
+			this.cameras.main.zoom += .005;
 		}
 		else if (this.controls.isDown('right')) {
 
-			this.cameras.main.scrollX++;
-			// this.cameras.main.zoom -= .005;
+			// this.cameras.main.scrollX++;
+			this.cameras.main.zoom -= .005;
 		}
 
 		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
