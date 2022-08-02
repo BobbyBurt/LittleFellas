@@ -102,8 +102,8 @@ class Level extends Phaser.Scene {
 
 		// rectangle_3
 		const rectangle_3 = this.add.rectangle(0, 0, 128, 128);
-		rectangle_3.scaleX = 5.804986371276949;
-		rectangle_3.scaleY = 1.4268564483170905;
+		rectangle_3.scaleX = 1.2031249781092408;
+		rectangle_3.scaleY = 0.47656251661110416;
 		rectangle_3.setOrigin(0, 0);
 		rectangle_3.isFilled = true;
 		rectangle_3.fillColor = 2894892;
@@ -111,22 +111,10 @@ class Level extends Phaser.Scene {
 		mobileTextcontainer.add(rectangle_3);
 
 		// mobileText
-		const mobileText = this.add.text(50, 50, "", {});
+		const mobileText = this.add.text(20, 20, "", {});
 		mobileText.text = "Mobile: ????";
-		mobileText.setStyle({ "fontFamily": "Arial", "fontSize": "32px" });
+		mobileText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer.add(mobileText);
-
-		// onlyDesktop
-		const onlyDesktop = this.add.text(50, 100, "", {});
-		onlyDesktop.text = "This gameobject will only appear on desktop";
-		onlyDesktop.setStyle({ "fontFamily": "Arial", "fontSize": "32px" });
-		mobileTextcontainer.add(onlyDesktop);
-
-		// onlyMobile
-		const onlyMobile = this.add.text(50, 100, "", {});
-		onlyMobile.text = "This gameobject will only appear on mobile";
-		onlyMobile.setStyle({ "fontFamily": "Arial", "fontSize": "32px" });
-		mobileTextcontainer.add(onlyMobile);
 
 		// lists
 		const alignToCameraLeft = [buttonTest, mobileTextcontainer];
@@ -163,16 +151,8 @@ class Level extends Phaser.Scene {
 
 		// mobileTextcontainer (components)
 		const mobileTextcontainerAlignOffsets = new AlignOffsets(mobileTextcontainer);
-		mobileTextcontainerAlignOffsets.x = 50;
-		mobileTextcontainerAlignOffsets.y = 50;
-
-		// onlyDesktop (components)
-		const onlyDesktopDeviceDependentActivation = new DeviceDependentActivation(onlyDesktop);
-		onlyDesktopDeviceDependentActivation.ifDesktop = true;
-
-		// onlyMobile (components)
-		const onlyMobileDeviceDependentActivation = new DeviceDependentActivation(onlyMobile);
-		onlyMobileDeviceDependentActivation.ifMobile = true;
+		mobileTextcontainerAlignOffsets.x = 20;
+		mobileTextcontainerAlignOffsets.y = 20;
 
 		this.dustforce_SS = dustforce_SS;
 		this.dustforce_SS_5 = dustforce_SS_5;
@@ -181,8 +161,6 @@ class Level extends Phaser.Scene {
 		this.buttonTest = buttonTest;
 		this.buttonTest2 = buttonTest2;
 		this.mobileText = mobileText;
-		this.onlyDesktop = onlyDesktop;
-		this.onlyMobile = onlyMobile;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -208,10 +186,6 @@ class Level extends Phaser.Scene {
 	buttonTest2;
 	/** @type {Phaser.GameObjects.Text} */
 	mobileText;
-	/** @type {Phaser.GameObjects.Text} */
-	onlyDesktop;
-	/** @type {Phaser.GameObjects.Text} */
-	onlyMobile;
 	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container>} */
 	alignToCameraLeft;
 	/** @type {Phaser.GameObjects.Rectangle[]} */

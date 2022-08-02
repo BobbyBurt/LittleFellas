@@ -215,16 +215,16 @@
             "components": [
                 "AlignOffsets"
             ],
-            "AlignOffsets.x": 50,
-            "AlignOffsets.y": 50,
+            "AlignOffsets.x": 20,
+            "AlignOffsets.y": 20,
             "list": [
                 {
                     "type": "Rectangle",
                     "id": "ed4c9e6f-5b96-46c3-952a-d59b6bd18c24",
                     "label": "rectangle_3",
                     "components": [],
-                    "scaleX": 5.804986371276949,
-                    "scaleY": 1.4268564483170905,
+                    "scaleX": 1.2031249781092408,
+                    "scaleY": 0.47656251661110416,
                     "originX": 0,
                     "originY": 0,
                     "isFilled": true,
@@ -239,41 +239,11 @@
                     "label": "mobileText",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 50,
-                    "y": 50,
+                    "x": 20,
+                    "y": 20,
                     "text": "Mobile: ????",
                     "fontFamily": "Arial",
-                    "fontSize": "32px"
-                },
-                {
-                    "type": "Text",
-                    "id": "a28fc427-801a-44dd-8156-c6ec74188aa2",
-                    "label": "onlyDesktop",
-                    "scope": "CLASS",
-                    "components": [
-                        "DeviceDependentActivation"
-                    ],
-                    "DeviceDependentActivation.ifDesktop": true,
-                    "x": 50,
-                    "y": 100,
-                    "text": "This gameobject will only appear on desktop",
-                    "fontFamily": "Arial",
-                    "fontSize": "32px"
-                },
-                {
-                    "type": "Text",
-                    "id": "3545007a-9e81-48b0-83de-1fa41b923bee",
-                    "label": "onlyMobile",
-                    "scope": "CLASS",
-                    "components": [
-                        "DeviceDependentActivation"
-                    ],
-                    "DeviceDependentActivation.ifMobile": true,
-                    "x": 50,
-                    "y": 100,
-                    "text": "This gameobject will only appear on mobile",
-                    "fontFamily": "Arial",
-                    "fontSize": "32px"
+                    "fontSize": "20px"
                 }
             ]
         }

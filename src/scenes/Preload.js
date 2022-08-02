@@ -24,11 +24,6 @@ class Preload extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// guapen
-		const guapen = this.add.image(0, 0, "guapen");
-		guapen.scaleX = 0.5;
-		guapen.scaleY = 0.5;
-
 		// progress
 		const progress = this.add.text(0, 136, "", {});
 		progress.setOrigin(0.5, 0.5);

@@ -1,6 +1,4 @@
-import eventsCenter from "../eventsCenter.js";
-
-class NewgroundsIO extends Phaser.Scene
+export default class newgroundsio extends Phaser.Scene
 {
     constructor()
     {
@@ -24,12 +22,10 @@ class NewgroundsIO extends Phaser.Scene
         initSession();
 
         /* load our medals and scoreboards from the server */
-        // ngio.queueComponent("Medal.getList", {}, onMedalsLoaded);
-        // ngio.queueComponent("ScoreBoard.getBoards", {}, onScoreboardsLoaded);
-        ngio.queueComponent("App.logView", {host: 'localHost'});
-        // ngio.executeQueue();
-
-		console.log('NGio here!');
+        ngio.queueComponent("Medal.getList", {}, onMedalsLoaded);
+        ngio.queueComponent("ScoreBoard.getBoards", {}, onScoreboardsLoaded);
+        // ngio.queueComponent("App.logView", {host: 'localHost'});
+        ngio.executeQueue();
     }
 
     update()

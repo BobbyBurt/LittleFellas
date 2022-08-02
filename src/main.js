@@ -22,7 +22,6 @@ window.addEventListener('load', function () {
 	});
 	
 	game.scene.add("preload", Preload);
-	game.scene.add("newgroundsio", NewgroundsIO);
 	game.scene.add("level", Level);
 	game.scene.add("boot", Boot, true);
 });
