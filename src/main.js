@@ -26,6 +26,7 @@ window.addEventListener('load', function () {
 	game.scene.add("preload", Preload);
 	game.scene.add("level", Level);
 	// game.scene.add("newgroundsio", newgroundsio);
+	game.scene.add("newgroundsio", newgroundsio);
 	game.scene.add("boot", Boot, true);
 });
 
