@@ -13,9 +13,11 @@ I should do this in order
   - I can't reasonably test above 2532 x 1020, so that's fine for this project
   - NG window on desktop will be 960 x 540, if the others want to change that later then it will be easy to
 
-- [ ] Test ideal size of sprites
 - [x] Test how many animated sprites can exist on screen
-- [ ] Test how many sprites of various animations, bigger animations, each with movement code
+- [x] Test how many sprites of various animations, bigger animations, each with movement code
+
+- [ ] Test ideal size of sprites
+- [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
