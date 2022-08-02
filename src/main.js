@@ -3,8 +3,12 @@ window.addEventListener('load', function () {
 
 	var game = new Phaser.Game({
 		type: Phaser.CANVAS,
+		// must be canvas for debug game scale plugin. Can change later
         backgroundColor: "#969fa3",
 		pixelArt: false,
+		title: 'Little Fellas',
+		version: '1.0',
+		url: 'https://www.newgrounds.com/projects/games/1920192/preview',
 		scale: {
 			// this allows the game to be fullscreen on safari in landscape, but creates whitespace & scrollability in portrait
 			mode: Phaser.Scale.NONE,
@@ -30,6 +34,7 @@ class Boot extends Phaser.Scene {
 		this.load.pack("pack", "assets/preload-asset-pack.json");
 
 		this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
+		// https://github.com/samme/phaser-plugin-debug-game-scale
 
 		// this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Preload"));
 	}
