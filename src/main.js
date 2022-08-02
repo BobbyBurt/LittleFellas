@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
         backgroundColor: "#969fa3",
 		pixelArt: false,
 		title: 'Little Fellas',
-		version: '1.0',
+		version: '2.0',
 		url: 'https://www.newgrounds.com/projects/games/1920192/preview',
 		physics: {
 			default: 'arcade',

@@ -16,8 +16,13 @@ class randomMove extends UserComponent {
 
 		/* START-USER-CTR-CODE */
 
+		// random direction
 		this.xMove = Phaser.Math.RND.normal();
 		this.yMove = Phaser.Math.RND.normal();
+
+		// setup start function
+		this.scene = this.gameObject.scene;
+		this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.start, this);
 
 		/* END-USER-CTR-CODE */
 	}
@@ -32,10 +37,15 @@ class randomMove extends UserComponent {
 
 	/* START-USER-CODE */
 
+	start() {
+
+		this.gameObject.body.setBounce(1);
+		this.gameObject.body.setVelocity(this.xMove * 100, this.yMove * 100);
+	}
+
 	update() {
 
-		this.gameObject.x += this.xMove;
-		this.gameObject.y += this.yMove;
+		
 	}
 
 	/* END-USER-CODE */
