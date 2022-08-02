@@ -2,7 +2,7 @@
 window.addEventListener('load', function () {
 
 	var game = new Phaser.Game({
-		type: Phaser.CANVAS,
+		type: Phaser.AUTO,
 		// must be canvas for debug game scale plugin. Can change later
         backgroundColor: "#969fa3",
 		pixelArt: false,
@@ -33,8 +33,9 @@ class Boot extends Phaser.Scene {
 		
 		this.load.pack("pack", "assets/preload-asset-pack.json");
 
-		this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
+		// this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
 		// https://github.com/samme/phaser-plugin-debug-game-scale
+		// renderer must be canvas
 
 		// this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Preload"));
 	}
