@@ -15,7 +15,7 @@ class randomMove extends UserComponent {
 		gameObject["__randomMove"] = this;
 
 		/* START-USER-CTR-CODE */
-		
+
 		this.xMove = Phaser.Math.RND.normal();
 		this.yMove = Phaser.Math.RND.normal();
 

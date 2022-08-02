@@ -174,6 +174,96 @@
             "fillColor": "#3c96ea",
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "5c3d4611-1dec-478c-b367-3d3239683c5a",
+            "label": "fella",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 537,
+            "y": 507
+        },
+        {
+            "prefabId": "aaee1bf3-080c-473b-8c02-212522d2608c",
+            "id": "d0023dd0-f267-4aa3-a960-9319e68f603a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "pantsPrefab",
+            "components": [],
+            "x": 946,
+            "y": 496
+        },
+        {
+            "type": "Rectangle",
+            "id": "1e4e9833-6c65-4e94-bf08-be9c513cfc01",
+            "label": "tankBounds",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 2555,
+            "y": 518,
+            "scaleY": 8.512184696082114,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "b413d7e8-6fb8-43c5-9bfe-a0978757b6b1",
+            "label": "tankBounds_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": -39,
+            "y": 506,
+            "scaleY": 8.512184696082114,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "0e963001-3fa1-44d2-9007-41dee83f7467",
+            "label": "tankBounds_2",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 1370,
+            "y": 1069,
+            "scaleX": 26.773871801638673,
+            "scaleY": 1.0128274046896948,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "66a09321-6446-4d0e-9aa0-b8a8e7d1282c",
+            "label": "tankBounds_3",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 1442,
+            "y": -38,
+            "scaleX": 26.773871801638673,
+            "scaleY": 1.0128274046896948,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -231,6 +321,23 @@
         {
             "id": "2f99fc8b-5f51-49e7-bd81-da41c2d0a59a",
             "label": "pantsTest"
+        },
+        {
+            "id": "f5266110-0306-40da-b57c-c257fcfd5e24",
+            "label": "fellasList",
+            "objectIds": [
+                "5c3d4611-1dec-478c-b367-3d3239683c5a"
+            ]
+        },
+        {
+            "id": "2129409e-3012-4996-8c4a-e72ecf7b8174",
+            "label": "bounds",
+            "objectIds": [
+                "1e4e9833-6c65-4e94-bf08-be9c513cfc01",
+                "0e963001-3fa1-44d2-9007-41dee83f7467",
+                "b413d7e8-6fb8-43c5-9bfe-a0978757b6b1",
+                "66a09321-6446-4d0e-9aa0-b8a8e7d1282c"
+            ]
         }
     ]
 }

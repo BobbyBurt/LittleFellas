@@ -16,7 +16,18 @@
             "name": "Animation",
             "baseClass": "",
             "gameObjectType": "Phaser.GameObjects.Sprite",
-            "properties": []
+            "properties": [
+                {
+                    "name": "animationKey",
+                    "label": "animation key",
+                    "tooltip": "key of animation to play on start",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                }
+            ]
         },
         {
             "name": "OnLoadAppear",
@@ -71,6 +82,12 @@
         {
             "name": "randomMove",
             "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": []
+        },
+        {
+            "name": "PhysicsBody",
+            "baseClass": "",
             "gameObjectType": "Phaser.GameObjects.Image",
             "properties": []
         }

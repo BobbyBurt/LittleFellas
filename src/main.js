@@ -10,6 +10,12 @@ window.addEventListener('load', function () {
 		title: 'Little Fellas',
 		version: '1.0',
 		url: 'https://www.newgrounds.com/projects/games/1920192/preview',
+		physics: {
+			default: 'arcade',
+			arcade: {
+				debug: true
+			}
+		},
 		scale: {
 			// this allows the game to be fullscreen on safari in landscape, but creates whitespace & scrollability in portrait
 			mode: Phaser.Scale.NONE,

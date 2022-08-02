@@ -6,36 +6,35 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-class Animation {
+class PhysicsBody {
 
 	constructor(gameObject) {
 		this.gameObject = gameObject;
-		gameObject["__Animation"] = this;
+		gameObject["__PhysicsBody"] = this;
 
 		/* START-USER-CTR-CODE */
-
-		this.scene = this.gameObject.scene;
-
-		this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.start, this);
-
+		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
-	/** @returns {Animation} */
+	/** @returns {PhysicsBody} */
 	static getComponent(gameObject) {
-		return gameObject["__Animation"];
+		return gameObject["__PhysicsBody"];
 	}
 
-	/** @type {Phaser.GameObjects.Sprite} */
+	/** @type {Phaser.GameObjects.Image} */
 	gameObject;
-	/** @type {string} */
-	animationKey = "";
 
 	/* START-USER-CODE */
 
 	start() {
+		
+		this.gameObject.scene.physics.add.existing(this.gameObject);
+		
+		/** @type {Phaser.Physics.Arcade.Body} */
+		const body = this.gameObject.body;
+		body.setSize(this.gameObject.width, this.gameObject.height);
 
-		this.gameObject.play(this.animationKey);
 	}
 
 	/* END-USER-CODE */

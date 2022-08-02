@@ -88,6 +88,35 @@ class Level extends Phaser.Scene {
 		buttonTest.isFilled = true;
 		buttonTest.fillColor = 3970794;
 
+		// fella
+		const fella = this.add.sprite(537, 507, "fella", 0);
+
+		// pantsPrefab
+		const pantsPrefab = new PantsPrefab(this, 946, 496);
+		this.add.existing(pantsPrefab);
+
+		// tankBounds
+		const tankBounds = this.add.rectangle(2555, 518, 128, 128);
+		tankBounds.scaleY = 8.512184696082114;
+		tankBounds.isFilled = true;
+
+		// tankBounds_1
+		const tankBounds_1 = this.add.rectangle(-39, 506, 128, 128);
+		tankBounds_1.scaleY = 8.512184696082114;
+		tankBounds_1.isFilled = true;
+
+		// tankBounds_2
+		const tankBounds_2 = this.add.rectangle(1370, 1069, 128, 128);
+		tankBounds_2.scaleX = 26.773871801638673;
+		tankBounds_2.scaleY = 1.0128274046896948;
+		tankBounds_2.isFilled = true;
+
+		// tankBounds_3
+		const tankBounds_3 = this.add.rectangle(1442, -38, 128, 128);
+		tankBounds_3.scaleX = 26.773871801638673;
+		tankBounds_3.scaleY = 1.0128274046896948;
+		tankBounds_3.isFilled = true;
+
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, mobileTextcontainer_1, buttonTest];
 		const alignToCameraRight = [buttonTest2];
@@ -97,6 +126,8 @@ class Level extends Phaser.Scene {
 		const alignToCameraMiddle = [];
 		const alignToCameraCenter = [];
 		const pantsTest = [];
+		const fellasList = [fella];
+		const bounds = [tankBounds, tankBounds_2, tankBounds_1, tankBounds_3];
 
 		// buttonTest2 (components)
 		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
@@ -126,12 +157,33 @@ class Level extends Phaser.Scene {
 		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
 		buttonTestDeviceDependentActivation.ifMobile = true;
 
+		// fella (components)
+		const fellaAnimation = new Animation(fella);
+		fellaAnimation.animationKey = "bob";
+
+		// tankBounds (components)
+		new PhysicsBody(tankBounds);
+
+		// tankBounds_1 (components)
+		new PhysicsBody(tankBounds_1);
+
+		// tankBounds_2 (components)
+		new PhysicsBody(tankBounds_2);
+
+		// tankBounds_3 (components)
+		new PhysicsBody(tankBounds_3);
+
 		this.buttonTest2 = buttonTest2;
 		this.mobileText = mobileText;
 		this.spriteCountText = spriteCountText;
 		this.fpsText = fpsText;
 		this.mobileText_1 = mobileText_1;
 		this.buttonTest = buttonTest;
+		this.fella = fella;
+		this.tankBounds = tankBounds;
+		this.tankBounds_1 = tankBounds_1;
+		this.tankBounds_2 = tankBounds_2;
+		this.tankBounds_3 = tankBounds_3;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -140,6 +192,8 @@ class Level extends Phaser.Scene {
 		this.alignToCameraMiddle = alignToCameraMiddle;
 		this.alignToCameraCenter = alignToCameraCenter;
 		this.pantsTest = pantsTest;
+		this.fellasList = fellasList;
+		this.bounds = bounds;
 
 		this.events.emit("scene-awake");
 	}
@@ -156,6 +210,16 @@ class Level extends Phaser.Scene {
 	mobileText_1;
 	/** @type {Phaser.GameObjects.Rectangle} */
 	buttonTest;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	tankBounds;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	tankBounds_1;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	tankBounds_2;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	tankBounds_3;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
 	/** @type {Phaser.GameObjects.Rectangle[]} */
@@ -172,6 +236,10 @@ class Level extends Phaser.Scene {
 	alignToCameraCenter;
 	/** @type {Array<any>} */
 	pantsTest;
+	/** @type {Phaser.GameObjects.Sprite[]} */
+	fellasList;
+	/** @type {Phaser.GameObjects.Rectangle[]} */
+	bounds;
 
 	/* START-USER-CODE */
 
@@ -227,6 +295,9 @@ class Level extends Phaser.Scene {
 
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 
+		// setup collision
+		this.initColliders();
+
 		this.resize();
 	}
 
@@ -235,12 +306,16 @@ class Level extends Phaser.Scene {
 		if (this.controls.isDown('left')) {
 
 			// this.cameras.main.scrollX--;
-			this.cameras.main.zoom += .005;
+			// this.cameras.main.zoom += .005;
+
+			this.fella.body.setVelocity(-400, 0);
 		}
 		else if (this.controls.isDown('right')) {
 
 			// this.cameras.main.scrollX++;
-			this.cameras.main.zoom -= .005;
+			// this.cameras.main.zoom -= .005;
+
+			this.fella.body.setVelocity(400, 0);
 		}
 
 		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
@@ -259,6 +334,22 @@ class Level extends Phaser.Scene {
 		this.alignObjects();
 
 		this.scaleObjects();
+	}
+
+	/** setup collision physics */
+	initColliders() {
+
+		this.physics.add.existing(this.fella);
+
+		for(let i = 0; i < this.bounds.length; i++) {
+
+			this.physics.add.existing(this.bounds[i]);
+			this.bounds[i].body.setImmovable(true);
+		}
+
+		this.physics.add.collider(this.fella, this.bounds);
+
+		// this.physics.add.collider(this.fellasList, this.bounds);
 	}
 
 	/** align objects included in the align left/right/top/bottom lists

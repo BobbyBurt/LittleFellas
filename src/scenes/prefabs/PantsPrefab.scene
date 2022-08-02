@@ -18,6 +18,7 @@
                 "Animation",
                 "randomMove"
             ],
+            "Animation.animationKey": "run",
             "texture": {
                 "key": "dino"
             }

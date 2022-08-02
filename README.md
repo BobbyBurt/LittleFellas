@@ -19,6 +19,8 @@ I should do this in order
 - [ ] Test ideal size of sprites
 - [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
+- [ ] can the tank be the same size across different resolutions?
+
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
 

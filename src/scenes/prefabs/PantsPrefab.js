@@ -9,7 +9,8 @@ class PantsPrefab extends Phaser.GameObjects.Sprite {
 		super(scene, x ?? 0, y ?? 0, texture || "dino", frame);
 
 		// this (components)
-		new Animation(this);
+		const thisAnimation = new Animation(this);
+		thisAnimation.animationKey = "run";
 		new randomMove(this);
 
 		/* START-USER-CTR-CODE */
