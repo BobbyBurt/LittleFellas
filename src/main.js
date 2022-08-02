@@ -1,4 +1,3 @@
-
 window.addEventListener('load', function () {
 
 	var game = new Phaser.Game({
@@ -22,9 +21,10 @@ window.addEventListener('load', function () {
 		}
 	});
 	
-	game.scene.add("Preload", Preload);
-	game.scene.add("Level", Level);
-	game.scene.add("Boot", Boot, true);
+	game.scene.add("preload", Preload);
+	game.scene.add("newgroundsio", NewgroundsIO);
+	game.scene.add("level", Level);
+	game.scene.add("boot", Boot, true);
 });
 
 class Boot extends Phaser.Scene {
@@ -44,6 +44,7 @@ class Boot extends Phaser.Scene {
 
 		window.addEventListener('resize', this.resize.bind(this));
 
+		this.scene.launch("newgroundsio");
 		this.scene.start("preload");
 	}
 
