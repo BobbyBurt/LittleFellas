@@ -20,8 +20,6 @@ I should do this in order
 Set size of tank, NG window, desktop zoom
 - [ ] can the tank be the same size across different resolutions?
 - [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
-Fella death function
-Death areas which give warnings. Death Chamber flashbacks...
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
