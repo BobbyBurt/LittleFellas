@@ -46,6 +46,300 @@
             "height": 128
         },
         {
+            "type": "Rectangle",
+            "id": "cb26b570-9996-4ba2-9ee1-c9e95aa17922",
+            "label": "buttonTest",
+            "scope": "CLASS",
+            "components": [
+                "AlignOffsets",
+                "SimpleButton",
+                "DeviceDependentActivation"
+            ],
+            "AlignOffsets.x": 450,
+            "AlignOffsets.y": -100,
+            "SimpleButton.bindButton": "left",
+            "DeviceDependentActivation.ifMobile": true,
+            "x": 466,
+            "y": 981,
+            "scaleX": 2.4726917897363947,
+            "scaleY": 1.8500935500799485,
+            "originX": 0,
+            "originY": 1,
+            "isFilled": true,
+            "fillColor": "#3c96ea",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "5c3d4611-1dec-478c-b367-3d3239683c5a",
+            "label": "fella",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 251,
+            "y": 272,
+            "tintTopLeft": "#60caf2",
+            "tintTopRight": "#60caf2",
+            "tintBottomLeft": "#60caf2",
+            "tintBottomRight": "#60caf2"
+        },
+        {
+            "type": "Rectangle",
+            "id": "1e4e9833-6c65-4e94-bf08-be9c513cfc01",
+            "label": "tankBounds",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 2535,
+            "y": 518,
+            "scaleX": 3.2005933874605628,
+            "scaleY": 8.512184696082114,
+            "isFilled": true,
+            "fillColor": "#6a6a6a",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "b413d7e8-6fb8-43c5-9bfe-a0978757b6b1",
+            "label": "tankBounds_1",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 8,
+            "y": 506,
+            "scaleX": 2.9103075290289895,
+            "scaleY": 8.512184696082114,
+            "isFilled": true,
+            "fillColor": "#6a6a6a",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "0e963001-3fa1-44d2-9007-41dee83f7467",
+            "label": "tankBounds_2",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 1370,
+            "y": 971,
+            "scaleX": 26.773871801638673,
+            "scaleY": 1.0128274046896948,
+            "isFilled": true,
+            "fillColor": "#6a6a6a",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "66a09321-6446-4d0e-9aa0-b8a8e7d1282c",
+            "label": "tankBounds_3",
+            "scope": "CLASS",
+            "components": [
+                "PhysicsBody"
+            ],
+            "x": 1442,
+            "y": -38,
+            "scaleX": 26.773871801638673,
+            "scaleY": 1.0128274046896948,
+            "isFilled": true,
+            "fillColor": "#6a6a6a",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "f8757db5-469f-480a-800e-a11e1d3753e7",
+            "label": "fella_5",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 423,
+            "y": 308,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#d83a3a",
+            "tintTopRight": "#d83a3a",
+            "tintBottomLeft": "#d83a3a",
+            "tintBottomRight": "#d83a3a"
+        },
+        {
+            "type": "Sprite",
+            "id": "9d5d2f14-1489-490e-8d55-3403cb3cd689",
+            "label": "fella_1",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 583.9269892278774,
+            "y": 391.2678510196204,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#d83a3a",
+            "tintTopRight": "#d83a3a",
+            "tintBottomLeft": "#d83a3a",
+            "tintBottomRight": "#d83a3a"
+        },
+        {
+            "type": "Sprite",
+            "id": "d0e66df7-6132-4864-9a5f-3dfa7fe83314",
+            "label": "fella_2",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 399.7183878909704,
+            "y": 477.0443753062718,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#d83a3a",
+            "tintTopRight": "#d83a3a",
+            "tintBottomLeft": "#d83a3a",
+            "tintBottomRight": "#d83a3a"
+        },
+        {
+            "type": "Sprite",
+            "id": "d08aa924-ca43-49ee-a0b7-07ba7143bcb6",
+            "label": "fella_3",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 135.3579523845696,
+            "y": 596.5690402958679,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#d83a3a",
+            "tintTopRight": "#d83a3a",
+            "tintBottomLeft": "#d83a3a",
+            "tintBottomRight": "#d83a3a"
+        },
+        {
+            "type": "Sprite",
+            "id": "8ad97fad-aa8a-4874-a124-bd3040687463",
+            "label": "fella_4",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 766.7294180354949,
+            "y": 524.8542413021103,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#d83a3a",
+            "tintTopRight": "#d83a3a",
+            "tintBottomLeft": "#d83a3a",
+            "tintBottomRight": "#d83a3a"
+        },
+        {
+            "type": "Sprite",
+            "id": "969bafcd-bed9-49ac-a3d2-19f5ef09c1eb",
+            "label": "fella_6",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 979.0614699581892,
+            "y": 387.04933343175236,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "tintTopLeft": "#d83a3a",
+            "tintTopRight": "#d83a3a",
+            "tintBottomLeft": "#d83a3a",
+            "tintBottomRight": "#d83a3a"
+        },
+        {
+            "type": "Sprite",
+            "id": "9d18788b-f42b-4cb3-8e43-095dd3e8ea47",
+            "label": "fella_7",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 581.1146441692987,
+            "y": 526.2604138313995,
+            "tintTopLeft": "#60caf2",
+            "tintTopRight": "#60caf2",
+            "tintBottomLeft": "#60caf2",
+            "tintBottomRight": "#60caf2"
+        },
+        {
+            "type": "Sprite",
+            "id": "35c580a5-2193-4c7c-8a98-099c5183c1bb",
+            "label": "fella_8",
+            "scope": "CLASS",
+            "components": [
+                "Animation",
+                "randomMove"
+            ],
+            "Animation.animationKey": "bob",
+            "texture": {
+                "key": "fella",
+                "frame": 0
+            },
+            "x": 1047.963923893368,
+            "y": 513.6048610677952,
+            "tintTopLeft": "#60caf2",
+            "tintTopRight": "#60caf2",
+            "tintBottomLeft": "#60caf2",
+            "tintBottomRight": "#60caf2"
+        },
+        {
             "type": "Container",
             "id": "c98729eb-4ce6-40d8-a05c-629d20728e98",
             "label": "MobileTextcontainer",
@@ -149,272 +443,6 @@
                     "fontSize": "20px"
                 }
             ]
-        },
-        {
-            "type": "Rectangle",
-            "id": "cb26b570-9996-4ba2-9ee1-c9e95aa17922",
-            "label": "buttonTest",
-            "scope": "CLASS",
-            "components": [
-                "AlignOffsets",
-                "SimpleButton",
-                "DeviceDependentActivation"
-            ],
-            "AlignOffsets.x": 450,
-            "AlignOffsets.y": -100,
-            "SimpleButton.bindButton": "left",
-            "DeviceDependentActivation.ifMobile": true,
-            "x": 466,
-            "y": 981,
-            "scaleX": 2.4726917897363947,
-            "scaleY": 1.8500935500799485,
-            "originX": 0,
-            "originY": 1,
-            "isFilled": true,
-            "fillColor": "#3c96ea",
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Sprite",
-            "id": "5c3d4611-1dec-478c-b367-3d3239683c5a",
-            "label": "fella",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 251,
-            "y": 272,
-            "tintTopLeft": "#60caf2",
-            "tintTopRight": "#60caf2",
-            "tintBottomLeft": "#60caf2",
-            "tintBottomRight": "#60caf2"
-        },
-        {
-            "type": "Rectangle",
-            "id": "1e4e9833-6c65-4e94-bf08-be9c513cfc01",
-            "label": "tankBounds",
-            "scope": "CLASS",
-            "components": [
-                "PhysicsBody"
-            ],
-            "x": 2555,
-            "y": 518,
-            "scaleY": 8.512184696082114,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Rectangle",
-            "id": "b413d7e8-6fb8-43c5-9bfe-a0978757b6b1",
-            "label": "tankBounds_1",
-            "scope": "CLASS",
-            "components": [
-                "PhysicsBody"
-            ],
-            "x": -39,
-            "y": 506,
-            "scaleY": 8.512184696082114,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Rectangle",
-            "id": "0e963001-3fa1-44d2-9007-41dee83f7467",
-            "label": "tankBounds_2",
-            "scope": "CLASS",
-            "components": [
-                "PhysicsBody"
-            ],
-            "x": 1370,
-            "y": 1069,
-            "scaleX": 26.773871801638673,
-            "scaleY": 1.0128274046896948,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Rectangle",
-            "id": "66a09321-6446-4d0e-9aa0-b8a8e7d1282c",
-            "label": "tankBounds_3",
-            "scope": "CLASS",
-            "components": [
-                "PhysicsBody"
-            ],
-            "x": 1442,
-            "y": -38,
-            "scaleX": 26.773871801638673,
-            "scaleY": 1.0128274046896948,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Sprite",
-            "id": "3d538a53-7b61-437e-98e7-d0868192284c",
-            "label": "fella_1",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 587,
-            "y": 282,
-            "scaleX": 0.8,
-            "scaleY": 0.8,
-            "tintTopLeft": "#31bd30",
-            "tintTopRight": "#31bd30"
-        },
-        {
-            "type": "Sprite",
-            "id": "0ca2cf16-6824-40a6-8c48-8bd6ab3e85d2",
-            "label": "fella_2",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 425,
-            "y": 282,
-            "scaleX": 0.9,
-            "scaleY": 0.9
-        },
-        {
-            "type": "Sprite",
-            "id": "69a1d6cf-7282-4c7c-a491-b718d0321cfe",
-            "label": "fella_3",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 731,
-            "y": 282,
-            "scaleX": 0.7,
-            "scaleY": 0.7
-        },
-        {
-            "type": "Sprite",
-            "id": "b05aec59-5f06-4cdc-9a35-e9186cfb0c0d",
-            "label": "fella_4",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 857,
-            "y": 282,
-            "scaleX": 0.6,
-            "scaleY": 0.6,
-            "tintTopLeft": "#e11f1f",
-            "tintTopRight": "#e11f1f",
-            "tintBottomLeft": "#3d5ede",
-            "tintBottomRight": "#3d5ede"
-        },
-        {
-            "type": "Sprite",
-            "id": "f8757db5-469f-480a-800e-a11e1d3753e7",
-            "label": "fella_5",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 965,
-            "y": 282,
-            "scaleX": 0.5,
-            "scaleY": 0.5
-        },
-        {
-            "type": "Sprite",
-            "id": "4b923763-055c-41e2-bdd8-c24b82d5ec73",
-            "label": "fella_6",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 1055,
-            "y": 282,
-            "scaleX": 0.4,
-            "scaleY": 0.4
-        },
-        {
-            "type": "Sprite",
-            "id": "cd5996d1-16d3-4f5f-8858-c14e31c23066",
-            "label": "fella_7",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 1127,
-            "y": 282,
-            "scaleX": 0.3,
-            "scaleY": 0.3
-        },
-        {
-            "type": "Sprite",
-            "id": "925b4378-4b0d-445b-ab09-ad72f56a27ef",
-            "label": "fella_8",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "Animation.animationKey": "bob",
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 1181,
-            "y": 282,
-            "scaleX": 0.2,
-            "scaleY": 0.2
         }
     ],
     "plainObjects": [],
@@ -478,14 +506,14 @@
             "label": "fellasList",
             "objectIds": [
                 "5c3d4611-1dec-478c-b367-3d3239683c5a",
-                "925b4378-4b0d-445b-ab09-ad72f56a27ef",
-                "cd5996d1-16d3-4f5f-8858-c14e31c23066",
-                "4b923763-055c-41e2-bdd8-c24b82d5ec73",
                 "f8757db5-469f-480a-800e-a11e1d3753e7",
-                "b05aec59-5f06-4cdc-9a35-e9186cfb0c0d",
-                "69a1d6cf-7282-4c7c-a491-b718d0321cfe",
-                "0ca2cf16-6824-40a6-8c48-8bd6ab3e85d2",
-                "3d538a53-7b61-437e-98e7-d0868192284c"
+                "35c580a5-2193-4c7c-8a98-099c5183c1bb",
+                "9d18788b-f42b-4cb3-8e43-095dd3e8ea47",
+                "969bafcd-bed9-49ac-a3d2-19f5ef09c1eb",
+                "8ad97fad-aa8a-4874-a124-bd3040687463",
+                "d08aa924-ca43-49ee-a0b7-07ba7143bcb6",
+                "d0e66df7-6132-4864-9a5f-3dfa7fe83314",
+                "9d5d2f14-1489-490e-8d55-3403cb3cd689"
             ]
         },
         {

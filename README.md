@@ -16,15 +16,19 @@ I should do this in order
 - [x] Test how many animated sprites can exist on screen
 - [x] Test how many sprites of various animations, bigger animations, each with movement code
 
-- [ ] Test ideal size of sprites
-- [ ] can the tank be the same size across different resolutions?
+- [x] Test ideal size of sprites
+- [x] can the tank be the same size across different resolutions?
+  - I can zoom, just make sure tank aspect ratio works on mobile & desktop
 - [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
+- [ ] Set tank size,
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
 
 - [ ] Impliment Psychogoldfish's audio hack for safari
+
+- [ ] only landscape orientation - add flip screen in case it's in portrait
 
 ### Notes
 - camera zoom messes with objects that should stay in place with a scroll factor of 0. I may have to render that stuff in a parallel scene
