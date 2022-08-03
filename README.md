@@ -21,7 +21,7 @@ I should do this in order
   - I can zoom, just make sure tank aspect ratio works on mobile & desktop
 - [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
-- [ ] Set tank size,
+- [ ] Set consistent tank size, NG window resolution, zoom levels
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
