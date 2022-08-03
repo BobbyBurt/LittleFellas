@@ -10,31 +10,6 @@
     },
     "displayList": [
         {
-            "type": "Rectangle",
-            "id": "3b1a0172-dca2-4b67-a007-96c343a003dc",
-            "label": "buttonTest2",
-            "scope": "CLASS",
-            "components": [
-                "AlignOffsets",
-                "SimpleButton",
-                "DeviceDependentActivation"
-            ],
-            "AlignOffsets.x": -100,
-            "AlignOffsets.y": -100,
-            "SimpleButton.bindButton": "right",
-            "DeviceDependentActivation.ifMobile": true,
-            "x": 2472,
-            "y": 962,
-            "scaleX": 3.992183120085278,
-            "scaleY": 1.8500935500799485,
-            "originX": 1,
-            "originY": 1,
-            "isFilled": true,
-            "fillColor": "#ea553c",
-            "width": 128,
-            "height": 128
-        },
-        {
             "type": "Ellipse",
             "id": "5726e19d-f17a-4393-aea3-bf04da686a27",
             "label": "originPoint",
@@ -42,31 +17,6 @@
             "scaleX": 0.1,
             "scaleY": 0.1,
             "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Rectangle",
-            "id": "cb26b570-9996-4ba2-9ee1-c9e95aa17922",
-            "label": "buttonTest",
-            "scope": "CLASS",
-            "components": [
-                "AlignOffsets",
-                "SimpleButton",
-                "DeviceDependentActivation"
-            ],
-            "AlignOffsets.x": 450,
-            "AlignOffsets.y": -100,
-            "SimpleButton.bindButton": "left",
-            "DeviceDependentActivation.ifMobile": true,
-            "x": 466,
-            "y": 981,
-            "scaleX": 2.4726917897363947,
-            "scaleY": 1.8500935500799485,
-            "originX": 0,
-            "originY": 1,
-            "isFilled": true,
-            "fillColor": "#3c96ea",
             "width": 128,
             "height": 128
         },
@@ -84,8 +34,8 @@
                 "key": "fella",
                 "frame": 0
             },
-            "x": 251,
-            "y": 272,
+            "x": 632,
+            "y": 485,
             "tintTopLeft": "#60caf2",
             "tintTopRight": "#60caf2",
             "tintBottomLeft": "#60caf2",
@@ -242,8 +192,8 @@
                 "key": "fella",
                 "frame": 0
             },
-            "x": 135.3579523845696,
-            "y": 596.5690402958679,
+            "x": 367,
+            "y": 636,
             "scaleX": 0.5,
             "scaleY": 0.5,
             "tintTopLeft": "#d83a3a",
@@ -443,6 +393,58 @@
                     "fontSize": "20px"
                 }
             ]
+        },
+        {
+            "type": "Rectangle",
+            "id": "3b1a0172-dca2-4b67-a007-96c343a003dc",
+            "label": "buttonTest2",
+            "scope": "CLASS",
+            "components": [
+                "AlignOffsets",
+                "SimpleButton",
+                "DeviceDependentActivation"
+            ],
+            "AlignOffsets.x": -100,
+            "AlignOffsets.y": -100,
+            "SimpleButton.bindButton": "right",
+            "DeviceDependentActivation.ifMobile": true,
+            "x": 2472,
+            "y": 962,
+            "scaleX": 3.992183120085278,
+            "scaleY": 1.8500935500799485,
+            "originX": 1,
+            "originY": 1,
+            "alpha": 0.2,
+            "isFilled": true,
+            "fillColor": "#ea553c",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "cb26b570-9996-4ba2-9ee1-c9e95aa17922",
+            "label": "buttonTest",
+            "scope": "CLASS",
+            "components": [
+                "AlignOffsets",
+                "SimpleButton",
+                "DeviceDependentActivation"
+            ],
+            "AlignOffsets.x": 450,
+            "AlignOffsets.y": -100,
+            "SimpleButton.bindButton": "left",
+            "DeviceDependentActivation.ifMobile": true,
+            "x": 466,
+            "y": 981,
+            "scaleX": 2.4726917897363947,
+            "scaleY": 1.8500935500799485,
+            "originX": 0,
+            "originY": 1,
+            "alpha": 0.2,
+            "isFilled": true,
+            "fillColor": "#3c96ea",
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

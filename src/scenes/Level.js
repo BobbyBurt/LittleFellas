@@ -16,30 +16,14 @@ class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// buttonTest2
-		const buttonTest2 = this.add.rectangle(2472, 962, 128, 128);
-		buttonTest2.scaleX = 3.992183120085278;
-		buttonTest2.scaleY = 1.8500935500799485;
-		buttonTest2.setOrigin(1, 1);
-		buttonTest2.isFilled = true;
-		buttonTest2.fillColor = 15357244;
-
 		// originPoint
 		const originPoint = this.add.ellipse(0, 0, 128, 128);
 		originPoint.scaleX = 0.1;
 		originPoint.scaleY = 0.1;
 		originPoint.isFilled = true;
 
-		// buttonTest
-		const buttonTest = this.add.rectangle(466, 981, 128, 128);
-		buttonTest.scaleX = 2.4726917897363947;
-		buttonTest.scaleY = 1.8500935500799485;
-		buttonTest.setOrigin(0, 1);
-		buttonTest.isFilled = true;
-		buttonTest.fillColor = 3970794;
-
 		// fella
-		const fella = this.add.sprite(251, 272, "fella", 0);
+		const fella = this.add.sprite(632, 485, "fella", 0);
 		fella.tintTopLeft = 6343410;
 		fella.tintTopRight = 6343410;
 		fella.tintBottomLeft = 6343410;
@@ -101,7 +85,7 @@ class Level extends Phaser.Scene {
 		fella_2.tintBottomRight = 14170682;
 
 		// fella_3
-		const fella_3 = this.add.sprite(135.3579523845696, 596.5690402958679, "fella", 0);
+		const fella_3 = this.add.sprite(367, 636, "fella", 0);
 		fella_3.scaleX = 0.5;
 		fella_3.scaleY = 0.5;
 		fella_3.tintTopLeft = 14170682;
@@ -191,6 +175,24 @@ class Level extends Phaser.Scene {
 		instructionText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer_1.add(instructionText);
 
+		// buttonTest2
+		const buttonTest2 = this.add.rectangle(2472, 962, 128, 128);
+		buttonTest2.scaleX = 3.992183120085278;
+		buttonTest2.scaleY = 1.8500935500799485;
+		buttonTest2.setOrigin(1, 1);
+		buttonTest2.alpha = 0.2;
+		buttonTest2.isFilled = true;
+		buttonTest2.fillColor = 15357244;
+
+		// buttonTest
+		const buttonTest = this.add.rectangle(466, 981, 128, 128);
+		buttonTest.scaleX = 2.4726917897363947;
+		buttonTest.scaleY = 1.8500935500799485;
+		buttonTest.setOrigin(0, 1);
+		buttonTest.alpha = 0.2;
+		buttonTest.isFilled = true;
+		buttonTest.fillColor = 3970794;
+
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, mobileTextcontainer_1, buttonTest];
 		const alignToCameraRight = [buttonTest2];
@@ -202,24 +204,6 @@ class Level extends Phaser.Scene {
 		const pantsTest = [];
 		const fellasList = [fella, fella_5, fella_8, fella_7, fella_6, fella_4, fella_3, fella_2, fella_1];
 		const bounds = [tankBounds, tankBounds_2, tankBounds_1, tankBounds_3];
-
-		// buttonTest2 (components)
-		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
-		buttonTest2AlignOffsets.x = -100;
-		buttonTest2AlignOffsets.y = -100;
-		const buttonTest2SimpleButton = new SimpleButton(buttonTest2);
-		buttonTest2SimpleButton.bindButton = "right";
-		const buttonTest2DeviceDependentActivation = new DeviceDependentActivation(buttonTest2);
-		buttonTest2DeviceDependentActivation.ifMobile = true;
-
-		// buttonTest (components)
-		const buttonTestAlignOffsets = new AlignOffsets(buttonTest);
-		buttonTestAlignOffsets.x = 450;
-		buttonTestAlignOffsets.y = -100;
-		const buttonTestSimpleButton = new SimpleButton(buttonTest);
-		buttonTestSimpleButton.bindButton = "left";
-		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
-		buttonTestDeviceDependentActivation.ifMobile = true;
 
 		// fella (components)
 		const fellaAnimation = new Animation(fella);
@@ -288,8 +272,24 @@ class Level extends Phaser.Scene {
 		mobileTextcontainer_1AlignOffsets.x = 20;
 		mobileTextcontainer_1AlignOffsets.y = -20;
 
-		this.buttonTest2 = buttonTest2;
-		this.buttonTest = buttonTest;
+		// buttonTest2 (components)
+		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
+		buttonTest2AlignOffsets.x = -100;
+		buttonTest2AlignOffsets.y = -100;
+		const buttonTest2SimpleButton = new SimpleButton(buttonTest2);
+		buttonTest2SimpleButton.bindButton = "right";
+		const buttonTest2DeviceDependentActivation = new DeviceDependentActivation(buttonTest2);
+		buttonTest2DeviceDependentActivation.ifMobile = true;
+
+		// buttonTest (components)
+		const buttonTestAlignOffsets = new AlignOffsets(buttonTest);
+		buttonTestAlignOffsets.x = 450;
+		buttonTestAlignOffsets.y = -100;
+		const buttonTestSimpleButton = new SimpleButton(buttonTest);
+		buttonTestSimpleButton.bindButton = "left";
+		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
+		buttonTestDeviceDependentActivation.ifMobile = true;
+
 		this.fella = fella;
 		this.tankBounds = tankBounds;
 		this.tankBounds_1 = tankBounds_1;
@@ -307,6 +307,8 @@ class Level extends Phaser.Scene {
 		this.spriteCountText = spriteCountText;
 		this.fpsText = fpsText;
 		this.instructionText = instructionText;
+		this.buttonTest2 = buttonTest2;
+		this.buttonTest = buttonTest;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -321,10 +323,6 @@ class Level extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
-	/** @type {Phaser.GameObjects.Rectangle} */
-	buttonTest2;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	buttonTest;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella;
 	/** @type {Phaser.GameObjects.Rectangle} */
@@ -359,6 +357,10 @@ class Level extends Phaser.Scene {
 	fpsText;
 	/** @type {Phaser.GameObjects.Text} */
 	instructionText;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	buttonTest2;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	buttonTest;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
 	/** @type {Phaser.GameObjects.Rectangle[]} */
@@ -435,9 +437,8 @@ class Level extends Phaser.Scene {
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 
 		// so multiple fingers can be used
-		this.input.addPointer(2);
+		this.input.addPointer(4);
 
-		// setup collision
 		this.initColliders();
 
 		this.resize();
@@ -497,8 +498,9 @@ class Level extends Phaser.Scene {
 		// tank walls
 		for(let i = 0; i < this.bounds.length; i++) {
 
-			this.physics.add.existing(this.bounds[i]);
-			this.bounds[i].body.setImmovable(true);
+			this.physics.add.existing(this.bounds[i], true);
+			// this.bounds[i].body.setImmovable(true);
+			// ^ this is redundant now because we're making static bodies, which don't move
 		}
 
 		// fellas
@@ -517,6 +519,7 @@ class Level extends Phaser.Scene {
 
 		// setup collisions
 		this.physics.add.collider(this.fellasList, this.bounds);
+		// this.physics.add.collider(this.fellasList, this.fellasList);
 	}
 
 	/** align objects included in the align left/right/top/bottom lists
