@@ -16,6 +16,12 @@ class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
+		// rectangle_1
+		const rectangle_1 = this.add.rectangle(0, 0, 128, 128);
+		rectangle_1.scaleX = 14.296742779695254;
+		rectangle_1.scaleY = 6.81222984660868;
+		rectangle_1.isFilled = true;
+
 		// originPoint
 		const originPoint = this.add.ellipse(0, 0, 128, 128);
 		originPoint.scaleX = 0.1;
@@ -23,42 +29,46 @@ class Level extends Phaser.Scene {
 		originPoint.isFilled = true;
 
 		// fella
-		const fella = this.add.sprite(632, 485, "fella", 0);
+		const fella = this.add.sprite(603, 189, "fella", 0);
 		fella.tintTopLeft = 6343410;
 		fella.tintTopRight = 6343410;
 		fella.tintBottomLeft = 6343410;
 		fella.tintBottomRight = 6343410;
 
 		// tankBounds
-		const tankBounds = this.add.rectangle(2535, 518, 128, 128);
-		tankBounds.scaleX = 3.2005933874605628;
+		const tankBounds = this.add.rectangle(910, 0, 128, 128);
+		tankBounds.scaleX = 6;
 		tankBounds.scaleY = 8.512184696082114;
+		tankBounds.setOrigin(0, 0.5);
 		tankBounds.isFilled = true;
 		tankBounds.fillColor = 6974058;
 
 		// tankBounds_1
-		const tankBounds_1 = this.add.rectangle(8, 506, 128, 128);
-		tankBounds_1.scaleX = 2.9103075290289895;
+		const tankBounds_1 = this.add.rectangle(-910, 0, 128, 128);
+		tankBounds_1.scaleX = 6;
 		tankBounds_1.scaleY = 8.512184696082114;
+		tankBounds_1.setOrigin(1, 0.5);
 		tankBounds_1.isFilled = true;
 		tankBounds_1.fillColor = 6974058;
 
 		// tankBounds_2
-		const tankBounds_2 = this.add.rectangle(1370, 971, 128, 128);
+		const tankBounds_2 = this.add.rectangle(0, 440, 128, 128);
 		tankBounds_2.scaleX = 26.773871801638673;
-		tankBounds_2.scaleY = 1.0128274046896948;
+		tankBounds_2.scaleY = 4;
+		tankBounds_2.setOrigin(0.5, 0);
 		tankBounds_2.isFilled = true;
 		tankBounds_2.fillColor = 6974058;
 
 		// tankBounds_3
-		const tankBounds_3 = this.add.rectangle(1442, -38, 128, 128);
+		const tankBounds_3 = this.add.rectangle(0, -440, 128, 128);
 		tankBounds_3.scaleX = 26.773871801638673;
-		tankBounds_3.scaleY = 1.0128274046896948;
+		tankBounds_3.scaleY = 4;
+		tankBounds_3.setOrigin(0.5, 1);
 		tankBounds_3.isFilled = true;
 		tankBounds_3.fillColor = 6974058;
 
 		// fella_5
-		const fella_5 = this.add.sprite(423, 308, "fella", 0);
+		const fella_5 = this.add.sprite(-635, -132, "fella", 0);
 		fella_5.scaleX = 0.5;
 		fella_5.scaleY = 0.5;
 		fella_5.tintTopLeft = 14170682;
@@ -67,7 +77,7 @@ class Level extends Phaser.Scene {
 		fella_5.tintBottomRight = 14170682;
 
 		// fella_1
-		const fella_1 = this.add.sprite(583.9269892278774, 391.2678510196204, "fella", 0);
+		const fella_1 = this.add.sprite(-474, -48, "fella", 0);
 		fella_1.scaleX = 0.5;
 		fella_1.scaleY = 0.5;
 		fella_1.tintTopLeft = 14170682;
@@ -76,7 +86,7 @@ class Level extends Phaser.Scene {
 		fella_1.tintBottomRight = 14170682;
 
 		// fella_2
-		const fella_2 = this.add.sprite(399.7183878909704, 477.0443753062718, "fella", 0);
+		const fella_2 = this.add.sprite(-659, 37, "fella", 0);
 		fella_2.scaleX = 0.5;
 		fella_2.scaleY = 0.5;
 		fella_2.tintTopLeft = 14170682;
@@ -85,7 +95,7 @@ class Level extends Phaser.Scene {
 		fella_2.tintBottomRight = 14170682;
 
 		// fella_3
-		const fella_3 = this.add.sprite(367, 636, "fella", 0);
+		const fella_3 = this.add.sprite(-691, 196, "fella", 0);
 		fella_3.scaleX = 0.5;
 		fella_3.scaleY = 0.5;
 		fella_3.tintTopLeft = 14170682;
@@ -94,7 +104,7 @@ class Level extends Phaser.Scene {
 		fella_3.tintBottomRight = 14170682;
 
 		// fella_4
-		const fella_4 = this.add.sprite(766.7294180354949, 524.8542413021103, "fella", 0);
+		const fella_4 = this.add.sprite(-292, 85, "fella", 0);
 		fella_4.scaleX = 0.5;
 		fella_4.scaleY = 0.5;
 		fella_4.tintTopLeft = 14170682;
@@ -103,7 +113,7 @@ class Level extends Phaser.Scene {
 		fella_4.tintBottomRight = 14170682;
 
 		// fella_6
-		const fella_6 = this.add.sprite(979.0614699581892, 387.04933343175236, "fella", 0);
+		const fella_6 = this.add.sprite(-581, -283, "fella", 0);
 		fella_6.scaleX = 0.5;
 		fella_6.scaleY = 0.5;
 		fella_6.tintTopLeft = 14170682;
@@ -112,14 +122,14 @@ class Level extends Phaser.Scene {
 		fella_6.tintBottomRight = 14170682;
 
 		// fella_7
-		const fella_7 = this.add.sprite(581.1146441692987, 526.2604138313995, "fella", 0);
+		const fella_7 = this.add.sprite(-477, 86, "fella", 0);
 		fella_7.tintTopLeft = 6343410;
 		fella_7.tintTopRight = 6343410;
 		fella_7.tintBottomLeft = 6343410;
 		fella_7.tintBottomRight = 6343410;
 
 		// fella_8
-		const fella_8 = this.add.sprite(1047.963923893368, 513.6048610677952, "fella", 0);
+		const fella_8 = this.add.sprite(321, 94, "fella", 0);
 		fella_8.tintTopLeft = 6343410;
 		fella_8.tintTopRight = 6343410;
 		fella_8.tintBottomLeft = 6343410;
@@ -130,8 +140,8 @@ class Level extends Phaser.Scene {
 
 		// rectangle_3
 		const rectangle_3 = this.add.rectangle(0, 0, 128, 128);
-		rectangle_3.scaleX = 1.402470438441591;
-		rectangle_3.scaleY = 0.9012382160764663;
+		rectangle_3.scaleX = 1.699990245600508;
+		rectangle_3.scaleY = 1.1568898761624102;
 		rectangle_3.setOrigin(0, 0);
 		rectangle_3.isFilled = true;
 		rectangle_3.fillColor = 2894892;
@@ -155,6 +165,12 @@ class Level extends Phaser.Scene {
 		fpsText.text = "FPS: ??";
 		fpsText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer.add(fpsText);
+
+		// zoomText
+		const zoomText = this.add.text(20, 110, "", {});
+		zoomText.text = "Cam zoom: ??";
+		zoomText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
+		mobileTextcontainer.add(zoomText);
 
 		// MobileTextcontainer_1
 		const mobileTextcontainer_1 = this.add.container(2, 1021);
@@ -290,6 +306,7 @@ class Level extends Phaser.Scene {
 		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
 		buttonTestDeviceDependentActivation.ifMobile = true;
 
+		this.rectangle_1 = rectangle_1;
 		this.fella = fella;
 		this.tankBounds = tankBounds;
 		this.tankBounds_1 = tankBounds_1;
@@ -306,6 +323,7 @@ class Level extends Phaser.Scene {
 		this.mobileText = mobileText;
 		this.spriteCountText = spriteCountText;
 		this.fpsText = fpsText;
+		this.zoomText = zoomText;
 		this.instructionText = instructionText;
 		this.buttonTest2 = buttonTest2;
 		this.buttonTest = buttonTest;
@@ -323,6 +341,8 @@ class Level extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
+	/** @type {Phaser.GameObjects.Rectangle} */
+	rectangle_1;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella;
 	/** @type {Phaser.GameObjects.Rectangle} */
@@ -356,6 +376,8 @@ class Level extends Phaser.Scene {
 	/** @type {Phaser.GameObjects.Text} */
 	fpsText;
 	/** @type {Phaser.GameObjects.Text} */
+	zoomText;
+	/** @type {Phaser.GameObjects.Text} */
 	instructionText;
 	/** @type {Phaser.GameObjects.Rectangle} */
 	buttonTest2;
@@ -384,11 +406,50 @@ class Level extends Phaser.Scene {
 
 	/* START-USER-CODE */
 
-	// Write more your code here
-
 	create() {
 
 		this.editorCreate();
+
+		// camera zoom
+		//  1: .65
+		// .3: 1
+
+		this.tankWidth = 1820;
+		this.tankHeight = 880;
+
+		this.minScreenWidth = this.tankWidth + (20 * 2);
+		this.minScreenHeight = this.tankHeight + (50 * 2);
+		// added number is the min pixel buffer between tank and screen edge on sides
+
+		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
+			// zoom out incrementally until we're past width and height min
+
+			for(let i = 0; i < 20; i++) {
+
+				this.cameras.main.setZoom(1 - (i * .05));
+
+				// check min
+				// console.log('w: ' + this.cameras.main.width / (1 - (i * .05)))
+				// console.log('h: ' + this.cameras.main.height / (1 - (i * .05)))
+
+				if(
+					(this.cameras.main.width / (1 - (i * .05))) > this.minScreenWidth &&
+					(this.cameras.main.height / (1 - (i * .05))) > this.minScreenHeight
+				) 
+					{
+
+					break;
+				}
+			}
+
+		}
+
+		// }
+			// this.cameras.main.setZoom(
+			// 	Phaser.Math.Linear(1.2, .65, this.scale.zoom)
+			// );
+		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
+		this.cameras.main.pan(0, 0);
 
 		// INPUT
 		// using Psychogoldfish's input wrapper solution
@@ -475,6 +536,8 @@ class Level extends Phaser.Scene {
 		}
 
 		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
+
+
 	}
 
 	/** scene specific resizing adjustments
@@ -506,20 +569,64 @@ class Level extends Phaser.Scene {
 		// fellas
 		for(let i = 0; i < this.fellasList.length; i++) {
 
-			this.physics.add.existing(this.fellasList[i]);
+			const _fella = this.fellasList[i];
+
+			this.physics.add.existing(_fella);
+
+			// damping avoids axis drift
+			// drag property is a multiplier of velocity
+			_fella.body.setDamping(true);
+			_fella.body.setDrag(.1, .1);
+
+			// debug text
 			this.spriteCountText.setText('sprites: ' + this.fellasList.length);
 
-			this.fellasList[i].setInteractive({ draggable: true });
-			this.fellasList[i].on('drag', function(pointer, dragX, dragY) {
+			_fella.setInteractive({ draggable: true });
+			_fella.on('drag', function(pointer, dragX, dragY) {
 
 				this.x = dragX;
 				this.y = dragY;
+
+				this.body.setVelocity(0);
+			});
+			_fella.on('dragend', function(pointer, dragX, dragY) {
+
+				console.log(
+					pointer.velocity
+					);
+
+				this.body.setVelocity(
+					pointer.velocity.x * 15, pointer.velocity.y * 15
+					);
 			});
 		}
 
 		// setup collisions
 		this.physics.add.collider(this.fellasList, this.bounds);
 		// this.physics.add.collider(this.fellasList, this.fellasList);
+	}
+
+	enforceBoundaries() {
+
+						// left boundary
+						if (dragX > this.boundariesX.left) {
+
+							this.x = dragX;
+						}
+						else {
+
+							this.x = this.boundariesX.left;
+						}
+
+						// right boundary
+						if (dragX < this.boundariesX.right) {
+
+							this.x = dragX;
+						}
+						else {
+
+							this.x = this.boundariesX.right;
+						}
 	}
 
 	/** align objects included in the align left/right/top/bottom lists
