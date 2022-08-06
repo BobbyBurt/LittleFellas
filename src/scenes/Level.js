@@ -410,10 +410,6 @@ class Level extends Phaser.Scene {
 
 		this.editorCreate();
 
-		// camera zoom
-		//  1: .65
-		// .3: 1
-
 		this.tankWidth = 1820;
 		this.tankHeight = 880;
 
@@ -421,6 +417,7 @@ class Level extends Phaser.Scene {
 		this.minScreenHeight = this.tankHeight + (50 * 2);
 		// added number is the min pixel buffer between tank and screen edge on sides
 
+		// adaptive zoom
 		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
 			// zoom out incrementally until we're past width and height min
 
@@ -449,7 +446,7 @@ class Level extends Phaser.Scene {
 			// 	Phaser.Math.Linear(1.2, .65, this.scale.zoom)
 			// );
 		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
-		this.cameras.main.pan(0, 0);
+		this.cameras.main.centerOn(0, 0);
 
 		// INPUT
 		// using Psychogoldfish's input wrapper solution
