@@ -11,8 +11,8 @@ window.addEventListener('load', function () {
 		version: '2.0',
 		url: 'https://www.newgrounds.com/projects/games/1920192/preview',
 		physics: {
-			default: 'arcade',
-			arcade: {
+			default: 'matter',
+			matter: {
 				debug: true
 			}
 		},

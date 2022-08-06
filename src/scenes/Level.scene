@@ -10,18 +10,6 @@
     },
     "displayList": [
         {
-            "type": "Rectangle",
-            "id": "8ca88795-fe2b-4c32-9e99-1577aecd51c1",
-            "label": "rectangle_1",
-            "scope": "CLASS",
-            "components": [],
-            "scaleX": 14.296742779695254,
-            "scaleY": 6.81222984660868,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
             "type": "Ellipse",
             "id": "5726e19d-f17a-4393-aea3-bf04da686a27",
             "label": "originPoint",
@@ -63,7 +51,7 @@
             ],
             "x": 910,
             "scaleX": 6,
-            "scaleY": 8.512184696082114,
+            "scaleY": 14.555905671444922,
             "originX": 0,
             "isFilled": true,
             "fillColor": "#6a6a6a",
@@ -80,7 +68,7 @@
             ],
             "x": -910,
             "scaleX": 6,
-            "scaleY": 8.512184696082114,
+            "scaleY": 14.555905671444922,
             "originX": 1,
             "isFilled": true,
             "fillColor": "#6a6a6a",

@@ -16,12 +16,6 @@ class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// rectangle_1
-		const rectangle_1 = this.add.rectangle(0, 0, 128, 128);
-		rectangle_1.scaleX = 14.296742779695254;
-		rectangle_1.scaleY = 6.81222984660868;
-		rectangle_1.isFilled = true;
-
 		// originPoint
 		const originPoint = this.add.ellipse(0, 0, 128, 128);
 		originPoint.scaleX = 0.1;
@@ -38,7 +32,7 @@ class Level extends Phaser.Scene {
 		// tankBounds
 		const tankBounds = this.add.rectangle(910, 0, 128, 128);
 		tankBounds.scaleX = 6;
-		tankBounds.scaleY = 8.512184696082114;
+		tankBounds.scaleY = 14.555905671444922;
 		tankBounds.setOrigin(0, 0.5);
 		tankBounds.isFilled = true;
 		tankBounds.fillColor = 6974058;
@@ -46,7 +40,7 @@ class Level extends Phaser.Scene {
 		// tankBounds_1
 		const tankBounds_1 = this.add.rectangle(-910, 0, 128, 128);
 		tankBounds_1.scaleX = 6;
-		tankBounds_1.scaleY = 8.512184696082114;
+		tankBounds_1.scaleY = 14.555905671444922;
 		tankBounds_1.setOrigin(1, 0.5);
 		tankBounds_1.isFilled = true;
 		tankBounds_1.fillColor = 6974058;
@@ -306,7 +300,6 @@ class Level extends Phaser.Scene {
 		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
 		buttonTestDeviceDependentActivation.ifMobile = true;
 
-		this.rectangle_1 = rectangle_1;
 		this.fella = fella;
 		this.tankBounds = tankBounds;
 		this.tankBounds_1 = tankBounds_1;
@@ -341,8 +334,6 @@ class Level extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
-	/** @type {Phaser.GameObjects.Rectangle} */
-	rectangle_1;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella;
 	/** @type {Phaser.GameObjects.Rectangle} */
