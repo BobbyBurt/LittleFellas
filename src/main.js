@@ -13,7 +13,10 @@ window.addEventListener('load', function () {
 		physics: {
 			default: 'matter',
 			matter: {
-				debug: true
+				debug: true,
+				gravity: {
+					y: 0
+				}
 			}
 		},
 		scale: {
@@ -42,7 +45,7 @@ class Boot extends Phaser.Scene {
 		
 		this.load.pack("pack", "assets/preload-asset-pack.json");
 
-		this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
+		// this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
 		// https://github.com/samme/phaser-plugin-debug-game-scale
 		// renderer must be canvas
 

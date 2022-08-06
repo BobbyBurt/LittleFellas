@@ -39,8 +39,8 @@ class randomMove extends UserComponent {
 
 	start() {
 
-		this.gameObject.body.setBounce(1);
-		this.gameObject.body.setVelocity(this.xMove * 100, this.yMove * 100);
+		// this.gameObject.body.setBounce(1);
+		// this.gameObject.body.setVelocity(this.xMove * 100, this.yMove * 100);
 	}
 
 	update() {

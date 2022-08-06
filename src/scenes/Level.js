@@ -549,7 +549,6 @@ class Level extends Phaser.Scene {
 		// tank walls
 		for(let i = 0; i < this.bounds.length; i++) {
 
-			this.physics.add.existing(this.bounds[i], true);
 			// this.bounds[i].body.setImmovable(true);
 			// ^ this is redundant now because we're making static bodies, which don't move
 		}
@@ -559,38 +558,18 @@ class Level extends Phaser.Scene {
 
 			const _fella = this.fellasList[i];
 
-			this.physics.add.existing(_fella);
+			this.matter.add.gameObject(this.fellasList[i], { shape: {type: 'circle', radius: 80 * this.fellasList[i].scaleX}})
+				.setBounce(.5)
+				.setFrictionAir(.01)
 
-			// damping avoids axis drift
-			// drag property is a multiplier of velocity
-			_fella.body.setDamping(true);
-			_fella.body.setDrag(.1, .1);
+			
 
 			// debug text
 			this.spriteCountText.setText('sprites: ' + this.fellasList.length);
-
-			_fella.setInteractive({ draggable: true });
-			_fella.on('drag', function(pointer, dragX, dragY) {
-
-				this.x = dragX;
-				this.y = dragY;
-
-				this.body.setVelocity(0);
-			});
-			_fella.on('dragend', function(pointer, dragX, dragY) {
-
-				console.log(
-					pointer.velocity
-					);
-
-				this.body.setVelocity(
-					pointer.velocity.x * 15, pointer.velocity.y * 15
-					);
-			});
 		}
 
 		// setup collisions
-		this.physics.add.collider(this.fellasList, this.bounds);
+		// this.physics.add.collider(this.fellasList, this.bounds);
 		// this.physics.add.collider(this.fellasList, this.fellasList);
 	}
 

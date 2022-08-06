@@ -29,11 +29,11 @@ class PhysicsBody {
 
 	start() {
 		
-		this.gameObject.scene.physics.add.existing(this.gameObject);
+		// this.gameObject.scene.physics.add.existing(this.gameObject);
 		
-		/** @type {Phaser.Physics.Arcade.Body} */
-		const body = this.gameObject.body;
-		body.setSize(this.gameObject.width, this.gameObject.height);
+		// /** @type {Phaser.Physics.Arcade.Body} */
+		// const body = this.gameObject.body;
+		// body.setSize(this.gameObject.width, this.gameObject.height);
 
 	}
 
