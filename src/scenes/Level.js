@@ -16,17 +16,10 @@ class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// rectangle_1
-		const rectangle_1 = this.add.rectangle(0, 0, 128, 128);
-		rectangle_1.scaleX = 14.296742779695254;
-		rectangle_1.scaleY = 6.81222984660868;
-		rectangle_1.isFilled = true;
-
-		// originPoint
-		const originPoint = this.add.ellipse(0, 0, 128, 128);
-		originPoint.scaleX = 0.1;
-		originPoint.scaleY = 0.1;
-		originPoint.isFilled = true;
+		// tankBox
+		const tankBox = this.add.rectangle(0, -10, 1820, 880);
+		tankBox.isFilled = true;
+		tankBox.fillColor = 8882055;
 
 		// fella
 		const fella = this.add.sprite(603, 189, "fella", 0);
@@ -34,38 +27,6 @@ class Level extends Phaser.Scene {
 		fella.tintTopRight = 6343410;
 		fella.tintBottomLeft = 6343410;
 		fella.tintBottomRight = 6343410;
-
-		// tankBounds
-		const tankBounds = this.add.rectangle(910, 0, 128, 128);
-		tankBounds.scaleX = 6;
-		tankBounds.scaleY = 8.512184696082114;
-		tankBounds.setOrigin(0, 0.5);
-		tankBounds.isFilled = true;
-		tankBounds.fillColor = 6974058;
-
-		// tankBounds_1
-		const tankBounds_1 = this.add.rectangle(-910, 0, 128, 128);
-		tankBounds_1.scaleX = 6;
-		tankBounds_1.scaleY = 8.512184696082114;
-		tankBounds_1.setOrigin(1, 0.5);
-		tankBounds_1.isFilled = true;
-		tankBounds_1.fillColor = 6974058;
-
-		// tankBounds_2
-		const tankBounds_2 = this.add.rectangle(0, 440, 128, 128);
-		tankBounds_2.scaleX = 26.773871801638673;
-		tankBounds_2.scaleY = 4;
-		tankBounds_2.setOrigin(0.5, 0);
-		tankBounds_2.isFilled = true;
-		tankBounds_2.fillColor = 6974058;
-
-		// tankBounds_3
-		const tankBounds_3 = this.add.rectangle(0, -440, 128, 128);
-		tankBounds_3.scaleX = 26.773871801638673;
-		tankBounds_3.scaleY = 4;
-		tankBounds_3.setOrigin(0.5, 1);
-		tankBounds_3.isFilled = true;
-		tankBounds_3.fillColor = 6974058;
 
 		// fella_5
 		const fella_5 = this.add.sprite(-635, -132, "fella", 0);
@@ -135,8 +96,531 @@ class Level extends Phaser.Scene {
 		fella_8.tintBottomLeft = 6343410;
 		fella_8.tintBottomRight = 6343410;
 
+		// buttonTest2
+		const buttonTest2 = this.add.rectangle(2472, 962, 128, 128);
+		buttonTest2.scaleX = 3.992183120085278;
+		buttonTest2.scaleY = 1.8500935500799485;
+		buttonTest2.setOrigin(1, 1);
+		buttonTest2.visible = false;
+		buttonTest2.alpha = 0.2;
+		buttonTest2.isFilled = true;
+		buttonTest2.fillColor = 15357244;
+
+		// buttonTest
+		const buttonTest = this.add.rectangle(466, 981, 128, 128);
+		buttonTest.scaleX = 2.4726917897363947;
+		buttonTest.scaleY = 1.8500935500799485;
+		buttonTest.setOrigin(0, 1);
+		buttonTest.visible = false;
+		buttonTest.alpha = 0.2;
+		buttonTest.isFilled = true;
+		buttonTest.fillColor = 3970794;
+
+		// fella_9
+		const fella_9 = this.add.sprite(-4.414516107912409, -175.11735795847486, "fella", 0);
+		fella_9.scaleX = 0.5;
+		fella_9.scaleY = 0.5;
+		fella_9.tintTopLeft = 14170682;
+		fella_9.tintTopRight = 14170682;
+		fella_9.tintBottomLeft = 14170682;
+		fella_9.tintBottomRight = 14170682;
+
+		// fella_10
+		const fella_10 = this.add.sprite(431.1800276870193, -166.37047956901839, "fella", 0);
+		fella_10.scaleX = 0.5;
+		fella_10.scaleY = 0.5;
+		fella_10.tintTopLeft = 14170682;
+		fella_10.tintTopRight = 14170682;
+		fella_10.tintBottomLeft = 14170682;
+		fella_10.tintBottomRight = 14170682;
+
+		// fella_11
+		const fella_11 = this.add.sprite(564.1325792067574, -110.39045787649704, "fella", 0);
+		fella_11.scaleX = 0.5;
+		fella_11.scaleY = 0.5;
+		fella_11.tintTopLeft = 14170682;
+		fella_11.tintTopRight = 14170682;
+		fella_11.tintBottomLeft = 14170682;
+		fella_11.tintBottomRight = 14170682;
+
+		// fella_12
+		const fella_12 = this.add.sprite(-127.14391159565137, 307.852663023587, "fella", 0);
+		fella_12.scaleX = 0.5;
+		fella_12.scaleY = 0.5;
+		fella_12.tintTopLeft = 14170682;
+		fella_12.tintTopRight = 14170682;
+		fella_12.tintBottomLeft = 14170682;
+		fella_12.tintBottomRight = 14170682;
+
+		// fella_13
+		const fella_13 = this.add.sprite(-405.2946443803668, 316.5995414130435, "fella", 0);
+		fella_13.scaleX = 0.5;
+		fella_13.scaleY = 0.5;
+		fella_13.tintTopLeft = 14170682;
+		fella_13.tintTopRight = 14170682;
+		fella_13.tintBottomLeft = 14170682;
+		fella_13.tintBottomRight = 14170682;
+
+		// fella_14
+		const fella_14 = this.add.sprite(98.52555085232527, 248.3738899752831, "fella", 0);
+		fella_14.scaleX = 0.5;
+		fella_14.scaleY = 0.5;
+		fella_14.tintTopLeft = 14170682;
+		fella_14.tintTopRight = 14170682;
+		fella_14.tintBottomLeft = 14170682;
+		fella_14.tintBottomRight = 14170682;
+
+		// fella_15
+		const fella_15 = this.add.sprite(547.9244058626557, 241.31396012158402, "fella", 0);
+		fella_15.scaleX = 0.5;
+		fella_15.scaleY = 0.5;
+		fella_15.tintTopLeft = 14170682;
+		fella_15.tintTopRight = 14170682;
+		fella_15.tintBottomLeft = 14170682;
+		fella_15.tintBottomRight = 14170682;
+
+		// fella_16
+		const fella_16 = this.add.sprite(7.367321394246502, -84.06991596619628, "fella", 0);
+		fella_16.scaleX = 0.5;
+		fella_16.scaleY = 0.5;
+		fella_16.tintTopLeft = 14170682;
+		fella_16.tintTopRight = 14170682;
+		fella_16.tintBottomLeft = 14170682;
+		fella_16.tintBottomRight = 14170682;
+
+		// fella_17
+		const fella_17 = this.add.sprite(-160.57274368331753, 83.87014911136774, "fella", 0);
+		fella_17.scaleX = 0.5;
+		fella_17.scaleY = 0.5;
+		fella_17.tintTopLeft = 14170682;
+		fella_17.tintTopRight = 14170682;
+		fella_17.tintBottomLeft = 14170682;
+		fella_17.tintBottomRight = 14170682;
+
+		// fella_18
+		const fella_18 = this.add.sprite(-237.54527351053437, -106.81179977878307, "fella", 0);
+		fella_18.scaleX = 0.5;
+		fella_18.scaleY = 0.5;
+		fella_18.tintTopLeft = 14170682;
+		fella_18.tintTopRight = 14170682;
+		fella_18.tintBottomLeft = 14170682;
+		fella_18.tintBottomRight = 14170682;
+
+		// fella_19
+		const fella_19 = this.add.sprite(-659.1448118823357, 265.8052196120621, "fella", 0);
+		fella_19.scaleX = 0.5;
+		fella_19.scaleY = 0.5;
+		fella_19.tintTopLeft = 14170682;
+		fella_19.tintTopRight = 14170682;
+		fella_19.tintBottomLeft = 14170682;
+		fella_19.tintBottomRight = 14170682;
+
+		// fella_20
+		const fella_20 = this.add.sprite(-769.3554795894871, 33.13825445252028, "fella", 0);
+		fella_20.scaleX = 0.5;
+		fella_20.scaleY = 0.5;
+		fella_20.tintTopLeft = 14170682;
+		fella_20.tintTopRight = 14170682;
+		fella_20.tintBottomLeft = 14170682;
+		fella_20.tintBottomRight = 14170682;
+
+		// fella_21
+		const fella_21 = this.add.sprite(-795.5961147578565, -89.31804299987016, "fella", 0);
+		fella_21.scaleX = 0.5;
+		fella_21.scaleY = 0.5;
+		fella_21.tintTopLeft = 14170682;
+		fella_21.tintTopRight = 14170682;
+		fella_21.tintBottomLeft = 14170682;
+		fella_21.tintBottomRight = 14170682;
+
+		// fella_22
+		const fella_22 = this.add.sprite(245.2824135874622, -113.80930249034824, "fella", 0);
+		fella_22.tintTopLeft = 6343410;
+		fella_22.tintTopRight = 6343410;
+		fella_22.tintBottomLeft = 6343410;
+		fella_22.tintBottomRight = 6343410;
+
+		// fella_23
+		const fella_23 = this.add.sprite(-274.2821627462515, -152.29556740395665, "fella", 0);
+		fella_23.tintTopLeft = 6343410;
+		fella_23.tintTopRight = 6343410;
+		fella_23.tintBottomLeft = 6343410;
+		fella_23.tintBottomRight = 6343410;
+
+		// fella_24
+		const fella_24 = this.add.sprite(73.8435971541156, 164.34143029436717, "fella", 0);
+		fella_24.tintTopLeft = 6343410;
+		fella_24.tintTopRight = 6343410;
+		fella_24.tintBottomLeft = 6343410;
+		fella_24.tintBottomRight = 6343410;
+
+		// fella_25
+		const fella_25 = this.add.sprite(512.9368923048298, 223.8202033426711, "fella", 0);
+		fella_25.tintTopLeft = 6343410;
+		fella_25.tintTopRight = 6343410;
+		fella_25.tintBottomLeft = 6343410;
+		fella_25.tintBottomRight = 6343410;
+
+		// fella_26
+		const fella_26 = this.add.sprite(701.8694655170893, 13.895121995716067, "fella", 0);
+		fella_26.tintTopLeft = 6343410;
+		fella_26.tintTopRight = 6343410;
+		fella_26.tintBottomLeft = 6343410;
+		fella_26.tintBottomRight = 6343410;
+
+		// fella_27
+		const fella_27 = this.add.sprite(-6.6276840288838335, 334.0308710498225, "fella", 0);
+		fella_27.scaleX = 0.5;
+		fella_27.scaleY = 0.5;
+		fella_27.tintTopLeft = 14170682;
+		fella_27.tintTopRight = 14170682;
+		fella_27.tintBottomLeft = 14170682;
+		fella_27.tintBottomRight = 14170682;
+
+		// fella_28
+		const fella_28 = this.add.sprite(-370.49782503027257, 341.0283737613876, "fella", 0);
+		fella_28.scaleX = 0.5;
+		fella_28.scaleY = 0.5;
+		fella_28.tintTopLeft = 14170682;
+		fella_28.tintTopRight = 14170682;
+		fella_28.tintBottomLeft = 14170682;
+		fella_28.tintBottomRight = 14170682;
+
+		// fella_29
+		const fella_29 = this.add.sprite(-797.3454904357478, 243.0633357994753, "fella", 0);
+		fella_29.scaleX = 0.5;
+		fella_29.scaleY = 0.5;
+		fella_29.tintTopLeft = 14170682;
+		fella_29.tintTopRight = 14170682;
+		fella_29.tintBottomLeft = 14170682;
+		fella_29.tintBottomRight = 14170682;
+
+		// fella_30
+		const fella_30 = this.add.sprite(-737.8667173874438, 111.86015995762841, "fella", 0);
+		fella_30.scaleX = 0.5;
+		fella_30.scaleY = 0.5;
+		fella_30.tintTopLeft = 14170682;
+		fella_30.tintTopRight = 14170682;
+		fella_30.tintBottomLeft = 14170682;
+		fella_30.tintBottomRight = 14170682;
+
+		// fella_31
+		const fella_31 = this.add.sprite(-538.4378901078366, 164.34143029436717, "fella", 0);
+		fella_31.scaleX = 0.5;
+		fella_31.scaleY = 0.5;
+		fella_31.tintTopLeft = 14170682;
+		fella_31.tintTopRight = 14170682;
+		fella_31.tintBottomLeft = 14170682;
+		fella_31.tintBottomRight = 14170682;
+
+		// fella_32
+		const fella_32 = this.add.sprite(-466.7134873142936, 321.78524130458345, "fella", 0);
+		fella_32.scaleX = 0.5;
+		fella_32.scaleY = 0.5;
+		fella_32.tintTopLeft = 14170682;
+		fella_32.tintTopRight = 14170682;
+		fella_32.tintBottomLeft = 14170682;
+		fella_32.tintBottomRight = 14170682;
+
+		// fella_33
+		const fella_33 = this.add.sprite(-111.59022470236135, 188.83268978484526, "fella", 0);
+		fella_33.scaleX = 0.5;
+		fella_33.scaleY = 0.5;
+		fella_33.tintTopLeft = 14170682;
+		fella_33.tintTopRight = 14170682;
+		fella_33.tintBottomLeft = 14170682;
+		fella_33.tintBottomRight = 14170682;
+
+		// fella_34
+		const fella_34 = this.add.sprite(-457.96660892483715, -91.06741867776145, "fella", 0);
+		fella_34.scaleX = 0.5;
+		fella_34.scaleY = 0.5;
+		fella_34.tintTopLeft = 14170682;
+		fella_34.tintTopRight = 14170682;
+		fella_34.tintBottomLeft = 14170682;
+		fella_34.tintBottomRight = 14170682;
+
+		// fella_35
+		const fella_35 = this.add.sprite(-762.3579768779219, -197.77933502913027, "fella", 0);
+		fella_35.scaleX = 0.5;
+		fella_35.scaleY = 0.5;
+		fella_35.tintTopLeft = 14170682;
+		fella_35.tintTopRight = 14170682;
+		fella_35.tintBottomLeft = 14170682;
+		fella_35.tintBottomRight = 14170682;
+
+		// fella_36
+		const fella_36 = this.add.sprite(-464.9641116364023, 103.11328156817196, "fella", 0);
+		fella_36.scaleX = 0.5;
+		fella_36.scaleY = 0.5;
+		fella_36.tintTopLeft = 14170682;
+		fella_36.tintTopRight = 14170682;
+		fella_36.tintBottomLeft = 14170682;
+		fella_36.tintBottomRight = 14170682;
+
+		// fella_37
+		const fella_37 = this.add.sprite(238.28491087589703, 92.61702750082421, "fella", 0);
+		fella_37.scaleX = 0.5;
+		fella_37.scaleY = 0.5;
+		fella_37.tintTopLeft = 14170682;
+		fella_37.tintTopRight = 14170682;
+		fella_37.tintBottomLeft = 14170682;
+		fella_37.tintBottomRight = 14170682;
+
+		// fella_38
+		const fella_38 = this.add.sprite(439.4631138333956, 341.0283737613876, "fella", 0);
+		fella_38.scaleX = 0.5;
+		fella_38.scaleY = 0.5;
+		fella_38.tintTopLeft = 14170682;
+		fella_38.tintTopRight = 14170682;
+		fella_38.tintBottomLeft = 14170682;
+		fella_38.tintBottomRight = 14170682;
+
+		// fella_39
+		const fella_39 = this.add.sprite(266.2749217221577, 159.0933032606933, "fella", 0);
+		fella_39.scaleX = 0.5;
+		fella_39.scaleY = 0.5;
+		fella_39.tintTopLeft = 14170682;
+		fella_39.tintTopRight = 14170682;
+		fella_39.tintBottomLeft = 14170682;
+		fella_39.tintBottomRight = 14170682;
+
+		// fella_40
+		const fella_40 = this.add.sprite(184.05426486126697, 306.0408602035618, "fella", 0);
+		fella_40.scaleX = 0.5;
+		fella_40.scaleY = 0.5;
+		fella_40.tintTopLeft = 14170682;
+		fella_40.tintTopRight = 14170682;
+		fella_40.tintBottomLeft = 14170682;
+		fella_40.tintBottomRight = 14170682;
+
+		// fella_41
+		const fella_41 = this.add.sprite(374.7362137514178, 290.29647910254016, "fella", 0);
+		fella_41.scaleX = 0.5;
+		fella_41.scaleY = 0.5;
+		fella_41.tintTopLeft = 14170682;
+		fella_41.tintTopRight = 14170682;
+		fella_41.tintBottomLeft = 14170682;
+		fella_41.tintBottomRight = 14170682;
+
+		// fella_42
+		const fella_42 = this.add.sprite(17.86357546159425, 43.63450851986803, "fella", 0);
+		fella_42.scaleX = 0.5;
+		fella_42.scaleY = 0.5;
+		fella_42.tintTopLeft = 14170682;
+		fella_42.tintTopRight = 14170682;
+		fella_42.tintBottomLeft = 14170682;
+		fella_42.tintBottomRight = 14170682;
+
+		// fella_43
+		const fella_43 = this.add.sprite(-295.274670880947, -19.343015884218477, "fella", 0);
+		fella_43.scaleX = 0.5;
+		fella_43.scaleY = 0.5;
+		fella_43.tintTopLeft = 14170682;
+		fella_43.tintTopRight = 14170682;
+		fella_43.tintBottomLeft = 14170682;
+		fella_43.tintBottomRight = 14170682;
+
+		// fella_44
+		const fella_44 = this.add.sprite(-94.09646792344843, 5.148243606259608, "fella", 0);
+		fella_44.scaleX = 0.5;
+		fella_44.scaleY = 0.5;
+		fella_44.tintTopLeft = 14170682;
+		fella_44.tintTopRight = 14170682;
+		fella_44.tintBottomLeft = 14170682;
+		fella_44.tintBottomRight = 14170682;
+
+		// fella_45
+		const fella_45 = this.add.sprite(-290.0265438472731, -120.8068052019134, "fella", 0);
+		fella_45.scaleX = 0.5;
+		fella_45.scaleY = 0.5;
+		fella_45.tintTopLeft = 14170682;
+		fella_45.tintTopRight = 14170682;
+		fella_45.tintBottomLeft = 14170682;
+		fella_45.tintBottomRight = 14170682;
+
+		// fella_46
+		const fella_46 = this.add.sprite(-547.184768497293, -145.2980646923915, "fella", 0);
+		fella_46.scaleX = 0.5;
+		fella_46.scaleY = 0.5;
+		fella_46.tintTopLeft = 14170682;
+		fella_46.tintTopRight = 14170682;
+		fella_46.tintBottomLeft = 14170682;
+		fella_46.tintBottomRight = 14170682;
+
+		// fella_47
+		const fella_47 = this.add.sprite(-422.9790953670113, -161.04244579341312, "fella", 0);
+		fella_47.scaleX = 0.5;
+		fella_47.scaleY = 0.5;
+		fella_47.tintTopLeft = 14170682;
+		fella_47.tintTopRight = 14170682;
+		fella_47.tintBottomLeft = 14170682;
+		fella_47.tintBottomRight = 14170682;
+
+		// fella_48
+		const fella_48 = this.add.sprite(159.5630053707889, 1.6494922504770235, "fella", 0);
+		fella_48.scaleX = 0.5;
+		fella_48.scaleY = 0.5;
+		fella_48.tintTopLeft = 14170682;
+		fella_48.tintTopRight = 14170682;
+		fella_48.tintBottomLeft = 14170682;
+		fella_48.tintBottomRight = 14170682;
+
+		// fella_49
+		const fella_49 = this.add.sprite(254.02929197691867, 69.8751436882374, "fella", 0);
+		fella_49.scaleX = 0.5;
+		fella_49.scaleY = 0.5;
+		fella_49.tintTopLeft = 14170682;
+		fella_49.tintTopRight = 14170682;
+		fella_49.tintBottomLeft = 14170682;
+		fella_49.tintBottomRight = 14170682;
+
+		// fella_50
+		const fella_50 = this.add.sprite(294.2649325684184, 176.5870600396062, "fella", 0);
+		fella_50.scaleX = 0.5;
+		fella_50.scaleY = 0.5;
+		fella_50.tintTopLeft = 14170682;
+		fella_50.tintTopRight = 14170682;
+		fella_50.tintBottomLeft = 14170682;
+		fella_50.tintBottomRight = 14170682;
+
+		// fella_51
+		const fella_51 = this.add.sprite(488.44563281435177, -28.08989427367494, "fella", 0);
+		fella_51.scaleX = 0.5;
+		fella_51.scaleY = 0.5;
+		fella_51.tintTopLeft = 14170682;
+		fella_51.tintTopRight = 14170682;
+		fella_51.tintBottomLeft = 14170682;
+		fella_51.tintBottomRight = 14170682;
+
+		// fella_52
+		const fella_52 = this.add.sprite(500.6912625595908, -122.5561808798047, "fella", 0);
+		fella_52.scaleX = 0.5;
+		fella_52.scaleY = 0.5;
+		fella_52.tintTopLeft = 14170682;
+		fella_52.tintTopRight = 14170682;
+		fella_52.tintBottomLeft = 14170682;
+		fella_52.tintBottomRight = 14170682;
+
+		// fella_53
+		const fella_53 = this.add.sprite(378.23496510720037, 101.36390589028066, "fella", 0);
+		fella_53.scaleX = 0.5;
+		fella_53.scaleY = 0.5;
+		fella_53.tintTopLeft = 14170682;
+		fella_53.tintTopRight = 14170682;
+		fella_53.tintBottomLeft = 14170682;
+		fella_53.tintBottomRight = 14170682;
+
+		// fella_54
+		const fella_54 = this.add.sprite(222.5405297748754, -96.31554571143532, "fella", 0);
+		fella_54.scaleX = 0.5;
+		fella_54.scaleY = 0.5;
+		fella_54.tintTopLeft = 14170682;
+		fella_54.tintTopRight = 14170682;
+		fella_54.tintBottomLeft = 14170682;
+		fella_54.tintBottomRight = 14170682;
+
+		// fella_55
+		const fella_55 = this.add.sprite(498.94188688169953, 120.60703834708487, "fella", 0);
+		fella_55.scaleX = 0.5;
+		fella_55.scaleY = 0.5;
+		fella_55.tintTopLeft = 14170682;
+		fella_55.tintTopRight = 14170682;
+		fella_55.tintBottomLeft = 14170682;
+		fella_55.tintBottomRight = 14170682;
+
+		// fella_56
+		const fella_56 = this.add.sprite(353.7437056167223, -131.30305926926115, "fella", 0);
+		fella_56.scaleX = 0.5;
+		fella_56.scaleY = 0.5;
+		fella_56.tintTopLeft = 14170682;
+		fella_56.tintTopRight = 14170682;
+		fella_56.tintBottomLeft = 14170682;
+		fella_56.tintBottomRight = 14170682;
+
+		// fella_57
+		const fella_57 = this.add.sprite(-202.55775995270852, -61.328032153609485, "fella", 0);
+		fella_57.scaleX = 0.5;
+		fella_57.scaleY = 0.5;
+		fella_57.tintTopLeft = 14170682;
+		fella_57.tintTopRight = 14170682;
+		fella_57.tintBottomLeft = 14170682;
+		fella_57.tintBottomRight = 14170682;
+
+		// fella_58
+		const fella_58 = this.add.sprite(175.30738647181053, -0.09988342741426828, "fella", 0);
+		fella_58.scaleX = 0.5;
+		fella_58.scaleY = 0.5;
+		fella_58.tintTopLeft = 14170682;
+		fella_58.tintTopRight = 14170682;
+		fella_58.tintBottomLeft = 14170682;
+		fella_58.tintBottomRight = 14170682;
+
+		// fella_59
+		const fella_59 = this.add.sprite(339.74870019359196, -96.31554571143532, "fella", 0);
+		fella_59.scaleX = 0.5;
+		fella_59.scaleY = 0.5;
+		fella_59.tintTopLeft = 14170682;
+		fella_59.tintTopRight = 14170682;
+		fella_59.tintBottomLeft = 14170682;
+		fella_59.tintBottomRight = 14170682;
+
+		// fella_60
+		const fella_60 = this.add.sprite(-80.10146250031809, -92.81679435565273, "fella", 0);
+		fella_60.scaleX = 0.5;
+		fella_60.scaleY = 0.5;
+		fella_60.tintTopLeft = 14170682;
+		fella_60.tintTopRight = 14170682;
+		fella_60.tintBottomLeft = 14170682;
+		fella_60.tintBottomRight = 14170682;
+
+		// fella_61
+		const fella_61 = this.add.sprite(-127.33460580338297, -182.03495392810862, "fella", 0);
+		fella_61.scaleX = 0.5;
+		fella_61.scaleY = 0.5;
+		fella_61.tintTopLeft = 14170682;
+		fella_61.tintTopRight = 14170682;
+		fella_61.tintBottomLeft = 14170682;
+		fella_61.tintBottomRight = 14170682;
+
+		// fella_62
+		const fella_62 = this.add.sprite(227.7886568085493, 24.391376063063817, "fella", 0);
+		fella_62.scaleX = 0.5;
+		fella_62.scaleY = 0.5;
+		fella_62.tintTopLeft = 14170682;
+		fella_62.tintTopRight = 14170682;
+		fella_62.tintBottomLeft = 14170682;
+		fella_62.tintBottomRight = 14170682;
+
+		// fella_63
+		const fella_63 = this.add.sprite(605.6538032330683, 178.3364357174975, "fella", 0);
+		fella_63.scaleX = 0.5;
+		fella_63.scaleY = 0.5;
+		fella_63.tintTopLeft = 14170682;
+		fella_63.tintTopRight = 14170682;
+		fella_63.tintBottomLeft = 14170682;
+		fella_63.tintBottomRight = 14170682;
+
+		// fella_64
+		const fella_64 = this.add.sprite(724.6113493296762, 323.53461698247474, "fella", 0);
+		fella_64.scaleX = 0.5;
+		fella_64.scaleY = 0.5;
+		fella_64.tintTopLeft = 14170682;
+		fella_64.tintTopRight = 14170682;
+		fella_64.tintBottomLeft = 14170682;
+		fella_64.tintBottomRight = 14170682;
+
+		// fella_65
+		const fella_65 = this.add.sprite(733.3582277191326, 216.82270063110593, "fella", 0);
+		fella_65.scaleX = 0.5;
+		fella_65.scaleY = 0.5;
+		fella_65.tintTopLeft = 14170682;
+		fella_65.tintTopRight = 14170682;
+		fella_65.tintBottomLeft = 14170682;
+		fella_65.tintBottomRight = 14170682;
+
 		// MobileTextcontainer
-		const mobileTextcontainer = this.add.container(0, 0);
+		const mobileTextcontainer = this.add.container(0, 532);
 
 		// rectangle_3
 		const rectangle_3 = this.add.rectangle(0, 0, 128, 128);
@@ -191,24 +675,6 @@ class Level extends Phaser.Scene {
 		instructionText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer_1.add(instructionText);
 
-		// buttonTest2
-		const buttonTest2 = this.add.rectangle(2472, 962, 128, 128);
-		buttonTest2.scaleX = 3.992183120085278;
-		buttonTest2.scaleY = 1.8500935500799485;
-		buttonTest2.setOrigin(1, 1);
-		buttonTest2.alpha = 0.2;
-		buttonTest2.isFilled = true;
-		buttonTest2.fillColor = 15357244;
-
-		// buttonTest
-		const buttonTest = this.add.rectangle(466, 981, 128, 128);
-		buttonTest.scaleX = 2.4726917897363947;
-		buttonTest.scaleY = 1.8500935500799485;
-		buttonTest.setOrigin(0, 1);
-		buttonTest.alpha = 0.2;
-		buttonTest.isFilled = true;
-		buttonTest.fillColor = 3970794;
-
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, mobileTextcontainer_1, buttonTest];
 		const alignToCameraRight = [buttonTest2];
@@ -218,25 +684,16 @@ class Level extends Phaser.Scene {
 		const alignToCameraMiddle = [];
 		const alignToCameraCenter = [];
 		const pantsTest = [];
-		const fellasList = [fella, fella_5, fella_8, fella_7, fella_6, fella_4, fella_3, fella_2, fella_1];
-		const bounds = [tankBounds, tankBounds_2, tankBounds_1, tankBounds_3];
+		const fellasList = [fella, fella_5, fella_8, fella_7, fella_6, fella_4, fella_3, fella_2, fella_1, fella_9, fella_65, fella_64, fella_63, fella_62, fella_61, fella_60, fella_59, fella_58, fella_57, fella_56, fella_55, fella_54, fella_53, fella_52, fella_51, fella_50, fella_49, fella_48, fella_47, fella_46, fella_45, fella_44, fella_43, fella_42, fella_41, fella_40, fella_39, fella_38, fella_37, fella_36, fella_35, fella_34, fella_33, fella_32, fella_31, fella_30, fella_29, fella_28, fella_27, fella_26, fella_25, fella_24, fella_23, fella_22, fella_21, fella_20, fella_19, fella_18, fella_17, fella_16, fella_15, fella_14, fella_13, fella_12, fella_11, fella_10];
+		const bounds = [tankBox];
+
+		// tankBox (components)
+		new PhysicsBody(tankBox);
 
 		// fella (components)
 		const fellaAnimation = new Animation(fella);
 		fellaAnimation.animationKey = "bob";
 		new randomMove(fella);
-
-		// tankBounds (components)
-		new PhysicsBody(tankBounds);
-
-		// tankBounds_1 (components)
-		new PhysicsBody(tankBounds_1);
-
-		// tankBounds_2 (components)
-		new PhysicsBody(tankBounds_2);
-
-		// tankBounds_3 (components)
-		new PhysicsBody(tankBounds_3);
 
 		// fella_5 (components)
 		const fella_5Animation = new Animation(fella_5);
@@ -278,6 +735,305 @@ class Level extends Phaser.Scene {
 		fella_8Animation.animationKey = "bob";
 		new randomMove(fella_8);
 
+		// buttonTest2 (components)
+		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
+		buttonTest2AlignOffsets.x = -100;
+		buttonTest2AlignOffsets.y = -100;
+		const buttonTest2SimpleButton = new SimpleButton(buttonTest2);
+		buttonTest2SimpleButton.bindButton = "right";
+
+		// buttonTest (components)
+		const buttonTestAlignOffsets = new AlignOffsets(buttonTest);
+		buttonTestAlignOffsets.x = 450;
+		buttonTestAlignOffsets.y = -100;
+		const buttonTestSimpleButton = new SimpleButton(buttonTest);
+		buttonTestSimpleButton.bindButton = "left";
+
+		// fella_9 (components)
+		const fella_9Animation = new Animation(fella_9);
+		fella_9Animation.animationKey = "bob";
+		new randomMove(fella_9);
+
+		// fella_10 (components)
+		const fella_10Animation = new Animation(fella_10);
+		fella_10Animation.animationKey = "bob";
+		new randomMove(fella_10);
+
+		// fella_11 (components)
+		const fella_11Animation = new Animation(fella_11);
+		fella_11Animation.animationKey = "bob";
+		new randomMove(fella_11);
+
+		// fella_12 (components)
+		const fella_12Animation = new Animation(fella_12);
+		fella_12Animation.animationKey = "bob";
+		new randomMove(fella_12);
+
+		// fella_13 (components)
+		const fella_13Animation = new Animation(fella_13);
+		fella_13Animation.animationKey = "bob";
+		new randomMove(fella_13);
+
+		// fella_14 (components)
+		const fella_14Animation = new Animation(fella_14);
+		fella_14Animation.animationKey = "bob";
+		new randomMove(fella_14);
+
+		// fella_15 (components)
+		const fella_15Animation = new Animation(fella_15);
+		fella_15Animation.animationKey = "bob";
+		new randomMove(fella_15);
+
+		// fella_16 (components)
+		const fella_16Animation = new Animation(fella_16);
+		fella_16Animation.animationKey = "bob";
+		new randomMove(fella_16);
+
+		// fella_17 (components)
+		const fella_17Animation = new Animation(fella_17);
+		fella_17Animation.animationKey = "bob";
+		new randomMove(fella_17);
+
+		// fella_18 (components)
+		const fella_18Animation = new Animation(fella_18);
+		fella_18Animation.animationKey = "bob";
+		new randomMove(fella_18);
+
+		// fella_19 (components)
+		const fella_19Animation = new Animation(fella_19);
+		fella_19Animation.animationKey = "bob";
+		new randomMove(fella_19);
+
+		// fella_20 (components)
+		const fella_20Animation = new Animation(fella_20);
+		fella_20Animation.animationKey = "bob";
+		new randomMove(fella_20);
+
+		// fella_21 (components)
+		const fella_21Animation = new Animation(fella_21);
+		fella_21Animation.animationKey = "bob";
+		new randomMove(fella_21);
+
+		// fella_22 (components)
+		const fella_22Animation = new Animation(fella_22);
+		fella_22Animation.animationKey = "bob";
+		new randomMove(fella_22);
+
+		// fella_23 (components)
+		const fella_23Animation = new Animation(fella_23);
+		fella_23Animation.animationKey = "bob";
+		new randomMove(fella_23);
+
+		// fella_24 (components)
+		const fella_24Animation = new Animation(fella_24);
+		fella_24Animation.animationKey = "bob";
+		new randomMove(fella_24);
+
+		// fella_25 (components)
+		const fella_25Animation = new Animation(fella_25);
+		fella_25Animation.animationKey = "bob";
+		new randomMove(fella_25);
+
+		// fella_26 (components)
+		const fella_26Animation = new Animation(fella_26);
+		fella_26Animation.animationKey = "bob";
+		new randomMove(fella_26);
+
+		// fella_27 (components)
+		const fella_27Animation = new Animation(fella_27);
+		fella_27Animation.animationKey = "bob";
+		new randomMove(fella_27);
+
+		// fella_28 (components)
+		const fella_28Animation = new Animation(fella_28);
+		fella_28Animation.animationKey = "bob";
+		new randomMove(fella_28);
+
+		// fella_29 (components)
+		const fella_29Animation = new Animation(fella_29);
+		fella_29Animation.animationKey = "bob";
+		new randomMove(fella_29);
+
+		// fella_30 (components)
+		const fella_30Animation = new Animation(fella_30);
+		fella_30Animation.animationKey = "bob";
+		new randomMove(fella_30);
+
+		// fella_31 (components)
+		const fella_31Animation = new Animation(fella_31);
+		fella_31Animation.animationKey = "bob";
+		new randomMove(fella_31);
+
+		// fella_32 (components)
+		const fella_32Animation = new Animation(fella_32);
+		fella_32Animation.animationKey = "bob";
+		new randomMove(fella_32);
+
+		// fella_33 (components)
+		const fella_33Animation = new Animation(fella_33);
+		fella_33Animation.animationKey = "bob";
+		new randomMove(fella_33);
+
+		// fella_34 (components)
+		const fella_34Animation = new Animation(fella_34);
+		fella_34Animation.animationKey = "bob";
+		new randomMove(fella_34);
+
+		// fella_35 (components)
+		const fella_35Animation = new Animation(fella_35);
+		fella_35Animation.animationKey = "bob";
+		new randomMove(fella_35);
+
+		// fella_36 (components)
+		const fella_36Animation = new Animation(fella_36);
+		fella_36Animation.animationKey = "bob";
+		new randomMove(fella_36);
+
+		// fella_37 (components)
+		const fella_37Animation = new Animation(fella_37);
+		fella_37Animation.animationKey = "bob";
+		new randomMove(fella_37);
+
+		// fella_38 (components)
+		const fella_38Animation = new Animation(fella_38);
+		fella_38Animation.animationKey = "bob";
+		new randomMove(fella_38);
+
+		// fella_39 (components)
+		const fella_39Animation = new Animation(fella_39);
+		fella_39Animation.animationKey = "bob";
+		new randomMove(fella_39);
+
+		// fella_40 (components)
+		const fella_40Animation = new Animation(fella_40);
+		fella_40Animation.animationKey = "bob";
+		new randomMove(fella_40);
+
+		// fella_41 (components)
+		const fella_41Animation = new Animation(fella_41);
+		fella_41Animation.animationKey = "bob";
+		new randomMove(fella_41);
+
+		// fella_42 (components)
+		const fella_42Animation = new Animation(fella_42);
+		fella_42Animation.animationKey = "bob";
+		new randomMove(fella_42);
+
+		// fella_43 (components)
+		const fella_43Animation = new Animation(fella_43);
+		fella_43Animation.animationKey = "bob";
+		new randomMove(fella_43);
+
+		// fella_44 (components)
+		const fella_44Animation = new Animation(fella_44);
+		fella_44Animation.animationKey = "bob";
+		new randomMove(fella_44);
+
+		// fella_45 (components)
+		const fella_45Animation = new Animation(fella_45);
+		fella_45Animation.animationKey = "bob";
+		new randomMove(fella_45);
+
+		// fella_46 (components)
+		const fella_46Animation = new Animation(fella_46);
+		fella_46Animation.animationKey = "bob";
+		new randomMove(fella_46);
+
+		// fella_47 (components)
+		const fella_47Animation = new Animation(fella_47);
+		fella_47Animation.animationKey = "bob";
+		new randomMove(fella_47);
+
+		// fella_48 (components)
+		const fella_48Animation = new Animation(fella_48);
+		fella_48Animation.animationKey = "bob";
+		new randomMove(fella_48);
+
+		// fella_49 (components)
+		const fella_49Animation = new Animation(fella_49);
+		fella_49Animation.animationKey = "bob";
+		new randomMove(fella_49);
+
+		// fella_50 (components)
+		const fella_50Animation = new Animation(fella_50);
+		fella_50Animation.animationKey = "bob";
+		new randomMove(fella_50);
+
+		// fella_51 (components)
+		const fella_51Animation = new Animation(fella_51);
+		fella_51Animation.animationKey = "bob";
+		new randomMove(fella_51);
+
+		// fella_52 (components)
+		const fella_52Animation = new Animation(fella_52);
+		fella_52Animation.animationKey = "bob";
+		new randomMove(fella_52);
+
+		// fella_53 (components)
+		const fella_53Animation = new Animation(fella_53);
+		fella_53Animation.animationKey = "bob";
+		new randomMove(fella_53);
+
+		// fella_54 (components)
+		const fella_54Animation = new Animation(fella_54);
+		fella_54Animation.animationKey = "bob";
+		new randomMove(fella_54);
+
+		// fella_55 (components)
+		const fella_55Animation = new Animation(fella_55);
+		fella_55Animation.animationKey = "bob";
+		new randomMove(fella_55);
+
+		// fella_56 (components)
+		const fella_56Animation = new Animation(fella_56);
+		fella_56Animation.animationKey = "bob";
+		new randomMove(fella_56);
+
+		// fella_57 (components)
+		const fella_57Animation = new Animation(fella_57);
+		fella_57Animation.animationKey = "bob";
+		new randomMove(fella_57);
+
+		// fella_58 (components)
+		const fella_58Animation = new Animation(fella_58);
+		fella_58Animation.animationKey = "bob";
+		new randomMove(fella_58);
+
+		// fella_59 (components)
+		const fella_59Animation = new Animation(fella_59);
+		fella_59Animation.animationKey = "bob";
+		new randomMove(fella_59);
+
+		// fella_60 (components)
+		const fella_60Animation = new Animation(fella_60);
+		fella_60Animation.animationKey = "bob";
+		new randomMove(fella_60);
+
+		// fella_61 (components)
+		const fella_61Animation = new Animation(fella_61);
+		fella_61Animation.animationKey = "bob";
+		new randomMove(fella_61);
+
+		// fella_62 (components)
+		const fella_62Animation = new Animation(fella_62);
+		fella_62Animation.animationKey = "bob";
+		new randomMove(fella_62);
+
+		// fella_63 (components)
+		const fella_63Animation = new Animation(fella_63);
+		fella_63Animation.animationKey = "bob";
+		new randomMove(fella_63);
+
+		// fella_64 (components)
+		const fella_64Animation = new Animation(fella_64);
+		fella_64Animation.animationKey = "bob";
+		new randomMove(fella_64);
+
+		// fella_65 (components)
+		const fella_65Animation = new Animation(fella_65);
+		fella_65Animation.animationKey = "bob";
+		new randomMove(fella_65);
+
 		// mobileTextcontainer (components)
 		const mobileTextcontainerAlignOffsets = new AlignOffsets(mobileTextcontainer);
 		mobileTextcontainerAlignOffsets.x = 20;
@@ -288,30 +1044,8 @@ class Level extends Phaser.Scene {
 		mobileTextcontainer_1AlignOffsets.x = 20;
 		mobileTextcontainer_1AlignOffsets.y = -20;
 
-		// buttonTest2 (components)
-		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
-		buttonTest2AlignOffsets.x = -100;
-		buttonTest2AlignOffsets.y = -100;
-		const buttonTest2SimpleButton = new SimpleButton(buttonTest2);
-		buttonTest2SimpleButton.bindButton = "right";
-		const buttonTest2DeviceDependentActivation = new DeviceDependentActivation(buttonTest2);
-		buttonTest2DeviceDependentActivation.ifMobile = true;
-
-		// buttonTest (components)
-		const buttonTestAlignOffsets = new AlignOffsets(buttonTest);
-		buttonTestAlignOffsets.x = 450;
-		buttonTestAlignOffsets.y = -100;
-		const buttonTestSimpleButton = new SimpleButton(buttonTest);
-		buttonTestSimpleButton.bindButton = "left";
-		const buttonTestDeviceDependentActivation = new DeviceDependentActivation(buttonTest);
-		buttonTestDeviceDependentActivation.ifMobile = true;
-
-		this.rectangle_1 = rectangle_1;
+		this.tankBox = tankBox;
 		this.fella = fella;
-		this.tankBounds = tankBounds;
-		this.tankBounds_1 = tankBounds_1;
-		this.tankBounds_2 = tankBounds_2;
-		this.tankBounds_3 = tankBounds_3;
 		this.fella_5 = fella_5;
 		this.fella_1 = fella_1;
 		this.fella_2 = fella_2;
@@ -320,13 +1054,70 @@ class Level extends Phaser.Scene {
 		this.fella_6 = fella_6;
 		this.fella_7 = fella_7;
 		this.fella_8 = fella_8;
+		this.buttonTest2 = buttonTest2;
+		this.buttonTest = buttonTest;
+		this.fella_9 = fella_9;
+		this.fella_10 = fella_10;
+		this.fella_11 = fella_11;
+		this.fella_12 = fella_12;
+		this.fella_13 = fella_13;
+		this.fella_14 = fella_14;
+		this.fella_15 = fella_15;
+		this.fella_16 = fella_16;
+		this.fella_17 = fella_17;
+		this.fella_18 = fella_18;
+		this.fella_19 = fella_19;
+		this.fella_20 = fella_20;
+		this.fella_21 = fella_21;
+		this.fella_22 = fella_22;
+		this.fella_23 = fella_23;
+		this.fella_24 = fella_24;
+		this.fella_25 = fella_25;
+		this.fella_26 = fella_26;
+		this.fella_27 = fella_27;
+		this.fella_28 = fella_28;
+		this.fella_29 = fella_29;
+		this.fella_30 = fella_30;
+		this.fella_31 = fella_31;
+		this.fella_32 = fella_32;
+		this.fella_33 = fella_33;
+		this.fella_34 = fella_34;
+		this.fella_35 = fella_35;
+		this.fella_36 = fella_36;
+		this.fella_37 = fella_37;
+		this.fella_38 = fella_38;
+		this.fella_39 = fella_39;
+		this.fella_40 = fella_40;
+		this.fella_41 = fella_41;
+		this.fella_42 = fella_42;
+		this.fella_43 = fella_43;
+		this.fella_44 = fella_44;
+		this.fella_45 = fella_45;
+		this.fella_46 = fella_46;
+		this.fella_47 = fella_47;
+		this.fella_48 = fella_48;
+		this.fella_49 = fella_49;
+		this.fella_50 = fella_50;
+		this.fella_51 = fella_51;
+		this.fella_52 = fella_52;
+		this.fella_53 = fella_53;
+		this.fella_54 = fella_54;
+		this.fella_55 = fella_55;
+		this.fella_56 = fella_56;
+		this.fella_57 = fella_57;
+		this.fella_58 = fella_58;
+		this.fella_59 = fella_59;
+		this.fella_60 = fella_60;
+		this.fella_61 = fella_61;
+		this.fella_62 = fella_62;
+		this.fella_63 = fella_63;
+		this.fella_64 = fella_64;
+		this.fella_65 = fella_65;
 		this.mobileText = mobileText;
 		this.spriteCountText = spriteCountText;
 		this.fpsText = fpsText;
 		this.zoomText = zoomText;
 		this.instructionText = instructionText;
-		this.buttonTest2 = buttonTest2;
-		this.buttonTest = buttonTest;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -342,17 +1133,9 @@ class Level extends Phaser.Scene {
 	}
 
 	/** @type {Phaser.GameObjects.Rectangle} */
-	rectangle_1;
+	tankBox;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	tankBounds;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	tankBounds_1;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	tankBounds_2;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	tankBounds_3;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella_5;
 	/** @type {Phaser.GameObjects.Sprite} */
@@ -369,6 +1152,124 @@ class Level extends Phaser.Scene {
 	fella_7;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella_8;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	buttonTest2;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	buttonTest;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_9;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_10;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_11;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_12;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_13;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_14;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_15;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_16;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_17;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_18;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_19;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_20;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_21;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_22;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_23;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_24;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_25;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_26;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_27;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_28;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_29;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_30;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_31;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_32;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_33;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_34;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_35;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_36;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_37;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_38;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_39;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_40;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_41;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_42;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_43;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_44;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_45;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_46;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_47;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_48;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_49;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_50;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_51;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_52;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_53;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_54;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_55;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_56;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_57;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_58;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_59;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_60;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_61;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_62;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_63;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_64;
+	/** @type {Phaser.GameObjects.Sprite} */
+	fella_65;
 	/** @type {Phaser.GameObjects.Text} */
 	mobileText;
 	/** @type {Phaser.GameObjects.Text} */
@@ -379,10 +1280,6 @@ class Level extends Phaser.Scene {
 	zoomText;
 	/** @type {Phaser.GameObjects.Text} */
 	instructionText;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	buttonTest2;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	buttonTest;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
 	/** @type {Phaser.GameObjects.Rectangle[]} */
@@ -413,8 +1310,8 @@ class Level extends Phaser.Scene {
 		this.tankWidth = 1820;
 		this.tankHeight = 880;
 
-		this.minScreenWidth = this.tankWidth + (20 * 2);
-		this.minScreenHeight = this.tankHeight + (50 * 2);
+		this.minScreenWidth = this.tankWidth + (64 * 2);
+		this.minScreenHeight = this.tankHeight + (64 * 2);
 		// added number is the min pixel buffer between tank and screen edge on sides
 
 		// adaptive zoom
@@ -499,6 +1396,11 @@ class Level extends Phaser.Scene {
 
 		this.initColliders();
 
+		// state test
+		this.stateControl = new StateController(this.fellasList[0]);
+
+		this.stateControl.setState('testState')
+
 		this.resize();
 	}
 
@@ -556,51 +1458,27 @@ class Level extends Phaser.Scene {
 	initColliders() {
 
 		// tank walls
-		for(let i = 0; i < this.bounds.length; i++) {
-
-			this.physics.add.existing(this.bounds[i], true);
-			// this.bounds[i].body.setImmovable(true);
-			// ^ this is redundant now because we're making static bodies, which don't move
-		}
+		this.matter.world.setBounds(-910, -450, 1820, 880, 300);
+		// this is centered at (0, 10) to avoid accidental app switching on ios
 
 		// fellas
 		for(let i = 0; i < this.fellasList.length; i++) {
 
 			const _fella = this.fellasList[i];
 
-			this.physics.add.existing(_fella);
+			this.matter.add.gameObject(this.fellasList[i], { inertia: Infinity, shape: {type: 'circle', radius: 80 * this.fellasList[i].scaleX}})
+				.setBounce(.5)
+				.setFrictionAir(.2)
 
-			// damping avoids axis drift
-			// drag property is a multiplier of velocity
-			_fella.body.setDamping(true);
-			_fella.body.setDrag(.1, .1);
+
 
 			// debug text
 			this.spriteCountText.setText('sprites: ' + this.fellasList.length);
-
-			_fella.setInteractive({ draggable: true });
-			_fella.on('drag', function(pointer, dragX, dragY) {
-
-				this.x = dragX;
-				this.y = dragY;
-
-				this.body.setVelocity(0);
-			});
-			_fella.on('dragend', function(pointer, dragX, dragY) {
-
-				console.log(
-					pointer.velocity
-					);
-
-				this.body.setVelocity(
-					pointer.velocity.x * 15, pointer.velocity.y * 15
-					);
-			});
 		}
 
+		this.matter.add.mouseSpring();
+
 		// setup collisions
-		this.physics.add.collider(this.fellasList, this.bounds);
-		// this.physics.add.collider(this.fellasList, this.fellasList);
 	}
 
 	enforceBoundaries() {
@@ -731,4 +1609,43 @@ class Level extends Phaser.Scene {
 
 /* END OF COMPILED CODE */
 
-// You can write more code here
+class StateController {
+
+	states;
+
+	currentState;
+
+	constructor(fella) {
+
+		this.states = {
+			testState: new State(fella)
+		}
+	}
+
+	setState(name) {
+
+		if (this.currentState === this.states[name]) {
+
+			return;
+		}
+
+		this.currentState = this.states[name];
+		this.currentState.enter();
+	}
+}
+
+class State {
+
+	fella
+	
+	constructor(fella) {
+
+		this.fella = fella
+	}
+
+	enter() {
+
+		console.log('enter');
+		this.fella.setVelocity(200, 200);
+	}
+}

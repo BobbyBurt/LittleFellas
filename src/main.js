@@ -11,9 +11,12 @@ window.addEventListener('load', function () {
 		version: '2.0',
 		url: 'https://www.newgrounds.com/projects/games/1920192/preview',
 		physics: {
-			default: 'arcade',
-			arcade: {
-				debug: true
+			default: 'matter',
+			matter: {
+				debug: true,
+				gravity: {
+					y: 0
+				}
 			}
 		},
 		scale: {
@@ -42,7 +45,7 @@ class Boot extends Phaser.Scene {
 		
 		this.load.pack("pack", "assets/preload-asset-pack.json");
 
-		this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
+		// this.load.plugin('PhaserDebugGameScalePlugin', 'https://cdn.jsdelivr.net/npm/phaser-plugin-debug-game-scale@3.3.0', true);
 		// https://github.com/samme/phaser-plugin-debug-game-scale
 		// renderer must be canvas
 
