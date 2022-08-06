@@ -1398,9 +1398,9 @@ class Level extends Phaser.Scene {
 
 		// state test
 		this.stateControl = new StateController(this.fellasList[0]);
-
 		this.stateControl.setState('testState')
 
+		// resize
 		this.resize();
 	}
 
@@ -1436,7 +1436,7 @@ class Level extends Phaser.Scene {
 
 		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
 
-
+		this.stateControl.update();
 	}
 
 	/** scene specific resizing adjustments
@@ -1479,29 +1479,6 @@ class Level extends Phaser.Scene {
 		this.matter.add.mouseSpring();
 
 		// setup collisions
-	}
-
-	enforceBoundaries() {
-
-						// left boundary
-						if (dragX > this.boundariesX.left) {
-
-							this.x = dragX;
-						}
-						else {
-
-							this.x = this.boundariesX.left;
-						}
-
-						// right boundary
-						if (dragX < this.boundariesX.right) {
-
-							this.x = dragX;
-						}
-						else {
-
-							this.x = this.boundariesX.right;
-						}
 	}
 
 	/** align objects included in the align left/right/top/bottom lists
@@ -1632,6 +1609,11 @@ class StateController {
 		this.currentState = this.states[name];
 		this.currentState.enter();
 	}
+
+	update() {
+
+		this.currentState.update();
+	}
 }
 
 class State {
@@ -1646,6 +1628,10 @@ class State {
 	enter() {
 
 		console.log('enter');
-		this.fella.setVelocity(200, 200);
+	}
+	
+	update() {
+		
+		console.log('update');
 	}
 }
