@@ -1,0 +1,19 @@
+class StateTwo {
+
+	fella
+	
+	constructor(fella) {
+
+		this.fella = fella
+	}
+
+	enter() {
+
+		console.log('enter');
+	}
+	
+	update() {
+		
+		console.log('update');
+	}
+}

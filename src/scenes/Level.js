@@ -1595,7 +1595,8 @@ class StateController {
 	constructor(fella) {
 
 		this.states = {
-			testState: new State(fella)
+			testState: new State(fella),
+			state2: new StateTwo(fella)
 		}
 	}
 
