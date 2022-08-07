@@ -1401,7 +1401,7 @@ class Level extends Phaser.Scene {
 
 		// state test
 		this.stateControl = new StateController(this.fellasList[0], this);
-		this.stateControl.setState('testState');
+		this.stateControl.setState('idle');
 
 		// resize
 		this.resize();

@@ -18,7 +18,7 @@ class StateTest {
 	enter() {
 
 		console.log('enter');
-		this.stateControl.setState('testState2');
+		this.stateControl.setState('testState');
 	}
 	
 	update() {

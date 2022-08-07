@@ -1,4 +1,4 @@
-class StateTest2 {
+class Idle {
 
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella;
@@ -13,15 +13,26 @@ class StateTest2 {
 
 		this.fella = fella;
 		this.scene = scene;
+
 	}
-
+	
 	enter() {
+		
+		this.duration = Phaser.Math.RND.between(30, 200);
 
-		console.log('enter');
+		// idle animation
+		this.fella.stop();
+		
+		this.fella.setVelocity(0);
 	}
 	
 	update() {
 		
-		console.log('update');
+		this.duration--;
+
+		if (this.duration <= 0) {
+
+			this.stateControl.setState('walk')
+		}
 	}
 }

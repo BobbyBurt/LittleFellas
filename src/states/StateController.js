@@ -9,7 +9,8 @@ class StateController {
         /** all state classes */
 		this.states = {
 			testState: new StateTest(fella, scene),
-			testState2: new StateTest2(fella, scene),
+			idle: new Idle(fella, scene),
+            walk: new RandomWalk(fella, scene)
 		}
 
         // set reference to this so states can call transition()
