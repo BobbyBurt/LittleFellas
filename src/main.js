@@ -3,8 +3,11 @@
 window.addEventListener('load', function () {
 
 	var game = new Phaser.Game({
-		type: Phaser.CANVAS,
+		type: Phaser.WEBGL,
 		// must be canvas for debug game scale plugin. Can change later
+		// tint doesn't work on canvas
+		// TODO: require webgl unless I can get tint working on canvas
+		// I can catch when webgl isn't available: https://github.com/samme/phaser3-faq/wiki/Game
         backgroundColor: "#969fa3",
 		pixelArt: false,
 		title: 'Little Fellas',
@@ -13,14 +16,15 @@ window.addEventListener('load', function () {
 		physics: {
 			default: 'matter',
 			matter: {
-				debug: true,
+				// debug: true,
 				gravity: {
 					y: 0
 				}
 			}
 		},
 		scale: {
-			// this allows the game to be fullscreen on safari in landscape, but creates whitespace & scrollability in portrait
+			// autocenter allows the game to be fullscreen on safari in landscape, 
+			// but creates whitespace & scrollability in portrait
 			mode: Phaser.Scale.NONE,
 			width: window.innerWidth * window.devicePixelRatio,
         	height: window.innerHeight * window.devicePixelRatio,

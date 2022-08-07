@@ -25,13 +25,11 @@ class RandomWalk {
 		this.duration = Phaser.Math.RND.between(20, 100);
 
 		this.fella.play('bob');
-
-		console.log('enter');
 	}
 	
 	update() {
 		
-		this.fella.setVelocity(this.xMove * 10, this.yMove * 10);
+		this.fella.setVelocity(this.xMove * 5, this.yMove * 5);
 		
 		this.duration--;
 

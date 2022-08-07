@@ -7,11 +7,6 @@
                 "key": "AlignOffsets"
             },
             {
-                "url": "src/components/Animation.js",
-                "type": "script",
-                "key": "Animation"
-            },
-            {
                 "url": "assets/Damage.png",
                 "type": "image",
                 "key": "Damage"

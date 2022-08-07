@@ -34,7 +34,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -55,7 +54,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -78,7 +76,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -101,7 +98,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -124,7 +120,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -147,7 +142,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -170,7 +164,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -193,7 +186,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -214,7 +206,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -285,7 +276,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -308,7 +298,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -331,7 +320,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -354,7 +342,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -377,7 +364,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -400,7 +386,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -423,7 +408,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -446,7 +430,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -469,7 +452,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -492,7 +474,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -515,7 +496,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -538,7 +518,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -561,7 +540,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -576,7 +554,7 @@
             "tintBottomRight": "#d83a3a"
         },
         {
-            "type": "Sprite",
+            "type": "Image",
             "id": "6bf73cb4-d4fa-4214-953a-2bd4ba2f1f3d",
             "label": "fella_22",
             "scope": "CLASS",
@@ -584,13 +562,12 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
             },
-            "x": 245.2824135874622,
-            "y": -113.80930249034824,
+            "x": 738,
+            "y": -287,
             "tintTopLeft": "#60caf2",
             "tintTopRight": "#60caf2",
             "tintBottomLeft": "#60caf2",
@@ -605,7 +582,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -623,10 +599,8 @@
             "label": "fella_24",
             "scope": "CLASS",
             "components": [
-                "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -647,7 +621,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -668,7 +641,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -689,7 +661,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -712,7 +683,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -735,7 +705,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -758,7 +727,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -781,7 +749,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -804,7 +771,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -827,7 +793,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -850,7 +815,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -873,7 +837,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -896,7 +859,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -919,7 +881,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -942,7 +903,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -965,7 +925,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -988,7 +947,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1011,7 +969,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1034,7 +991,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1057,7 +1013,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1080,7 +1035,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1103,7 +1057,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1126,7 +1079,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1149,7 +1101,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1172,7 +1123,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1195,7 +1145,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1218,7 +1167,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1241,7 +1189,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1264,7 +1211,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1287,7 +1233,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1310,7 +1255,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1333,7 +1277,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1356,7 +1299,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1379,7 +1321,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1402,7 +1343,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1425,7 +1365,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1448,7 +1387,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1471,7 +1409,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1494,7 +1431,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1517,7 +1453,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1540,7 +1475,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1563,7 +1497,6 @@
                 "Animation",
                 "randomMove"
             ],
-            "Animation.animationKey": "bob",
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -1660,17 +1593,18 @@
             "components": [
                 "AlignOffsets"
             ],
-            "AlignOffsets.x": 20,
-            "AlignOffsets.y": -20,
-            "x": 2,
-            "y": 1021,
+            "AlignOffsets.x": -20,
+            "AlignOffsets.y": 20,
+            "x": 253.76046412464586,
+            "y": 1058.7046034090909,
             "list": [
                 {
                     "type": "Rectangle",
                     "id": "5903418e-797e-4f8c-a5e3-d61e07ea190d",
                     "label": "rectangle",
                     "components": [],
-                    "y": -60.68319434475234,
+                    "x": -457.76046168181927,
+                    "y": -1.3877977538431878,
                     "scaleX": 3.56967178859774,
                     "scaleY": 0.47656251661110416,
                     "originX": 0,
@@ -1687,13 +1621,28 @@
                     "label": "instructionText",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 20,
-                    "y": -40.68319434475234,
+                    "x": -437.76046168181927,
+                    "y": 18.612202246156812,
                     "text": "You can drag the little fellas around the screen",
                     "fontFamily": "Arial",
                     "fontSize": "20px"
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "4e84f6de-5444-46fb-aac3-587682db45fe",
+            "label": "dino",
+            "components": [],
+            "texture": {
+                "key": "dino"
+            },
+            "x": 486,
+            "y": -302,
+            "tintTopLeft": "#2039c1",
+            "tintTopRight": "#2039c1",
+            "tintBottomLeft": "#2039c1",
+            "tintBottomRight": "#2039c1"
         }
     ],
     "plainObjects": [],
@@ -1709,7 +1658,6 @@
             "label": "alignToCameraLeft",
             "objectIds": [
                 "c98729eb-4ce6-40d8-a05c-629d20728e98",
-                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6",
                 "cb26b570-9996-4ba2-9ee1-c9e95aa17922"
             ]
         },
@@ -1717,14 +1665,16 @@
             "id": "3392a870-e4cf-4eb3-aa94-d451ae04aaf6",
             "label": "alignToCameraRight",
             "objectIds": [
-                "3b1a0172-dca2-4b67-a007-96c343a003dc"
+                "3b1a0172-dca2-4b67-a007-96c343a003dc",
+                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
             ]
         },
         {
             "id": "f1f47867-753f-4517-8759-6b2666dd431d",
             "label": "alignToCameraTop",
             "objectIds": [
-                "c98729eb-4ce6-40d8-a05c-629d20728e98"
+                "c98729eb-4ce6-40d8-a05c-629d20728e98",
+                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
             ]
         },
         {
@@ -1732,7 +1682,6 @@
             "label": "alignToCameraBottom",
             "objectIds": [
                 "3b1a0172-dca2-4b67-a007-96c343a003dc",
-                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6",
                 "cb26b570-9996-4ba2-9ee1-c9e95aa17922"
             ]
         },

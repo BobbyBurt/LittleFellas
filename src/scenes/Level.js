@@ -234,7 +234,7 @@ class Level extends Phaser.Scene {
 		fella_21.tintBottomRight = 14170682;
 
 		// fella_22
-		const fella_22 = this.add.sprite(245.2824135874622, -113.80930249034824, "fella", 0);
+		const fella_22 = this.add.image(738, -287, "fella", 0);
 		fella_22.tintTopLeft = 6343410;
 		fella_22.tintTopRight = 6343410;
 		fella_22.tintBottomLeft = 6343410;
@@ -657,10 +657,10 @@ class Level extends Phaser.Scene {
 		mobileTextcontainer.add(zoomText);
 
 		// MobileTextcontainer_1
-		const mobileTextcontainer_1 = this.add.container(2, 1021);
+		const mobileTextcontainer_1 = this.add.container(253.76046412464586, 1058.7046034090909);
 
 		// rectangle
-		const rectangle = this.add.rectangle(0, -60.68319434475234, 128, 128);
+		const rectangle = this.add.rectangle(-457.76046168181927, -1.3877977538431878, 128, 128);
 		rectangle.scaleX = 3.56967178859774;
 		rectangle.scaleY = 0.47656251661110416;
 		rectangle.setOrigin(0, 0);
@@ -670,16 +670,23 @@ class Level extends Phaser.Scene {
 		mobileTextcontainer_1.add(rectangle);
 
 		// instructionText
-		const instructionText = this.add.text(20, -40.68319434475234, "", {});
+		const instructionText = this.add.text(-437.76046168181927, 18.612202246156812, "", {});
 		instructionText.text = "You can drag the little fellas around the screen";
 		instructionText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer_1.add(instructionText);
 
+		// dino
+		const dino = this.add.image(486, -302, "dino");
+		dino.tintTopLeft = 2111937;
+		dino.tintTopRight = 2111937;
+		dino.tintBottomLeft = 2111937;
+		dino.tintBottomRight = 2111937;
+
 		// lists
-		const alignToCameraLeft = [mobileTextcontainer, mobileTextcontainer_1, buttonTest];
-		const alignToCameraRight = [buttonTest2];
-		const alignToCameraTop = [mobileTextcontainer];
-		const alignToCameraBottom = [buttonTest2, mobileTextcontainer_1, buttonTest];
+		const alignToCameraLeft = [mobileTextcontainer, buttonTest];
+		const alignToCameraRight = [buttonTest2, mobileTextcontainer_1];
+		const alignToCameraTop = [mobileTextcontainer, mobileTextcontainer_1];
+		const alignToCameraBottom = [buttonTest2, buttonTest];
 		const resizeScale = [];
 		const alignToCameraMiddle = [];
 		const alignToCameraCenter = [];
@@ -691,48 +698,30 @@ class Level extends Phaser.Scene {
 		new PhysicsBody(tankBox);
 
 		// fella (components)
-		const fellaAnimation = new Animation(fella);
-		fellaAnimation.animationKey = "bob";
 		new randomMove(fella);
 
 		// fella_5 (components)
-		const fella_5Animation = new Animation(fella_5);
-		fella_5Animation.animationKey = "bob";
 		new randomMove(fella_5);
 
 		// fella_1 (components)
-		const fella_1Animation = new Animation(fella_1);
-		fella_1Animation.animationKey = "bob";
 		new randomMove(fella_1);
 
 		// fella_2 (components)
-		const fella_2Animation = new Animation(fella_2);
-		fella_2Animation.animationKey = "bob";
 		new randomMove(fella_2);
 
 		// fella_3 (components)
-		const fella_3Animation = new Animation(fella_3);
-		fella_3Animation.animationKey = "bob";
 		new randomMove(fella_3);
 
 		// fella_4 (components)
-		const fella_4Animation = new Animation(fella_4);
-		fella_4Animation.animationKey = "bob";
 		new randomMove(fella_4);
 
 		// fella_6 (components)
-		const fella_6Animation = new Animation(fella_6);
-		fella_6Animation.animationKey = "bob";
 		new randomMove(fella_6);
 
 		// fella_7 (components)
-		const fella_7Animation = new Animation(fella_7);
-		fella_7Animation.animationKey = "bob";
 		new randomMove(fella_7);
 
 		// fella_8 (components)
-		const fella_8Animation = new Animation(fella_8);
-		fella_8Animation.animationKey = "bob";
 		new randomMove(fella_8);
 
 		// buttonTest2 (components)
@@ -750,288 +739,174 @@ class Level extends Phaser.Scene {
 		buttonTestSimpleButton.bindButton = "left";
 
 		// fella_9 (components)
-		const fella_9Animation = new Animation(fella_9);
-		fella_9Animation.animationKey = "bob";
 		new randomMove(fella_9);
 
 		// fella_10 (components)
-		const fella_10Animation = new Animation(fella_10);
-		fella_10Animation.animationKey = "bob";
 		new randomMove(fella_10);
 
 		// fella_11 (components)
-		const fella_11Animation = new Animation(fella_11);
-		fella_11Animation.animationKey = "bob";
 		new randomMove(fella_11);
 
 		// fella_12 (components)
-		const fella_12Animation = new Animation(fella_12);
-		fella_12Animation.animationKey = "bob";
 		new randomMove(fella_12);
 
 		// fella_13 (components)
-		const fella_13Animation = new Animation(fella_13);
-		fella_13Animation.animationKey = "bob";
 		new randomMove(fella_13);
 
 		// fella_14 (components)
-		const fella_14Animation = new Animation(fella_14);
-		fella_14Animation.animationKey = "bob";
 		new randomMove(fella_14);
 
 		// fella_15 (components)
-		const fella_15Animation = new Animation(fella_15);
-		fella_15Animation.animationKey = "bob";
 		new randomMove(fella_15);
 
 		// fella_16 (components)
-		const fella_16Animation = new Animation(fella_16);
-		fella_16Animation.animationKey = "bob";
 		new randomMove(fella_16);
 
 		// fella_17 (components)
-		const fella_17Animation = new Animation(fella_17);
-		fella_17Animation.animationKey = "bob";
 		new randomMove(fella_17);
 
 		// fella_18 (components)
-		const fella_18Animation = new Animation(fella_18);
-		fella_18Animation.animationKey = "bob";
 		new randomMove(fella_18);
 
 		// fella_19 (components)
-		const fella_19Animation = new Animation(fella_19);
-		fella_19Animation.animationKey = "bob";
 		new randomMove(fella_19);
 
 		// fella_20 (components)
-		const fella_20Animation = new Animation(fella_20);
-		fella_20Animation.animationKey = "bob";
 		new randomMove(fella_20);
 
 		// fella_21 (components)
-		const fella_21Animation = new Animation(fella_21);
-		fella_21Animation.animationKey = "bob";
 		new randomMove(fella_21);
 
 		// fella_22 (components)
-		const fella_22Animation = new Animation(fella_22);
-		fella_22Animation.animationKey = "bob";
 		new randomMove(fella_22);
 
 		// fella_23 (components)
-		const fella_23Animation = new Animation(fella_23);
-		fella_23Animation.animationKey = "bob";
 		new randomMove(fella_23);
 
 		// fella_24 (components)
-		const fella_24Animation = new Animation(fella_24);
-		fella_24Animation.animationKey = "bob";
 		new randomMove(fella_24);
 
 		// fella_25 (components)
-		const fella_25Animation = new Animation(fella_25);
-		fella_25Animation.animationKey = "bob";
 		new randomMove(fella_25);
 
 		// fella_26 (components)
-		const fella_26Animation = new Animation(fella_26);
-		fella_26Animation.animationKey = "bob";
 		new randomMove(fella_26);
 
 		// fella_27 (components)
-		const fella_27Animation = new Animation(fella_27);
-		fella_27Animation.animationKey = "bob";
 		new randomMove(fella_27);
 
 		// fella_28 (components)
-		const fella_28Animation = new Animation(fella_28);
-		fella_28Animation.animationKey = "bob";
 		new randomMove(fella_28);
 
 		// fella_29 (components)
-		const fella_29Animation = new Animation(fella_29);
-		fella_29Animation.animationKey = "bob";
 		new randomMove(fella_29);
 
 		// fella_30 (components)
-		const fella_30Animation = new Animation(fella_30);
-		fella_30Animation.animationKey = "bob";
 		new randomMove(fella_30);
 
 		// fella_31 (components)
-		const fella_31Animation = new Animation(fella_31);
-		fella_31Animation.animationKey = "bob";
 		new randomMove(fella_31);
 
 		// fella_32 (components)
-		const fella_32Animation = new Animation(fella_32);
-		fella_32Animation.animationKey = "bob";
 		new randomMove(fella_32);
 
 		// fella_33 (components)
-		const fella_33Animation = new Animation(fella_33);
-		fella_33Animation.animationKey = "bob";
 		new randomMove(fella_33);
 
 		// fella_34 (components)
-		const fella_34Animation = new Animation(fella_34);
-		fella_34Animation.animationKey = "bob";
 		new randomMove(fella_34);
 
 		// fella_35 (components)
-		const fella_35Animation = new Animation(fella_35);
-		fella_35Animation.animationKey = "bob";
 		new randomMove(fella_35);
 
 		// fella_36 (components)
-		const fella_36Animation = new Animation(fella_36);
-		fella_36Animation.animationKey = "bob";
 		new randomMove(fella_36);
 
 		// fella_37 (components)
-		const fella_37Animation = new Animation(fella_37);
-		fella_37Animation.animationKey = "bob";
 		new randomMove(fella_37);
 
 		// fella_38 (components)
-		const fella_38Animation = new Animation(fella_38);
-		fella_38Animation.animationKey = "bob";
 		new randomMove(fella_38);
 
 		// fella_39 (components)
-		const fella_39Animation = new Animation(fella_39);
-		fella_39Animation.animationKey = "bob";
 		new randomMove(fella_39);
 
 		// fella_40 (components)
-		const fella_40Animation = new Animation(fella_40);
-		fella_40Animation.animationKey = "bob";
 		new randomMove(fella_40);
 
 		// fella_41 (components)
-		const fella_41Animation = new Animation(fella_41);
-		fella_41Animation.animationKey = "bob";
 		new randomMove(fella_41);
 
 		// fella_42 (components)
-		const fella_42Animation = new Animation(fella_42);
-		fella_42Animation.animationKey = "bob";
 		new randomMove(fella_42);
 
 		// fella_43 (components)
-		const fella_43Animation = new Animation(fella_43);
-		fella_43Animation.animationKey = "bob";
 		new randomMove(fella_43);
 
 		// fella_44 (components)
-		const fella_44Animation = new Animation(fella_44);
-		fella_44Animation.animationKey = "bob";
 		new randomMove(fella_44);
 
 		// fella_45 (components)
-		const fella_45Animation = new Animation(fella_45);
-		fella_45Animation.animationKey = "bob";
 		new randomMove(fella_45);
 
 		// fella_46 (components)
-		const fella_46Animation = new Animation(fella_46);
-		fella_46Animation.animationKey = "bob";
 		new randomMove(fella_46);
 
 		// fella_47 (components)
-		const fella_47Animation = new Animation(fella_47);
-		fella_47Animation.animationKey = "bob";
 		new randomMove(fella_47);
 
 		// fella_48 (components)
-		const fella_48Animation = new Animation(fella_48);
-		fella_48Animation.animationKey = "bob";
 		new randomMove(fella_48);
 
 		// fella_49 (components)
-		const fella_49Animation = new Animation(fella_49);
-		fella_49Animation.animationKey = "bob";
 		new randomMove(fella_49);
 
 		// fella_50 (components)
-		const fella_50Animation = new Animation(fella_50);
-		fella_50Animation.animationKey = "bob";
 		new randomMove(fella_50);
 
 		// fella_51 (components)
-		const fella_51Animation = new Animation(fella_51);
-		fella_51Animation.animationKey = "bob";
 		new randomMove(fella_51);
 
 		// fella_52 (components)
-		const fella_52Animation = new Animation(fella_52);
-		fella_52Animation.animationKey = "bob";
 		new randomMove(fella_52);
 
 		// fella_53 (components)
-		const fella_53Animation = new Animation(fella_53);
-		fella_53Animation.animationKey = "bob";
 		new randomMove(fella_53);
 
 		// fella_54 (components)
-		const fella_54Animation = new Animation(fella_54);
-		fella_54Animation.animationKey = "bob";
 		new randomMove(fella_54);
 
 		// fella_55 (components)
-		const fella_55Animation = new Animation(fella_55);
-		fella_55Animation.animationKey = "bob";
 		new randomMove(fella_55);
 
 		// fella_56 (components)
-		const fella_56Animation = new Animation(fella_56);
-		fella_56Animation.animationKey = "bob";
 		new randomMove(fella_56);
 
 		// fella_57 (components)
-		const fella_57Animation = new Animation(fella_57);
-		fella_57Animation.animationKey = "bob";
 		new randomMove(fella_57);
 
 		// fella_58 (components)
-		const fella_58Animation = new Animation(fella_58);
-		fella_58Animation.animationKey = "bob";
 		new randomMove(fella_58);
 
 		// fella_59 (components)
-		const fella_59Animation = new Animation(fella_59);
-		fella_59Animation.animationKey = "bob";
 		new randomMove(fella_59);
 
 		// fella_60 (components)
-		const fella_60Animation = new Animation(fella_60);
-		fella_60Animation.animationKey = "bob";
 		new randomMove(fella_60);
 
 		// fella_61 (components)
-		const fella_61Animation = new Animation(fella_61);
-		fella_61Animation.animationKey = "bob";
 		new randomMove(fella_61);
 
 		// fella_62 (components)
-		const fella_62Animation = new Animation(fella_62);
-		fella_62Animation.animationKey = "bob";
 		new randomMove(fella_62);
 
 		// fella_63 (components)
-		const fella_63Animation = new Animation(fella_63);
-		fella_63Animation.animationKey = "bob";
 		new randomMove(fella_63);
 
 		// fella_64 (components)
-		const fella_64Animation = new Animation(fella_64);
-		fella_64Animation.animationKey = "bob";
 		new randomMove(fella_64);
 
 		// fella_65 (components)
-		const fella_65Animation = new Animation(fella_65);
-		fella_65Animation.animationKey = "bob";
 		new randomMove(fella_65);
 
 		// mobileTextcontainer (components)
@@ -1041,8 +916,8 @@ class Level extends Phaser.Scene {
 
 		// mobileTextcontainer_1 (components)
 		const mobileTextcontainer_1AlignOffsets = new AlignOffsets(mobileTextcontainer_1);
-		mobileTextcontainer_1AlignOffsets.x = 20;
-		mobileTextcontainer_1AlignOffsets.y = -20;
+		mobileTextcontainer_1AlignOffsets.x = -20;
+		mobileTextcontainer_1AlignOffsets.y = 20;
 
 		this.tankBox = tankBox;
 		this.fella = fella;
@@ -1182,7 +1057,7 @@ class Level extends Phaser.Scene {
 	fella_20;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella_21;
-	/** @type {Phaser.GameObjects.Sprite} */
+	/** @type {Phaser.GameObjects.Image} */
 	fella_22;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella_23;
@@ -1282,11 +1157,11 @@ class Level extends Phaser.Scene {
 	instructionText;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
-	/** @type {Phaser.GameObjects.Rectangle[]} */
+	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container>} */
 	alignToCameraRight;
 	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraTop;
-	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container>} */
+	/** @type {Phaser.GameObjects.Rectangle[]} */
 	alignToCameraBottom;
 	/** @type {Array<any>} */
 	resizeScale;
@@ -1296,7 +1171,7 @@ class Level extends Phaser.Scene {
 	alignToCameraCenter;
 	/** @type {Array<any>} */
 	pantsTest;
-	/** @type {Phaser.GameObjects.Sprite[]} */
+	/** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
 	fellasList;
 	/** @type {Phaser.GameObjects.Rectangle[]} */
 	bounds;
@@ -1313,6 +1188,9 @@ class Level extends Phaser.Scene {
 		this.minScreenWidth = this.tankWidth + (64 * 2);
 		this.minScreenHeight = this.tankHeight + (64 * 2);
 		// added number is the min pixel buffer between tank and screen edge on sides
+
+		// tank bg needs depth below all fellas
+		this.tankBox.setDepth(-999);
 
 		// adaptive zoom
 		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
@@ -1400,8 +1278,18 @@ class Level extends Phaser.Scene {
 		this.fellasList[0].setData('hunger', 69);
 
 		// state test
-		this.stateControl = new StateController(this.fellasList[0], this);
-		this.stateControl.setState('idle');
+		// this.stateControl = new StateController(this.fellasList[0], this);
+		// this.stateControl.setState('idle');
+
+		this.fellasStates = [];
+
+		// update all fella states
+		for (let i = 0; i < this.fellasList.length; i++) {
+
+			// this.fellasStates.push(new StateController(this.fellasList[i], this));
+			// this.fellasStates[i].setState('idle');
+		}
+
 
 		// resize
 		this.resize();
@@ -1439,7 +1327,16 @@ class Level extends Phaser.Scene {
 
 		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
 
-		this.stateControl.update();
+		for (let i = 0; i < this.fellasList.length; i++) {
+
+			// update all fella states
+			// this.fellasStates[i].update();
+
+			// depth sort needs to happen for each fella on each frame
+			// if this hits performance then I can get away with updating this 
+			// only in states where the fella is moving
+			this.fellasList[i].setDepth(this.fellasList[i].y);
+		}
 	}
 
 	/** scene specific resizing adjustments
@@ -1469,19 +1366,31 @@ class Level extends Phaser.Scene {
 
 			const _fella = this.fellasList[i];
 
-			this.matter.add.gameObject(this.fellasList[i], { inertia: Infinity, shape: {type: 'circle', radius: 80 * this.fellasList[i].scaleX}})
-				.setBounce(.5)
-				.setFrictionAir(.2)
+			this.matter.add.gameObject(
+				this.fellasList[i], 
+				{ inertia: Infinity, shape: {type: 'circle', radius: 80 * this.fellasList[i].scaleX}})
+					.setBounce(.5)
+					.setFrictionAir(.2)
+					.setMass(20);
 
+			_fella.setDepth(_fella.y)
 
+			// if special fella
+			if (_fella.scaleX == 1) {
+
+				_fella.body.gameObject.setMass(50);
+			}
 
 			// debug text
 			this.spriteCountText.setText('sprites: ' + this.fellasList.length);
 		}
 
-		this.matter.add.mouseSpring();
+		/** @type {Phaser.Physics.Matter.PointerConstraint} */		
+		this.mouseConstraint = this.matter.add.mouseSpring();
+		// NOTE: apparently I can use stopDrag()
+		// https://newdocs.phaser.io/docs/3.54.0/focus/Phaser.Physics.Matter.Factory-mouseSpring
+		// TODO: how do I know when / what is being dragged so I can set a state?
 
-		// setup collisions
 	}
 
 	/** align objects included in the align left/right/top/bottom lists

@@ -41,13 +41,13 @@ class randomMove extends UserComponent {
 
 		/** @type {Phaser.Physics.Matter.Sprite} */
 		const body = this.gameObject.body.gameObject
-		
+
 		// body.setVelocity(this.xMove * 100, this.yMove);
 	}
 
 	update() {
 
-		
+
 	}
 
 	/* END-USER-CODE */
