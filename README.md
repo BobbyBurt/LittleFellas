@@ -27,13 +27,15 @@ I should do this in order
 - [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
 - [x] Set consistent tank size, NG window resolution, zoom levels
+- [ ] temp tank BG
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?
 
 - [ ] Impliment Psychogoldfish's audio hack for safari
 
-- [ ] only landscape orientation - add flip screen in case it's in portrait
+- [x] only landscape orientation - add flip screen in case it's in portrait
+- [x] temp orientation prompt
 
 ### Notes
 - camera zoom messes with objects that should stay in place with a scroll factor of 0. I may have to render that stuff in a parallel scene

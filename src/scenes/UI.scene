@@ -52,6 +52,17 @@
                     "fontSize": "20px"
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "bb20b5cf-b044-4d60-8947-573143f433ff",
+            "label": "practice_dustman",
+            "components": [],
+            "texture": {
+                "key": "practice-dustman"
+            },
+            "x": 1326,
+            "y": 516
         }
     ],
     "plainObjects": [],

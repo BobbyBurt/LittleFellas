@@ -35,6 +35,9 @@ class UI extends Phaser.Scene {
 		instructionText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer_1.add(instructionText);
 
+		// practice_dustman
+		this.add.image(1326, 516, "practice-dustman");
+
 		// mobileTextcontainer_1 (components)
 		const mobileTextcontainer_1AlignOffsets = new AlignOffsets(mobileTextcontainer_1);
 		mobileTextcontainer_1AlignOffsets.x = -20;
@@ -59,9 +62,9 @@ class UI extends Phaser.Scene {
 
 		this.editorCreate();
 
-		this.scale = this.
+		this.uiDownscale = this.scale.zoom;
 
-		console.log('ui');
+		this.mobileTextcontainer_1.setScale(this.uiDownscale);
 	}
 
 	/* END-USER-CODE */
