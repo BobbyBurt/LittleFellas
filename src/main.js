@@ -49,7 +49,7 @@ class Boot extends Phaser.Scene {
 		// https://github.com/samme/phaser-plugin-debug-game-scale
 		// renderer must be canvas
 
-		// this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Preload"));
+		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Preload"));
 	}
 
 	create() {

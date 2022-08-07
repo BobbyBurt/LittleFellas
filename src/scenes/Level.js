@@ -1396,9 +1396,12 @@ class Level extends Phaser.Scene {
 
 		this.initColliders();
 
+		// gameobject data test
+		this.fellasList[0].setData('hunger', 69);
+
 		// state test
-		this.stateControl = new StateController(this.fellasList[0]);
-		this.stateControl.setState('testState')
+		this.stateControl = new StateController(this.fellasList[0], this);
+		this.stateControl.setState('testState');
 
 		// resize
 		this.resize();
@@ -1585,54 +1588,3 @@ class Level extends Phaser.Scene {
 }
 
 /* END OF COMPILED CODE */
-
-class StateController {
-
-	states;
-
-	currentState;
-
-	constructor(fella) {
-
-		this.states = {
-			testState: new State(fella)
-			// state2: new (fella)
-		}
-	}
-
-	setState(name) {
-
-		if (this.currentState === this.states[name]) {
-
-			return;
-		}
-
-		this.currentState = this.states[name];
-		this.currentState.enter();
-	}
-
-	update() {
-
-		this.currentState.update();
-	}
-}
-
-class State {
-
-	fella
-	
-	constructor(fella) {
-
-		this.fella = fella
-	}
-
-	enter() {
-
-		console.log('enter');
-	}
-	
-	update() {
-		
-		console.log('update');
-	}
-}
