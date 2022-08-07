@@ -17,7 +17,7 @@ class UI extends Phaser.Scene {
 	editorCreate() {
 
 		// MobileTextcontainer_1
-		const mobileTextcontainer_1 = this.add.container(1143, 458);
+		const mobileTextcontainer_1 = this.add.container(2411, 60);
 
 		// rectangle
 		const rectangle = this.add.rectangle(-457.76046168181927, -1.3877977538431878, 128, 128);
@@ -34,9 +34,6 @@ class UI extends Phaser.Scene {
 		instructionText.text = "You can drag the little fellas around the screen";
 		instructionText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer_1.add(instructionText);
-
-		// practice_dustman
-		this.add.image(1326, 516, "practice-dustman");
 
 		// mobileTextcontainer_1 (components)
 		const mobileTextcontainer_1AlignOffsets = new AlignOffsets(mobileTextcontainer_1);
@@ -62,9 +59,8 @@ class UI extends Phaser.Scene {
 
 		this.editorCreate();
 
-		this.uiDownscale = this.scale.zoom;
-
-		this.mobileTextcontainer_1.setScale(this.uiDownscale);
+		// TODO: port align lists here
+		// TODO: setup UI scaling
 	}
 
 	/* END-USER-CODE */

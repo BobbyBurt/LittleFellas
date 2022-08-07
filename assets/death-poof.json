@@ -1,0 +1,461 @@
+{
+	"textures": [
+		{
+			"image": "death-poof.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1241,
+				"h": 244
+			},
+			"scale": 0.3,
+			"frames": [
+				{
+					"filename": "CLOUD_DEATH/0004",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 138,
+						"y": 41,
+						"w": 293,
+						"h": 231
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 293,
+						"h": 231
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0005",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 138,
+						"y": 41,
+						"w": 293,
+						"h": 231
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 293,
+						"h": 231
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0006",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 138,
+						"y": 41,
+						"w": 293,
+						"h": 231
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 293,
+						"h": 231
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0007",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 138,
+						"y": 41,
+						"w": 293,
+						"h": 231
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 293,
+						"h": 231
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0010",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 138,
+						"y": 41,
+						"w": 293,
+						"h": 231
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 293,
+						"h": 231
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0011",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 138,
+						"y": 41,
+						"w": 293,
+						"h": 231
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 293,
+						"h": 231
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0020",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 3,
+						"h": 3
+					},
+					"frame": {
+						"x": 1,
+						"y": 234,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0012",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 153,
+						"y": 32,
+						"w": 279,
+						"h": 242
+					},
+					"frame": {
+						"x": 296,
+						"y": 1,
+						"w": 279,
+						"h": 242
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0013",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 153,
+						"y": 32,
+						"w": 279,
+						"h": 242
+					},
+					"frame": {
+						"x": 296,
+						"y": 1,
+						"w": 279,
+						"h": 242
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0014",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 146,
+						"y": 44,
+						"w": 285,
+						"h": 230
+					},
+					"frame": {
+						"x": 577,
+						"y": 1,
+						"w": 285,
+						"h": 230
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0015",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 146,
+						"y": 44,
+						"w": 285,
+						"h": 230
+					},
+					"frame": {
+						"x": 577,
+						"y": 1,
+						"w": 285,
+						"h": 230
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0000",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 149,
+						"y": 53,
+						"w": 272,
+						"h": 210
+					},
+					"frame": {
+						"x": 864,
+						"y": 1,
+						"w": 272,
+						"h": 210
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0001",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 149,
+						"y": 53,
+						"w": 272,
+						"h": 210
+					},
+					"frame": {
+						"x": 864,
+						"y": 1,
+						"w": 272,
+						"h": 210
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0002",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 149,
+						"y": 53,
+						"w": 272,
+						"h": 210
+					},
+					"frame": {
+						"x": 864,
+						"y": 1,
+						"w": 272,
+						"h": 210
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0003",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 149,
+						"y": 53,
+						"w": 272,
+						"h": 210
+					},
+					"frame": {
+						"x": 864,
+						"y": 1,
+						"w": 272,
+						"h": 210
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0008",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 149,
+						"y": 53,
+						"w": 272,
+						"h": 210
+					},
+					"frame": {
+						"x": 864,
+						"y": 1,
+						"w": 272,
+						"h": 210
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0009",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 149,
+						"y": 53,
+						"w": 272,
+						"h": 210
+					},
+					"frame": {
+						"x": 864,
+						"y": 1,
+						"w": 272,
+						"h": 210
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0018",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 257,
+						"y": 159,
+						"w": 24,
+						"h": 27
+					},
+					"frame": {
+						"x": 864,
+						"y": 213,
+						"w": 24,
+						"h": 27
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0019",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 257,
+						"y": 159,
+						"w": 24,
+						"h": 27
+					},
+					"frame": {
+						"x": 864,
+						"y": 213,
+						"w": 24,
+						"h": 27
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0016",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 211,
+						"y": 130,
+						"w": 102,
+						"h": 79
+					},
+					"frame": {
+						"x": 1138,
+						"y": 1,
+						"w": 102,
+						"h": 79
+					}
+				},
+				{
+					"filename": "CLOUD_DEATH/0017",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 576,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 211,
+						"y": 130,
+						"w": 102,
+						"h": 79
+					},
+					"frame": {
+						"x": 1138,
+						"y": 1,
+						"w": 102,
+						"h": 79
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:7e5e9408f4b22409dc46be33a4f6ca0f:7c5b504f7a41bfa73c8911d9f2c1a2cd:a4ec0e5a434dbdd9a7a7d62a9f0219dc$"
+	}
+}

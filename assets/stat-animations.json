@@ -1,0 +1,143 @@
+{
+    "anims": [
+        {
+            "key": "poof",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "death-poof",
+                    "frame": "CLOUD_DEATH/0020",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    }
+}

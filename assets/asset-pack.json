@@ -18,6 +18,12 @@
                 "key": "Damage_1"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/death-poof.json",
+                "path": "assets",
+                "key": "death-poof"
+            },
+            {
                 "url": "src/components/DeviceDependentActivation.js",
                 "type": "script",
                 "key": "DeviceDependentActivation"
@@ -96,6 +102,11 @@
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"
+            },
+            {
+                "url": "assets/stat-animations.json",
+                "type": "animation",
+                "key": "stat-animations"
             },
             {
                 "url": "assets/wings.png",

@@ -18,7 +18,7 @@ class Dead {
 	enter() {
 
 		// set animation frame
-		this.fella.play('idle');
+		// TODO: set to first frame of idle, or death frame is one exists
 		this.fella.stop();
 		
 		// add wings
@@ -28,14 +28,15 @@ class Dead {
 		// TODO: set scale according to fella type
 		
 		// add poof
-		this.poof = this.scene.add.image(this.fella.x, this.fella.y, 'poof');
+		this.poof = this.scene.add.sprite(this.fella.x, this.fella.y, 'poof');
+		this.poof.play('poof');
 		this.poof.setScale(1.5, 1.5);
-		this.poof.setAlpha(.7);
+		// this.poof.setAlpha(.7);
 		this.poof.setDepth(this.fella.depth + 1);
 		// TODO: set scale according to fella type
-		this.poofRemove = this.scene.time.delayedCall(200, () => {
+		this.poofRemove = this.scene.time.delayedCall(1000, () => {
 
-			this.poof.destroy();
+			// this.poof.destroy();
 		});
 		
 		this.fella.setData('alive', false);
