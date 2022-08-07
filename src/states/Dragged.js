@@ -1,4 +1,4 @@
-class StateTest {
+class Dragged {
 
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella;

@@ -21,6 +21,7 @@ class Idle {
 		this.duration = Phaser.Math.RND.between(60, 300);
 
 		// idle animation
+		this.fella.play('bob');
 		this.fella.stop();
 		
 		this.fella.setVelocity(0);

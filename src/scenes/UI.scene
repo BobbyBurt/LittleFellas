@@ -1,0 +1,64 @@
+{
+    "id": "a6a1f831-1e31-441d-a807-f24fc5d40b6a",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "ui",
+        "borderWidth": 1820,
+        "borderHeight": 880
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "78ad1b7c-85e4-4659-8a21-71acef2bd242",
+            "label": "MobileTextcontainer_1",
+            "scope": "CLASS",
+            "components": [
+                "AlignOffsets"
+            ],
+            "AlignOffsets.x": -20,
+            "AlignOffsets.y": 20,
+            "x": 1143,
+            "y": 458,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "aea9bc7e-23fa-4632-b933-45905f68c259",
+                    "label": "rectangle",
+                    "components": [],
+                    "x": -457.76046168181927,
+                    "y": -1.3877977538431878,
+                    "scaleX": 3.56967178859774,
+                    "scaleY": 0.47656251661110416,
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#2c2c2c",
+                    "fillAlpha": 0.5,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "2c0f7dd3-e9e8-4c49-aed5-67634eaeb8b7",
+                    "label": "instructionText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -437.76046168181927,
+                    "y": 18.612202246156812,
+                    "text": "You can drag the little fellas around the screen",
+                    "fontFamily": "Arial",
+                    "fontSize": "20px"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

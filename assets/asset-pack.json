@@ -73,14 +73,14 @@
                 "key": "InputWrapper"
             },
             {
-                "url": "src/scenes/prefabs/PantsPrefab.js",
-                "type": "script",
-                "key": "PantsPrefab"
-            },
-            {
                 "url": "src/components/PhysicsBody.js",
                 "type": "script",
                 "key": "PhysicsBody"
+            },
+            {
+                "url": "assets/poof.png",
+                "type": "image",
+                "key": "poof"
             },
             {
                 "url": "assets/practice-dustman.png",
@@ -96,6 +96,11 @@
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"
+            },
+            {
+                "url": "assets/wings.png",
+                "type": "image",
+                "key": "wings"
             }
         ]
     },

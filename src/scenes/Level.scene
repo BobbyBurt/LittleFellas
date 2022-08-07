@@ -554,26 +554,6 @@
             "tintBottomRight": "#d83a3a"
         },
         {
-            "type": "Image",
-            "id": "6bf73cb4-d4fa-4214-953a-2bd4ba2f1f3d",
-            "label": "fella_22",
-            "scope": "CLASS",
-            "components": [
-                "Animation",
-                "randomMove"
-            ],
-            "texture": {
-                "key": "fella",
-                "frame": 0
-            },
-            "x": 738,
-            "y": -287,
-            "tintTopLeft": "#60caf2",
-            "tintTopRight": "#60caf2",
-            "tintBottomLeft": "#60caf2",
-            "tintBottomRight": "#60caf2"
-        },
-        {
             "type": "Sprite",
             "id": "be6c84cb-242b-4619-8ab1-f4327e6c93d6",
             "label": "fella_23",
@@ -1588,61 +1568,51 @@
         },
         {
             "type": "Container",
-            "id": "0d69dca6-81ad-4795-80c8-69e9ba4f62d6",
-            "label": "MobileTextcontainer_1",
-            "components": [
-                "AlignOffsets"
-            ],
-            "AlignOffsets.x": -20,
-            "AlignOffsets.y": 20,
-            "x": 253.76046412464586,
-            "y": 1058.7046034090909,
+            "id": "55bc1d27-f694-46f5-9d9b-28a4dda45fd2",
+            "label": "orientationPrompt",
+            "scope": "CLASS",
+            "components": [],
             "list": [
                 {
                     "type": "Rectangle",
-                    "id": "5903418e-797e-4f8c-a5e3-d61e07ea190d",
-                    "label": "rectangle",
+                    "id": "bd66ecf0-dd86-49dd-9363-10a5b310fd13",
+                    "label": "rectangle_1",
                     "components": [],
-                    "x": -457.76046168181927,
-                    "y": -1.3877977538431878,
-                    "scaleX": 3.56967178859774,
-                    "scaleY": 0.47656251661110416,
-                    "originX": 0,
-                    "originY": 0,
                     "isFilled": true,
-                    "fillColor": "#2c2c2c",
-                    "fillAlpha": 0.5,
-                    "width": 128,
-                    "height": 128
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.8,
+                    "width": 800,
+                    "height": 600
                 },
                 {
                     "type": "Text",
-                    "id": "53b27df1-2cba-4f26-84f3-fc166da3dc39",
-                    "label": "instructionText",
-                    "scope": "CLASS",
+                    "id": "7f492dc0-0e78-438b-9eb6-09fd599cd8b6",
+                    "label": "text_1",
                     "components": [],
-                    "x": -437.76046168181927,
-                    "y": 18.612202246156812,
-                    "text": "You can drag the little fellas around the screen",
-                    "fontFamily": "Arial",
-                    "fontSize": "20px"
+                    "y": -121,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Please flip \nyour phone to \nlandscape orientation",
+                    "lineSpacing": 15,
+                    "align": "center",
+                    "fontFamily": "arial",
+                    "fontSize": "70px"
+                },
+                {
+                    "type": "Text",
+                    "id": "e69656da-c688-416f-b623-2464dc7eff9d",
+                    "label": "text",
+                    "components": [],
+                    "y": 186,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "You may need to use \nthe default browser",
+                    "lineSpacing": 15,
+                    "align": "center",
+                    "fontFamily": "arial",
+                    "fontSize": "50px"
                 }
             ]
-        },
-        {
-            "type": "Image",
-            "id": "4e84f6de-5444-46fb-aac3-587682db45fe",
-            "label": "dino",
-            "components": [],
-            "texture": {
-                "key": "dino"
-            },
-            "x": 486,
-            "y": -302,
-            "tintTopLeft": "#2039c1",
-            "tintTopRight": "#2039c1",
-            "tintBottomLeft": "#2039c1",
-            "tintBottomRight": "#2039c1"
         }
     ],
     "plainObjects": [],
@@ -1665,16 +1635,14 @@
             "id": "3392a870-e4cf-4eb3-aa94-d451ae04aaf6",
             "label": "alignToCameraRight",
             "objectIds": [
-                "3b1a0172-dca2-4b67-a007-96c343a003dc",
-                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
+                "3b1a0172-dca2-4b67-a007-96c343a003dc"
             ]
         },
         {
             "id": "f1f47867-753f-4517-8759-6b2666dd431d",
             "label": "alignToCameraTop",
             "objectIds": [
-                "c98729eb-4ce6-40d8-a05c-629d20728e98",
-                "0d69dca6-81ad-4795-80c8-69e9ba4f62d6"
+                "c98729eb-4ce6-40d8-a05c-629d20728e98"
             ]
         },
         {
@@ -1691,11 +1659,17 @@
         },
         {
             "id": "71012bf3-4f2c-4bfb-b490-a6a38253d3b3",
-            "label": "alignToCameraMiddle"
+            "label": "alignToCameraMiddle",
+            "objectIds": [
+                "55bc1d27-f694-46f5-9d9b-28a4dda45fd2"
+            ]
         },
         {
             "id": "2178f94b-3199-4295-b1f2-5a789fbcb3f3",
-            "label": "alignToCameraCenter"
+            "label": "alignToCameraCenter",
+            "objectIds": [
+                "55bc1d27-f694-46f5-9d9b-28a4dda45fd2"
+            ]
         },
         {
             "id": "2f99fc8b-5f51-49e7-bd81-da41c2d0a59a",
@@ -1758,7 +1732,6 @@
                 "becc97fc-3ef4-44f5-ae23-9d70fe3257c8",
                 "36330f57-5c91-4b85-90ad-73d84f2d7bcd",
                 "be6c84cb-242b-4619-8ab1-f4327e6c93d6",
-                "6bf73cb4-d4fa-4214-953a-2bd4ba2f1f3d",
                 "53048158-8440-499a-8cfb-3200b19632ae",
                 "00d5603c-ed57-48b1-be3d-022e282959ed",
                 "cce65678-19ac-441e-8ef0-a440489d34ac",

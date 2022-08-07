@@ -38,9 +38,11 @@ window.addEventListener('load', function () {
 	
 	game.scene.add("preload", Preload);
 	game.scene.add("level", Level);
+	game.scene.add("ui", UI);
 	// game.scene.add("newgroundsio", newgroundsio);
 	game.scene.add("newgroundsio", newgroundsio);
 	game.scene.add("boot", Boot, true);
+	// the order that scenes are added is the order that they will be rendered in
 });
 
 class Boot extends Phaser.Scene {

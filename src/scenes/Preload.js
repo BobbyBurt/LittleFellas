@@ -100,7 +100,10 @@ class Preload extends Phaser.Scene {
 		window.removeEventListener('touchstart', this.onPointer);
 		window.removeEventListener('click', this.onPointer);
 
-		this.scene.start("level");
+		// start scenes
+		this.scene.stop(this);
+		this.scene.launch("level");
+		this.scene.launch("ui");
 	}
 
 	resize ()

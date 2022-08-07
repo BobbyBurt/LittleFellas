@@ -19,6 +19,11 @@ I should do this in order
 - [x] Test ideal size of sprites
 - [x] can the tank be the same size across different resolutions?
   - I can zoom, just make sure tank aspect ratio works on mobile & desktop
+
+- [ ] refactor Level.js, separate chunks into functions
+- [ ] use timer events in states
+  - [ ] test if they are fixed or impacted by framerate
+
 - [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
 - [x] Set consistent tank size, NG window resolution, zoom levels

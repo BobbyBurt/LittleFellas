@@ -233,13 +233,6 @@ class Level extends Phaser.Scene {
 		fella_21.tintBottomLeft = 14170682;
 		fella_21.tintBottomRight = 14170682;
 
-		// fella_22
-		const fella_22 = this.add.image(738, -287, "fella", 0);
-		fella_22.tintTopLeft = 6343410;
-		fella_22.tintTopRight = 6343410;
-		fella_22.tintBottomLeft = 6343410;
-		fella_22.tintBottomRight = 6343410;
-
 		// fella_23
 		const fella_23 = this.add.sprite(-274.2821627462515, -152.29556740395665, "fella", 0);
 		fella_23.tintTopLeft = 6343410;
@@ -656,42 +649,42 @@ class Level extends Phaser.Scene {
 		zoomText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
 		mobileTextcontainer.add(zoomText);
 
-		// MobileTextcontainer_1
-		const mobileTextcontainer_1 = this.add.container(253.76046412464586, 1058.7046034090909);
+		// orientationPrompt
+		const orientationPrompt = this.add.container(0, 0);
 
-		// rectangle
-		const rectangle = this.add.rectangle(-457.76046168181927, -1.3877977538431878, 128, 128);
-		rectangle.scaleX = 3.56967178859774;
-		rectangle.scaleY = 0.47656251661110416;
-		rectangle.setOrigin(0, 0);
-		rectangle.isFilled = true;
-		rectangle.fillColor = 2894892;
-		rectangle.fillAlpha = 0.5;
-		mobileTextcontainer_1.add(rectangle);
+		// rectangle_1
+		const rectangle_1 = this.add.rectangle(0, 0, 800, 600);
+		rectangle_1.isFilled = true;
+		rectangle_1.fillColor = 0;
+		rectangle_1.fillAlpha = 0.8;
+		orientationPrompt.add(rectangle_1);
 
-		// instructionText
-		const instructionText = this.add.text(-437.76046168181927, 18.612202246156812, "", {});
-		instructionText.text = "You can drag the little fellas around the screen";
-		instructionText.setStyle({ "fontFamily": "Arial", "fontSize": "20px" });
-		mobileTextcontainer_1.add(instructionText);
+		// text_1
+		const text_1 = this.add.text(0, -121, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.text = "Please flip \nyour phone to \nlandscape orientation";
+		text_1.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "70px" });
+		text_1.setLineSpacing(15);
+		orientationPrompt.add(text_1);
 
-		// dino
-		const dino = this.add.image(486, -302, "dino");
-		dino.tintTopLeft = 2111937;
-		dino.tintTopRight = 2111937;
-		dino.tintBottomLeft = 2111937;
-		dino.tintBottomRight = 2111937;
+		// text
+		const text = this.add.text(0, 186, "", {});
+		text.setOrigin(0.5, 0.5);
+		text.text = "You may need to use \nthe default browser";
+		text.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "50px" });
+		text.setLineSpacing(15);
+		orientationPrompt.add(text);
 
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, buttonTest];
-		const alignToCameraRight = [buttonTest2, mobileTextcontainer_1];
-		const alignToCameraTop = [mobileTextcontainer, mobileTextcontainer_1];
+		const alignToCameraRight = [buttonTest2];
+		const alignToCameraTop = [mobileTextcontainer];
 		const alignToCameraBottom = [buttonTest2, buttonTest];
 		const resizeScale = [];
-		const alignToCameraMiddle = [];
-		const alignToCameraCenter = [];
+		const alignToCameraMiddle = [orientationPrompt];
+		const alignToCameraCenter = [orientationPrompt];
 		const pantsTest = [];
-		const fellasList = [fella, fella_5, fella_8, fella_7, fella_6, fella_4, fella_3, fella_2, fella_1, fella_9, fella_65, fella_64, fella_63, fella_62, fella_61, fella_60, fella_59, fella_58, fella_57, fella_56, fella_55, fella_54, fella_53, fella_52, fella_51, fella_50, fella_49, fella_48, fella_47, fella_46, fella_45, fella_44, fella_43, fella_42, fella_41, fella_40, fella_39, fella_38, fella_37, fella_36, fella_35, fella_34, fella_33, fella_32, fella_31, fella_30, fella_29, fella_28, fella_27, fella_26, fella_25, fella_24, fella_23, fella_22, fella_21, fella_20, fella_19, fella_18, fella_17, fella_16, fella_15, fella_14, fella_13, fella_12, fella_11, fella_10];
+		const fellasList = [fella, fella_5, fella_8, fella_7, fella_6, fella_4, fella_3, fella_2, fella_1, fella_9, fella_65, fella_64, fella_63, fella_62, fella_61, fella_60, fella_59, fella_58, fella_57, fella_56, fella_55, fella_54, fella_53, fella_52, fella_51, fella_50, fella_49, fella_48, fella_47, fella_46, fella_45, fella_44, fella_43, fella_42, fella_41, fella_40, fella_39, fella_38, fella_37, fella_36, fella_35, fella_34, fella_33, fella_32, fella_31, fella_30, fella_29, fella_28, fella_27, fella_26, fella_25, fella_24, fella_23, fella_21, fella_20, fella_19, fella_18, fella_17, fella_16, fella_15, fella_14, fella_13, fella_12, fella_11, fella_10];
 		const bounds = [tankBox];
 
 		// tankBox (components)
@@ -776,9 +769,6 @@ class Level extends Phaser.Scene {
 
 		// fella_21 (components)
 		new randomMove(fella_21);
-
-		// fella_22 (components)
-		new randomMove(fella_22);
 
 		// fella_23 (components)
 		new randomMove(fella_23);
@@ -914,11 +904,6 @@ class Level extends Phaser.Scene {
 		mobileTextcontainerAlignOffsets.x = 20;
 		mobileTextcontainerAlignOffsets.y = 20;
 
-		// mobileTextcontainer_1 (components)
-		const mobileTextcontainer_1AlignOffsets = new AlignOffsets(mobileTextcontainer_1);
-		mobileTextcontainer_1AlignOffsets.x = -20;
-		mobileTextcontainer_1AlignOffsets.y = 20;
-
 		this.tankBox = tankBox;
 		this.fella = fella;
 		this.fella_5 = fella_5;
@@ -944,7 +929,6 @@ class Level extends Phaser.Scene {
 		this.fella_19 = fella_19;
 		this.fella_20 = fella_20;
 		this.fella_21 = fella_21;
-		this.fella_22 = fella_22;
 		this.fella_23 = fella_23;
 		this.fella_24 = fella_24;
 		this.fella_25 = fella_25;
@@ -992,7 +976,7 @@ class Level extends Phaser.Scene {
 		this.spriteCountText = spriteCountText;
 		this.fpsText = fpsText;
 		this.zoomText = zoomText;
-		this.instructionText = instructionText;
+		this.orientationPrompt = orientationPrompt;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -1057,8 +1041,6 @@ class Level extends Phaser.Scene {
 	fella_20;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella_21;
-	/** @type {Phaser.GameObjects.Image} */
-	fella_22;
 	/** @type {Phaser.GameObjects.Sprite} */
 	fella_23;
 	/** @type {Phaser.GameObjects.Sprite} */
@@ -1153,11 +1135,11 @@ class Level extends Phaser.Scene {
 	fpsText;
 	/** @type {Phaser.GameObjects.Text} */
 	zoomText;
-	/** @type {Phaser.GameObjects.Text} */
-	instructionText;
+	/** @type {Phaser.GameObjects.Container} */
+	orientationPrompt;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
-	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container>} */
+	/** @type {Phaser.GameObjects.Rectangle[]} */
 	alignToCameraRight;
 	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraTop;
@@ -1165,13 +1147,13 @@ class Level extends Phaser.Scene {
 	alignToCameraBottom;
 	/** @type {Array<any>} */
 	resizeScale;
-	/** @type {Array<any>} */
+	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraMiddle;
-	/** @type {Array<any>} */
+	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraCenter;
 	/** @type {Array<any>} */
 	pantsTest;
-	/** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
+	/** @type {Phaser.GameObjects.Sprite[]} */
 	fellasList;
 	/** @type {Phaser.GameObjects.Rectangle[]} */
 	bounds;
@@ -1191,37 +1173,6 @@ class Level extends Phaser.Scene {
 
 		// tank bg needs depth below all fellas
 		this.tankBox.setDepth(-999);
-
-		// adaptive zoom
-		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
-			// zoom out incrementally until we're past width and height min
-
-			for(let i = 0; i < 20; i++) {
-
-				this.cameras.main.setZoom(1 - (i * .05));
-
-				// check min
-				// console.log('w: ' + this.cameras.main.width / (1 - (i * .05)))
-				// console.log('h: ' + this.cameras.main.height / (1 - (i * .05)))
-
-				if(
-					(this.cameras.main.width / (1 - (i * .05))) > this.minScreenWidth &&
-					(this.cameras.main.height / (1 - (i * .05))) > this.minScreenHeight
-				) 
-					{
-
-					break;
-				}
-			}
-
-		}
-
-		// }
-			// this.cameras.main.setZoom(
-			// 	Phaser.Math.Linear(1.2, .65, this.scale.zoom)
-			// );
-		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
-		this.cameras.main.centerOn(0, 0);
 
 		// INPUT
 		// using Psychogoldfish's input wrapper solution
@@ -1262,10 +1213,16 @@ class Level extends Phaser.Scene {
 			}
 		});
 
+		this.orientationPrompt.setDepth(1000);
+		this.orientationPrompt.setAlpha(0);
+		// TODO: parallel UI scene isn't set up yet. This needs to be there
+
 		// CAMERA SETTINGS
 		// this needs to be done at every scene's creation
 		this.cameras.main.setViewport(0, 0, this.scale.width, this.scale.height);
 		this.cameras.main.setRoundPixels(true);
+		this.cameras.main.centerOn(0, 0);
+		this.setAdaptiveZoom()
 
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 
@@ -1283,11 +1240,12 @@ class Level extends Phaser.Scene {
 
 		this.fellasStates = [];
 
-		// update all fella states
+		// setup all fella states
 		for (let i = 0; i < this.fellasList.length; i++) {
 
-			// this.fellasStates.push(new StateController(this.fellasList[i], this));
-			// this.fellasStates[i].setState('idle');
+			this.fellasList[i].status = new StateController(this.fellasList[i], this);
+			// gameobject.state is a build in member meant to be an int or string, so we make our own property
+			this.fellasList[i].status.setState('idle');
 		}
 
 
@@ -1330,12 +1288,15 @@ class Level extends Phaser.Scene {
 		for (let i = 0; i < this.fellasList.length; i++) {
 
 			// update all fella states
-			// this.fellasStates[i].update();
+			this.fellasList[i].status.update();
 
 			// depth sort needs to happen for each fella on each frame
 			// if this hits performance then I can get away with updating this 
 			// only in states where the fella is moving
-			this.fellasList[i].setDepth(this.fellasList[i].y);
+			if (this.fellasList[i].getData('alive')) {
+
+				this.fellasList[i].setDepth(this.fellasList[i].y);
+			}
 		}
 	}
 
@@ -1352,6 +1313,20 @@ class Level extends Phaser.Scene {
 		this.alignObjects();
 
 		this.scaleObjects();
+
+		this.cameras.main.centerOn(0, 0);
+
+		this.setAdaptiveZoom();
+
+		// orientation check
+		if (this.registry.get('mobile') && this.scale.height > this.scale.width) {
+
+			this.orientationPrompt.setAlpha(1);
+		}
+		else {
+
+			this.orientationPrompt.setAlpha(0);
+		}
 	}
 
 	/** setup collision physics */
@@ -1365,6 +1340,9 @@ class Level extends Phaser.Scene {
 		for(let i = 0; i < this.fellasList.length; i++) {
 
 			const _fella = this.fellasList[i];
+
+			_fella.setData('alive', true);
+
 
 			this.matter.add.gameObject(
 				this.fellasList[i], 
@@ -1391,6 +1369,46 @@ class Level extends Phaser.Scene {
 		// https://newdocs.phaser.io/docs/3.54.0/focus/Phaser.Physics.Matter.Factory-mouseSpring
 		// TODO: how do I know when / what is being dragged so I can set a state?
 
+		this.matter.world.on('dragstart', function(body) { 
+
+			console.log(body);
+		});
+
+		this.matter.world.on('dragend', function(body) { 
+
+			body.gameObject.status.setState('dead');
+		});
+	}
+
+	/** incrementally zoom the camera out until necessary elements aren't cropped out */
+	setAdaptiveZoom() {
+
+		this.cameras.main.setZoom(1);
+
+		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
+			// zoom out incrementally until we're past width and height min
+
+			for(let i = 0; i < 20; i++) {
+
+				this.cameras.main.setZoom(1 - (i * .05));
+
+				// check min
+				// console.log('w: ' + this.cameras.main.width / (1 - (i * .05)))
+				// console.log('h: ' + this.cameras.main.height / (1 - (i * .05)))
+
+				if(
+					(this.cameras.main.width / (1 - (i * .05))) > this.minScreenWidth &&
+					(this.cameras.main.height / (1 - (i * .05))) > this.minScreenHeight
+				) 
+					{
+
+					break;
+				}
+			}
+
+		}
+
+		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
 	}
 
 	/** align objects included in the align left/right/top/bottom lists
