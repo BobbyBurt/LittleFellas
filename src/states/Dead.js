@@ -20,6 +20,9 @@ class Dead {
 		// set animation frame
 		// TODO: set to first frame of idle, or death frame is one exists
 		this.fella.stop();
+
+		// TODO: remove physics. not sure how, i swear i had this setup before
+		// this.fella.body.stop();
 		
 		// add wings
 		this.wings = this.scene.add.image(this.fella.x, this.fella.y, 'wings');
@@ -43,7 +46,9 @@ class Dead {
 		
 		this.fella.setData('alive', false);
 
-		console.log(this.scene.fellas);
+		this.fella.status = null;
+		// free this up for garbage collection
+		this.fella.destroy();
 	}
 
 	
