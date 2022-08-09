@@ -9,7 +9,9 @@ class Level extends Phaser.Scene {
 		super("level");
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		
+
+		
 		/* END-USER-CTR-CODE */
 	}
 
@@ -965,99 +967,40 @@ class Level extends Phaser.Scene {
 
 	/* START-USER-CODE */
 
+	/** @type {Phaser.GameObjects.Group} */
+	fellas;
+
+	tankWidth = 1820;
+	tankHeight = 880;
+	minScreenWidth = (this.tankWidth + (64 * 2));
+	minScreenHeight = (this.tankHeight + (20 * 2));
+	// the number being double represents the amount of space we want at least on both sides
+
 	create() {
 
 		this.editorCreate();
 
-		this.tankWidth = 1820;
-		this.tankHeight = 880;
-
-		this.minScreenWidth = this.tankWidth + (64 * 2);
-		this.minScreenHeight = this.tankHeight + (64 * 2);
-		// added number is the min pixel buffer between tank and screen edge on sides
+		this.fellas = this.add.group();
 
 		// tank bg needs depth below all fellas
 		this.tankBox.setDepth(-999);
 
-		// DEBUG: mute all audio
+		//audio
 		this.sound.setVolume(0);
-
-		// music
-		this.music = this.sound.add('tank-2').play();
-
-		this.input.keyboard.on('m', () => {
-
-			this.music.stop();
-		});
-
-		// sfx
+		// this.music = this.sound.add('tank-2').play();
 		this.sound.add('dead');
 
-		// INPUT
-		// using Psychogoldfish's input wrapper solution
+		this.setupInput();
 
-		this.controls = new InputWrapper();
-
-		let keys = this.input.keyboard.addKeys({
-			left_1: 'left',
-			left_2: 'A',
-			right_1: 'right',
-			right_2: 'D'
-		});
-
-		this.controls.bindKey('left', keys.left_1);
-		this.controls.bindKey('right', keys.right_1);
-
-		this.controls.bindButton(SimpleButton.getComponent(this.buttonTest).bindButton, SimpleButton.getComponent(this.buttonTest));
-		this.controls.bindButton(SimpleButton.getComponent(this.buttonTest2).bindButton, SimpleButton.getComponent(this.buttonTest2));
-		// since the button to bind this to is a property, this could be a loop of all buttons
-
-		// example of using events for inputs
-		this.controls.onPress('left', () => {
-
-		});
-
-		// spawning sprites
-		this.controls.onPress('right', () => {
-
-			for (let i = 0; i < 10; i++) {
-
-				// const pantsPrefab_0 = new PantsPrefab(this, Phaser.Math.RND.between(0, this.scale.width), Phaser.Math.RND.between(150, this.scale.height - 100));
-				// this.add.existing(pantsPrefab_0);
-				// this.pantsTest.push(pantsPrefab_0);
-
-				// // update sprite count
-				// this.spriteCount++;
-				// this.spriteCountText.setText('sprites: ' + this.pantsTest.length);
-			}
-		});
-
+		// orientation
 		this.orientationPrompt.setDepth(1000);
 		this.orientationPrompt.setAlpha(0);
 		// TODO: parallel UI scene isn't set up yet. This needs to be there
 
-		// CAMERA SETTINGS
-		// this needs to be done at every scene's creation
-		this.cameras.main.setViewport(0, 0, this.scale.width, this.scale.height);
-		this.cameras.main.setRoundPixels(true);
-		this.cameras.main.centerOn(0, 0);
-		this.setAdaptiveZoom()
-
+		// debug UI
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 
-		// so multiple fingers can be used
-		this.input.addPointer(4);
-
 		this.initColliders();
-
-		// gameobject data test
-		this.fellasList[0].setData('hunger', 69);
-
-		// state test
-		// this.stateControl = new StateController(this.fellasList[0], this);
-		// this.stateControl.setState('idle');
-
-		this.fellasStates = [];
 
 		// setup all fella states
 		for (let i = 0; i < this.fellasList.length; i++) {
@@ -1067,6 +1010,10 @@ class Level extends Phaser.Scene {
 			this.fellasList[i].status.setState('idle');
 		}
 
+		// camera
+		this.cameras.main.setViewport(0, 0, this.scale.width, this.scale.height);
+		this.cameras.main.setRoundPixels(true);
+		this.cameras.main.centerOn(0, 0);
 
 		// resize
 		this.resize();
@@ -1199,11 +1146,43 @@ class Level extends Phaser.Scene {
 		});
 	}
 
+	addFella() {
+
+		this.fellasList.push(this.add.sprite(0, 0));
+
+		const _fella = this.fellasList[this.fellasList.length -1]
+
+		_fella.setData('alive', true);
+
+		this.matter.add.gameObject(
+			this.fellasList[this.fellasList.length -1], 
+			{ inertia: Infinity, shape: {type: 'circle', radius: 80 * .5}})
+				.setBounce(.5)
+				.setFrictionAir(.2)
+				.setMass(20);
+
+		_fella.setDepth(_fella.y)
+
+		// if special fella
+		if (_fella.scaleX == 1) {
+
+			_fella.body.gameObject.setMass(50);
+		}
+
+		// debug text
+		this.spriteCountText.setText('sprites: ' + this.fellasList.length);
+
+		_fella.status = new StateController(this.fellasList[this.fellasList.length -1], this);
+			// gameobject.state is a build in member meant to be an int or string, so we make our own property
+			_fella.status.setState('idle');
+	}
+
 	/** incrementally zoom the camera out until necessary elements aren't cropped out */
 	setAdaptiveZoom() {
 
-		this.cameras.main.setZoom(1);
+		// calculate min size
 
+		this.cameras.main.setZoom(1);
 		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
 			// zoom out incrementally until we're past width and height min
 
@@ -1228,6 +1207,42 @@ class Level extends Phaser.Scene {
 		}
 
 		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
+	}
+
+	/** setup keyboard / on screen buttons with Psychogoldfish's helper classes
+	 * currently leftover code that I can use for debug
+	 */
+	setupInput() {
+
+		this.controls = new InputWrapper();
+
+		let keys = this.input.keyboard.addKeys({
+			left_1: 'left',
+			left_2: 'A',
+			right_1: 'right',
+			right_2: 'D'
+		});
+
+		this.controls.bindKey('left', keys.left_1);
+		this.controls.bindKey('right', keys.right_1);
+
+		this.controls.bindButton(SimpleButton.getComponent(this.buttonTest).bindButton, SimpleButton.getComponent(this.buttonTest));
+		this.controls.bindButton(SimpleButton.getComponent(this.buttonTest2).bindButton, SimpleButton.getComponent(this.buttonTest2));
+		// since the button to bind this to is a property, this could be a loop of all buttons
+
+		// example of using events for inputs
+		this.controls.onPress('left', () => {
+
+			this.addFella();
+		});
+
+		// spawning sprites
+		this.controls.onPress('right', () => {
+
+			for (let i = 0; i < 10; i++) {
+
+			}
+		});
 	}
 
 	/** align objects included in the align left/right/top/bottom lists

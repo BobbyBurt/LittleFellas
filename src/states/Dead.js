@@ -42,7 +42,8 @@ class Dead {
 		this.scene.sound.play('dead');
 		
 		this.fella.setData('alive', false);
-		this.fella.body.destroy();
+
+		console.log(this.scene.fellas);
 	}
 
 	
@@ -51,6 +52,8 @@ class Dead {
 		this.fella.y -= 2;
 		this.wings.y -= 2;
 		// TODO: delay rise
+
+		// TODO: tween fadeout
 	}
 
 	onEvent() {

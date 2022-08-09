@@ -83,11 +83,6 @@
                 "key": "fella_1"
             },
             {
-                "url": "assets/fella-animations.json",
-                "type": "animation",
-                "key": "fella-animations"
-            },
-            {
                 "url": "assets/fellas-animations.json",
                 "type": "animation",
                 "key": "fellas-animations"
@@ -139,22 +134,10 @@
                 "key": "stat-animations"
             },
             {
-                "url": [
-                    "assets/audio/tank-2.mp3"
-                ],
-                "type": "audio",
-                "key": "tank-2"
-            },
-            {
                 "type": "multiatlas",
                 "url": "assets/fellas/ufo.json",
                 "path": "assets/fellas",
                 "key": "ufo"
-            },
-            {
-                "url": "assets/fellas/ufo-animations.json",
-                "type": "animation",
-                "key": "ufo-animations"
             },
             {
                 "url": "assets/wings.png",
