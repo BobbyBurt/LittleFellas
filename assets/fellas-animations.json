@@ -1,0 +1,355 @@
+{
+    "anims": [
+        {
+            "key": "reg-bob",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0005",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "showOnStart": true
+        },
+        {
+            "key": "reg-dragged",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "fella_1",
+                    "frame": "fella/0003",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "ufo-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "ufo",
+                    "frame": "frame0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0020.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0021.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0022.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0023.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0024.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0025.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0026.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0027.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0028.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0029.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "frame0030.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "reg-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "reg",
+                    "frame": "GrimbloPhotoshopfiles40000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "GrimbloPhotoshopfiles40001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "GrimbloPhotoshopfiles40002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "GrimbloPhotoshopfiles40003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "GrimbloPhotoshopfiles40004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "GrimbloPhotoshopfiles40005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "boyo-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "boyo",
+                    "frame": 0,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo",
+                    "frame": 4,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo",
+                    "frame": 5,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    }
+}

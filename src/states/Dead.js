@@ -38,6 +38,8 @@ class Dead {
 
 			// this.poof.destroy();
 		});
+
+		this.scene.sound.play('dead');
 		
 		this.fella.setData('alive', false);
 		this.fella.body.destroy();

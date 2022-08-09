@@ -24,7 +24,7 @@ class RandomWalk {
 	
 		this.duration = Phaser.Math.RND.between(20, 100);
 
-		this.fella.play('bob');
+		this.fella.play('reg-bob');
 	}
 	
 	update() {

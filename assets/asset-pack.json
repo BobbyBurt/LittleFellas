@@ -7,15 +7,29 @@
                 "key": "AlignOffsets"
             },
             {
+                "url": "assets/fellas/boyo.png",
+                "frameConfig": {
+                    "frameWidth": 89,
+                    "frameHeight": 200,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "boyo"
+            },
+            {
                 "url": "assets/Damage.png",
                 "type": "image",
                 "key": "Damage"
             },
             {
-                "atlasURL": "assets/Damage.xml",
-                "textureURL": "assets/Damage.png",
-                "type": "atlasXML",
-                "key": "Damage_1"
+                "url": [
+                    "assets/audio/dead.wav"
+                ],
+                "type": "audio",
+                "key": "dead"
             },
             {
                 "type": "multiatlas",
@@ -74,6 +88,11 @@
                 "key": "fella-animations"
             },
             {
+                "url": "assets/fellas-animations.json",
+                "type": "animation",
+                "key": "fellas-animations"
+            },
+            {
                 "url": "src/InputWrapper.js",
                 "type": "script",
                 "key": "InputWrapper"
@@ -82,6 +101,11 @@
                 "url": "src/components/PhysicsBody.js",
                 "type": "script",
                 "key": "PhysicsBody"
+            },
+            {
+                "url": "src/components/PlayAnimation.js",
+                "type": "script",
+                "key": "PlayAnimation"
             },
             {
                 "url": "assets/poof.png",
@@ -99,6 +123,12 @@
                 "key": "randomMove"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/fellas/reg.json",
+                "path": "assets/fellas",
+                "key": "reg"
+            },
+            {
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"
@@ -107,6 +137,24 @@
                 "url": "assets/stat-animations.json",
                 "type": "animation",
                 "key": "stat-animations"
+            },
+            {
+                "url": [
+                    "assets/audio/tank-2.mp3"
+                ],
+                "type": "audio",
+                "key": "tank-2"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/ufo.json",
+                "path": "assets/fellas",
+                "key": "ufo"
+            },
+            {
+                "url": "assets/fellas/ufo-animations.json",
+                "type": "animation",
+                "key": "ufo-animations"
             },
             {
                 "url": "assets/wings.png",

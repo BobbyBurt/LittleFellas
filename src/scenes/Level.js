@@ -690,33 +690,6 @@ class Level extends Phaser.Scene {
 		// tankBox (components)
 		new PhysicsBody(tankBox);
 
-		// fella (components)
-		new randomMove(fella);
-
-		// fella_5 (components)
-		new randomMove(fella_5);
-
-		// fella_1 (components)
-		new randomMove(fella_1);
-
-		// fella_2 (components)
-		new randomMove(fella_2);
-
-		// fella_3 (components)
-		new randomMove(fella_3);
-
-		// fella_4 (components)
-		new randomMove(fella_4);
-
-		// fella_6 (components)
-		new randomMove(fella_6);
-
-		// fella_7 (components)
-		new randomMove(fella_7);
-
-		// fella_8 (components)
-		new randomMove(fella_8);
-
 		// buttonTest2 (components)
 		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
 		buttonTest2AlignOffsets.x = -100;
@@ -730,174 +703,6 @@ class Level extends Phaser.Scene {
 		buttonTestAlignOffsets.y = -100;
 		const buttonTestSimpleButton = new SimpleButton(buttonTest);
 		buttonTestSimpleButton.bindButton = "left";
-
-		// fella_9 (components)
-		new randomMove(fella_9);
-
-		// fella_10 (components)
-		new randomMove(fella_10);
-
-		// fella_11 (components)
-		new randomMove(fella_11);
-
-		// fella_12 (components)
-		new randomMove(fella_12);
-
-		// fella_13 (components)
-		new randomMove(fella_13);
-
-		// fella_14 (components)
-		new randomMove(fella_14);
-
-		// fella_15 (components)
-		new randomMove(fella_15);
-
-		// fella_16 (components)
-		new randomMove(fella_16);
-
-		// fella_17 (components)
-		new randomMove(fella_17);
-
-		// fella_18 (components)
-		new randomMove(fella_18);
-
-		// fella_19 (components)
-		new randomMove(fella_19);
-
-		// fella_20 (components)
-		new randomMove(fella_20);
-
-		// fella_21 (components)
-		new randomMove(fella_21);
-
-		// fella_23 (components)
-		new randomMove(fella_23);
-
-		// fella_24 (components)
-		new randomMove(fella_24);
-
-		// fella_25 (components)
-		new randomMove(fella_25);
-
-		// fella_26 (components)
-		new randomMove(fella_26);
-
-		// fella_27 (components)
-		new randomMove(fella_27);
-
-		// fella_28 (components)
-		new randomMove(fella_28);
-
-		// fella_29 (components)
-		new randomMove(fella_29);
-
-		// fella_30 (components)
-		new randomMove(fella_30);
-
-		// fella_31 (components)
-		new randomMove(fella_31);
-
-		// fella_32 (components)
-		new randomMove(fella_32);
-
-		// fella_33 (components)
-		new randomMove(fella_33);
-
-		// fella_34 (components)
-		new randomMove(fella_34);
-
-		// fella_35 (components)
-		new randomMove(fella_35);
-
-		// fella_36 (components)
-		new randomMove(fella_36);
-
-		// fella_37 (components)
-		new randomMove(fella_37);
-
-		// fella_38 (components)
-		new randomMove(fella_38);
-
-		// fella_39 (components)
-		new randomMove(fella_39);
-
-		// fella_40 (components)
-		new randomMove(fella_40);
-
-		// fella_41 (components)
-		new randomMove(fella_41);
-
-		// fella_42 (components)
-		new randomMove(fella_42);
-
-		// fella_43 (components)
-		new randomMove(fella_43);
-
-		// fella_44 (components)
-		new randomMove(fella_44);
-
-		// fella_45 (components)
-		new randomMove(fella_45);
-
-		// fella_46 (components)
-		new randomMove(fella_46);
-
-		// fella_47 (components)
-		new randomMove(fella_47);
-
-		// fella_48 (components)
-		new randomMove(fella_48);
-
-		// fella_49 (components)
-		new randomMove(fella_49);
-
-		// fella_50 (components)
-		new randomMove(fella_50);
-
-		// fella_51 (components)
-		new randomMove(fella_51);
-
-		// fella_52 (components)
-		new randomMove(fella_52);
-
-		// fella_53 (components)
-		new randomMove(fella_53);
-
-		// fella_54 (components)
-		new randomMove(fella_54);
-
-		// fella_55 (components)
-		new randomMove(fella_55);
-
-		// fella_56 (components)
-		new randomMove(fella_56);
-
-		// fella_57 (components)
-		new randomMove(fella_57);
-
-		// fella_58 (components)
-		new randomMove(fella_58);
-
-		// fella_59 (components)
-		new randomMove(fella_59);
-
-		// fella_60 (components)
-		new randomMove(fella_60);
-
-		// fella_61 (components)
-		new randomMove(fella_61);
-
-		// fella_62 (components)
-		new randomMove(fella_62);
-
-		// fella_63 (components)
-		new randomMove(fella_63);
-
-		// fella_64 (components)
-		new randomMove(fella_64);
-
-		// fella_65 (components)
-		new randomMove(fella_65);
 
 		// mobileTextcontainer (components)
 		const mobileTextcontainerAlignOffsets = new AlignOffsets(mobileTextcontainer);
@@ -1173,6 +978,20 @@ class Level extends Phaser.Scene {
 
 		// tank bg needs depth below all fellas
 		this.tankBox.setDepth(-999);
+
+		// DEBUG: mute all audio
+		this.sound.setVolume(0);
+
+		// music
+		this.music = this.sound.add('tank-2').play();
+
+		this.input.keyboard.on('m', () => {
+
+			this.music.stop();
+		});
+
+		// sfx
+		this.sound.add('dead');
 
 		// INPUT
 		// using Psychogoldfish's input wrapper solution

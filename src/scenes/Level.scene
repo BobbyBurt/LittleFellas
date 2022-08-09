@@ -31,8 +31,7 @@
             "label": "fella",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -51,8 +50,7 @@
             "label": "fella_5",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -73,8 +71,7 @@
             "label": "fella_1",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -95,8 +92,7 @@
             "label": "fella_2",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -117,8 +113,7 @@
             "label": "fella_3",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -139,8 +134,7 @@
             "label": "fella_4",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -161,8 +155,7 @@
             "label": "fella_6",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -183,8 +176,7 @@
             "label": "fella_7",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -203,8 +195,7 @@
             "label": "fella_8",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -273,8 +264,7 @@
             "label": "fella_9",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -295,8 +285,7 @@
             "label": "fella_10",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -317,8 +306,7 @@
             "label": "fella_11",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -339,8 +327,7 @@
             "label": "fella_12",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -361,8 +348,7 @@
             "label": "fella_13",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -383,8 +369,7 @@
             "label": "fella_14",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -405,8 +390,7 @@
             "label": "fella_15",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -427,8 +411,7 @@
             "label": "fella_16",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -449,8 +432,7 @@
             "label": "fella_17",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -471,8 +453,7 @@
             "label": "fella_18",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -493,8 +474,7 @@
             "label": "fella_19",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -515,8 +495,7 @@
             "label": "fella_20",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -537,8 +516,7 @@
             "label": "fella_21",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -559,8 +537,7 @@
             "label": "fella_23",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -578,9 +555,7 @@
             "id": "36330f57-5c91-4b85-90ad-73d84f2d7bcd",
             "label": "fella_24",
             "scope": "CLASS",
-            "components": [
-                "randomMove"
-            ],
+            "components": [],
             "texture": {
                 "key": "fella",
                 "frame": 0
@@ -598,8 +573,7 @@
             "label": "fella_25",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -618,8 +592,7 @@
             "label": "fella_26",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -638,8 +611,7 @@
             "label": "fella_27",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -660,8 +632,7 @@
             "label": "fella_28",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -682,8 +653,7 @@
             "label": "fella_29",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -704,8 +674,7 @@
             "label": "fella_30",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -726,8 +695,7 @@
             "label": "fella_31",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -748,8 +716,7 @@
             "label": "fella_32",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -770,8 +737,7 @@
             "label": "fella_33",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -792,8 +758,7 @@
             "label": "fella_34",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -814,8 +779,7 @@
             "label": "fella_35",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -836,8 +800,7 @@
             "label": "fella_36",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -858,8 +821,7 @@
             "label": "fella_37",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -880,8 +842,7 @@
             "label": "fella_38",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -902,8 +863,7 @@
             "label": "fella_39",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -924,8 +884,7 @@
             "label": "fella_40",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -946,8 +905,7 @@
             "label": "fella_41",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -968,8 +926,7 @@
             "label": "fella_42",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -990,8 +947,7 @@
             "label": "fella_43",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1012,8 +968,7 @@
             "label": "fella_44",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1034,8 +989,7 @@
             "label": "fella_45",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1056,8 +1010,7 @@
             "label": "fella_46",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1078,8 +1031,7 @@
             "label": "fella_47",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1100,8 +1052,7 @@
             "label": "fella_48",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1122,8 +1073,7 @@
             "label": "fella_49",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1144,8 +1094,7 @@
             "label": "fella_50",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1166,8 +1115,7 @@
             "label": "fella_51",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1188,8 +1136,7 @@
             "label": "fella_52",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1210,8 +1157,7 @@
             "label": "fella_53",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1232,8 +1178,7 @@
             "label": "fella_54",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1254,8 +1199,7 @@
             "label": "fella_55",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1276,8 +1220,7 @@
             "label": "fella_56",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1298,8 +1241,7 @@
             "label": "fella_57",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1320,8 +1262,7 @@
             "label": "fella_58",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1342,8 +1283,7 @@
             "label": "fella_59",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1364,8 +1304,7 @@
             "label": "fella_60",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1386,8 +1325,7 @@
             "label": "fella_61",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1408,8 +1346,7 @@
             "label": "fella_62",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1430,8 +1367,7 @@
             "label": "fella_63",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1452,8 +1388,7 @@
             "label": "fella_64",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
@@ -1474,8 +1409,7 @@
             "label": "fella_65",
             "scope": "CLASS",
             "components": [
-                "Animation",
-                "randomMove"
+                "Animation"
             ],
             "texture": {
                 "key": "fella",
