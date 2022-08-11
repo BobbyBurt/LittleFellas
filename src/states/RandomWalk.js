@@ -19,8 +19,10 @@ class RandomWalk {
 	
 	enter() {
 
-		this.xMove = Phaser.Math.RND.normal();
-		this.yMove = Phaser.Math.RND.normal();
+		// this.xMove = Phaser.Math.RND.normal();
+		// this.yMove = Phaser.Math.RND.normal();
+		this.target = {x: this.fella.x + (Phaser.Math.RND.normal() * 150), y: this.fella.y + (Phaser.Math.RND.normal() * 150)}
+		console.log(this.target);
 	
 		this.duration = Phaser.Math.RND.between(20, 100);
 
@@ -28,8 +30,14 @@ class RandomWalk {
 	}
 	
 	update() {
-		
-		this.fella.setVelocity(this.xMove * 5, this.yMove * 5);
+
+		// old move
+		// this.fella.setVelocity(this.xMove * 5, this.yMove * 5);
+
+		// move
+		this.fella.setVelocity(
+			((-this.fella.x + this.target.x) * .05), ((-this.fella.y + this.target.y) * .05));
+
 		
 		this.duration--;
 

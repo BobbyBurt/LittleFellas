@@ -210,6 +210,9 @@ class Level extends Phaser.Scene {
 	minScreenHeight = (this.tankHeight + (20 * 2));
 	// the number being double represents the amount of space we want at least on both sides
 
+	/** how much total velocity of drag does it take to make fella want to breed */
+	velocityToBreed = 4000;
+
 	create() {
 
 		this.editorCreate();
@@ -218,6 +221,10 @@ class Level extends Phaser.Scene {
 		this.fellas = this.add.group();
 		this.fellas.maxSize = -1;
 		// TODO: set max
+
+		/** group of 2 fellas to breed */
+		this.hornyFellas = this.add.group();
+		this.hornyFellas.maxSize = 2;
 
 		// tank bg needs depth below all fellas
 		this.tankBox.setDepth(-999);
@@ -241,8 +248,30 @@ class Level extends Phaser.Scene {
 		this.matter.world.setBounds(-910, -450, 1820, 880, 300);
 		// this is centered at (0, 10) to avoid accidental app switching on ios
 		this.setupDrag();
+		const _this = this;
+		this.colCount = 0;
+		this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
 
-		// TEST: manual fella create
+			// with wall
+			if (bodyA.isStatic || bodyB.isStatic) {
+
+				// TODO: check for velocity of fella. this may be a fatal collision
+				return;
+			}
+
+			// breed check
+			if (bodyA.gameObject.getData('horny') && bodyB.gameObject.getData('horny')) {
+
+				bodyA.gameObject.status.setState('dead');
+				bodyB.gameObject.status.setState('dead');
+				this.addFella();
+			}
+		});
+		// this is called EVERY COLLISION. There is no other way to check for a collision
+		// between two bodies. if there is, hell if i can find it
+
+		// manual fella create
+		this.addFella('reg');
 		this.addFella('reg');
 
 		// setup all fella states
@@ -273,9 +302,6 @@ class Level extends Phaser.Scene {
 			// debug function here
 		}
 
-		// debug text
-		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
-
 		// for each fella loop
 		this.fellas.children.each(function(fella) {
 
@@ -285,8 +311,11 @@ class Level extends Phaser.Scene {
 			fella.status.update();
 		});
 
+		// debug text
+		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
+
 		// debug info
-		this.spriteCountText.setText('sprites: ' + this.fellas.getLength());
+		this.spriteCountText.setText('fellas: ' + this.fellas.getLength());
 		// its just easier to do this every frame. wont be in the final game anyways
 	}
 
@@ -326,11 +355,23 @@ class Level extends Phaser.Scene {
 
 		this.matter.world.on('dragstart', function(body) { 
 
+			// setup transition conditions if necessary
+			body.gameObject.status.setState('dragged');
 		});
 
+		const _this = this;
 		this.matter.world.on('dragend', function(body) { 
 
-			body.gameObject.status.setState('dead');
+			console.log('total drag velocity: ' + body.gameObject.getData('totalVelocity'));
+			if((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) {
+
+				body.gameObject.setData('horny', true);
+				body.gameObject.status.setState('breeding');
+			}
+			else {
+
+				body.gameObject.status.setState('idle');
+			}
 		});
 	}
 
@@ -371,6 +412,18 @@ class Level extends Phaser.Scene {
 		// state machine
 		fella.status = new StateController(fella, this);
 		fella.status.setState('idle');
+	}
+
+	/** adds / removes fella from horny group  */
+	setHorny(fella, horny) {
+
+		if (horny) {
+
+			if (this.hornyFellas.getLength() < this.hornyFellas.maxSize) {
+
+				this.hornyFellas.add(fella);
+			}
+		}
 	}
 
 	/** incrementally zoom the camera out until necessary elements aren't cropped out */
@@ -435,9 +488,8 @@ class Level extends Phaser.Scene {
 		// spawning sprites
 		this.controls.onPress('right', () => {
 
-			for (let i = 0; i < 10; i++) {
-
-			}
+			Phaser.Actions.PlaceOnCircle(this.fellas.getChildren(),
+				new Phaser.Geom.Circle(0, 0, 300));
 		});
 	}
 

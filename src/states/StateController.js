@@ -12,6 +12,7 @@ class StateController {
 			idle: new Idle(fella, scene),
             walk: new RandomWalk(fella, scene),
             dragged: new Dragged(fella, scene),
+            breeding: new Breeding(fella, scene),
 			dead: new Dead(fella, scene)
 		}
 

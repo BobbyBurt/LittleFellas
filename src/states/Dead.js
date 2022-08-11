@@ -25,9 +25,9 @@ class Dead {
 		// this.fella.body.stop();
 		
 		// add wings
-		this.wings = this.scene.add.image(this.fella.x, this.fella.y, 'wings');
-		this.wings.setScale(.5, .5);
-		this.wings.setDepth(this.fella.depth - 1);
+		// this.wings = this.scene.add.image(this.fella.x, this.fella.y, 'wings');
+		// this.wings.setScale(.5, .5);
+		// this.wings.setDepth(this.fella.depth - 1);
 		// TODO: set scale according to fella type
 		
 		// add poof
