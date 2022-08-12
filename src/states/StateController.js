@@ -14,7 +14,8 @@ class StateController {
             dragged: new Dragged(fella, scene),
             breeding: new Breeding(fella, scene),
             feeding: new Feeding(fella, scene),
-			dead: new Dead(fella, scene)
+			dead: new Dead(fella, scene),
+			sliding: new Sliding(fella, scene)
 		}
 
         // set reference to this so states can call transition()

@@ -212,7 +212,7 @@ class Level extends Phaser.Scene {
 
 	/** how much total velocity of drag does it take to make fella want to breed */
 	velocityToBreed = 4000;
-	terminalVelocity = 200;
+	terminalVelocity = 80;
 
 	spawningRaces = ['yellow', 'green', 'cyan', 'blue', 'purple'];
 
@@ -363,6 +363,8 @@ class Level extends Phaser.Scene {
 		this.setupDrag();
 		const _this = this;
 		this.colCount = 0;
+
+		// collision event
 		this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
 
 			// wall collision
@@ -388,6 +390,8 @@ class Level extends Phaser.Scene {
 
 					return;
 				}
+
+				console.log('x: ' + _fella.velocity.x + ' y: ' + _fella.velocity.y)
 
 				// kill if at terminal velocity
 				if (_wall.side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
@@ -552,7 +556,7 @@ class Level extends Phaser.Scene {
 			}
 			else {
 
-				body.gameObject.status.setState('idle');
+				body.gameObject.status.setState('sliding');
 			}
 		});
 	}
