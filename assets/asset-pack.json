@@ -7,6 +7,12 @@
                 "key": "AlignOffsets"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/fellas/angro.json",
+                "path": "assets/fellas",
+                "key": "angro"
+            },
+            {
                 "url": "assets/fellas/boyo.png",
                 "frameConfig": {
                     "frameWidth": 89,
@@ -18,6 +24,12 @@
                 },
                 "type": "spritesheet",
                 "key": "boyo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/boyo.json",
+                "path": "assets/fellas",
+                "key": "boyo_1"
             },
             {
                 "url": "assets/Damage.png",
@@ -88,9 +100,27 @@
                 "key": "fellas-animations"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/fellas/girl.json",
+                "path": "assets/fellas",
+                "key": "girl"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/effects/hearts.json",
+                "path": "assets/effects",
+                "key": "hearts"
+            },
+            {
                 "url": "src/InputWrapper.js",
                 "type": "script",
                 "key": "InputWrapper"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/mango.json",
+                "path": "assets/fellas",
+                "key": "mango"
             },
             {
                 "url": "src/components/PhysicsBody.js",
@@ -124,14 +154,32 @@
                 "key": "reg"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/fellas/scooper.json",
+                "path": "assets/fellas",
+                "key": "scooper"
+            },
+            {
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/fellas/smarto.json",
+                "path": "assets/fellas",
+                "key": "smarto"
+            },
+            {
                 "url": "assets/stat-animations.json",
                 "type": "animation",
                 "key": "stat-animations"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/temp-reg.json",
+                "path": "assets/fellas",
+                "key": "temp-reg"
             },
             {
                 "type": "multiatlas",
@@ -143,6 +191,12 @@
                 "url": "assets/wings.png",
                 "type": "image",
                 "key": "wings"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/yellow.json",
+                "path": "assets/fellas",
+                "key": "yellow"
             }
         ]
     },

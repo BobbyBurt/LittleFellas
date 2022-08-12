@@ -13,6 +13,7 @@ class StateController {
             walk: new RandomWalk(fella, scene),
             dragged: new Dragged(fella, scene),
             breeding: new Breeding(fella, scene),
+            feeding: new Feeding(fella, scene),
 			dead: new Dead(fella, scene)
 		}
 
@@ -26,10 +27,10 @@ class StateController {
 	setState(name) {
 
 		if (this.currentState === this.states[name]) {
-
+			
 			return;
 		}
-
+		
 		this.currentState = this.states[name];
 		this.currentState.enter();
 	}

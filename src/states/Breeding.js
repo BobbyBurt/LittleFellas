@@ -20,10 +20,10 @@ class Breeding {
 
 	enter() {
 
-		this.fella.play('reg-bob');
+		this.fella.play(this.fella.getData('sprite') + '-walk');
 		
-		// temp feedback
-		this.fella.tint = 15117227;
+		this.timeForNewHearts = false;
+		this.makeHearts();
 
 		// this.scene.matter.setVelocityX(this.fella.body, -this.fella.x);
 	}
@@ -34,5 +34,24 @@ class Breeding {
 		// this.scene.matter.setVelocityY(this.fella.body, (-this.fella.y * .05));
 
 		this.fella.setVelocity((-this.fella.x * .05), (-this.fella.y * .05));
+		
+		if (this.timeForNewHearts) {
+
+			this.makeHearts();
+		}
+	}
+
+	makeHearts() {
+
+		this.timeForNewHearts = false;
+
+		this.hearts = this.scene.add.sprite(this.fella.x, this.fella.y - 100, 'fella');
+		this.hearts.play('hearts');
+		this.heartsRemove = this.scene.time.delayedCall(500, () => {
+
+			this.hearts.destroy();
+			
+			this.timeForNewHearts = true;
+		});
 	}
 }

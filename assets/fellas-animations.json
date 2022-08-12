@@ -1,253 +1,192 @@
 {
     "anims": [
         {
-            "key": "reg-bob",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0001",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0002",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0003",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0004",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0005",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1,
-            "showOnStart": true
-        },
-        {
-            "key": "reg-dragged",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0000",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "fella_1",
-                    "frame": "fella/0003",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
             "key": "ufo-idle",
             "type": "frame",
             "frames": [
                 {
                     "key": "ufo",
-                    "frame": "frame0001.png",
+                    "frame": "idle0000.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0002.png",
+                    "frame": "idle0001.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0003.png",
+                    "frame": "idle0002.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0004.png",
+                    "frame": "idle0003.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0005.png",
+                    "frame": "idle0004.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0006.png",
+                    "frame": "idle0005.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0007.png",
+                    "frame": "idle0006.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0008.png",
+                    "frame": "idle0007.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0009.png",
+                    "frame": "idle0008.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0010.png",
+                    "frame": "idle0009.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0011.png",
+                    "frame": "idle0010.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0012.png",
+                    "frame": "idle0011.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0013.png",
+                    "frame": "idle0012.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0014.png",
+                    "frame": "idle0013.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0015.png",
+                    "frame": "idle0014.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0016.png",
+                    "frame": "idle0015.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0017.png",
+                    "frame": "idle0016.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0018.png",
+                    "frame": "idle0017.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0019.png",
+                    "frame": "idle0018.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0020.png",
+                    "frame": "idle0019.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0021.png",
+                    "frame": "idle0020.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0022.png",
+                    "frame": "idle0021.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0023.png",
+                    "frame": "idle0022.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0024.png",
+                    "frame": "idle0023.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0025.png",
+                    "frame": "idle0024.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0026.png",
+                    "frame": "idle0025.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0027.png",
+                    "frame": "idle0026.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0028.png",
+                    "frame": "idle0027.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0029.png",
+                    "frame": "idle0028.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
                     "key": "ufo",
-                    "frame": "frame0030.png",
+                    "frame": "idle0029.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "idle0030.png",
                     "duration": 0,
                     "keyframe": false
                 }
@@ -257,42 +196,999 @@
             "repeat": -1
         },
         {
-            "key": "reg-walk",
+            "key": "ufo-walk",
             "type": "frame",
             "frames": [
                 {
-                    "key": "reg",
-                    "frame": "GrimbloPhotoshopfiles40000.png",
+                    "key": "ufo",
+                    "frame": "walk0000.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "reg",
-                    "frame": "GrimbloPhotoshopfiles40001.png",
+                    "key": "ufo",
+                    "frame": "walk0001.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "reg",
-                    "frame": "GrimbloPhotoshopfiles40002.png",
+                    "key": "ufo",
+                    "frame": "walk0002.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "reg",
-                    "frame": "GrimbloPhotoshopfiles40003.png",
+                    "key": "ufo",
+                    "frame": "walk0003.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "reg",
-                    "frame": "GrimbloPhotoshopfiles40004.png",
+                    "key": "ufo",
+                    "frame": "walk0004.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "reg",
-                    "frame": "GrimbloPhotoshopfiles40005.png",
+                    "key": "ufo",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ufo",
+                    "frame": "walk0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "mango-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "mango",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0020.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0021.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0022.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0023.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0024.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0025.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0026.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0027.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0028.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0029.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0030.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0031.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0032.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0033.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0034.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0035.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0036.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0037.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0038.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0039.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "idle0040.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "mango-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "mango",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mango",
+                    "frame": "walk0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "girl-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "girl",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "girl-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "girl",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "girl",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "boyo-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "boyo-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "boyo_1",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "angro-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "angro",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "angro-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "angro",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "angro",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "pixie-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "yellow",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "yellow",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "yellow",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "yellow",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "yellow",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "yellow",
+                    "frame": "idle0005.png",
                     "duration": 0,
                     "keyframe": false
                 }
@@ -302,47 +1198,1163 @@
             "repeat": -1
         },
         {
-            "key": "boyo-idle",
+            "key": "pixie-walk",
             "type": "frame",
             "frames": [
                 {
-                    "key": "boyo",
-                    "frame": 0,
+                    "key": "yellow",
+                    "frame": "walk0000.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "boyo",
-                    "frame": 1,
+                    "key": "yellow",
+                    "frame": "walk0001.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "boyo",
-                    "frame": 2,
+                    "key": "yellow",
+                    "frame": "walk0002.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "boyo",
-                    "frame": 3,
+                    "key": "yellow",
+                    "frame": "walk0003.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "boyo",
-                    "frame": 4,
+                    "key": "yellow",
+                    "frame": "walk0004.png",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "boyo",
-                    "frame": 5,
+                    "key": "yellow",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "smarto-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "smarto",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0020.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0021.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0022.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0023.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0024.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0025.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0026.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0027.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0028.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0029.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0030.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0031.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0032.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0033.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0034.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0035.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0036.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0037.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0038.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0039.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0040.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0041.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0042.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0043.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0044.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0045.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0046.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0047.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0048.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0049.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0050.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0051.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0052.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0053.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0054.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0055.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0056.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0057.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0058.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0059.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0060.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0061.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0062.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0063.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0064.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0065.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0066.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0067.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0068.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0069.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0070.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "idle0071.png",
                     "duration": 0,
                     "keyframe": false
                 }
             ],
             "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "smarto-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "smarto",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "smarto",
+                    "frame": "walk0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "scooper-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "scooper",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "walk0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "scooper-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "scooper",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0020.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0021.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0022.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0023.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0024.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0025.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0026.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0027.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0028.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0029.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0030.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0031.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0032.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0033.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0034.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0035.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0036.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0037.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0038.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0039.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0040.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0041.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "scooper",
+                    "frame": "idle0042.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "reg-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "reg",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "reg-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "reg",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "reg-dragged",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "reg",
+                    "frame": "dragged0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "dragged0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "dragged0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "dragged0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "dragged0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "dragged0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 20,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "reg-hungry",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "reg",
+                    "frame": "hungry0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "hungry0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "hungry0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "hungry0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "hungry0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "hungry0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         }

@@ -1,0 +1,146 @@
+{
+	"textures": [
+		{
+			"image": "reg.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 141,
+				"h": 179
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "GrimbloPhotoshopfiles40003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 6,
+						"w": 50,
+						"h": 86
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 50,
+						"h": 86
+					}
+				},
+				{
+					"filename": "GrimbloPhotoshopfiles40001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 28,
+						"y": 3,
+						"w": 42,
+						"h": 89
+					},
+					"frame": {
+						"x": 53,
+						"y": 1,
+						"w": 42,
+						"h": 89
+					}
+				},
+				{
+					"filename": "GrimbloPhotoshopfiles40005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 28,
+						"y": 3,
+						"w": 42,
+						"h": 89
+					},
+					"frame": {
+						"x": 1,
+						"y": 89,
+						"w": 42,
+						"h": 89
+					}
+				},
+				{
+					"filename": "GrimbloPhotoshopfiles40000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 28,
+						"y": 7,
+						"w": 50,
+						"h": 83
+					},
+					"frame": {
+						"x": 45,
+						"y": 92,
+						"w": 50,
+						"h": 83
+					}
+				},
+				{
+					"filename": "GrimbloPhotoshopfiles40002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 5,
+						"w": 43,
+						"h": 87
+					},
+					"frame": {
+						"x": 97,
+						"y": 1,
+						"w": 43,
+						"h": 87
+					}
+				},
+				{
+					"filename": "GrimbloPhotoshopfiles40004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 5,
+						"w": 43,
+						"h": 87
+					},
+					"frame": {
+						"x": 97,
+						"y": 90,
+						"w": 43,
+						"h": 87
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8b2e070636a39278e9c0768625c51385:466865ef7eee08a97edfe4f261d9e61c:434d206ad1dbf2613a092e5e66f058a4$"
+	}
+}

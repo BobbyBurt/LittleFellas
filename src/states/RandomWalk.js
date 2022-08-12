@@ -22,11 +22,10 @@ class RandomWalk {
 		// this.xMove = Phaser.Math.RND.normal();
 		// this.yMove = Phaser.Math.RND.normal();
 		this.target = {x: this.fella.x + (Phaser.Math.RND.normal() * 150), y: this.fella.y + (Phaser.Math.RND.normal() * 150)}
-		console.log(this.target);
 	
 		this.duration = Phaser.Math.RND.between(20, 100);
 
-		this.fella.play('reg-bob');
+		this.fella.play(this.fella.getData('sprite') + '-walk');
 	}
 	
 	update() {

@@ -133,6 +133,99 @@
             ],
             "frameRate": 24,
             "skipMissedFrames": true
+        },
+        {
+            "key": "hearts",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "hearts",
+                    "frame": "hearts0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hearts",
+                    "frame": "hearts0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 18,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

@@ -20,14 +20,13 @@ I should do this in order
 - [x] can the tank be the same size across different resolutions?
   - I can zoom, just make sure tank aspect ratio works on mobile & desktop
 
-- [ ] refactor Level.js, separate chunks into functions
+- [x] refactor Level.js, separate chunks into functions
 - [ ] use timer events in states
-  - [ ] test if they are fixed or impacted by framerate
-
-- [ ] prototype the most fun ways of interacting with creatures. The gameplay will be focused around them
 
 - [x] Set consistent tank size, NG window resolution, zoom levels
-- [ ] temp tank BG
+- [x] temp tank BG
+
+- [ ] FIXME: feeding turns into a drag on mobile
 
 - [x] Set up Newgrounds.io
 - [ ] uhh can I call NGio.js functions the way it's set up?

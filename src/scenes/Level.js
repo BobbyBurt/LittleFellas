@@ -212,6 +212,113 @@ class Level extends Phaser.Scene {
 
 	/** how much total velocity of drag does it take to make fella want to breed */
 	velocityToBreed = 4000;
+	terminalVelocity = 200;
+
+	spawningRaces = ['yellow', 'green', 'cyan', 'blue', 'purple'];
+
+	// races
+	races = new Map([
+
+		// tier 1
+		['yellow', {
+			breeding: { with: 'green', makes: 'mango' },
+			sprite: 'reg',
+			tint: 0xf0f042,
+			circleRadius: 40,
+			mass: 10
+		}],
+		['green', {
+			breeding: { with: 'cyan', makes: 'ufo' },
+			sprite: 'reg',
+			tint: 0x67e467,
+			circleRadius: 40,
+			mass: 10
+		}],
+		['cyan', {
+			breeding: { with: 'blue', makes: 'boyo' },
+			sprite: 'reg',
+			tint: 0x5eeded,
+			circleRadius: 40,
+			mass: 10
+		}],
+		['blue', {
+			breeding: { with: 'purple', makes: 'girl' },
+			sprite: 'reg',
+			tint: 0x6666ff,
+			circleRadius: 40,
+			mass: 10
+		}],
+		['purple', {
+			breeding: { with: 'green', makes: 'nothing' },
+			sprite: 'reg',
+			tint: 0xd580ff,
+			circleRadius: 40,
+			mass: 10
+		}],
+
+		// tier 2
+		['mango', {
+			breeding: { with: 'ufo', makes: 'smarto' },
+			sprite: 'mango',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}],
+		['ufo', {
+			breeding: { with: 'boyo', makes: 'angro' },
+			sprite: 'ufo',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}],
+		['boyo', {
+			breeding: { with: 'girl', makes: 'pixie' },
+			sprite: 'boyo',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}],
+		['girl', {
+			breeding: { with: 'mango', makes: 'nothing' },
+			sprite: 'girl',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}],
+
+		// tier 3
+		['smarto', {
+			breeding: { with: 'angro', makes: 'scooper' },
+			sprite: 'smarto',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}],
+		['angro', {
+			breeding: { with: 'pixie', makes: 'scooper' },
+			sprite: 'angro',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}],
+		['pixie', {
+			breeding: { with: 'smarto', makes: 'nothing' },
+			sprite: 'pixie',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}], 
+
+		// tier 4
+		['scooper', {
+			breeding: { with: 'scooper', makes: 'nothing' },
+			sprite: 'scooper',
+			tint: 0xffffff,
+			circleRadius: 80,
+			mass: 20
+		}]
+
+	]);
 
 	create() {
 
@@ -244,35 +351,102 @@ class Level extends Phaser.Scene {
 		// debug UI
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 
-		// physics
-		this.matter.world.setBounds(-910, -450, 1820, 880, 300);
+		// tank bounds
+		// this.matter.world.setBounds(-910, -450, 1820, 880, 300);
+		this.matter.add.rectangle(-1210, -750, 6000, 600, {isStatic: true}).side = 'top';
+		this.matter.add.rectangle(-1210, -750, 600, 6000, {isStatic: true}).side = 'left';
+		this.matter.add.rectangle(-1210, 730, 6000, 600, {isStatic: true}).side = 'bottom';
+		this.matter.add.rectangle(1210, -750, 600, 6000, {isStatic: true}).side = 'right';
 		// this is centered at (0, 10) to avoid accidental app switching on ios
+
+		// physics
 		this.setupDrag();
 		const _this = this;
 		this.colCount = 0;
 		this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
 
-			// with wall
+			// wall collision
 			if (bodyA.isStatic || bodyB.isStatic) {
 
-				// TODO: check for velocity of fella. this may be a fatal collision
+				let _wall;
+				let _fella;
+
+				// set definitions
+				if (bodyA.isStatic && bodyB.label == 'Circle Body') {
+
+					_wall = bodyA;
+					_fella = bodyB;
+				}
+				else if (bodyB.isStatic && bodyA.label == 'Circle Body') {
+
+					_wall = bodyB;
+					_fella = bodyA;
+				}
+
+				// return if fella is being dragged
+				if (_fella.gameObject.status.currentState.constructor.name == 'Dragged') {
+
+					return;
+				}
+
+				// kill if at terminal velocity
+				if (_wall.side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
+
+					console.log('DEAD - top');
+					_fella.gameObject.status.setState('dead');
+				}
+				else if (_wall.side == 'bottom' && _fella.velocity.y > this.terminalVelocity) {
+
+					console.log('DEAD - bottom');
+					_fella.gameObject.status.setState('dead');
+				}
+				else if (_wall.side == 'left' && _fella.velocity.x < -this.terminalVelocity) {
+
+					console.log('DEAD - left');
+					_fella.gameObject.status.setState('dead');
+				}
+				else if (_wall.side == 'right' && _fella.velocity.x > this.terminalVelocity) {
+
+					console.log('DEAD - right');
+					_fella.gameObject.status.setState('dead');
+				}
+
 				return;
 			}
 
 			// breed check
 			if (bodyA.gameObject.getData('horny') && bodyB.gameObject.getData('horny')) {
 
+				let raceA = bodyA.gameObject.getData('race');
+				let raceB = bodyB.gameObject.getData('race');
+				let raceDataA = this.races.get(raceA);
+				let raceDataB = this.races.get(raceB);
+
+				if (raceDataA.breeding.with == raceB && raceDataA.breeding.makes != 'nothing') {
+
+					this.addFella(raceDataA.breeding.makes);
+				}
+				else if (raceDataB.breeding.with == raceA && raceDataB.breeding.makes != 'nothing') {
+
+					this.addFella(raceDataB.breeding.makes);
+				}
+
+				// TEMP: killing parents				
 				bodyA.gameObject.status.setState('dead');
 				bodyB.gameObject.status.setState('dead');
-				this.addFella();
 			}
 		});
 		// this is called EVERY COLLISION. There is no other way to check for a collision
 		// between two bodies. if there is, hell if i can find it
 
 		// manual fella create
-		this.addFella('reg');
-		this.addFella('reg');
+		this.spawnTimer = new Phaser.Time.TimerEvent({ delay: 4000, loop: true, callback: () => {
+
+			this.addFella(Phaser.Math.RND.pick(this.spawningRaces));
+			
+		}});
+
+		this.time.addEvent(this.spawnTimer);
 
 		// setup all fella states
 		// for (let i = 0; i < this.fellasList.length; i++) {
@@ -355,6 +529,8 @@ class Level extends Phaser.Scene {
 
 		this.matter.world.on('dragstart', function(body) { 
 
+			if (body.isStatic) return;
+
 			// setup transition conditions if necessary
 			body.gameObject.status.setState('dragged');
 		});
@@ -362,7 +538,13 @@ class Level extends Phaser.Scene {
 		const _this = this;
 		this.matter.world.on('dragend', function(body) { 
 
-			console.log('total drag velocity: ' + body.gameObject.getData('totalVelocity'));
+			if (body.isStatic) return;
+
+			// console.log(body.gameObject);
+			// console.log(body.gameObject.getData('race'));
+			// console.log('total drag velocity: ' + body.gameObject.getData('totalVelocity'));
+			// FIXME: getting a crash that points to this line
+
 			if((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) {
 
 				body.gameObject.setData('horny', true);
@@ -385,15 +567,14 @@ class Level extends Phaser.Scene {
 	addFella(race) {
 
 		const fella = this.add.sprite(0, 0, "fella");
+		const raceData = this.races.get(race);
 
-		// TODO : change colour of tier 1 fellas
-		// fella.tint = 6343410;
+		// tier 1 colours
+		fella.setTint(raceData.tint);
 
-		// TODO: change based on fella race
-		let colliderRadius = 80;
+		let colliderRadius = raceData.circleRadius;
 
-		// TODO: change based on fella race
-		let mass = 20;
+		let mass = raceData.mass;
 
 		this.fellas.add(
 			this.matter.add.gameObject(fella, 
@@ -405,9 +586,11 @@ class Level extends Phaser.Scene {
 
 		// set default data
 		fella.setData('race', race);
+		fella.setData('sprite', raceData.sprite);
 		fella.setData('alive', true);
 		fella.setData('health', 100);
 		fella.setData('happy', 100);
+		fella.setData('totalVelocity', 0);
 
 		// state machine
 		fella.status = new StateController(fella, this);
@@ -482,7 +665,11 @@ class Level extends Phaser.Scene {
 		// example of using events for inputs
 		this.controls.onPress('left', () => {
 
-			this.addFella();
+			this.addFella('yellow');
+			this.addFella('green');
+			this.addFella('cyan');
+			this.addFella('blue');
+			this.addFella('purple');
 		});
 
 		// spawning sprites
