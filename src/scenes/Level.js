@@ -44,7 +44,7 @@ class Level extends Phaser.Scene {
 		buttonTest.fillColor = 3970794;
 
 		// MobileTextcontainer
-		const mobileTextcontainer = this.add.container(0, 532);
+		const mobileTextcontainer = this.add.container(-618, -632);
 
 		// rectangle_3
 		const rectangle_3 = this.add.rectangle(0, 0, 128, 128);
@@ -106,14 +106,20 @@ class Level extends Phaser.Scene {
 		text.setLineSpacing(15);
 		orientationPrompt.add(text);
 
+		// guapen
+		const guapen = this.add.image(829, 74, "guapen");
+
+		// dino
+		const dino = this.add.image(623, 7, "dino");
+
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, buttonTest];
-		const alignToCameraRight = [buttonTest2];
+		const alignToCameraRight = [buttonTest2, guapen];
 		const alignToCameraTop = [mobileTextcontainer];
-		const alignToCameraBottom = [buttonTest2, buttonTest];
+		const alignToCameraBottom = [buttonTest2, buttonTest, guapen];
 		const resizeScale = [];
-		const alignToCameraMiddle = [orientationPrompt];
-		const alignToCameraCenter = [orientationPrompt];
+		const alignToCameraMiddle = [orientationPrompt, dino];
+		const alignToCameraCenter = [orientationPrompt, dino];
 		const pantsTest = [];
 		const fellasList = [];
 		const bounds = [tankBox];
@@ -180,17 +186,17 @@ class Level extends Phaser.Scene {
 	orientationPrompt;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
-	/** @type {Phaser.GameObjects.Rectangle[]} */
+	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Image>} */
 	alignToCameraRight;
 	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraTop;
-	/** @type {Phaser.GameObjects.Rectangle[]} */
+	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Image>} */
 	alignToCameraBottom;
 	/** @type {Array<any>} */
 	resizeScale;
-	/** @type {Phaser.GameObjects.Container[]} */
+	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
 	alignToCameraMiddle;
-	/** @type {Phaser.GameObjects.Container[]} */
+	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
 	alignToCameraCenter;
 	/** @type {Array<any>} */
 	pantsTest;
@@ -447,7 +453,7 @@ class Level extends Phaser.Scene {
 		this.spawnTimer = new Phaser.Time.TimerEvent({ delay: 4000, loop: true, callback: () => {
 
 			this.addFella(Phaser.Math.RND.pick(this.spawningRaces));
-			
+
 		}});
 
 		this.time.addEvent(this.spawnTimer);
@@ -495,31 +501,6 @@ class Level extends Phaser.Scene {
 		// debug info
 		this.spriteCountText.setText('fellas: ' + this.fellas.getLength());
 		// its just easier to do this every frame. wont be in the final game anyways
-	}
-
-	/** scene specific resizing adjustments
-	 * 
-	 * called at window resize from main.js binded method
-	 */
-	resize() {
-
-		this.alignObjects();
-
-		this.scaleObjects();
-
-		this.cameras.main.centerOn(0, 0);
-
-		this.setAdaptiveZoom();
-
-		// orientation check
-		if (this.registry.get('mobile') && this.scale.height > this.scale.width) {
-
-			this.orientationPrompt.setAlpha(1);
-		}
-		else {
-
-			this.orientationPrompt.setAlpha(0);
-		}
 	}
 
 	/** setup mouse drag physics constraints & events */
@@ -592,8 +573,7 @@ class Level extends Phaser.Scene {
 		fella.setData('race', race);
 		fella.setData('sprite', raceData.sprite);
 		fella.setData('alive', true);
-		fella.setData('health', 100);
-		fella.setData('happy', 100);
+		fella.setData('energy', 1);
 		fella.setData('totalVelocity', 0);
 
 		// state machine
@@ -611,6 +591,17 @@ class Level extends Phaser.Scene {
 				this.hornyFellas.add(fella);
 			}
 		}
+	}
+
+	/**
+	 * 
+	 * @param {number} fella gameobject
+	 * @param {number} amount 0-1, 1 being full energy
+	 * @param {number} add add amount to current energy. Otherwise, energy will be set to amount
+	 */
+	setEnergy(fella, amount, add) {
+
+
 	}
 
 	/** incrementally zoom the camera out until necessary elements aren't cropped out */
@@ -701,9 +692,7 @@ class Level extends Phaser.Scene {
 			let offsetX = 0;
 			if (AlignOffsets.getComponent(this.alignToCameraLeft[i])) offsetX = AlignOffsets.getComponent(this.alignToCameraLeft[i]).x;
 
-			this.alignToCameraLeft[i].setX(offsetX);
-
-			this.alignToCameraLeft[i].scrollFactorX = 0;
+			this.alignToCameraLeft[i].setX(this.cameras.main.worldView.left + offsetX);
 		};
 
 		// RIGHT
@@ -713,9 +702,7 @@ class Level extends Phaser.Scene {
 			let offsetX = 0;
 			if (AlignOffsets.getComponent(this.alignToCameraRight[i])) offsetX = AlignOffsets.getComponent(this.alignToCameraRight[i]).x;
 
-			this.alignToCameraRight[i].setX(this.scale.width + offsetX);
-
-			this.alignToCameraRight[i].scrollFactorX = 0;
+			this.alignToCameraRight[i].setX(this.cameras.main.worldView.right + offsetX);
 		};
 
 		// TOP
@@ -725,9 +712,8 @@ class Level extends Phaser.Scene {
 			let offsetY = 0;
 			if (AlignOffsets.getComponent(this.alignToCameraTop[i])) offsetY = AlignOffsets.getComponent(this.alignToCameraTop[i]).y;
 
-			this.alignToCameraTop[i].setY(offsetY);
+			this.alignToCameraTop[i].setY(this.cameras.main.worldView.top + offsetY);
 
-			this.alignToCameraTop[i].scrollFactorY = 0;
 		};
 
 		// BOTTOM
@@ -737,9 +723,7 @@ class Level extends Phaser.Scene {
 			let offsetY = 0;
 			if (AlignOffsets.getComponent(this.alignToCameraBottom[i])) offsetY = AlignOffsets.getComponent(this.alignToCameraBottom[i]).y;
 
-			this.alignToCameraBottom[i].setY(this.scale.height+ offsetY);
-
-			this.alignToCameraBottom[i].scrollFactorY = 0;
+			this.alignToCameraBottom[i].setY(this.cameras.main.worldView.bottom + offsetY);
 		};
 
 		// MIDDLE (vertical)
@@ -749,9 +733,7 @@ class Level extends Phaser.Scene {
 			let offsetY = 0;
 			if (AlignOffsets.getComponent(this.alignToCameraMiddle[i])) offsetY = AlignOffsets.getComponent(this.alignToCameraMiddle[i]).y;
 
-			this.alignToCameraMiddle[i].setY((this.scale.height / 2) + offsetY);
-
-			this.alignToCameraMiddle[i].scrollFactorY = 0;
+			this.alignToCameraMiddle[i].setY(this.cameras.main.worldView.centerY + offsetY);
 		};
 
 		// CENTER (horizontal)
@@ -761,9 +743,7 @@ class Level extends Phaser.Scene {
 			let offsetX = 0;
 			if (AlignOffsets.getComponent(this.alignToCameraCenter[i])) offsetX = AlignOffsets.getComponent(this.alignToCameraCenter[i]).x;
 
-			this.alignToCameraCenter[i].setX((this.scale.width / 2) + offsetX);
-
-			this.alignToCameraCenter[i].scrollFactorX = 0;
+			this.alignToCameraCenter[i].setX(this.cameras.main.worldView.centerX + offsetX);
 		};
 
 	}
@@ -782,6 +762,35 @@ class Level extends Phaser.Scene {
 
 			// if certain images need to be scaled differently, then add a component which includes such properties
 		}
+	}
+
+	/** scene specific resizing adjustments
+	 * 
+	 * called at window resize from main.js binded method
+	 */
+	resize() {
+
+		this.setAdaptiveZoom();
+		
+		this.scaleObjects();
+		
+		this.cameras.main.centerOn(0, 0);		
+		
+		// orientation check
+		if (this.registry.get('mobile') && this.scale.height > this.scale.width) {
+			
+			this.orientationPrompt.setAlpha(1);
+			this.input.enabled = false;
+		}
+		else {
+			
+			this.orientationPrompt.setAlpha(0);
+			this.input.enabled = true;
+		}
+		
+		this.cameras.main.preRender(1);
+
+		this.alignObjects();
 	}
 
 	/* END-USER-CODE */

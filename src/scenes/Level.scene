@@ -84,7 +84,8 @@
             ],
             "AlignOffsets.x": 20,
             "AlignOffsets.y": 20,
-            "y": 532,
+            "x": -618,
+            "y": -632,
             "list": [
                 {
                     "type": "Rectangle",
@@ -198,6 +199,28 @@
                     "fontSize": "50px"
                 }
             ]
+        },
+        {
+            "type": "Image",
+            "id": "077fa474-6b56-483a-aac1-2ea53e189bec",
+            "label": "guapen",
+            "components": [],
+            "texture": {
+                "key": "guapen"
+            },
+            "x": 829,
+            "y": 74
+        },
+        {
+            "type": "Image",
+            "id": "ddd1e14f-f0f6-468b-9aa4-ae2ee3e62e89",
+            "label": "dino",
+            "components": [],
+            "texture": {
+                "key": "dino"
+            },
+            "x": 623,
+            "y": 7
         }
     ],
     "plainObjects": [],
@@ -220,7 +243,8 @@
             "id": "3392a870-e4cf-4eb3-aa94-d451ae04aaf6",
             "label": "alignToCameraRight",
             "objectIds": [
-                "3b1a0172-dca2-4b67-a007-96c343a003dc"
+                "3b1a0172-dca2-4b67-a007-96c343a003dc",
+                "077fa474-6b56-483a-aac1-2ea53e189bec"
             ]
         },
         {
@@ -235,7 +259,8 @@
             "label": "alignToCameraBottom",
             "objectIds": [
                 "3b1a0172-dca2-4b67-a007-96c343a003dc",
-                "cb26b570-9996-4ba2-9ee1-c9e95aa17922"
+                "cb26b570-9996-4ba2-9ee1-c9e95aa17922",
+                "077fa474-6b56-483a-aac1-2ea53e189bec"
             ]
         },
         {
@@ -246,14 +271,16 @@
             "id": "71012bf3-4f2c-4bfb-b490-a6a38253d3b3",
             "label": "alignToCameraMiddle",
             "objectIds": [
-                "55bc1d27-f694-46f5-9d9b-28a4dda45fd2"
+                "55bc1d27-f694-46f5-9d9b-28a4dda45fd2",
+                "ddd1e14f-f0f6-468b-9aa4-ae2ee3e62e89"
             ]
         },
         {
             "id": "2178f94b-3199-4295-b1f2-5a789fbcb3f3",
             "label": "alignToCameraCenter",
             "objectIds": [
-                "55bc1d27-f694-46f5-9d9b-28a4dda45fd2"
+                "55bc1d27-f694-46f5-9d9b-28a4dda45fd2",
+                "ddd1e14f-f0f6-468b-9aa4-ae2ee3e62e89"
             ]
         },
         {

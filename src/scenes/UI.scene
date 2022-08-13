@@ -52,6 +52,23 @@
                     "fontSize": "20px"
                 }
             ]
+        },
+        {
+            "type": "Rectangle",
+            "id": "09eced77-2783-4bba-8f8c-b99c0638dded",
+            "label": "rectangle_1",
+            "components": [
+                "AlignOffsets"
+            ],
+            "AlignOffsets.x": -50,
+            "AlignOffsets.y": 50,
+            "x": 1774,
+            "y": 55,
+            "originX": 1,
+            "originY": 0,
+            "isFilled": true,
+            "width": 150,
+            "height": 150
         }
     ],
     "plainObjects": [],
@@ -60,5 +77,37 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "bcbd3c47-4eb7-4dbb-a0fb-b67fc39b596e",
+            "label": "alignToCameraRight",
+            "objectIds": [
+                "09eced77-2783-4bba-8f8c-b99c0638dded"
+            ]
+        },
+        {
+            "id": "9b979c58-8e10-44dd-82c1-bd1c3b6b08fa",
+            "label": "alignToCameraLeft"
+        },
+        {
+            "id": "bc940181-d13e-4aee-b312-19a17a5ff73e",
+            "label": "alignToCameraTop",
+            "objectIds": [
+                "09eced77-2783-4bba-8f8c-b99c0638dded"
+            ]
+        },
+        {
+            "id": "b9d339d5-7bc4-4f31-9352-ea0cabf3ddd1",
+            "label": "alignToCameraBottom"
+        },
+        {
+            "id": "ab7d3baf-c0f8-46c6-aeaa-23c2c238437b",
+            "label": "alignToCameraMiddle"
+        },
+        {
+            "id": "095c702f-fd72-4221-9550-14d24eb36a08",
+            "label": "alignToCameraCenter"
+        }
+    ]
 }

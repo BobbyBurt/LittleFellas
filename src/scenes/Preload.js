@@ -103,7 +103,6 @@ class Preload extends Phaser.Scene {
 		// start scenes
 		this.scene.stop(this);
 		this.scene.launch("level");
-		this.scene.launch("ui");
 	}
 
 	resize ()
