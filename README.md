@@ -29,6 +29,8 @@ I should do this in order
 - [ ] impact effect animation
 - [ ] fix heart destory
 
+- [ ] horny timer
+
 - [x] Set up Newgrounds.io
 
 - [x] only landscape orientation - add flip screen in case it's in portrait

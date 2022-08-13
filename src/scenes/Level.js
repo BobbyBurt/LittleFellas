@@ -566,6 +566,9 @@ class Level extends Phaser.Scene {
 
 		this.editorCreate();
 
+		// TEST: puke
+		this.addPuke(300, 300);
+
 		// fellas group
 		this.fellas = this.add.group();
 		this.fellas.maxSize = -1;
@@ -582,6 +585,7 @@ class Level extends Phaser.Scene {
 		this.sound.setVolume(1);
 		// this.music = this.sound.add('tank-2').play();
 		this.sound.add('impact');
+		this.sound.add('munch');
 
 		this.setupInput();
 
@@ -713,6 +717,9 @@ class Level extends Phaser.Scene {
 		fella.setData('energy', 1);
 		fella.setData('totalVelocity', 0);
 
+		fella.type = 'fella';
+		// used to distinguish bodies
+
 		// state machine
 		fella.status = new StateController(fella, this);
 		fella.status.setState('idle');
@@ -771,15 +778,48 @@ class Level extends Phaser.Scene {
 		let race1Data = this.races.get(race1.getData('race'));
 		let race2Data = this.races.get(race2.getData('race'));
 		if (race1Data.breeding.with == race2.getData('race')) {
-			
+
 			this.addFella(race1Data.breeding.makes);
 		}
 		else if (race2Data.breeding.with == race1.getData('race')) {
-			
+
 			this.addFella(race2Data.breeding.makes);
 		}
 		race1.status.setState('dead');
 		race2.status.setState('dead');
+	}
+
+
+	addFood(x, y) {
+
+		const food = this.add.image(x, y, 'guapen').setScale(.3, .3);
+		food.setDepth(800);
+
+		this.matter.add.gameObject(food, { inertia: Infinity, isSensor: true, shape: {type: 'circle', radius: 30}}).setFrictionAir(.3).type = 'food';
+	}
+
+	addPuke(x, y) {
+
+		const puke = this.add.image(x, y, 'poof').setScale(.5);
+		puke.setDepth(-800);
+		this.matter.add.gameObject(puke, { inertia: Infinity, isSensor: true, isStatic: true, shape: {type: 'circle', radius: 60}}).type = 'puke';
+
+		puke.setOnCollide(pair => {
+
+			// catch wall
+			if (pair.bodyB.isStatic && pair.bodyA.isStatic) return;
+
+			// catch food
+			if (pair.bodyB.gameObject.type == 'food' || pair.bodyA.gameObject.type == 'food') return;
+
+			// set def
+			let _fella;
+			if (pair.bodyB.gameObject.type == 'puke') _fella = pair.bodyA;
+			else if (pair.bodyA.gameObject.type == 'puke') _fella = pair.bodyB;
+
+			if (_fella.gameObject != null)
+			_fella.gameObject.status.setState('dead');
+		});
 	}
 
 	/**
@@ -797,7 +837,7 @@ class Level extends Phaser.Scene {
 		this.bottomBound = this.matter.add.gameObject(this.add.rectangle(-1210, 730, 6000, 600), {isStatic: true});
 		this.rightBound = this.matter.add.gameObject(this.add.rectangle(1210, -750, 600, 6000), {isStatic: true});
 		// this is centered at (0, 10) to avoid accidental app switching on ios
-		
+
 		// OLD - tank bounds 
 		// this.matter.world.setBounds(-910, -450, 1820, 880, 300);;
 
@@ -864,6 +904,12 @@ class Level extends Phaser.Scene {
 			// cant drag bounds
 			if (body.isStatic) return;
 
+			// food
+			if (body.gameObject.type == 'food') {
+
+				return;
+			}
+
 			// fella-bound collision callback for impact check
 			body.gameObject.setOnCollideWith(_scene.topBound.body, () => {
 
@@ -891,13 +937,36 @@ class Level extends Phaser.Scene {
 
 			// drag wall
 			if (body.isStatic) return;
-
+			
 			// fella has died during drag
 			if (body.gameObject == null) {
 
 				console.log('dragend event: this fella is dead');
 				return;
 			}
+
+			// food
+			if (body.gameObject.type == 'food') {
+
+				// if(_this.matter.intersectBody(body, _this.fellas.getChildren()[0])) {
+
+				// 	console.log('feed');
+				// }
+				let intersect = _this.matter.intersectBody(body, _this.fellas.getChildren());
+				if(intersect[0] != null) {
+
+					_this.setEnergy(intersect[0].gameObject, .3, true);
+					
+					body.gameObject.destroy(); 
+					
+					_this.sound.play('munch');
+
+					// TODO: visual effect
+				}
+
+				return;
+			}
+
 
 			// shaken = horny
 			// only if velocity > terminal and fella is alive

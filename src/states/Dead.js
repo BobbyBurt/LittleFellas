@@ -30,6 +30,8 @@ class Dead {
 		// this.wings.setDepth(this.fella.depth - 1);
 		// TODO: set scale according to fella type
 		
+		this.scene.addFood(this.fella.x, this.fella.y);
+
 		// add poof
 		this.poof = this.scene.add.sprite(this.fella.x, this.fella.y, 'poof');
 		this.poof.play('poof');

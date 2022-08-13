@@ -123,6 +123,13 @@
                 "key": "mango"
             },
             {
+                "url": [
+                    "assets/audio/munch.ogg"
+                ],
+                "type": "audio",
+                "key": "munch"
+            },
+            {
                 "url": "src/components/PlayAnimation.js",
                 "type": "script",
                 "key": "PlayAnimation"
