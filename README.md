@@ -26,15 +26,17 @@ I should do this in order
 - [x] Set consistent tank size, NG window resolution, zoom levels
 - [x] temp tank BG
 
-- [ ] FIXME: feeding turns into a drag on mobile
+- [ ] impact effect animation
 
 - [x] Set up Newgrounds.io
-- [ ] uhh can I call NGio.js functions the way it's set up?
-
-- [ ] Impliment Psychogoldfish's audio hack for safari
 
 - [x] only landscape orientation - add flip screen in case it's in portrait
 - [x] temp orientation prompt
+
+### Non essential / post jam update
+- [ ] uhh can I call NGio.js functions the way it's set up?
+
+- [ ] Impliment Psychogoldfish's audio hack for safari
 
 ### Notes
 - camera zoom messes with objects that should stay in place with a scroll factor of 0. I may have to render that stuff in a parallel scene

@@ -37,13 +37,6 @@
                 "key": "Damage"
             },
             {
-                "url": [
-                    "assets/audio/dead.wav"
-                ],
-                "type": "audio",
-                "key": "dead"
-            },
-            {
                 "type": "multiatlas",
                 "url": "assets/death-poof.json",
                 "path": "assets",
@@ -110,6 +103,13 @@
                 "url": "assets/effects/hearts.json",
                 "path": "assets/effects",
                 "key": "hearts"
+            },
+            {
+                "url": [
+                    "assets/audio/impact.wav"
+                ],
+                "type": "audio",
+                "key": "impact"
             },
             {
                 "url": "src/InputWrapper.js",

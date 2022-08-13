@@ -106,20 +106,225 @@ class Level extends Phaser.Scene {
 		text.setLineSpacing(15);
 		orientationPrompt.add(text);
 
-		// guapen
-		const guapen = this.add.image(829, 74, "guapen");
+		// fellaUI
+		const fellaUI = this.add.container(-910, -450);
 
-		// dino
-		const dino = this.add.image(623, 7, "dino");
+		// familyButton
+		const familyButton = this.add.rectangle(80, 40, 125, 125);
+		familyButton.setOrigin(0, 0);
+		familyButton.isFilled = true;
+		fellaUI.add(familyButton);
+
+		// fellaCountText
+		const fellaCountText = this.add.text(379, 40, "", {});
+		fellaCountText.text = "x 0";
+		fellaCountText.setStyle({ "fontFamily": "arial", "fontSize": "80px" });
+		fellaUI.add(fellaCountText);
+
+		// text_3
+		const text_3 = this.add.text(90, 80, "", {});
+		text_3.text = "TREE";
+		text_3.setStyle({ "color": "#3d3d3dff", "fontFamily": "ARIAL", "fontSize": "40px", "fontStyle": "bold" });
+		fellaUI.add(text_3);
+
+		// fella_0000
+		const fella_0000 = this.add.image(318, 79, "fella_1", "fella/0000");
+		fella_0000.scaleX = 0.4669736556768917;
+		fella_0000.scaleY = 0.4669736556768917;
+		fellaUI.add(fella_0000);
+
+		// moneyUI
+		const moneyUI = this.add.container(-910, 430);
+
+		// shopButton
+		const shopButton = this.add.rectangle(80, -40, 125, 125);
+		shopButton.setOrigin(0, 1);
+		shopButton.isFilled = true;
+		moneyUI.add(shopButton);
+
+		// moneyText
+		const moneyText = this.add.text(301, -40, "", {});
+		moneyText.setOrigin(0, 1);
+		moneyText.text = "$ 428";
+		moneyText.setStyle({ "fontFamily": "arial", "fontSize": "80px" });
+		moneyUI.add(moneyText);
+
+		// text_4
+		const text_4 = this.add.text(86, -122, "", {});
+		text_4.text = "SHOP";
+		text_4.setStyle({ "color": "#3d3d3dff", "fontFamily": "ARIAL", "fontSize": "40px", "fontStyle": "bold" });
+		moneyUI.add(text_4);
+
+		// shopMenu
+		const shopMenu = this.add.container(0, 1166);
+
+		// rectangle
+		const rectangle = this.add.rectangle(0, 0, 800, 600);
+		rectangle.scaleX = 1.5672471108996504;
+		rectangle.isFilled = true;
+		rectangle.fillColor = 0;
+		rectangle.fillAlpha = 0.8;
+		shopMenu.add(rectangle);
+
+		// text_2
+		const text_2 = this.add.text(0, -201, "", {});
+		text_2.setOrigin(0.5, 0.5);
+		text_2.text = "SHOP";
+		text_2.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "70px", "fontStyle": "bold italic" });
+		text_2.setLineSpacing(15);
+		shopMenu.add(text_2);
+
+		// price
+		const price = this.add.text(-398, 214, "", {});
+		price.setOrigin(0.5, 0.5);
+		price.text = "$ 100";
+		price.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "50px" });
+		price.setLineSpacing(15);
+		shopMenu.add(price);
+
+		// idle0000_png
+		const idle0000_png = this.add.image(-394, 104, "reg", "idle0000.png");
+		shopMenu.add(idle0000_png);
+
+		// idle0000_png_1
+		const idle0000_png_1 = this.add.image(-234, 104, "reg", "idle0000.png");
+		idle0000_png_1.tintTopLeft = 15256153;
+		idle0000_png_1.tintTopRight = 15256153;
+		idle0000_png_1.tintBottomLeft = 15256153;
+		idle0000_png_1.tintBottomRight = 15256153;
+		shopMenu.add(idle0000_png_1);
+
+		// idle0000_png_2
+		const idle0000_png_2 = this.add.image(-74, 104, "reg", "idle0000.png");
+		shopMenu.add(idle0000_png_2);
+
+		// idle0000_png_3
+		const idle0000_png_3 = this.add.image(86, 104, "reg", "idle0000.png");
+		shopMenu.add(idle0000_png_3);
+
+		// idle0000_png_4
+		const idle0000_png_4 = this.add.image(246, 104, "reg", "idle0000.png");
+		shopMenu.add(idle0000_png_4);
+
+		// idle0000_png_5
+		const idle0000_png_5 = this.add.image(406, 104, "reg", "idle0000.png");
+		idle0000_png_5.alpha = 0.3;
+		idle0000_png_5.alphaTopLeft = 0.3;
+		idle0000_png_5.alphaTopRight = 0.3;
+		idle0000_png_5.alphaBottomLeft = 0.3;
+		idle0000_png_5.alphaBottomRight = 0.3;
+		idle0000_png_5.tintTopLeft = 12085485;
+		idle0000_png_5.tintTopRight = 12085485;
+		idle0000_png_5.tintBottomLeft = 12085485;
+		idle0000_png_5.tintBottomRight = 12085485;
+		shopMenu.add(idle0000_png_5);
+
+		// fellaMenu
+		const fellaMenu = this.add.container(0, 2032);
+
+		// rectangle_2
+		const rectangle_2 = this.add.rectangle(0, 0, 800, 600);
+		rectangle_2.scaleX = 1.872202098436922;
+		rectangle_2.scaleY = 1.510335750772474;
+		rectangle_2.isFilled = true;
+		rectangle_2.fillColor = 0;
+		rectangle_2.fillAlpha = 0.8;
+		fellaMenu.add(rectangle_2);
+
+		// text_5
+		const text_5 = this.add.text(-474, -302, "", {});
+		text_5.setOrigin(0.5, 0.5);
+		text_5.text = "BREEDING \nCHART";
+		text_5.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "70px", "fontStyle": "bold italic" });
+		text_5.setLineSpacing(15);
+		fellaMenu.add(text_5);
+
+		// idle0000_png_6
+		const idle0000_png_6 = this.add.image(7, -307, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_6);
+
+		// idle0000_png_7
+		const idle0000_png_7 = this.add.image(-161.6380157470703, -190.264892578125, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_7);
+
+		// idle0000_png_8
+		const idle0000_png_8 = this.add.image(149.14031982421875, -206.6217041015625, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_8);
+
+		// idle0000_png_9
+		const idle0000_png_9 = this.add.image(-333.3839416503906, -34.875732421875, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_9);
+
+		// idle0000_png_10
+		const idle0000_png_10 = this.add.image(-486.0469970703125, 153.226806640625, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_10);
+
+		// idle0000_png_11
+		const idle0000_png_11 = this.add.image(-641.4361572265625, 354.960205078125, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_11);
+
+		// idle0000_png_12
+		const idle0000_png_12 = this.add.image(-6.248849391937256, -2.1622314453125, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_12);
+
+		// idle0000_png_13
+		const idle0000_png_13 = this.add.image(397.2177734375, -37.6019287109375, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_13);
+
+		// idle0000_png_14
+		const idle0000_png_14 = this.add.image(-199.8037872314453, 164.13134765625, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_14);
+
+		// idle0000_png_15
+		const idle0000_png_15 = this.add.image(173.67544555664062, 128.69189453125, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_15);
+
+		// idle0000_png_16
+		const idle0000_png_16 = this.add.image(528.07177734375, 131.41796875, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_16);
+
+		// idle0000_png_17
+		const idle0000_png_17 = this.add.image(-352.4668273925781, 327.698974609375, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_17);
+
+		// idle0000_png_18
+		const idle0000_png_18 = this.add.image(-3.522723913192749, 322.246826171875, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_18);
+
+		// idle0000_png_19
+		const idle0000_png_19 = this.add.image(331.7907409667969, 311.34228515625, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_19);
+
+		// idle0000_png_20
+		const idle0000_png_20 = this.add.image(705.2699584960938, 308.6162109375, "reg", "idle0000.png");
+		fellaMenu.add(idle0000_png_20);
+
+		// tutorialUI
+		const tutorialUI = this.add.container(0, -1018);
+
+		// rectangle_4
+		const rectangle_4 = this.add.rectangle(0, 0, 800, 600);
+		rectangle_4.isFilled = true;
+		rectangle_4.fillColor = 0;
+		rectangle_4.fillAlpha = 0.8;
+		tutorialUI.add(rectangle_4);
+
+		// text_7
+		const text_7 = this.add.text(0, -6, "", {});
+		text_7.setOrigin(0.5, 0.5);
+		text_7.text = "This is the tutorial text. \nLorem ipsum indesid \nglonkin ishta ongol";
+		text_7.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "50px" });
+		text_7.setLineSpacing(15);
+		tutorialUI.add(text_7);
 
 		// lists
-		const alignToCameraLeft = [mobileTextcontainer, buttonTest];
-		const alignToCameraRight = [buttonTest2, guapen];
-		const alignToCameraTop = [mobileTextcontainer];
-		const alignToCameraBottom = [buttonTest2, buttonTest, guapen];
+		const alignToCameraLeft = [mobileTextcontainer, buttonTest, moneyUI, fellaUI];
+		const alignToCameraRight = [buttonTest2];
+		const alignToCameraTop = [mobileTextcontainer, fellaUI];
+		const alignToCameraBottom = [buttonTest2, buttonTest, moneyUI];
 		const resizeScale = [];
-		const alignToCameraMiddle = [orientationPrompt, dino];
-		const alignToCameraCenter = [orientationPrompt, dino];
+		const alignToCameraMiddle = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
+		const alignToCameraCenter = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
 		const pantsTest = [];
 		const fellasList = [];
 		const bounds = [tankBox];
@@ -146,14 +351,28 @@ class Level extends Phaser.Scene {
 		mobileTextcontainerAlignOffsets.x = 20;
 		mobileTextcontainerAlignOffsets.y = 20;
 
+		// shopMenu (components)
+		const shopMenuAlignOffsets = new AlignOffsets(shopMenu);
+		shopMenuAlignOffsets.y = 100;
+
 		this.tankBox = tankBox;
 		this.buttonTest2 = buttonTest2;
 		this.buttonTest = buttonTest;
+		this.mobileTextcontainer = mobileTextcontainer;
 		this.mobileText = mobileText;
 		this.spriteCountText = spriteCountText;
 		this.fpsText = fpsText;
 		this.zoomText = zoomText;
 		this.orientationPrompt = orientationPrompt;
+		this.fellaUI = fellaUI;
+		this.familyButton = familyButton;
+		this.fellaCountText = fellaCountText;
+		this.moneyUI = moneyUI;
+		this.shopButton = shopButton;
+		this.moneyText = moneyText;
+		this.shopMenu = shopMenu;
+		this.fellaMenu = fellaMenu;
+		this.tutorialUI = tutorialUI;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -174,6 +393,8 @@ class Level extends Phaser.Scene {
 	buttonTest2;
 	/** @type {Phaser.GameObjects.Rectangle} */
 	buttonTest;
+	/** @type {Phaser.GameObjects.Container} */
+	mobileTextcontainer;
 	/** @type {Phaser.GameObjects.Text} */
 	mobileText;
 	/** @type {Phaser.GameObjects.Text} */
@@ -184,19 +405,37 @@ class Level extends Phaser.Scene {
 	zoomText;
 	/** @type {Phaser.GameObjects.Container} */
 	orientationPrompt;
+	/** @type {Phaser.GameObjects.Container} */
+	fellaUI;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	familyButton;
+	/** @type {Phaser.GameObjects.Text} */
+	fellaCountText;
+	/** @type {Phaser.GameObjects.Container} */
+	moneyUI;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	shopButton;
+	/** @type {Phaser.GameObjects.Text} */
+	moneyText;
+	/** @type {Phaser.GameObjects.Container} */
+	shopMenu;
+	/** @type {Phaser.GameObjects.Container} */
+	fellaMenu;
+	/** @type {Phaser.GameObjects.Container} */
+	tutorialUI;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
-	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Image>} */
+	/** @type {Phaser.GameObjects.Rectangle[]} */
 	alignToCameraRight;
 	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraTop;
-	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Image>} */
+	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container>} */
 	alignToCameraBottom;
 	/** @type {Array<any>} */
 	resizeScale;
-	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
+	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraMiddle;
-	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
+	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraCenter;
 	/** @type {Array<any>} */
 	pantsTest;
@@ -218,7 +457,7 @@ class Level extends Phaser.Scene {
 
 	/** how much total velocity of drag does it take to make fella want to breed */
 	velocityToBreed = 4000;
-	terminalVelocity = 80;
+	terminalVelocity = 70;
 
 	spawningRaces = ['yellow', 'green', 'cyan', 'blue', 'purple'];
 
@@ -343,9 +582,9 @@ class Level extends Phaser.Scene {
 		this.tankBox.setDepth(-999);
 
 		//audio
-		this.sound.setVolume(0);
+		this.sound.setVolume(1);
 		// this.music = this.sound.add('tank-2').play();
-		this.sound.add('dead');
+		this.sound.add('impact');
 
 		this.setupInput();
 
@@ -356,6 +595,177 @@ class Level extends Phaser.Scene {
 
 		// debug UI
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
+		this.mobileTextcontainer.setVisible(false);
+		// change this before release
+
+		this.setupPhysics();
+
+		// manual fella create
+		this.spawnTimer = new Phaser.Time.TimerEvent({ delay: 4000, loop: true, callback: () => {
+
+			this.addFella(Phaser.Math.RND.pick(this.spawningRaces));
+
+		}});
+
+		this.time.addEvent(this.spawnTimer);
+
+		// setup all fella states
+		// for (let i = 0; i < this.fellasList.length; i++) {
+
+		// 	this.fellasList[i].status = new StateController(this.fellasList[i], this);
+		// 	// gameobject.state is a build in member meant to be an int or string, so we make our own property
+		// 	this.fellasList[i].status.setState('idle');
+		// }
+
+		// camera
+		this.cameras.main.setViewport(0, 0, this.scale.width, this.scale.height);
+		this.cameras.main.setRoundPixels(true);
+		this.cameras.main.centerOn(0, 0);
+
+		// shop UI
+		this.moneyUI.setDepth(999);
+		this.shopMenu.setDepth(999);
+		this.shopMenu.setVisible(false);
+		this.shopButton.setInteractive();
+		this.shopButton.on('pointerdown', () => {
+
+			this.shopMenu.setVisible(!this.shopMenu.visible);
+
+		});
+
+		// fella UI
+		this.fellaUI.setDepth(999);
+		this.fellaMenu.setDepth(999);
+		this.fellaMenu.setVisible(false);
+		this.familyButton.setInteractive();
+		this.familyButton.on('pointerdown', () => {
+
+			console.log('f');
+			this.fellaMenu.setVisible(!this.fellaMenu.visible);
+
+		});
+
+		this.tutorialUI.setVisible(false);
+
+		// TODO: make UI setup its own clas, yeah?
+
+		// resize
+		this.resize();
+	}
+
+	update() {
+
+		if (this.controls.isDown('left')) {
+
+			// debug function here
+		}
+		if (this.controls.isDown('right')) {
+
+			// debug function here
+		}
+
+		// for each fella loop
+		this.fellas.children.each(function(fella) {
+
+			fella.setDepth(fella.y);
+
+			// update all fella states
+			fella.status.update();
+		});
+
+		// debug text
+		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
+
+		// debug info
+		// this.spriteCountText.setText('fellas: ' + this.fellas.getLength());
+		// its just easier to do this every frame. wont be in the final game anyways
+	}
+
+	/**
+	 * manual fella creation
+	 * 
+	 * adds physics, state machine
+	 * 
+	 * @param {String} race
+	 */
+	addFella(race) {
+
+		const fella = this.add.sprite(0, 0, "fella");
+		const raceData = this.races.get(race);
+
+		// tier 1 colours
+		fella.setTint(raceData.tint);
+
+		let colliderRadius = raceData.circleRadius;
+
+		let mass = raceData.mass;
+
+		this.fellas.add(
+			this.matter.add.gameObject(fella, 
+			{ inertia: Infinity, shape: {type: 'circle', radius: colliderRadius}})
+				.setBounce(.5)
+				.setFrictionAir(.2)
+				.setMass(mass)
+		);
+
+		// set default data
+		fella.setData('race', race);
+		fella.setData('sprite', raceData.sprite);
+		fella.setData('alive', true);
+		fella.setData('energy', 1);
+		fella.setData('totalVelocity', 0);
+
+		// state machine
+		fella.status = new StateController(fella, this);
+		fella.status.setState('idle');
+
+		// update count
+		this.fellaCountText.setText('x ' + this.fellas.getLength());
+	}
+
+	/** adds / removes fella from horny group  */
+	setHorny(fella, horny) {
+
+		if (horny) {
+
+			if (this.hornyFellas.getLength() < this.hornyFellas.maxSize) {
+
+				this.hornyFellas.add(fella);
+			}
+		}
+	}
+
+	/**
+	 * 
+	 * @param {number} fella gameobject
+	 * @param {number} amount 0-1, 1 being full energy
+	 * @param {number} add add amount to current energy. Otherwise, energy will be set to amount
+	 */
+	setEnergy(fella, amount, add) {
+
+
+	}
+
+	/**
+	 * called when fella hits a wall at terminal velocity
+	 * 
+	 * @param {*} fella 
+	 */
+	fellaImpact(_fellaBody) {
+
+		this.sound.play('impact');
+		_fellaBody.gameObject.setData('alive', false);
+		// sliding state will check this at the end
+	}
+
+	/**
+	 * create tank walls
+	 * 
+	 * collision event
+	 * 
+	 * called from create
+	 */
+	setupPhysics() {
 
 		// tank bounds
 		// this.matter.world.setBounds(-910, -450, 1820, 880, 300);
@@ -402,23 +812,23 @@ class Level extends Phaser.Scene {
 				// kill if at terminal velocity
 				if (_wall.side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
 
-					console.log('DEAD - top');
-					_fella.gameObject.status.setState('dead');
+					console.log('top');
+					this.fellaImpact(_fella);
 				}
 				else if (_wall.side == 'bottom' && _fella.velocity.y > this.terminalVelocity) {
 
-					console.log('DEAD - bottom');
-					_fella.gameObject.status.setState('dead');
+					console.log('bottom');
+					this.fellaImpact(_fella);
 				}
 				else if (_wall.side == 'left' && _fella.velocity.x < -this.terminalVelocity) {
 
-					console.log('DEAD - left');
-					_fella.gameObject.status.setState('dead');
+					console.log('left');
+					this.fellaImpact(_fella);
 				}
 				else if (_wall.side == 'right' && _fella.velocity.x > this.terminalVelocity) {
 
-					console.log('DEAD - right');
-					_fella.gameObject.status.setState('dead');
+					console.log('right');
+					this.fellaImpact(_fella);
 				}
 
 				return;
@@ -448,59 +858,6 @@ class Level extends Phaser.Scene {
 		});
 		// this is called EVERY COLLISION. There is no other way to check for a collision
 		// between two bodies. if there is, hell if i can find it
-
-		// manual fella create
-		this.spawnTimer = new Phaser.Time.TimerEvent({ delay: 4000, loop: true, callback: () => {
-
-			this.addFella(Phaser.Math.RND.pick(this.spawningRaces));
-
-		}});
-
-		this.time.addEvent(this.spawnTimer);
-
-		// setup all fella states
-		// for (let i = 0; i < this.fellasList.length; i++) {
-
-		// 	this.fellasList[i].status = new StateController(this.fellasList[i], this);
-		// 	// gameobject.state is a build in member meant to be an int or string, so we make our own property
-		// 	this.fellasList[i].status.setState('idle');
-		// }
-
-		// camera
-		this.cameras.main.setViewport(0, 0, this.scale.width, this.scale.height);
-		this.cameras.main.setRoundPixels(true);
-		this.cameras.main.centerOn(0, 0);
-
-		// resize
-		this.resize();
-	}
-
-	update() {
-
-		if (this.controls.isDown('left')) {
-
-			// debug function here
-		}
-		if (this.controls.isDown('right')) {
-
-			// debug function here
-		}
-
-		// for each fella loop
-		this.fellas.children.each(function(fella) {
-
-			fella.setDepth(fella.y);
-
-			// update all fella states
-			fella.status.update();
-		});
-
-		// debug text
-		this.fpsText.setText('FPS: ' + this.game.loop.actualFps);
-
-		// debug info
-		this.spriteCountText.setText('fellas: ' + this.fellas.getLength());
-		// its just easier to do this every frame. wont be in the final game anyways
 	}
 
 	/** setup mouse drag physics constraints & events */
@@ -542,100 +899,6 @@ class Level extends Phaser.Scene {
 		});
 	}
 
-	/**
-	 * manual fella creation
-	 * 
-	 * adds physics, state machine
-	 * 
-	 * @param {String} race
-	 */
-	addFella(race) {
-
-		const fella = this.add.sprite(0, 0, "fella");
-		const raceData = this.races.get(race);
-
-		// tier 1 colours
-		fella.setTint(raceData.tint);
-
-		let colliderRadius = raceData.circleRadius;
-
-		let mass = raceData.mass;
-
-		this.fellas.add(
-			this.matter.add.gameObject(fella, 
-			{ inertia: Infinity, shape: {type: 'circle', radius: colliderRadius}})
-				.setBounce(.5)
-				.setFrictionAir(.2)
-				.setMass(mass)
-		);
-
-		// set default data
-		fella.setData('race', race);
-		fella.setData('sprite', raceData.sprite);
-		fella.setData('alive', true);
-		fella.setData('energy', 1);
-		fella.setData('totalVelocity', 0);
-
-		// state machine
-		fella.status = new StateController(fella, this);
-		fella.status.setState('idle');
-	}
-
-	/** adds / removes fella from horny group  */
-	setHorny(fella, horny) {
-
-		if (horny) {
-
-			if (this.hornyFellas.getLength() < this.hornyFellas.maxSize) {
-
-				this.hornyFellas.add(fella);
-			}
-		}
-	}
-
-	/**
-	 * 
-	 * @param {number} fella gameobject
-	 * @param {number} amount 0-1, 1 being full energy
-	 * @param {number} add add amount to current energy. Otherwise, energy will be set to amount
-	 */
-	setEnergy(fella, amount, add) {
-
-
-	}
-
-	/** incrementally zoom the camera out until necessary elements aren't cropped out */
-	setAdaptiveZoom() {
-
-		// calculate min size
-
-		this.cameras.main.setZoom(1);
-		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
-			// zoom out incrementally until we're past width and height min
-
-			for(let i = 0; i < 20; i++) {
-
-				this.cameras.main.setZoom(1 - (i * .05));
-
-				// check min
-				// console.log('w: ' + this.cameras.main.width / (1 - (i * .05)))
-				// console.log('h: ' + this.cameras.main.height / (1 - (i * .05)))
-
-				if(
-					(this.cameras.main.width / (1 - (i * .05))) > this.minScreenWidth &&
-					(this.cameras.main.height / (1 - (i * .05))) > this.minScreenHeight
-				) 
-					{
-
-					break;
-				}
-			}
-
-		}
-
-		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
-	}
-
 	/** setup keyboard / on screen buttons with Psychogoldfish's helper classes
 	 * currently leftover code that I can use for debug
 	 */
@@ -673,6 +936,38 @@ class Level extends Phaser.Scene {
 			Phaser.Actions.PlaceOnCircle(this.fellas.getChildren(),
 				new Phaser.Geom.Circle(0, 0, 300));
 		});
+	}
+
+	/** incrementally zoom the camera out until necessary elements aren't cropped out */
+	setAdaptiveZoom() {
+
+		// calculate min size
+
+		this.cameras.main.setZoom(1);
+		if (this.scale.width < this.minScreenWidth || this.scale.height < this.minScreenHeight) {
+			// zoom out incrementally until we're past width and height min
+
+			for(let i = 0; i < 20; i++) {
+
+				this.cameras.main.setZoom(1 - (i * .05));
+
+				// check min
+				// console.log('w: ' + this.cameras.main.width / (1 - (i * .05)))
+				// console.log('h: ' + this.cameras.main.height / (1 - (i * .05)))
+
+				if(
+					(this.cameras.main.width / (1 - (i * .05))) > this.minScreenWidth &&
+					(this.cameras.main.height / (1 - (i * .05))) > this.minScreenHeight
+				) 
+					{
+
+					break;
+				}
+			}
+
+		}
+
+		this.zoomText.setText('cam zoom: ' + this.cameras.main.zoom);
 	}
 
 	/** align objects included in the align left/right/top/bottom lists
@@ -771,23 +1066,25 @@ class Level extends Phaser.Scene {
 	resize() {
 
 		this.setAdaptiveZoom();
-		
+
 		this.scaleObjects();
-		
+
 		this.cameras.main.centerOn(0, 0);		
-		
+
 		// orientation check
 		if (this.registry.get('mobile') && this.scale.height > this.scale.width) {
-			
+
 			this.orientationPrompt.setAlpha(1);
 			this.input.enabled = false;
+
+			// TODO: hide shop or family UI
 		}
 		else {
-			
+
 			this.orientationPrompt.setAlpha(0);
 			this.input.enabled = true;
 		}
-		
+
 		this.cameras.main.preRender(1);
 
 		this.alignObjects();

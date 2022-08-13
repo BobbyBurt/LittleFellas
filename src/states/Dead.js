@@ -41,14 +41,16 @@ class Dead {
 
 			// this.poof.destroy();
 		});
-
-		this.scene.sound.play('dead');
 		
 		this.fella.setData('alive', false);
 
+		
 		this.fella.status = null;
 		// free this up for garbage collection
 		this.fella.destroy();
+		
+		// update fella count UI
+		this.scene.fellaCountText.setText('x ' + this.scene.fellas.getLength());
 	}
 
 	

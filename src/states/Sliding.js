@@ -25,7 +25,14 @@ class Sliding {
 		if (this.fella.body.velocity.x < 1 && this.fella.body.velocity.x > -1 
 			&& this.fella.body.velocity.y < 1 && this.fella.body.velocity.y > -1) {
 
-			this.stateControl.setState('idle');
+			if (!this.fella.getData('alive')) {
+				
+				this.stateControl.setState('dead');
+			}
+			else {
+				
+				this.stateControl.setState('idle');
+			}
 		}
 	}
 }
