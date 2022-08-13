@@ -69,12 +69,6 @@
             "properties": []
         },
         {
-            "name": "PhysicsBody",
-            "baseClass": "",
-            "gameObjectType": "Phaser.GameObjects.Image",
-            "properties": []
-        },
-        {
             "name": "PlayAnimation",
             "baseClass": "",
             "gameObjectType": "Phaser.GameObjects.Image",

@@ -327,10 +327,6 @@ class Level extends Phaser.Scene {
 		const alignToCameraCenter = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
 		const pantsTest = [];
 		const fellasList = [];
-		const bounds = [tankBox];
-
-		// tankBox (components)
-		new PhysicsBody(tankBox);
 
 		// buttonTest2 (components)
 		const buttonTest2AlignOffsets = new AlignOffsets(buttonTest2);
@@ -382,7 +378,6 @@ class Level extends Phaser.Scene {
 		this.alignToCameraCenter = alignToCameraCenter;
 		this.pantsTest = pantsTest;
 		this.fellasList = fellasList;
-		this.bounds = bounds;
 
 		this.events.emit("scene-awake");
 	}
@@ -441,8 +436,6 @@ class Level extends Phaser.Scene {
 	pantsTest;
 	/** @type {Array<any>} */
 	fellasList;
-	/** @type {Phaser.GameObjects.Rectangle[]} */
-	bounds;
 
 	/* START-USER-CODE */
 
@@ -458,6 +451,8 @@ class Level extends Phaser.Scene {
 	/** how much total velocity of drag does it take to make fella want to breed */
 	velocityToBreed = 3000;
 	terminalVelocity = 70;
+
+
 
 	spawningRaces = ['green', 'cyan', 'blue', 'purple'];
 	// DEBUG: i removed yellow from this list
@@ -709,6 +704,12 @@ class Level extends Phaser.Scene {
 				.setMass(mass)
 		);
 
+		// TEST: gameobject specific collide
+		fella.setOnCollideWith(this.topBound.body, pair => {
+
+			console.log('hit wall');
+		})
+
 		// set default data
 		fella.setData('race', race);
 		fella.setData('regular', (race == 'white' || race == 'yellow' || race == 'green' || race == 'cyan' || race == 'blue' || race == 'purple'));
@@ -775,78 +776,37 @@ class Level extends Phaser.Scene {
 	setupPhysics() {
 
 		// tank bounds
-		// this.matter.world.setBounds(-910, -450, 1820, 880, 300);
-		this.matter.add.rectangle(-1210, -750, 6000, 600, {isStatic: true}).side = 'top';
-		this.matter.add.rectangle(-1210, -750, 600, 6000, {isStatic: true}).side = 'left';
-		this.matter.add.rectangle(-1210, 730, 6000, 600, {isStatic: true}).side = 'bottom';
-		this.matter.add.rectangle(1210, -750, 600, 6000, {isStatic: true}).side = 'right';
+		this.topBound = this.matter.add.gameObject(this.add.rectangle(-1210, -750, 6000, 600), {isStatic: true});
+		this.leftBound = this.matter.add.gameObject(this.add.rectangle(-1210, -750, 600, 6000), {isStatic: true});
+		this.bottomBound = this.matter.add.gameObject(this.add.rectangle(-1210, 730, 6000, 600), {isStatic: true});
+		this.rightBound = this.matter.add.gameObject(this.add.rectangle(1210, -750, 600, 6000), {isStatic: true});
 		// this is centered at (0, 10) to avoid accidental app switching on ios
+		
+		// OLD - tank bounds 
+		// this.matter.world.setBounds(-910, -450, 1820, 880, 300);;
+
+		// LESS OLD - tank bounds
+		// this.matter.add.rectangle(-1210, -750, 6000, 600, {isStatic: true}).side = 'top';
+		// this.matter.add.rectangle(-1210, -750, 600, 6000, {isStatic: true}).side = 'left';
+		// this.matter.add.rectangle(-1210, 730, 6000, 600, {isStatic: true}).side = 'bottom';
+		// this.matter.add.rectangle(1210, -750, 600, 6000, {isStatic: true}).side = 'right';
 
 		// physics
 		this.setupDrag();
 		const _this = this;
 		this.colCount = 0;
 
+		// this.topBound.setOnCollideWith(this.dragge pair => {
+
+		// 	console.log('top');
+		// });
+
 		// collision event
 		this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
-			
+
 			// console.log(event);
-
-			// wall collision
-			if (bodyA.isStatic || bodyB.isStatic) {
-
-				let _wall;
-				let _fella;
-
-				// set definitions
-				if (bodyA.isStatic && bodyB.label == 'Circle Body') {
-
-					_wall = bodyA;
-					_fella = bodyB;
-				}
-				else if (bodyB.isStatic && bodyA.label == 'Circle Body') {
-
-					_wall = bodyB;
-					_fella = bodyA;
-				}
-
-				// return if fella is being dragged
-				// if (_fella.gameObject.status.currentState.constructor.name == 'Dragged') {
-
-				// 	console.log('collision during drag state has been ignored');
-				// 	return;
-				// }
-
-				// DEBUG: only show me yellow's collisions
-				if (_fella.gameObject.getData('race') == 'yellow') {
-
-					console.log(_fella.velocity.x, _fella.velocity.y);
-				}
-
-				// kill if at terminal velocity
-				if (_wall.side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
-
-					console.log('top');
-					this.fellaImpact(_fella);
-				}
-				else if (_wall.side == 'bottom' && _fella.velocity.y > this.terminalVelocity) {
-
-					console.log('bottom');
-					this.fellaImpact(_fella);
-				}
-				else if (_wall.side == 'left' && _fella.velocity.x < -this.terminalVelocity) {
-
-					console.log('left');
-					this.fellaImpact(_fella);
-				}
-				else if (_wall.side == 'right' && _fella.velocity.x > this.terminalVelocity) {
-
-					console.log('right');
-					this.fellaImpact(_fella);
-				}
-
+			if (bodyA.isStatic || bodyB.isStatic)
 				return;
-			}
 
 			// breed check
 			if (bodyA.gameObject.getData('horny') && bodyB.gameObject.getData('horny')) {
@@ -870,8 +830,6 @@ class Level extends Phaser.Scene {
 				bodyB.gameObject.status.setState('dead');
 			}
 		});
-		// this is called EVERY COLLISION. There is no other way to check for a collision
-		// between two bodies. if there is, hell if i can find it
 	}
 
 	/** setup mouse drag physics constraints & events */
@@ -883,9 +841,29 @@ class Level extends Phaser.Scene {
 		// https://newdocs.phaser.io/docs/3.54.0/focus/Phaser.Physics.Matter.Factory-mouseSpring
 		// TODO: how do I know when / what is being dragged so I can set a state?
 
+		let _scene = this
 		this.matter.world.on('dragstart', function(body) { 
 
+			// cant drag bounds
 			if (body.isStatic) return;
+
+			// fella-bound collision callback for impact check
+			body.gameObject.setOnCollideWith(_scene.topBound.body, () => {
+
+				_scene.impactCheck(body, 'top');
+			});
+			body.gameObject.setOnCollideWith(_scene.leftBound.body, () => {
+
+				_scene.impactCheck(body, 'left');
+			});
+			body.gameObject.setOnCollideWith(_scene.bottomBound.body, () => {
+
+				_scene.impactCheck(body, 'bottom');
+			});
+			body.gameObject.setOnCollideWith(_scene.rightBound.body, () => {
+
+				_scene.impactCheck(body, 'right');
+			});
 
 			// setup transition conditions if necessary
 			body.gameObject.status.setState('dragged');
@@ -911,7 +889,7 @@ class Level extends Phaser.Scene {
 
 			// TODO: if the player is able to hit fellas against the wall rather than just flick,
 			// they need to not breed after an impact
-			
+
 			// shaken = horny
 			if((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) {
 
@@ -960,6 +938,46 @@ class Level extends Phaser.Scene {
 
 			this.addFella('yellow');
 		});
+	}
+
+	/**
+	 * 
+	 * @param {*} _fella 
+	 * @param {*} side 'top', 'left', etc
+	 * @returns 
+	 */
+	impactCheck(_fella, side) {
+
+		// return if fella is being dragged
+		// if (_fella.gameObject.status.currentState.constructor.name == 'Dragged') {
+
+		// 	console.log('collision during drag state has been ignored');
+		// 	return;
+		// }
+
+		console.log(side)
+
+		// kill if at terminal velocity
+		if (side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
+
+			console.log('top');
+			this.fellaImpact(_fella);
+		}
+		else if (side == 'bottom' && _fella.velocity.y > this.terminalVelocity) {
+
+			console.log('bottom');
+			this.fellaImpact(_fella);
+		}
+		else if (side == 'left' && _fella.velocity.x < -this.terminalVelocity) {
+
+			console.log('left');
+			this.fellaImpact(_fella);
+		}
+		else if (side == 'right' && _fella.velocity.x > this.terminalVelocity) {
+
+			console.log('right');
+			this.fellaImpact(_fella);
+		}
 	}
 
 	/** incrementally zoom the camera out until necessary elements aren't cropped out */

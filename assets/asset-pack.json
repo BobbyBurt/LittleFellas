@@ -123,11 +123,6 @@
                 "key": "mango"
             },
             {
-                "url": "src/components/PhysicsBody.js",
-                "type": "script",
-                "key": "PhysicsBody"
-            },
-            {
                 "url": "src/components/PlayAnimation.js",
                 "type": "script",
                 "key": "PlayAnimation"

@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
 		physics: {
 			default: 'matter',
 			matter: {
-				// debug: true,
+				debug: true,
 				gravity: {
 					y: 0
 				}

@@ -785,13 +785,6 @@
             "id": "f5266110-0306-40da-b57c-c257fcfd5e24",
             "label": "fellasList",
             "scope": "PUBLIC"
-        },
-        {
-            "id": "2129409e-3012-4996-8c4a-e72ecf7b8174",
-            "label": "bounds",
-            "objectIds": [
-                "b413d7e8-6fb8-43c5-9bfe-a0978757b6b1"
-            ]
         }
     ]
 }
