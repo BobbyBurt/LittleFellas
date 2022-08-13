@@ -20,7 +20,10 @@ class Dragged {
 		
 		this.totalVelocity = 0;
 		
-		this.fella.play(this.fella.getData('sprite') + '-dragged');
+		if (this.fella.getData('regular')) {
+			
+			this.fella.play(this.fella.getData('sprite') + '-dragged');
+		}
 	}
 	
 	update() {

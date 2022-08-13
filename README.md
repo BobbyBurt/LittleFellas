@@ -27,6 +27,7 @@ I should do this in order
 - [x] temp tank BG
 
 - [ ] impact effect animation
+- [ ] fix heart destory
 
 - [x] Set up Newgrounds.io
 
@@ -40,3 +41,8 @@ I should do this in order
 
 ### Notes
 - camera zoom messes with objects that should stay in place with a scroll factor of 0. I may have to render that stuff in a parallel scene
+
+### Crash log
+when breeding smarto
+Cannot read properties of null (reading 'getData')
+Level.js 899

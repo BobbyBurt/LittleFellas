@@ -456,10 +456,11 @@ class Level extends Phaser.Scene {
 	// the number being double represents the amount of space we want at least on both sides
 
 	/** how much total velocity of drag does it take to make fella want to breed */
-	velocityToBreed = 4000;
+	velocityToBreed = 3000;
 	terminalVelocity = 70;
 
-	spawningRaces = ['yellow', 'green', 'cyan', 'blue', 'purple'];
+	spawningRaces = ['green', 'cyan', 'blue', 'purple'];
+	// DEBUG: i removed yellow from this list
 
 	// races
 	races = new Map([
@@ -710,6 +711,7 @@ class Level extends Phaser.Scene {
 
 		// set default data
 		fella.setData('race', race);
+		fella.setData('regular', (race == 'white' || race == 'yellow' || race == 'green' || race == 'cyan' || race == 'blue' || race == 'purple'));
 		fella.setData('sprite', raceData.sprite);
 		fella.setData('alive', true);
 		fella.setData('energy', 1);
@@ -756,6 +758,11 @@ class Level extends Phaser.Scene {
 		this.sound.play('impact');
 		_fellaBody.gameObject.setData('alive', false);
 		// sliding state will check this at the end
+
+		// break from drag
+		console.log(_fellaBody);
+		console.log(this.mouseConstraint);
+		this.mouseConstraint.stopDrag();
 	}
 
 	/**
@@ -782,6 +789,8 @@ class Level extends Phaser.Scene {
 
 		// collision event
 		this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
+			
+			// console.log(event);
 
 			// wall collision
 			if (bodyA.isStatic || bodyB.isStatic) {
@@ -802,12 +811,17 @@ class Level extends Phaser.Scene {
 				}
 
 				// return if fella is being dragged
-				if (_fella.gameObject.status.currentState.constructor.name == 'Dragged') {
+				// if (_fella.gameObject.status.currentState.constructor.name == 'Dragged') {
 
-					return;
+				// 	console.log('collision during drag state has been ignored');
+				// 	return;
+				// }
+
+				// DEBUG: only show me yellow's collisions
+				if (_fella.gameObject.getData('race') == 'yellow') {
+
+					console.log(_fella.velocity.x, _fella.velocity.y);
 				}
-
-				console.log('x: ' + _fella.velocity.x + ' y: ' + _fella.velocity.y)
 
 				// kill if at terminal velocity
 				if (_wall.side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
@@ -887,6 +901,18 @@ class Level extends Phaser.Scene {
 			// console.log('total drag velocity: ' + body.gameObject.getData('totalVelocity'));
 			// FIXME: getting a crash that points to this line
 
+			// prevent crash from trying to access destroyed gameObject if 
+			// fella has died during drag
+			if (body.gameObject == null) {
+
+				console.log('dragend event: this fella is dead');
+				return;
+			}
+
+			// TODO: if the player is able to hit fellas against the wall rather than just flick,
+			// they need to not breed after an impact
+			
+			// shaken = horny
 			if((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) {
 
 				body.gameObject.setData('horny', true);
@@ -923,7 +949,6 @@ class Level extends Phaser.Scene {
 		// example of using events for inputs
 		this.controls.onPress('left', () => {
 
-			this.addFella('yellow');
 			this.addFella('green');
 			this.addFella('cyan');
 			this.addFella('blue');
@@ -933,8 +958,7 @@ class Level extends Phaser.Scene {
 		// spawning sprites
 		this.controls.onPress('right', () => {
 
-			Phaser.Actions.PlaceOnCircle(this.fellas.getChildren(),
-				new Phaser.Geom.Circle(0, 0, 300));
+			this.addFella('yellow');
 		});
 	}
 

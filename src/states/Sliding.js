@@ -22,6 +22,13 @@ class Sliding {
 	
 	update() {
 		
+		// rotate if dead
+		if (!this.fella.getData('alive')) {
+
+			this.fella.setAngle(this.fella.angle += 30);
+		}
+		
+		// when stopped, go to idle or dead state
 		if (this.fella.body.velocity.x < 1 && this.fella.body.velocity.x > -1 
 			&& this.fella.body.velocity.y < 1 && this.fella.body.velocity.y > -1) {
 
