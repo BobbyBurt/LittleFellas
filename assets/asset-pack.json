@@ -124,7 +124,7 @@
             },
             {
                 "url": [
-                    "assets/audio/munch.ogg"
+                    "assets/audio/munch.wav"
                 ],
                 "type": "audio",
                 "key": "munch"
@@ -176,6 +176,20 @@
                 "url": "assets/stat-animations.json",
                 "type": "animation",
                 "key": "stat-animations"
+            },
+            {
+                "url": [
+                    "assets/audio/tank-2.mp3"
+                ],
+                "type": "audio",
+                "key": "tank-2"
+            },
+            {
+                "url": [
+                    "assets/audio/tap.wav"
+                ],
+                "type": "audio",
+                "key": "tap"
             },
             {
                 "type": "multiatlas",

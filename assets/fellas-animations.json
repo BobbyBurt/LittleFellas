@@ -2357,6 +2357,51 @@
             "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "reg-run",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "reg",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "reg",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

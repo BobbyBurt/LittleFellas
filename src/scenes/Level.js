@@ -161,13 +161,14 @@ class Level extends Phaser.Scene {
 		// rectangle
 		const rectangle = this.add.rectangle(0, 0, 800, 600);
 		rectangle.scaleX = 1.5672471108996504;
+		rectangle.scaleY = 0.7005699229611766;
 		rectangle.isFilled = true;
 		rectangle.fillColor = 0;
 		rectangle.fillAlpha = 0.8;
 		shopMenu.add(rectangle);
 
 		// text_2
-		const text_2 = this.add.text(0, -201, "", {});
+		const text_2 = this.add.text(0, -146, "", {});
 		text_2.setOrigin(0.5, 0.5);
 		text_2.text = "SHOP";
 		text_2.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "70px", "fontStyle": "bold italic" });
@@ -175,49 +176,64 @@ class Level extends Phaser.Scene {
 		shopMenu.add(text_2);
 
 		// price
-		const price = this.add.text(-398, 214, "", {});
+		const price = this.add.text(-3, -51, "", {});
 		price.setOrigin(0.5, 0.5);
-		price.text = "$ 100";
+		price.text = "$ 100 each !";
 		price.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "50px" });
 		price.setLineSpacing(15);
 		shopMenu.add(price);
 
-		// idle0000_png
-		const idle0000_png = this.add.image(-394, 104, "reg", "idle0000.png");
-		shopMenu.add(idle0000_png);
+		// fellaPreview1
+		const fellaPreview1 = this.add.image(-394, 64, "reg", "idle0000.png");
+		shopMenu.add(fellaPreview1);
 
-		// idle0000_png_1
-		const idle0000_png_1 = this.add.image(-234, 104, "reg", "idle0000.png");
-		idle0000_png_1.tintTopLeft = 15256153;
-		idle0000_png_1.tintTopRight = 15256153;
-		idle0000_png_1.tintBottomLeft = 15256153;
-		idle0000_png_1.tintBottomRight = 15256153;
-		shopMenu.add(idle0000_png_1);
+		// fellaPreview2
+		const fellaPreview2 = this.add.image(-234, 64, "reg", "idle0000.png");
+		fellaPreview2.tintTopLeft = 15256153;
+		fellaPreview2.tintTopRight = 15256153;
+		fellaPreview2.tintBottomLeft = 15256153;
+		fellaPreview2.tintBottomRight = 15256153;
+		shopMenu.add(fellaPreview2);
 
-		// idle0000_png_2
-		const idle0000_png_2 = this.add.image(-74, 104, "reg", "idle0000.png");
-		shopMenu.add(idle0000_png_2);
+		// fellaPreview3
+		const fellaPreview3 = this.add.image(-74, 64, "reg", "idle0000.png");
+		fellaPreview3.alpha = 0.3;
+		fellaPreview3.alphaTopLeft = 0.3;
+		fellaPreview3.alphaTopRight = 0.3;
+		fellaPreview3.alphaBottomLeft = 0.3;
+		fellaPreview3.alphaBottomRight = 0.3;
+		shopMenu.add(fellaPreview3);
 
-		// idle0000_png_3
-		const idle0000_png_3 = this.add.image(86, 104, "reg", "idle0000.png");
-		shopMenu.add(idle0000_png_3);
+		// fellaPreview4
+		const fellaPreview4 = this.add.image(86, 64, "reg", "idle0000.png");
+		fellaPreview4.alpha = 0.3;
+		fellaPreview4.alphaTopLeft = 0.3;
+		fellaPreview4.alphaTopRight = 0.3;
+		fellaPreview4.alphaBottomLeft = 0.3;
+		fellaPreview4.alphaBottomRight = 0.3;
+		shopMenu.add(fellaPreview4);
 
-		// idle0000_png_4
-		const idle0000_png_4 = this.add.image(246, 104, "reg", "idle0000.png");
-		shopMenu.add(idle0000_png_4);
+		// fellaPreview5
+		const fellaPreview5 = this.add.image(246, 64, "reg", "idle0000.png");
+		fellaPreview5.alpha = 0.3;
+		fellaPreview5.alphaTopLeft = 0.3;
+		fellaPreview5.alphaTopRight = 0.3;
+		fellaPreview5.alphaBottomLeft = 0.3;
+		fellaPreview5.alphaBottomRight = 0.3;
+		shopMenu.add(fellaPreview5);
 
-		// idle0000_png_5
-		const idle0000_png_5 = this.add.image(406, 104, "reg", "idle0000.png");
-		idle0000_png_5.alpha = 0.3;
-		idle0000_png_5.alphaTopLeft = 0.3;
-		idle0000_png_5.alphaTopRight = 0.3;
-		idle0000_png_5.alphaBottomLeft = 0.3;
-		idle0000_png_5.alphaBottomRight = 0.3;
-		idle0000_png_5.tintTopLeft = 12085485;
-		idle0000_png_5.tintTopRight = 12085485;
-		idle0000_png_5.tintBottomLeft = 12085485;
-		idle0000_png_5.tintBottomRight = 12085485;
-		shopMenu.add(idle0000_png_5);
+		// fellaPreview6
+		const fellaPreview6 = this.add.image(406, 64, "reg", "idle0000.png");
+		fellaPreview6.alpha = 0.3;
+		fellaPreview6.alphaTopLeft = 0.3;
+		fellaPreview6.alphaTopRight = 0.3;
+		fellaPreview6.alphaBottomLeft = 0.3;
+		fellaPreview6.alphaBottomRight = 0.3;
+		fellaPreview6.tintTopLeft = 12085485;
+		fellaPreview6.tintTopRight = 12085485;
+		fellaPreview6.tintBottomLeft = 12085485;
+		fellaPreview6.tintBottomRight = 12085485;
+		shopMenu.add(fellaPreview6);
 
 		// fellaMenu
 		const fellaMenu = this.add.container(0, 2032);
@@ -349,7 +365,7 @@ class Level extends Phaser.Scene {
 
 		// shopMenu (components)
 		const shopMenuAlignOffsets = new AlignOffsets(shopMenu);
-		shopMenuAlignOffsets.y = 100;
+		shopMenuAlignOffsets.y = 300;
 
 		this.tankBox = tankBox;
 		this.buttonTest2 = buttonTest2;
@@ -367,6 +383,12 @@ class Level extends Phaser.Scene {
 		this.shopButton = shopButton;
 		this.moneyText = moneyText;
 		this.shopMenu = shopMenu;
+		this.fellaPreview1 = fellaPreview1;
+		this.fellaPreview2 = fellaPreview2;
+		this.fellaPreview3 = fellaPreview3;
+		this.fellaPreview4 = fellaPreview4;
+		this.fellaPreview5 = fellaPreview5;
+		this.fellaPreview6 = fellaPreview6;
 		this.fellaMenu = fellaMenu;
 		this.tutorialUI = tutorialUI;
 		this.alignToCameraLeft = alignToCameraLeft;
@@ -414,6 +436,18 @@ class Level extends Phaser.Scene {
 	moneyText;
 	/** @type {Phaser.GameObjects.Container} */
 	shopMenu;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaPreview1;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaPreview2;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaPreview3;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaPreview4;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaPreview5;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaPreview6;
 	/** @type {Phaser.GameObjects.Container} */
 	fellaMenu;
 	/** @type {Phaser.GameObjects.Container} */
@@ -452,6 +486,9 @@ class Level extends Phaser.Scene {
 	velocityToBreed = 2000;
 	terminalVelocity = 70;
 
+	/** max frames to be considered a tap */
+	tapDownTime = 70;
+
 	/** 2 index array of fellas ready to breed */
 	toBreed = ['', ''];
 
@@ -467,7 +504,8 @@ class Level extends Phaser.Scene {
 			sprite: 'reg',
 			tint: 0xf0f042,
 			circleRadius: 40,
-			mass: 10
+			mass: 10,
+			unlocked: false
 		}],
 		['green', {
 			breeding: { with: 'cyan', makes: 'ufo' },
@@ -562,12 +600,12 @@ class Level extends Phaser.Scene {
 
 	]);
 
+	/** abstracted because tier 1 will likely change */
+	racesUnlocked = [true, true, false, false, false];
+
 	create() {
 
 		this.editorCreate();
-
-		// TEST: puke
-		this.addPuke(300, 300);
 
 		// fellas group
 		this.fellas = this.add.group();
@@ -583,9 +621,10 @@ class Level extends Phaser.Scene {
 
 		//audio
 		this.sound.setVolume(1);
-		// this.music = this.sound.add('tank-2').play();
+		this.music = this.sound.add('tank-2').play();
 		this.sound.add('impact');
 		this.sound.add('munch');
+		this.sound.add('tap', {volume: 0.3});
 
 		this.setupInput();
 
@@ -600,6 +639,25 @@ class Level extends Phaser.Scene {
 		// change this before release
 
 		this.setupPhysics();
+
+		// CUT CONTENT - tap input
+		// let _this = this;
+		// this.input.on('pointerup', function (pointer) {
+
+		// 	console.log(pointer.upTime - pointer.downTime, _this.tapDownTime);
+		// 	if ((pointer.upTime - pointer.downTime) < _this.tapDownTime) {
+
+		// 		_this.sound.play('tap');
+
+		// 		_this.registry.set('last-tap', {x: pointer.worldX, y: pointer.worldY});
+
+		// 		_this.fellas.getChildren().forEach(function (item, index) {
+
+
+		// 			item.status.setState('scatter');
+		// 		})
+		// 	}
+		// });
 
 		// manual fella create
 		this.spawnTimer = new Phaser.Time.TimerEvent({ delay: 4000, loop: true, callback: () => {
@@ -623,30 +681,7 @@ class Level extends Phaser.Scene {
 		this.cameras.main.setRoundPixels(true);
 		this.cameras.main.centerOn(0, 0);
 
-		// shop UI
-		this.moneyUI.setDepth(999);
-		this.shopMenu.setDepth(999);
-		this.shopMenu.setVisible(false);
-		this.shopButton.setInteractive();
-		this.shopButton.on('pointerdown', () => {
-
-			this.shopMenu.setVisible(!this.shopMenu.visible);
-
-		});
-
-		// fella UI
-		this.fellaUI.setDepth(999);
-		this.fellaMenu.setDepth(999);
-		this.fellaMenu.setVisible(false);
-		this.familyButton.setInteractive();
-		this.familyButton.on('pointerdown', () => {
-
-			console.log('f');
-			this.fellaMenu.setVisible(!this.fellaMenu.visible);
-
-		});
-
-		this.tutorialUI.setVisible(false);
+		this.setupUI();
 
 		// TODO: make UI setup its own clas, yeah?
 
@@ -777,11 +812,11 @@ class Level extends Phaser.Scene {
 		// what does this combo make
 		let race1Data = this.races.get(race1.getData('race'));
 		let race2Data = this.races.get(race2.getData('race'));
-		if (race1Data.breeding.with == race2.getData('race')) {
+		if (race1Data.breeding.with == race2.getData('race') && race1Data.breeding.makes != 'nothing') {
 
 			this.addFella(race1Data.breeding.makes);
 		}
-		else if (race2Data.breeding.with == race1.getData('race')) {
+		else if (race2Data.breeding.with == race1.getData('race') && race2Data.breeding.makes != 'nothing') {
 
 			this.addFella(race2Data.breeding.makes);
 		}
@@ -795,13 +830,21 @@ class Level extends Phaser.Scene {
 		const food = this.add.image(x, y, 'guapen').setScale(.3, .3);
 		food.setDepth(800);
 
-		this.matter.add.gameObject(food, { inertia: Infinity, isSensor: true, shape: {type: 'circle', radius: 30}}).setFrictionAir(.3).type = 'food';
+		this.matter.add.gameObject(food, { inertia: Infinity, isSensor: true, shape: {type: 'circle', radius: 40}}).setFrictionAir(.3).type = 'food';
+
+		this.foodRemove = this.time.delayedCall(10000, () => {
+
+			food.destroy();
+		})
 	}
 
+	/** CUT CONTENT */
 	addPuke(x, y) {
 
 		const puke = this.add.image(x, y, 'poof').setScale(.5);
 		puke.setDepth(-800);
+		puke.setTint(0x669900);
+
 		this.matter.add.gameObject(puke, { inertia: Infinity, isSensor: true, isStatic: true, shape: {type: 'circle', radius: 60}}).type = 'puke';
 
 		puke.setOnCollide(pair => {
@@ -817,8 +860,11 @@ class Level extends Phaser.Scene {
 			if (pair.bodyB.gameObject.type == 'puke') _fella = pair.bodyA;
 			else if (pair.bodyA.gameObject.type == 'puke') _fella = pair.bodyB;
 
-			if (_fella.gameObject != null)
-			_fella.gameObject.status.setState('dead');
+			if (_fella.gameObject != null) {
+
+				_fella.gameObject.status.setState('dead');
+				// TODO: add sickness state, not instant death
+			}
 		});
 	}
 
@@ -937,7 +983,7 @@ class Level extends Phaser.Scene {
 
 			// drag wall
 			if (body.isStatic) return;
-			
+
 			// fella has died during drag
 			if (body.gameObject == null) {
 
@@ -956,13 +1002,15 @@ class Level extends Phaser.Scene {
 				if(intersect[0] != null) {
 
 					_this.setEnergy(intersect[0].gameObject, .3, true);
-					
+
 					body.gameObject.destroy(); 
-					
+
 					_this.sound.play('munch');
 
 					// TODO: visual effect
 				}
+
+				// TODO: visual feedback
 
 				return;
 			}
@@ -1034,7 +1082,8 @@ class Level extends Phaser.Scene {
 		// spawning sprites
 		this.controls.onPress('right', () => {
 
-			this.addFella('yellow');
+			// TEST: puke
+			this.addPuke(300, 300);
 		});
 	}
 
@@ -1052,8 +1101,6 @@ class Level extends Phaser.Scene {
 		// 	console.log('collision during drag state has been ignored');
 		// 	return;
 		// }
-
-		console.log(side)
 
 		// kill if at terminal velocity
 		if (side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
@@ -1075,6 +1122,76 @@ class Level extends Phaser.Scene {
 
 			console.log('right');
 			this.fellaImpact(_fella);
+		}
+	}
+
+	/** shop & family tree */
+	setupUI() {
+
+		// shop UI
+		this.moneyUI.setDepth(999);
+		this.shopMenu.setDepth(999);
+		this.shopMenu.setVisible(false);
+		this.shopButton.setInteractive();
+		this.shopButton.on('pointerdown', () => {
+
+			// TODO: check if other menu is open
+			this.shopMenu.setVisible(!this.shopMenu.visible);
+
+		});
+
+		// buy buttons
+		this.fellaPreview1.setInteractive();
+		this.fellaPreview1.on('pointerdown', () => {
+
+			if (this.racesUnlocked[2]) {
+
+				this.addFella('yellow');
+			}
+			this.racesUnlocked[2] = true;
+
+		});
+
+		// fella UI
+		this.fellaUI.setDepth(999);
+		this.fellaMenu.setDepth(999);
+		this.fellaMenu.setVisible(false);
+		this.familyButton.setInteractive();
+		this.familyButton.on('pointerdown', () => {
+
+			this.fellaMenu.setVisible(!this.fellaMenu.visible);
+
+		});
+
+		this.tutorialUI.setVisible(false);
+	}
+
+	/**
+	 * unlocks race in shop, updates UI to reflect
+	 * @param {Number} race based on racesUnlocked[]
+	 */
+	unlockRace(raceUnlockIndex) {
+
+		this.racesUnlocked[raceUnlockIndex] = true;
+		switch (raceUnlockIndex) {
+			case 0 :
+				this.fellaPreview1.setAlpha(1);
+				break;
+			case 1 :
+				this.fellaPreview2.setAlpha(1);
+				break;
+			case 2 :
+				this.fellaPreview3.setAlpha(1);
+				break;
+			case 3 :
+				this.fellaPreview4.setAlpha(1);
+				break;
+			case 4 :
+				this.fellaPreview5.setAlpha(1);
+				break;
+			case 5 :
+				this.fellaPreview6.setAlpha(1);
+				break;
 		}
 	}
 

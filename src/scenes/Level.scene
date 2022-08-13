@@ -324,7 +324,7 @@
             "components": [
                 "AlignOffsets"
             ],
-            "AlignOffsets.y": 100,
+            "AlignOffsets.y": 300,
             "y": 1166,
             "list": [
                 {
@@ -333,6 +333,7 @@
                     "label": "rectangle",
                     "components": [],
                     "scaleX": 1.5672471108996504,
+                    "scaleY": 0.7005699229611766,
                     "isFilled": true,
                     "fillColor": "#000000",
                     "fillAlpha": 0.8,
@@ -344,7 +345,7 @@
                     "id": "f8b80d50-8fdf-46b0-9528-21056baf130b",
                     "label": "text_2",
                     "components": [],
-                    "y": -201,
+                    "y": -146,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "SHOP",
@@ -359,11 +360,11 @@
                     "id": "1bcd9cc7-489d-473e-8f39-2e5724e27a2d",
                     "label": "price",
                     "components": [],
-                    "x": -398,
-                    "y": 214,
+                    "x": -3,
+                    "y": -51,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "$ 100",
+                    "text": "$ 100 each !",
                     "lineSpacing": 15,
                     "align": "center",
                     "fontFamily": "arial",
@@ -372,26 +373,28 @@
                 {
                     "type": "Image",
                     "id": "ab3e28b6-8350-4105-a593-14b088d9f3a0",
-                    "label": "idle0000_png",
+                    "label": "fellaPreview1",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
                     "x": -394,
-                    "y": 104
+                    "y": 64
                 },
                 {
                     "type": "Image",
                     "id": "2eabf116-ef79-498a-bec6-a8fcec892065",
-                    "label": "idle0000_png_1",
+                    "label": "fellaPreview2",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
                     "x": -234,
-                    "y": 104,
+                    "y": 64,
                     "tintTopLeft": "#e8ca59",
                     "tintTopRight": "#e8ca59",
                     "tintBottomLeft": "#e8ca59",
@@ -400,50 +403,69 @@
                 {
                     "type": "Image",
                     "id": "5a7fecc8-39e2-483a-8a83-70f020bcf2ff",
-                    "label": "idle0000_png_2",
+                    "label": "fellaPreview3",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
                     "x": -74,
-                    "y": 104
+                    "y": 64,
+                    "alpha": 0.3,
+                    "alphaTopLeft": 0.3,
+                    "alphaTopRight": 0.3,
+                    "alphaBottomLeft": 0.3,
+                    "alphaBottomRight": 0.3
                 },
                 {
                     "type": "Image",
                     "id": "8413a1cc-5b9d-45af-a090-64ce84b077f3",
-                    "label": "idle0000_png_3",
+                    "label": "fellaPreview4",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
                     "x": 86,
-                    "y": 104
+                    "y": 64,
+                    "alpha": 0.3,
+                    "alphaTopLeft": 0.3,
+                    "alphaTopRight": 0.3,
+                    "alphaBottomLeft": 0.3,
+                    "alphaBottomRight": 0.3
                 },
                 {
                     "type": "Image",
                     "id": "d84efa86-3077-4e18-a265-052a76320e6a",
-                    "label": "idle0000_png_4",
+                    "label": "fellaPreview5",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
                     "x": 246,
-                    "y": 104
+                    "y": 64,
+                    "alpha": 0.3,
+                    "alphaTopLeft": 0.3,
+                    "alphaTopRight": 0.3,
+                    "alphaBottomLeft": 0.3,
+                    "alphaBottomRight": 0.3
                 },
                 {
                     "type": "Image",
                     "id": "6407af9a-0080-4842-adc4-f557042383e3",
-                    "label": "idle0000_png_5",
+                    "label": "fellaPreview6",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
                     "x": 406,
-                    "y": 104,
+                    "y": 64,
                     "alpha": 0.3,
                     "alphaTopLeft": 0.3,
                     "alphaTopRight": 0.3,
