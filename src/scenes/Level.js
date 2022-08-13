@@ -449,10 +449,11 @@ class Level extends Phaser.Scene {
 	// the number being double represents the amount of space we want at least on both sides
 
 	/** how much total velocity of drag does it take to make fella want to breed */
-	velocityToBreed = 3000;
+	velocityToBreed = 2000;
 	terminalVelocity = 70;
 
-
+	/** 2 index array of fellas ready to breed */
+	toBreed = ['', ''];
 
 	spawningRaces = ['green', 'cyan', 'blue', 'purple'];
 	// DEBUG: i removed yellow from this list
@@ -704,12 +705,6 @@ class Level extends Phaser.Scene {
 				.setMass(mass)
 		);
 
-		// TEST: gameobject specific collide
-		fella.setOnCollideWith(this.topBound.body, pair => {
-
-			console.log('hit wall');
-		})
-
 		// set default data
 		fella.setData('race', race);
 		fella.setData('regular', (race == 'white' || race == 'yellow' || race == 'green' || race == 'cyan' || race == 'blue' || race == 'purple'));
@@ -767,6 +762,27 @@ class Level extends Phaser.Scene {
 	}
 
 	/**
+	 * called by each horny fella when two of them touch
+	 * @param {GameObject} race 
+	 */
+	breed(race1, race2) {
+
+		// what does this combo make
+		let race1Data = this.races.get(race1.getData('race'));
+		let race2Data = this.races.get(race2.getData('race'));
+		if (race1Data.breeding.with == race2.getData('race')) {
+			
+			this.addFella(race1Data.breeding.makes);
+		}
+		else if (race2Data.breeding.with == race1.getData('race')) {
+			
+			this.addFella(race2Data.breeding.makes);
+		}
+		race1.status.setState('dead');
+		race2.status.setState('dead');
+	}
+
+	/**
 	 * create tank walls
 	 * 
 	 * collision event
@@ -796,40 +812,41 @@ class Level extends Phaser.Scene {
 		const _this = this;
 		this.colCount = 0;
 
+		// OLD - world collision detection
 		// this.topBound.setOnCollideWith(this.dragge pair => {
 
 		// 	console.log('top');
 		// });
 
 		// collision event
-		this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
+		// this.matter.world.on('collisionstart', (event, bodyA, bodyB) => {
 
-			// console.log(event);
-			if (bodyA.isStatic || bodyB.isStatic)
-				return;
+		// 	// console.log(event);
+		// 	if (bodyA.isStatic || bodyB.isStatic)
+		// 		return;
 
-			// breed check
-			if (bodyA.gameObject.getData('horny') && bodyB.gameObject.getData('horny')) {
+		// 	// breed check
+		// 	if (bodyA.gameObject.getData('horny') && bodyB.gameObject.getData('horny')) {
 
-				let raceA = bodyA.gameObject.getData('race');
-				let raceB = bodyB.gameObject.getData('race');
-				let raceDataA = this.races.get(raceA);
-				let raceDataB = this.races.get(raceB);
+		// 		let raceA = bodyA.gameObject.getData('race');
+		// 		let raceB = bodyB.gameObject.getData('race');
+		// 		let raceDataA = this.races.get(raceA);
+		// 		let raceDataB = this.races.get(raceB);
 
-				if (raceDataA.breeding.with == raceB && raceDataA.breeding.makes != 'nothing') {
+		// 		if (raceDataA.breeding.with == raceB && raceDataA.breeding.makes != 'nothing') {
 
-					this.addFella(raceDataA.breeding.makes);
-				}
-				else if (raceDataB.breeding.with == raceA && raceDataB.breeding.makes != 'nothing') {
+		// 			this.addFella(raceDataA.breeding.makes);
+		// 		}
+		// 		else if (raceDataB.breeding.with == raceA && raceDataB.breeding.makes != 'nothing') {
 
-					this.addFella(raceDataB.breeding.makes);
-				}
+		// 			this.addFella(raceDataB.breeding.makes);
+		// 		}
 
-				// TEMP: killing parents				
-				bodyA.gameObject.status.setState('dead');
-				bodyB.gameObject.status.setState('dead');
-			}
-		});
+		// 		// TEMP: killing parents				
+		// 		bodyA.gameObject.status.setState('dead');
+		// 		bodyB.gameObject.status.setState('dead');
+		// 	}
+		// });
 	}
 
 	/** setup mouse drag physics constraints & events */
@@ -872,14 +889,9 @@ class Level extends Phaser.Scene {
 		const _this = this;
 		this.matter.world.on('dragend', function(body) { 
 
+			// drag wall
 			if (body.isStatic) return;
 
-			// console.log(body.gameObject);
-			// console.log(body.gameObject.getData('race'));
-			// console.log('total drag velocity: ' + body.gameObject.getData('totalVelocity'));
-			// FIXME: getting a crash that points to this line
-
-			// prevent crash from trying to access destroyed gameObject if 
 			// fella has died during drag
 			if (body.gameObject == null) {
 
@@ -887,14 +899,31 @@ class Level extends Phaser.Scene {
 				return;
 			}
 
-			// TODO: if the player is able to hit fellas against the wall rather than just flick,
-			// they need to not breed after an impact
-
 			// shaken = horny
-			if((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) {
+			// only if velocity > terminal and fella is alive
+			if(((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) && body.gameObject.getData('alive')) {
 
 				body.gameObject.setData('horny', true);
 				body.gameObject.status.setState('breeding');
+
+				// collide with other horny callback
+				body.gameObject.setOnCollide(pair => {
+
+					// with wall
+					if (pair.bodyB.isStatic || pair.bodyA.isStatic) return;
+
+					// post dead
+					if (pair.bodyA.gameObject == null || pair.bodyB.gameObject == null) {
+
+						console.log('breed collide event: fella to breed is dead');
+						return;
+					}
+
+					if (pair.bodyB.gameObject.getData('horny') && pair.bodyA.gameObject.getData('horny')) {
+
+						_this.breed(pair.bodyA.gameObject, pair.bodyB.gameObject);
+					}
+				});
 			}
 			else {
 
