@@ -1193,7 +1193,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -1238,7 +1238,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2219,7 +2219,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2264,7 +2264,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2309,7 +2309,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 18,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2354,52 +2354,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
-            "key": "reg-run",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "reg",
-                    "frame": "walk0000.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "reg",
-                    "frame": "walk0001.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "reg",
-                    "frame": "walk0002.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "reg",
-                    "frame": "walk0003.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "reg",
-                    "frame": "walk0004.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "reg",
-                    "frame": "walk0005.png",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2444,7 +2399,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2489,7 +2444,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2534,7 +2489,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -3128,7 +3083,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 48,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -3278,7 +3233,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -3323,7 +3278,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -3414,7 +3369,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 12,
             "skipMissedFrames": true,
             "repeat": -1,
             "yoyo": true
@@ -3573,6 +3528,96 @@
                 {
                     "key": "tod",
                     "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "nectar-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "nectar",
+                    "frame": "fly0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "nectar-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "nectar",
+                    "frame": "fly0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "nectar",
+                    "frame": "fly0005.png",
                     "duration": 0,
                     "keyframe": false
                 }

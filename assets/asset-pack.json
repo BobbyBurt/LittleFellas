@@ -170,11 +170,23 @@
                 "key": "mango"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/effects/mating.json",
+                "path": "assets/effects",
+                "key": "mating"
+            },
+            {
                 "url": [
                     "assets/audio/munch.wav"
                 ],
                 "type": "audio",
                 "key": "munch"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/nectar.json",
+                "path": "assets/fellas",
+                "key": "nectar"
             },
             {
                 "url": "src/components/PlayAnimation.js",

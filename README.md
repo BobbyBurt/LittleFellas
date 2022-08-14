@@ -34,6 +34,10 @@ I should do this in order
 - [ ] change size of cloud
 - [ ] character flip
 
+- [ ] fellas can be in a forever slide state. seems to happen when theres a lot on screen
+
+- [ ] investigate memory leaks. It seems like destroy() doesn't remove the reference, so no garbage collection
+
 - [ ] hover over UI feedback
 
 - [ ] process bg as smaller image

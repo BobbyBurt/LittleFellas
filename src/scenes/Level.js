@@ -454,55 +454,73 @@ class Level extends Phaser.Scene {
 		['red', {
 			breeding: { with: 'purple', makes: 'angro' },
 			sprite: 'reg',
+			name: 'Grimblo (red)',
+			desc: "",
 			tint: 0xec7171,
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
+			facingLeft: false,
 			meat: 'steak'
 		}],
 		['purple', {
 			breeding: { with: 'blue', makes: 'girl' },
 			sprite: 'reg',
+			name: 'Grimblo (purple)',
+			desc: "",
 			tint: 0xc78cee,
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
+			facingLeft: false,
 			meat: 'bacon'
 		}],
 		['blue', {
 			breeding: { with: 'cyan', makes: 'boyo' },
 			sprite: 'reg',
+			name: 'Grimblo (blue)',
+			desc: "",
 			tint: 0x7078dc,
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
+			facingLeft: false,
 			meat: 'chicken'
 		}],
 		['cyan', {
 			breeding: { with: 'green', makes: 'ufo' },
 			sprite: 'reg',
+			name: 'Grimblo (cyan)',
+			desc: "",
 			tint: 0x86ebea,
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
+			facingLeft: false,
 			meat: 'steak'
 		}],
 		['green', {
 			breeding: { with: 'yellow', makes: 'mango' },
 			sprite: 'reg',
+			name: 'Grimblo (green)',
+			desc: "",
 			tint: 0x77e482,
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
+			facingLeft: false,
 			meat: 'bacon'
 		}],
 		['yellow', {
 			breeding: { with: 'red', makes: 'nothing' },
 			sprite: 'reg',
+			name: 'Grimblo (yellow)',
+			desc: "",
 			tint: 0xefdd51,
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
+			facingLeft: false,
 			meat: 'chicken'
 		}],
 
@@ -510,46 +528,61 @@ class Level extends Phaser.Scene {
 		['angro', {
 			breeding: { with: 'girl', makes: 'scooper' },
 			sprite: 'angro',
+			name: 'Angro',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 80,
 			shadow: true,
 			meat: 'chicken',
+			facingLeft: false,
 			mass: 20
 		}],
 		['girl', {
 			breeding: { with: 'boyo', makes: 'pixie' },
 			sprite: 'girl',
+			name: 'Girlina',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: true,
 			meat: 'bacon',
+			facingLeft: true,
 			mass: 20
 		}],
 		['boyo', {
 			breeding: { with: 'ufo', makes: 'smarto' },
 			sprite: 'boyo',
+			name: 'Boyo',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 80,
 			shadow: true,
 			meat: 'chicken',
+			facingLeft: false,
 			mass: 20
 		}],
 		['ufo', {
 			breeding: { with: 'mango', makes: 'bull' },
 			sprite: 'ufo',
+			name: 'Larry B. B.',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: false,
 			meat: 'steak',
+			facingLeft: false,
 			mass: 20
 		}],
 		['mango', {
 			breeding: { with: 'angro', makes: 'nothing' },
 			sprite: 'mango',
+			name: 'Mango Horse',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
 			meat: 'chicken',
+			facingLeft: true,
 			mass: 20
 		}],
 
@@ -557,37 +590,49 @@ class Level extends Phaser.Scene {
 		['scooper', {
 			breeding: { with: 'pixie', makes: 'balls' },
 			sprite: 'scooper',
+			name: 'Scooper',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 120,
 			shadow: false,
 			meat: 'bacon',
+			facingLeft: true,
 			mass: 20
 		}],
 		['pixie', {
 			breeding: { with: 'smarto', makes: 'bee' },
 			sprite: 'pixie',
+			name: 'Yellow Fella',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 50,
 			shadow: true,
 			meat: 'bacon',
+			facingLeft: false,
 			mass: 20
 		}], 
 		['smarto', {
 			breeding: { with: 'bull', makes: 'weird' },
 			sprite: 'smarto',
+			name: 'Smarto The Surfer Alien',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 100,
 			shadow: true,
 			meat: 'steak',
+			facingLeft: true,
 			mass: 20
 		}], 
 		['bull', {
 			breeding: { with: 'scooper', makes: 'nothing' },
 			sprite: 'bull',
+			name: 'Bullfrog',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: true,
 			meat: 'steak',
+			facingLeft: false,
 			mass: 20
 		}], 
 
@@ -595,28 +640,37 @@ class Level extends Phaser.Scene {
 		['balls', {
 			breeding: { with: 'bee', makes: 'mom' },
 			sprite: 'balls',
+			name: 'Threeballs',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
 			meat: 'bacon',
+			facingLeft: false,
 			mass: 20
 		}], 
 		['bee', {
 			breeding: { with: 'weird', makes: 'tod' },
 			sprite: 'bee',
+			name: 'Bee',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 50,
 			shadow: false,
 			meat: 'chicken',
+			facingLeft: false,
 			mass: 20
 		}],
 		['weird', {
 			breeding: { with: 'balls', makes: 'nothing' },
 			sprite: 'weird',
+			name: 'Weird Guy',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 100,
 			shadow: true,
 			meat: 'steak',
+			facingLeft: true,
 			mass: 20
 		}],
 
@@ -624,19 +678,25 @@ class Level extends Phaser.Scene {
 		['tod', {
 			breeding: { with: 'nectar', makes: 'ultimate' },
 			sprite: 'tod',
+			name: 'Tod',
+			desc: "",
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
 			meat: 'chicken',
+			facingLeft: false,
 			mass: 20
 		}], 
 		['nectar', {
 			breeding: { with: 'tod', makes: 'nothing' },
-			sprite: 'reg',
+			sprite: 'nectar',
+			name: 'Butterfly',
+			desc: "",
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 40,
 			shadow: false,
 			meat: 'bacon',
+			facingLeft: true,
 			mass: 20
 		}], 
 
@@ -644,10 +704,13 @@ class Level extends Phaser.Scene {
 		['ultimate', {
 			breeding: { with: 'ultimate', makes: 'gremlin' },
 			sprite: 'ultimate',
+			name: 'Ultimate Lifeform',
+			desc: "Ever since the dawn of time and everything as we know it, these creatures have already existed. Nobody really knows where they came from but one thing is for certain, they have no weaknesses. It’s a fact that nobody can beat this lifeform and in most cases, this would be a problem for the remaining species since the ultimate lifeform can come in and kill anybody. However, this fella is very unfazed with everything and won’t bother anyone. They enjoy laying on the couch with a blanket and watching Netflix.",
 			tint: 0xffffff,
 			circleRadius: 120,
 			shadow: false,
 			meat: 'chicken',
+			facingLeft: false,
 			mass: 20
 		}], 
 
@@ -655,10 +718,13 @@ class Level extends Phaser.Scene {
 		['gremlin', {
 			breeding: { with: 'gremlin', makes: 'gremlin' },
 			sprite: 'gremlin',
+			name: 'Gremlin',
+			desc: "Ew get this thing off of me.",
 			tint: 0xffffff,
 			circleRadius: 25,
 			shadow: true,
 			meat: 'steak',
+			facingLeft: false,
 			mass: 20
 		}]
 
@@ -675,7 +741,7 @@ class Level extends Phaser.Scene {
 
 		// fellas group
 		this.fellas = this.add.group();
-		this.fellas.maxSize = -1;
+		this.fellas.maxSize = 100;
 		// TODO: set max
 
 		/** group of 2 fellas to breed */
@@ -703,6 +769,16 @@ class Level extends Phaser.Scene {
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
 		this.mobileTextcontainer.setVisible(false);
 		// change this before release
+
+		// setup effects
+		this.eatingEffect = this.add.sprite(9999, 9999);
+		this.eatingEffect.destroy();
+		this.matingEffect = this.add.sprite(9999, 9999);
+		this.matingEffect.destroy();
+		this.impactEffect = this.add.group({ maxSize: 30});
+		// only one effect object can exist in scene
+		// active state is checked to make sure it's available
+		// but first eatingEffect needs to not be null
 
 		this.setupPhysics();
 
@@ -934,7 +1010,7 @@ class Level extends Phaser.Scene {
 	 * 
 	 * @param {*} fella 
 	 */
-	fellaImpact(_fellaBody) {
+	fellaImpact(_fellaBody, side) {
 
 		this.sound.play('impact');
 		_fellaBody.gameObject.setData('alive', false);
@@ -945,6 +1021,43 @@ class Level extends Phaser.Scene {
 		// console.log(_fellaBody);
 		// console.log(this.mouseConstraint);
 		this.mouseConstraint.stopDrag();
+
+
+		// effect position
+		let impactEffectPosition = {x: 0, y: 0}
+		switch (side) {
+			case 'top':
+				impactEffectPosition.x = _fellaBody.gameObject.x;
+				impactEffectPosition.y = -430;
+				break;
+			case 'right':
+				impactEffectPosition.x = 950;
+				impactEffectPosition.y = _fellaBody.gameObject.y;
+				break;
+			case 'bottom':
+				impactEffectPosition.x = _fellaBody.gameObject.x;
+				impactEffectPosition.y = 460;
+				break;
+			case 'left':
+				impactEffectPosition.x = -910;
+				impactEffectPosition.y = _fellaBody.gameObject.y;
+				break;
+
+		}
+
+		// add effect to group
+		this.impactEffect.get(impactEffectPosition.x, impactEffectPosition.y + 40)
+			.setActive(true)
+			.setFlipX(Phaser.Math.RND.normal() > 0)
+			.setDepth(-400)
+			.play('impact');
+		
+		// effect group max manage
+		if (this.impactEffect.countActive() == this.impactEffect.maxSize) {
+
+			this.impactEffect.getFirstAlive().setActive(false);
+			this.impactEffect.shuffle();
+		}
 	}
 
 	/**
@@ -964,8 +1077,41 @@ class Level extends Phaser.Scene {
 
 			this.addFella(race2Data.breeding.makes);
 		}
-		race1.status.setState('dead');
-		race2.status.setState('dead');
+		else {
+			
+			// incompatible pair
+			race1.status.setState('walk');
+			race2.status.setState('walk');
+			return;
+		}
+		
+		if (!this.matingEffect.active) {
+
+			this.matingEffect = this.add.sprite(race1.x, race1.y)
+				.play('mating')
+				.setDepth(800)
+				.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+
+					this.matingEffect.destroy();
+				});
+		}
+
+		// get rid of parents
+		race1.setData('alive', false);
+		race1.shadow.destroy();
+		race1.hungerEffect.destroy();
+		race1.heartEffect.destroy();
+		race1.status = null;
+		race1.destroy();
+
+		race2.setData('alive', false);
+		race2.shadow.destroy();
+		race2.hungerEffect.destroy();
+		race2.heartEffect.destroy();
+		race2.status = null;
+		race2.destroy();
+		
+		this.fellaCountText.setText('x ' + this.fellas.getLength());
 	}
 
 	addFood(x, y) {
@@ -1149,7 +1295,24 @@ class Level extends Phaser.Scene {
 
 					_this.setEnergy(intersect[0].gameObject, .3, true);
 
-					_this.add.sprite(intersect[0].gameObject.x, intersect[0].gameObject.y).play('crumbs');
+					console.log(intersect[0].gameObject.status.currentState.constructor.name);
+					if (intersect[0].gameObject.status.currentState.constructor.name != 'Slidding') {
+
+						intersect[0].gameObject.status.setState('idle');
+					}
+
+					console.log(_this.eatingEffect);
+					if (!_this.eatingEffect.active)
+					{
+
+						_this.eatingEffect = _this.add.sprite(intersect[0].gameObject.x, intersect[0].gameObject.y)
+							.play('eating')
+							.setDepth(800)
+							.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+	
+								_this.eatingEffect.destroy();
+							});
+					}
 
 					body.gameObject.destroy(); 
 
@@ -1264,22 +1427,22 @@ class Level extends Phaser.Scene {
 		if (side == 'top' && _fella.velocity.y < -this.terminalVelocity) {
 
 			console.log('top');
-			this.fellaImpact(_fella);
+			this.fellaImpact(_fella, side);
 		}
 		else if (side == 'bottom' && _fella.velocity.y > this.terminalVelocity) {
 
 			console.log('bottom');
-			this.fellaImpact(_fella);
+			this.fellaImpact(_fella, side);
 		}
 		else if (side == 'left' && _fella.velocity.x < -this.terminalVelocity) {
 
 			console.log('left');
-			this.fellaImpact(_fella);
+			this.fellaImpact(_fella, side);
 		}
 		else if (side == 'right' && _fella.velocity.x > this.terminalVelocity) {
 
 			console.log('right');
-			this.fellaImpact(_fella);
+			this.fellaImpact(_fella, side);
 		}
 	}
 

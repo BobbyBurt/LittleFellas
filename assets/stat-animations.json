@@ -494,7 +494,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 48,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -502,18 +502,6 @@
             "key": "impact",
             "type": "frame",
             "frames": [
-                {
-                    "key": "impact_1",
-                    "frame": "impact0000.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "impact_1",
-                    "frame": "impact0001.png",
-                    "duration": 0,
-                    "keyframe": false
-                },
                 {
                     "key": "impact_1",
                     "frame": "impact0002.png",
@@ -593,9 +581,240 @@
                     "keyframe": false
                 }
             ],
+            "frameRate": 48,
+            "skipMissedFrames": true
+        },
+        {
+            "key": "mating",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "mating",
+                    "frame": "sex/0000",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0001",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0002",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0003",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0004",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0005",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0006",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0007",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0008",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0009",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0010",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0011",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0012",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0013",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0014",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0015",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0016",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0017",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0018",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0019",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0020",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0021",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0022",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "mating",
+                    "frame": "sex/0023",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
             "frameRate": 24,
-            "skipMissedFrames": true,
-            "repeat": -1
+            "skipMissedFrames": true
+        },
+        {
+            "key": "eating",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 48,
+            "skipMissedFrames": true
         }
     ],
     "globalTimeScale": 1,

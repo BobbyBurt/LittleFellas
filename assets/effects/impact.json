@@ -4,30 +4,30 @@
 			"image": "impact.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 97,
-				"h": 309
+				"w": 250,
+				"h": 230
 			},
-			"scale": 0.5,
+			"scale": 0.7,
 			"frames": [
 				{
 					"filename": "impact0009.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 417,
-						"y": 207,
-						"w": 95,
-						"h": 69
+						"x": 584,
+						"y": 290,
+						"w": 132,
+						"h": 96
 					},
 					"frame": {
 						"x": 1,
 						"y": 1,
-						"w": 95,
-						"h": 69
+						"w": 132,
+						"h": 96
 					}
 				},
 				{
@@ -35,20 +35,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 417,
-						"y": 207,
-						"w": 95,
-						"h": 69
+						"x": 584,
+						"y": 290,
+						"w": 132,
+						"h": 96
 					},
 					"frame": {
 						"x": 1,
 						"y": 1,
-						"w": 95,
-						"h": 69
+						"w": 132,
+						"h": 96
 					}
 				},
 				{
@@ -56,146 +56,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 417,
-						"y": 207,
-						"w": 95,
-						"h": 69
+						"x": 584,
+						"y": 290,
+						"w": 132,
+						"h": 96
 					},
 					"frame": {
 						"x": 1,
 						"y": 1,
-						"w": 95,
-						"h": 69
-					}
-				},
-				{
-					"filename": "impact0012.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 960,
-						"h": 540
-					},
-					"spriteSourceSize": {
-						"x": 423,
-						"y": 210,
-						"w": 89,
-						"h": 69
-					},
-					"frame": {
-						"x": 1,
-						"y": 72,
-						"w": 89,
-						"h": 69
-					}
-				},
-				{
-					"filename": "impact0013.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 960,
-						"h": 540
-					},
-					"spriteSourceSize": {
-						"x": 423,
-						"y": 210,
-						"w": 89,
-						"h": 69
-					},
-					"frame": {
-						"x": 1,
-						"y": 72,
-						"w": 89,
-						"h": 69
-					}
-				},
-				{
-					"filename": "impact0014.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 960,
-						"h": 540
-					},
-					"spriteSourceSize": {
-						"x": 423,
-						"y": 210,
-						"w": 89,
-						"h": 69
-					},
-					"frame": {
-						"x": 1,
-						"y": 72,
-						"w": 89,
-						"h": 69
-					}
-				},
-				{
-					"filename": "impact0006.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 960,
-						"h": 540
-					},
-					"spriteSourceSize": {
-						"x": 420,
-						"y": 211,
-						"w": 87,
-						"h": 62
-					},
-					"frame": {
-						"x": 1,
-						"y": 143,
-						"w": 87,
-						"h": 62
-					}
-				},
-				{
-					"filename": "impact0007.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 960,
-						"h": 540
-					},
-					"spriteSourceSize": {
-						"x": 420,
-						"y": 211,
-						"w": 87,
-						"h": 62
-					},
-					"frame": {
-						"x": 1,
-						"y": 143,
-						"w": 87,
-						"h": 62
-					}
-				},
-				{
-					"filename": "impact0008.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 960,
-						"h": 540
-					},
-					"spriteSourceSize": {
-						"x": 420,
-						"y": 211,
-						"w": 87,
-						"h": 62
-					},
-					"frame": {
-						"x": 1,
-						"y": 143,
-						"w": 87,
-						"h": 62
+						"w": 132,
+						"h": 96
 					}
 				},
 				{
@@ -203,20 +77,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 425,
-						"y": 214,
-						"w": 78,
-						"h": 55
+						"x": 596,
+						"y": 300,
+						"w": 108,
+						"h": 76
 					},
 					"frame": {
-						"x": 1,
-						"y": 207,
-						"w": 78,
-						"h": 55
+						"x": 135,
+						"y": 1,
+						"w": 108,
+						"h": 76
 					}
 				},
 				{
@@ -224,20 +98,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 425,
-						"y": 214,
-						"w": 78,
-						"h": 55
+						"x": 596,
+						"y": 300,
+						"w": 108,
+						"h": 76
 					},
 					"frame": {
-						"x": 1,
-						"y": 207,
-						"w": 78,
-						"h": 55
+						"x": 135,
+						"y": 1,
+						"w": 108,
+						"h": 76
 					}
 				},
 				{
@@ -245,20 +119,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 425,
-						"y": 214,
-						"w": 78,
-						"h": 55
+						"x": 596,
+						"y": 300,
+						"w": 108,
+						"h": 76
 					},
 					"frame": {
-						"x": 1,
-						"y": 207,
-						"w": 78,
-						"h": 55
+						"x": 135,
+						"y": 1,
+						"w": 108,
+						"h": 76
 					}
 				},
 				{
@@ -266,20 +140,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 429,
-						"y": 219,
-						"w": 65,
-						"h": 44
+						"x": 601,
+						"y": 307,
+						"w": 91,
+						"h": 61
 					},
 					"frame": {
-						"x": 1,
-						"y": 264,
-						"w": 65,
-						"h": 44
+						"x": 135,
+						"y": 79,
+						"w": 91,
+						"h": 61
 					}
 				},
 				{
@@ -287,20 +161,20 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 429,
-						"y": 219,
-						"w": 65,
-						"h": 44
+						"x": 601,
+						"y": 307,
+						"w": 91,
+						"h": 61
 					},
 					"frame": {
-						"x": 1,
-						"y": 264,
-						"w": 65,
-						"h": 44
+						"x": 135,
+						"y": 79,
+						"w": 91,
+						"h": 61
 					}
 				},
 				{
@@ -308,20 +182,146 @@
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 960,
-						"h": 540
+						"w": 1344,
+						"h": 756
 					},
 					"spriteSourceSize": {
-						"x": 429,
-						"y": 219,
-						"w": 65,
-						"h": 44
+						"x": 601,
+						"y": 307,
+						"w": 91,
+						"h": 61
+					},
+					"frame": {
+						"x": 135,
+						"y": 79,
+						"w": 91,
+						"h": 61
+					}
+				},
+				{
+					"filename": "impact0012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1344,
+						"h": 756
+					},
+					"spriteSourceSize": {
+						"x": 592,
+						"y": 295,
+						"w": 125,
+						"h": 95
 					},
 					"frame": {
 						"x": 1,
-						"y": 264,
-						"w": 65,
-						"h": 44
+						"y": 99,
+						"w": 125,
+						"h": 95
+					}
+				},
+				{
+					"filename": "impact0013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1344,
+						"h": 756
+					},
+					"spriteSourceSize": {
+						"x": 592,
+						"y": 295,
+						"w": 125,
+						"h": 95
+					},
+					"frame": {
+						"x": 1,
+						"y": 99,
+						"w": 125,
+						"h": 95
+					}
+				},
+				{
+					"filename": "impact0014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1344,
+						"h": 756
+					},
+					"spriteSourceSize": {
+						"x": 592,
+						"y": 295,
+						"w": 125,
+						"h": 95
+					},
+					"frame": {
+						"x": 1,
+						"y": 99,
+						"w": 125,
+						"h": 95
+					}
+				},
+				{
+					"filename": "impact0006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1344,
+						"h": 756
+					},
+					"spriteSourceSize": {
+						"x": 589,
+						"y": 295,
+						"w": 121,
+						"h": 87
+					},
+					"frame": {
+						"x": 128,
+						"y": 142,
+						"w": 121,
+						"h": 87
+					}
+				},
+				{
+					"filename": "impact0007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1344,
+						"h": 756
+					},
+					"spriteSourceSize": {
+						"x": 589,
+						"y": 295,
+						"w": 121,
+						"h": 87
+					},
+					"frame": {
+						"x": 128,
+						"y": 142,
+						"w": 121,
+						"h": 87
+					}
+				},
+				{
+					"filename": "impact0008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1344,
+						"h": 756
+					},
+					"spriteSourceSize": {
+						"x": 589,
+						"y": 295,
+						"w": 121,
+						"h": 87
+					},
+					"frame": {
+						"x": 128,
+						"y": 142,
+						"w": 121,
+						"h": 87
 					}
 				}
 			]
@@ -330,6 +330,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:1a29258c762d3a8eb82972fde8344dee:5938916917394286b7f81c2e6b4c4dcc:0ae39fbe7013636eb056103b29b9855f$"
+		"smartupdate": "$TexturePacker:SmartUpdate:69cf85f67e41dc0231e5f90b03c7fbb7:5938916917394286b7f81c2e6b4c4dcc:0ae39fbe7013636eb056103b29b9855f$"
 	}
 }

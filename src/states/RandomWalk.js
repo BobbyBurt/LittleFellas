@@ -51,8 +51,8 @@ class RandomWalk {
 		if (this.duration <= 0) {
 
 			// decrease energy
-			if (Phaser.Math.RND.normal() < 0)
-			this.scene.setEnergy(this.fella, -.05, true);
+			if (Phaser.Math.RND.normal() > .5)
+			this.scene.setEnergy(this.fella, -.1, true);
 			
 			this.stateControl.setState('idle');
 		}
