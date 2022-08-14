@@ -1193,7 +1193,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 12,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -1238,7 +1238,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 12,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2219,7 +2219,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 12,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2264,7 +2264,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 12,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2309,7 +2309,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 20,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2354,7 +2354,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 12,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
         },
@@ -2402,6 +2402,1022 @@
             "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "balls-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "balls",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "balls-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "balls",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "balls",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "bee-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bee",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "bee-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bee",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bee",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "weird-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "weird",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0020.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0021.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0022.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0023.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0024.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0025.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0026.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0027.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0028.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0029.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0030.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0031.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0032.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0033.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0034.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0035.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0036.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0037.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0038.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0039.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0040.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0041.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0042.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0043.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0044.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0045.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0046.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0047.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0048.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0049.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "idle0050.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "weird-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "weird",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "weird",
+                    "frame": "walk0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "gremlin-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "gremlin",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "idle0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "gremlin-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "gremlin",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "gremlin",
+                    "frame": "walk0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "bull-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bull",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "bull-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "bull",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "bull",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "ultimate-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "ultimate",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "yoyo": true
+        },
+        {
+            "key": "ultimate-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "ultimate",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "ultimate",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "yoyo": true
         }
     ],
     "globalTimeScale": 1,

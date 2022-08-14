@@ -31,6 +31,8 @@ I should do this in order
 
 - [ ] horny timer
 
+- [ ] process bg as smaller image
+
 - [x] Set up Newgrounds.io
 
 - [x] only landscape orientation - add flip screen in case it's in portrait

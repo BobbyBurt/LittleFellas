@@ -24,6 +24,17 @@ class Idle {
 		this.fella.play(this.fella.getData('sprite') + '-idle');
 		
 		this.fella.setVelocity(0);
+
+		console.log(this.fella.getData('energy'));
+
+		if (this.fella.getData('energy') <= 0) {
+
+			this.stateControl.setState('dead');
+		}
+		else if (this.fella.getData('energy') <= .3) {
+
+			this.fella.play(this.fella.getData('sprite') + '-hungry');
+		}
 	}
 	
 	update() {

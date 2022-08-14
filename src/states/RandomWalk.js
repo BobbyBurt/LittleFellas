@@ -26,6 +26,8 @@ class RandomWalk {
 		this.duration = Phaser.Math.RND.between(20, 100);
 
 		this.fella.play(this.fella.getData('sprite') + '-walk');
+
+		// this.fella.setData('energy', this.fella.getData('energy') - .1);
 	}
 	
 	update() {

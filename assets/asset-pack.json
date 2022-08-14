@@ -13,6 +13,18 @@
                 "key": "angro"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/fellas/balls.json",
+                "path": "assets/fellas",
+                "key": "balls"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/bee.json",
+                "path": "assets/fellas",
+                "key": "bee"
+            },
+            {
                 "url": "assets/fellas/boyo.png",
                 "frameConfig": {
                     "frameWidth": 89,
@@ -30,6 +42,12 @@
                 "url": "assets/fellas/boyo.json",
                 "path": "assets/fellas",
                 "key": "boyo_1"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/bull.json",
+                "path": "assets/fellas",
+                "key": "bull"
             },
             {
                 "url": "assets/Damage.png",
@@ -69,6 +87,11 @@
                 "key": "dustpants-animations"
             },
             {
+                "url": "assets/family-tree.png",
+                "type": "image",
+                "key": "family-tree"
+            },
+            {
                 "url": "assets/fella.png",
                 "frameConfig": {
                     "frameWidth": 180,
@@ -97,6 +120,12 @@
                 "url": "assets/fellas/girl.json",
                 "path": "assets/fellas",
                 "key": "girl"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/gremlin.json",
+                "path": "assets/fellas",
+                "key": "gremlin"
             },
             {
                 "type": "multiatlas",
@@ -185,6 +214,11 @@
                 "key": "tank-2"
             },
             {
+                "url": "assets/tankBG.png",
+                "type": "image",
+                "key": "tankBG"
+            },
+            {
                 "url": [
                     "assets/audio/tap.wav"
                 ],
@@ -202,6 +236,18 @@
                 "url": "assets/fellas/ufo.json",
                 "path": "assets/fellas",
                 "key": "ufo"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/ultimate.json",
+                "path": "assets/fellas",
+                "key": "ultimate"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/weird.json",
+                "path": "assets/fellas",
+                "key": "weird"
             },
             {
                 "url": "assets/wings.png",
