@@ -19,9 +19,9 @@ class Level extends Phaser.Scene {
 	editorCreate() {
 
 		// tankBG
-		const tankBG = this.add.image(21, -41, "tankBG");
-		tankBG.scaleX = 0.6108773023635666;
-		tankBG.scaleY = 0.6108773023635666;
+		const tankBG = this.add.image(21, -12, "tankBG");
+		tankBG.scaleX = 0.6168902370241159;
+		tankBG.scaleY = 0.6168902370241159;
 
 		// buttonTest2
 		const buttonTest2 = this.add.rectangle(2472, 962, 128, 128);
@@ -472,7 +472,8 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'purple', makes: 'angro' },
 			sprite: 'reg',
 			tint: 0xec7171,
-			circleRadius: 40,
+			circleRadius: 50,
+			shadow: true,
 			mass: 10,
 			unlocked: false
 		}],
@@ -480,7 +481,8 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'blue', makes: 'girl' },
 			sprite: 'reg',
 			tint: 0xc78cee,
-			circleRadius: 40,
+			circleRadius: 50,
+			shadow: true,
 			mass: 10,
 			unlocked: false
 		}],
@@ -488,28 +490,32 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'cyan', makes: 'boyo' },
 			sprite: 'reg',
 			tint: 0x7078dc,
-			circleRadius: 40,
+			circleRadius: 50,
+			shadow: true,
 			mass: 10
 		}],
 		['cyan', {
 			breeding: { with: 'green', makes: 'ufo' },
 			sprite: 'reg',
 			tint: 0x86ebea,
-			circleRadius: 40,
+			circleRadius: 50,
+			shadow: true,
 			mass: 10
 		}],
 		['green', {
 			breeding: { with: 'yellow', makes: 'mango' },
 			sprite: 'reg',
 			tint: 0x77e482,
-			circleRadius: 40,
+			circleRadius: 50,
+			shadow: true,
 			mass: 10
 		}],
 		['yellow', {
 			breeding: { with: 'red', makes: 'nothing' },
 			sprite: 'reg',
 			tint: 0xefdd51,
-			circleRadius: 40,
+			circleRadius: 50,
+			shadow: true,
 			mass: 10
 		}],
 
@@ -519,13 +525,15 @@ class Level extends Phaser.Scene {
 			sprite: 'angro',
 			tint: 0xffffff,
 			circleRadius: 80,
+			shadow: true,
 			mass: 20
 		}],
 		['girl', {
 			breeding: { with: 'boyo', makes: 'pixie' },
 			sprite: 'girl',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 60,
+			shadow: true,
 			mass: 20
 		}],
 		['boyo', {
@@ -533,20 +541,23 @@ class Level extends Phaser.Scene {
 			sprite: 'boyo',
 			tint: 0xffffff,
 			circleRadius: 80,
+			shadow: true,
 			mass: 20
 		}],
 		['ufo', {
 			breeding: { with: 'mango', makes: 'bull' },
 			sprite: 'ufo',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 60,
+			shadow: false,
 			mass: 20
 		}],
 		['mango', {
 			breeding: { with: 'angro', makes: 'nothing' },
 			sprite: 'mango',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 70,
+			shadow: true,
 			mass: 20
 		}],
 
@@ -555,28 +566,32 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'pixie', makes: 'balls' },
 			sprite: 'scooper',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 120,
+			shadow: false,
 			mass: 20
 		}],
 		['pixie', {
 			breeding: { with: 'smarto', makes: 'bee' },
 			sprite: 'pixie',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 50,
+			shadow: true,
 			mass: 20
 		}], 
 		['smarto', {
 			breeding: { with: 'bull', makes: 'weird' },
 			sprite: 'smarto',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 100,
+			shadow: true,
 			mass: 20
 		}], 
 		['bull', {
 			breeding: { with: 'scooper', makes: 'nothing' },
 			sprite: 'bull',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 60,
+			shadow: true,
 			mass: 20
 		}], 
 
@@ -585,21 +600,24 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'bee', makes: 'mom' },
 			sprite: 'balls',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 70,
+			shadow: true,
 			mass: 20
 		}], 
 		['bee', {
-			breeding: { with: 'weird', makes: 'dad' },
+			breeding: { with: 'weird', makes: 'tod' },
 			sprite: 'bee',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 50,
+			shadow: false,
 			mass: 20
 		}],
 		['weird', {
 			breeding: { with: 'balls', makes: 'nothing' },
 			sprite: 'weird',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 100,
+			shadow: true,
 			mass: 20
 		}],
 
@@ -609,13 +627,15 @@ class Level extends Phaser.Scene {
 			sprite: 'reg',
 			tint: 0xff0000,
 			circleRadius: 80,
+			shadow: true,
 			mass: 20
 		}], 
-		['dad', {
+		['tod', {
 			breeding: { with: 'mom', makes: 'nothing' },
-			sprite: 'reg',
-			tint: 0x0066ff,
-			circleRadius: 80,
+			sprite: 'tod',
+			tint: 0xffffff,
+			circleRadius: 70,
+			shadow: true,
 			mass: 20
 		}], 
 
@@ -624,7 +644,8 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'ultimate', makes: 'gremlin' },
 			sprite: 'ultimate',
 			tint: 0xffffff,
-			circleRadius: 80,
+			circleRadius: 120,
+			shadow: false,
 			mass: 20
 		}], 
 
@@ -633,7 +654,8 @@ class Level extends Phaser.Scene {
 			breeding: { with: 'gremlin', makes: 'gremlin' },
 			sprite: 'gremlin',
 			tint: 0xffffff,
-			circleRadius: 30,
+			circleRadius: 25,
+			shadow: true,
 			mass: 20
 		}]
 
@@ -713,23 +735,23 @@ class Level extends Phaser.Scene {
 		this.addFella('purple');
 		this.addFella('blue');
 		this.addFella('cyan');
-		// this.addFella('yellow');
-		// this.addFella('boyo');
-		// this.addFella('girl');
-		// this.addFella('mango');
-		// this.addFella('balls');
-		// this.addFella('bee');
-		// this.addFella('weird');
-		// this.addFella('gremlin');
-		// this.addFella('bull');
-		// this.addFella('mom');
-		// this.addFella('dad');
-		// this.addFella('ufo');
-		// this.addFella('scooper');
-		// this.addFella('pixie');
-		// this.addFella('smarto');
-		// this.addFella('ultimate');
-		// this.addFella('angro');
+		this.addFella('yellow');
+		this.addFella('boyo');
+		this.addFella('girl');
+		this.addFella('mango');
+		this.addFella('balls');
+		this.addFella('bee');
+		this.addFella('weird');
+		this.addFella('gremlin');
+		this.addFella('bull');
+		this.addFella('mom');
+		this.addFella('tod');
+		this.addFella('ufo');
+		this.addFella('scooper');
+		this.addFella('pixie');
+		this.addFella('smarto');
+		this.addFella('ultimate');
+		this.addFella('angro');
 
 		// setup all fella states
 		// for (let i = 0; i < this.fellasList.length; i++) {
@@ -754,8 +776,6 @@ class Level extends Phaser.Scene {
 		this.money = 0;
 		this.setMoney(999999);
 
-		// TODO: make UI setup its own clas, yeah?
-
 		// resize
 		this.resize();
 	}
@@ -771,13 +791,28 @@ class Level extends Phaser.Scene {
 			// debug function here
 		}
 
-		// for each fella loop
-		this.fellas.children.each(function(fella) {
-
-			fella.setDepth(fella.y);
+		// each fella
+		this.fellas.getChildren().forEach(function (fella, index) {
 
 			// update all fella states
 			fella.status.update();
+
+			if (fella.active) {
+	
+				fella.setDepth(fella.y);
+	
+				// hunger effect
+				fella.hungerEffect.setPosition(fella.x - (fella.body.circleRadius * .7), fella.y - fella.body.circleRadius);
+				fella.hungerEffect.setDepth(fella.y + 1);
+
+				// heart effect
+				fella.heartEffect.setPosition(fella.x, fella.y - (fella.body.circleRadius + 40));
+				fella.heartEffect.setDepth(fella.y + 1);
+	
+				// shadow
+				fella.shadow.setPosition(fella.x, fella.y + fella.body.circleRadius + 20);
+				fella.shadow.setDepth(fella.y - 100);
+			}
 		});
 
 		// debug text
@@ -819,6 +854,7 @@ class Level extends Phaser.Scene {
 		fella.setData('race', race);
 		fella.setData('regular', (race == 'white' || race == 'yellow' || race == 'green' || race == 'cyan' || race == 'blue' || race == 'purple'));
 		fella.setData('sprite', raceData.sprite);
+		fella.setData('radius', raceData.circleRadius);
 		fella.setData('alive', true);
 		fella.setData('energy', 1);
 		fella.setData('totalVelocity', 0);
@@ -826,12 +862,26 @@ class Level extends Phaser.Scene {
 		fella.type = 'fella';
 		// used to distinguish bodies
 
-		// state machine
-		fella.status = new StateController(fella, this);
-		fella.status.setState('idle');
 
 		// update count
 		this.fellaCountText.setText('x ' + this.fellas.getLength());
+
+		// hunger effect
+		fella.hungerEffect = this.add.sprite(fella.x - fella.body.circleRadius, fella.y - fella.body.circleRadius).play('hunger');
+		fella.hungerEffect.setVisible(false);
+
+		// heart effect
+		fella.heartEffect = this.add.sprite(fella.x - fella.body.circleRadius, fella.y - fella.body.circleRadius).play('hearts');
+		fella.heartEffect.setVisible(false);
+
+		fella.shadow = this.add.image(fella.x - fella.body.circleRadius, fella.y - fella.body.circleRadius, 'shadow').setScale((fella.body.circleRadius / 60), 1).setAlpha(.7);
+		if (race == 'bull') fella.shadow.setScale(2, 1);
+		if (race == 'gremlin') fella.shadow.setScale(1, .5);
+		fella.shadow.setVisible(raceData.shadow);
+
+		// state machine
+		fella.status = new StateController(fella, this);
+		fella.status.setState('idle');
 	}
 
 	/** adds / removes fella from horny group  */
@@ -881,8 +931,8 @@ class Level extends Phaser.Scene {
 		// sliding state will check this at the end
 
 		// break from drag
-		console.log(_fellaBody);
-		console.log(this.mouseConstraint);
+		// console.log(_fellaBody);
+		// console.log(this.mouseConstraint);
 		this.mouseConstraint.stopDrag();
 	}
 
@@ -1038,6 +1088,9 @@ class Level extends Phaser.Scene {
 				return;
 			}
 
+			// hide shadow
+			body.gameObject.shadow.setVisible(false);
+
 			// fella-bound collision callback for impact check
 			body.gameObject.setOnCollideWith(_scene.topBound.body, () => {
 
@@ -1096,7 +1149,6 @@ class Level extends Phaser.Scene {
 
 				return;
 			}
-
 
 			// shaken = horny
 			// only if velocity > terminal and fella is alive
@@ -1166,8 +1218,6 @@ class Level extends Phaser.Scene {
 		// spawning sprites
 		this.controls.onPress('right', () => {
 
-			// TEST: puke
-			this.addPuke(300, 300);
 		});
 	}
 

@@ -134,6 +134,12 @@
                 "key": "hearts"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/effects/hunger.json",
+                "path": "assets/effects",
+                "key": "hunger"
+            },
+            {
                 "url": [
                     "assets/audio/impact.wav"
                 ],
@@ -191,6 +197,11 @@
                 "key": "scooper"
             },
             {
+                "url": "assets/effects/shadow.png",
+                "type": "image",
+                "key": "shadow"
+            },
+            {
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"
@@ -236,6 +247,12 @@
                 "url": "assets/fellas/temp-reg.json",
                 "path": "assets/fellas",
                 "key": "temp-reg"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/fellas/tod.json",
+                "path": "assets/fellas",
+                "key": "tod"
             },
             {
                 "type": "multiatlas",

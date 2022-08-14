@@ -25,6 +25,9 @@ class Idle {
 		
 		this.fella.setVelocity(0);
 
+		// bring back shadow
+		this.fella.shadow.setVisible(true);
+
 		console.log(this.fella.getData('energy'));
 
 		if (this.fella.getData('energy') <= 0) {

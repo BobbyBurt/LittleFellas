@@ -20,21 +20,13 @@ class Dead {
 		// set animation frame
 		// TODO: set to first frame of idle, or death frame is one exists
 		this.fella.stop();
-
-		// TODO: remove physics. not sure how, i swear i had this setup before
-		// this.fella.body.stop();
-		
-		// add wings
-		// this.wings = this.scene.add.image(this.fella.x, this.fella.y, 'wings');
-		// this.wings.setScale(.5, .5);
-		// this.wings.setDepth(this.fella.depth - 1);
-		// TODO: set scale according to fella type
 		
 		if (this.fella.getData('drop-food')) {
 
 			this.scene.addFood(this.fella.x, this.fella.y);
 		}
 
+		
 		// add poof
 		this.poof = this.scene.add.sprite(this.fella.x, this.fella.y, 'poof');
 		this.poof.play('poof');
@@ -48,22 +40,21 @@ class Dead {
 		});
 		
 		this.fella.setData('alive', false);
-
-		
-		this.fella.status = null;
-		// free this up for garbage collection
-		this.fella.destroy();
 		
 		// update fella count UI
 		this.scene.fellaCountText.setText('x ' + this.scene.fellas.getLength());
+		
+		// free this up for garbage collection
+		this.fella.shadow.destroy();
+		this.fella.hungerEffect.destroy();
+		this.fella.heartEffect.destroy();
+		this.fella.status = null;
+		this.fella.destroy();
+		
 	}
 
 	
 	update() {
-		
-		this.fella.y -= 2;
-		this.wings.y -= 2;
-		// TODO: delay rise
 
 		// TODO: tween fadeout
 	}

@@ -1,0 +1,524 @@
+{
+	"textures": [
+		{
+			"image": "hunger.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 238,
+				"h": 473
+			},
+			"scale": 0.15,
+			"frames": [
+				{
+					"filename": "hunger0012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 7,
+						"w": 78,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 78,
+						"h": 55
+					}
+				},
+				{
+					"filename": "hunger0014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 6,
+						"w": 78,
+						"h": 55
+					},
+					"frame": {
+						"x": 81,
+						"y": 1,
+						"w": 78,
+						"h": 55
+					}
+				},
+				{
+					"filename": "hunger0024.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 0,
+						"w": 76,
+						"h": 78
+					},
+					"frame": {
+						"x": 161,
+						"y": 1,
+						"w": 76,
+						"h": 78
+					}
+				},
+				{
+					"filename": "hunger0015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 6,
+						"w": 78,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 58,
+						"w": 78,
+						"h": 55
+					}
+				},
+				{
+					"filename": "hunger0011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 8,
+						"w": 78,
+						"h": 54
+					},
+					"frame": {
+						"x": 81,
+						"y": 58,
+						"w": 78,
+						"h": 54
+					}
+				},
+				{
+					"filename": "hunger0023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 1,
+						"w": 76,
+						"h": 75
+					},
+					"frame": {
+						"x": 161,
+						"y": 81,
+						"w": 76,
+						"h": 75
+					}
+				},
+				{
+					"filename": "hunger0013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 7,
+						"w": 78,
+						"h": 54
+					},
+					"frame": {
+						"x": 81,
+						"y": 114,
+						"w": 78,
+						"h": 54
+					}
+				},
+				{
+					"filename": "hunger0022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 1,
+						"w": 76,
+						"h": 73
+					},
+					"frame": {
+						"x": 161,
+						"y": 158,
+						"w": 76,
+						"h": 73
+					}
+				},
+				{
+					"filename": "hunger0009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 9,
+						"w": 78,
+						"h": 53
+					},
+					"frame": {
+						"x": 1,
+						"y": 115,
+						"w": 78,
+						"h": 53
+					}
+				},
+				{
+					"filename": "hunger0010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 9,
+						"w": 78,
+						"h": 53
+					},
+					"frame": {
+						"x": 1,
+						"y": 170,
+						"w": 78,
+						"h": 53
+					}
+				},
+				{
+					"filename": "hunger0008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 10,
+						"w": 78,
+						"h": 52
+					},
+					"frame": {
+						"x": 81,
+						"y": 170,
+						"w": 78,
+						"h": 52
+					}
+				},
+				{
+					"filename": "hunger0006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 11,
+						"w": 78,
+						"h": 51
+					},
+					"frame": {
+						"x": 81,
+						"y": 224,
+						"w": 78,
+						"h": 51
+					}
+				},
+				{
+					"filename": "hunger0021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 2,
+						"w": 76,
+						"h": 70
+					},
+					"frame": {
+						"x": 161,
+						"y": 233,
+						"w": 76,
+						"h": 70
+					}
+				},
+				{
+					"filename": "hunger0005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 12,
+						"w": 78,
+						"h": 50
+					},
+					"frame": {
+						"x": 1,
+						"y": 225,
+						"w": 78,
+						"h": 50
+					}
+				},
+				{
+					"filename": "hunger0020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 2,
+						"w": 77,
+						"h": 68
+					},
+					"frame": {
+						"x": 1,
+						"y": 277,
+						"w": 77,
+						"h": 68
+					}
+				},
+				{
+					"filename": "hunger0019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 3,
+						"w": 77,
+						"h": 65
+					},
+					"frame": {
+						"x": 80,
+						"y": 277,
+						"w": 77,
+						"h": 65
+					}
+				},
+				{
+					"filename": "hunger0018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 4,
+						"w": 77,
+						"h": 62
+					},
+					"frame": {
+						"x": 159,
+						"y": 305,
+						"w": 77,
+						"h": 62
+					}
+				},
+				{
+					"filename": "hunger0017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 4,
+						"w": 77,
+						"h": 60
+					},
+					"frame": {
+						"x": 80,
+						"y": 344,
+						"w": 77,
+						"h": 60
+					}
+				},
+				{
+					"filename": "hunger0016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 5,
+						"w": 77,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 347,
+						"w": 77,
+						"h": 56
+					}
+				},
+				{
+					"filename": "hunger0007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 10,
+						"w": 77,
+						"h": 52
+					},
+					"frame": {
+						"x": 1,
+						"y": 405,
+						"w": 77,
+						"h": 52
+					}
+				},
+				{
+					"filename": "hunger0004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 12,
+						"w": 77,
+						"h": 50
+					},
+					"frame": {
+						"x": 159,
+						"y": 369,
+						"w": 77,
+						"h": 50
+					}
+				},
+				{
+					"filename": "hunger0003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 13,
+						"w": 77,
+						"h": 48
+					},
+					"frame": {
+						"x": 80,
+						"y": 406,
+						"w": 77,
+						"h": 48
+					}
+				},
+				{
+					"filename": "hunger0001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 14,
+						"w": 42,
+						"h": 16
+					},
+					"frame": {
+						"x": 80,
+						"y": 456,
+						"w": 42,
+						"h": 16
+					}
+				},
+				{
+					"filename": "hunger0002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 90,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 13,
+						"w": 76,
+						"h": 48
+					},
+					"frame": {
+						"x": 159,
+						"y": 421,
+						"w": 76,
+						"h": 48
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:ca05577780226f1d192797f346d3f8e8:d7a058dbe2d75cc4a4f2e69e42a725e5:b7583d844981aae43ab5a88a6b85f20b$"
+	}
+}

@@ -25,6 +25,9 @@ class Breeding {
 		this.timeForNewHearts = false;
 		this.makeHearts();
 
+		// bring back shadow
+		this.fella.shadow.setVisible(true);
+
 		// this.scene.matter.setVelocityX(this.fella.body, -this.fella.x);
 	}
 	
@@ -35,10 +38,12 @@ class Breeding {
 
 		this.fella.setVelocity((-this.fella.x * .05), (-this.fella.y * .05));
 		
-		if (this.timeForNewHearts) {
+		this.hearts.setPosition(this.fella.x, this.fella.y);
 
-			this.makeHearts();
-		}
+		// if (this.timeForNewHearts) {
+
+		// 	this.makeHearts();
+		// }
 	}
 
 	makeHearts() {

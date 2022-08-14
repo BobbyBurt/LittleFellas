@@ -27,11 +27,13 @@ I should do this in order
 - [x] temp tank BG
 
 - [ ] impact effect animation
-- [ ] fix heart destory
+- [x] fix heart destory
 
 - [ ] horny timer
 
 - [ ] process bg as smaller image
+
+- [ ] food fadeout
 
 - [x] Set up Newgrounds.io
 

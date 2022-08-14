@@ -223,9 +223,163 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 18,
+            "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "hunger",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "hunger",
+                    "frame": "hunger0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0018.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0019.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0020.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0021.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0022.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0023.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "hunger",
+                    "frame": "hunger0024.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "yoyo": true
         }
     ],
     "globalTimeScale": 1,

@@ -3418,6 +3418,168 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "yoyo": true
+        },
+        {
+            "key": "tod-idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tod",
+                    "frame": "idle0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "idle0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "tod-walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "tod",
+                    "frame": "walk0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "tod",
+                    "frame": "walk0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,
