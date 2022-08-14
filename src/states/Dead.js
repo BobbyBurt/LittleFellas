@@ -23,7 +23,7 @@ class Dead {
 		
 		if (this.fella.getData('drop-food')) {
 
-			this.scene.addFood(this.fella.x, this.fella.y);
+			this.scene.addFood(this.fella.x, this.fella.y, this.fella.getData('meat'));
 		}
 
 		

@@ -149,11 +149,11 @@ class Level extends Phaser.Scene {
 		// shopMenu
 		const shopMenu = this.add.container(0, 1166);
 
-		// rectangle
-		const rectangle = this.add.rectangle(0, 0, 1200, 600);
-		rectangle.alpha = 0.9;
-		rectangle.isFilled = true;
-		shopMenu.add(rectangle);
+		// shopBG
+		const shopBG = this.add.rectangle(0, 0, 1200, 400);
+		shopBG.alpha = 0.9;
+		shopBG.isFilled = true;
+		shopMenu.add(shopBG);
 
 		// text_2
 		const text_2 = this.add.text(0, -146, "", {});
@@ -222,13 +222,13 @@ class Level extends Phaser.Scene {
 		// fellaMenu
 		const fellaMenu = this.add.container(0, 2032);
 
-		// rectangle_2
-		const rectangle_2 = this.add.rectangle(0, 0, 800, 600);
-		rectangle_2.scaleX = 1.872202098436922;
-		rectangle_2.scaleY = 1.510335750772474;
-		rectangle_2.alpha = 0.9;
-		rectangle_2.isFilled = true;
-		fellaMenu.add(rectangle_2);
+		// familyBG
+		const familyBG = this.add.rectangle(0, 0, 800, 600);
+		familyBG.scaleX = 1.872202098436922;
+		familyBG.scaleY = 1.510335750772474;
+		familyBG.alpha = 0.9;
+		familyBG.isFilled = true;
+		fellaMenu.add(familyBG);
 
 		// text_5
 		const text_5 = this.add.text(-474, -302, "", {});
@@ -334,6 +334,7 @@ class Level extends Phaser.Scene {
 		this.moneyText = moneyText;
 		this.shopButton = shopButton;
 		this.shopMenu = shopMenu;
+		this.shopBG = shopBG;
 		this.fellaPreview1 = fellaPreview1;
 		this.fellaPreview2 = fellaPreview2;
 		this.fellaPreview3 = fellaPreview3;
@@ -341,6 +342,7 @@ class Level extends Phaser.Scene {
 		this.fellaPreview5 = fellaPreview5;
 		this.fellaPreview6 = fellaPreview6;
 		this.fellaMenu = fellaMenu;
+		this.familyBG = familyBG;
 		this.tutorialUI = tutorialUI;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
@@ -388,6 +390,8 @@ class Level extends Phaser.Scene {
 	shopButton;
 	/** @type {Phaser.GameObjects.Container} */
 	shopMenu;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	shopBG;
 	/** @type {Phaser.GameObjects.Image} */
 	fellaPreview1;
 	/** @type {Phaser.GameObjects.Image} */
@@ -402,6 +406,8 @@ class Level extends Phaser.Scene {
 	fellaPreview6;
 	/** @type {Phaser.GameObjects.Container} */
 	fellaMenu;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	familyBG;
 	/** @type {Phaser.GameObjects.Container} */
 	tutorialUI;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
@@ -934,6 +940,7 @@ class Level extends Phaser.Scene {
 		fella.setData('regular', (race == 'white' || race == 'yellow' || race == 'green' || race == 'cyan' || race == 'blue' || race == 'purple'));
 		fella.setData('sprite', raceData.sprite);
 		fella.setData('shadow', raceData.shadow);
+		fella.setData('meat', raceData.meat);
 		fella.setData('alive', true);
 		fella.setData('energy', 1);
 		fella.setData('totalVelocity', 0);
@@ -960,18 +967,6 @@ class Level extends Phaser.Scene {
 		// state machine
 		fella.status = new StateController(fella, this);
 		fella.status.setState('idle');
-	}
-
-	/** adds / removes fella from horny group  */
-	setHorny(fella, horny) {
-
-		if (horny) {
-
-			if (this.hornyFellas.getLength() < this.hornyFellas.maxSize) {
-
-				this.hornyFellas.add(fella);
-			}
-		}
 	}
 
 	/**
@@ -1051,7 +1046,7 @@ class Level extends Phaser.Scene {
 			.setFlipX(Phaser.Math.RND.normal() > 0)
 			.setDepth(-400)
 			.play('impact');
-		
+
 		// effect group max manage
 		if (this.impactEffect.countActive() == this.impactEffect.maxSize) {
 
@@ -1078,13 +1073,13 @@ class Level extends Phaser.Scene {
 			this.addFella(race2Data.breeding.makes);
 		}
 		else {
-			
+
 			// incompatible pair
 			race1.status.setState('walk');
 			race2.status.setState('walk');
 			return;
 		}
-		
+
 		if (!this.matingEffect.active) {
 
 			this.matingEffect = this.add.sprite(race1.x, race1.y)
@@ -1110,13 +1105,19 @@ class Level extends Phaser.Scene {
 		race2.heartEffect.destroy();
 		race2.status = null;
 		race2.destroy();
-		
+
 		this.fellaCountText.setText('x ' + this.fellas.getLength());
 	}
 
-	addFood(x, y) {
+	/**
+	 * 
+	 * @param {*} x 
+	 * @param {*} y 
+	 * @param {*} meat steak bacon or chicken
+	 */
+	addFood(x, y, meat) {
 
-		const food = this.add.image(x, y, 'guapen').setScale(.3, .3);
+		const food = this.add.image(x, y, meat);
 		food.setDepth(800);
 
 		this.matter.add.gameObject(food, { inertia: Infinity, isSensor: true, shape: {type: 'circle', radius: 40}}).setFrictionAir(.3).type = 'food';
@@ -1309,7 +1310,7 @@ class Level extends Phaser.Scene {
 							.play('eating')
 							.setDepth(800)
 							.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-	
+
 								_this.eatingEffect.destroy();
 							});
 					}
@@ -1486,6 +1487,37 @@ class Level extends Phaser.Scene {
 
 			this.fellaMenu.setVisible(!this.fellaMenu.visible);
 
+		});
+
+		// mouse hover feeback
+		this.familyButton.on('pointerover', () => {
+
+			this.familyButton.setTint(0xd9d9d9);
+		});
+		this.familyButton.on('pointerout', () => {
+
+			this.familyButton.setTint(0xffffff);
+		});
+		this.shopButton.on('pointerover', () => {
+
+			this.shopButton.setTint(0xd9d9d9);
+		});
+		this.shopButton.on('pointerout', () => {
+
+			this.shopButton.setTint(0xffffff);
+		});
+
+		// click / tap anywhere else to hide
+		this.shopBG.setInteractive();
+		this.familyBG.setInteractive();
+		let __this = this;
+		this.input.on('pointerdown', function(pointer, over) {
+
+			if (over.length == 0) {
+
+				__this.shopMenu.setVisible(false);
+				__this.fellaMenu.setVisible(false);
+			}
 		});
 
 		this.tutorialUI.setVisible(false);

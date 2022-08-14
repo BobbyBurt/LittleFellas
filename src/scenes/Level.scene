@@ -317,13 +317,14 @@
                 {
                     "type": "Rectangle",
                     "id": "ba336469-69a1-4fd2-b5cf-99801348b804",
-                    "label": "rectangle",
+                    "label": "shopBG",
+                    "scope": "CLASS",
                     "components": [],
                     "alpha": 0.9,
                     "isFilled": true,
                     "fillColor": "#ffffff",
                     "width": 1200,
-                    "height": 600
+                    "height": 400
                 },
                 {
                     "type": "Text",
@@ -472,7 +473,8 @@
                 {
                     "type": "Rectangle",
                     "id": "4316053c-93b8-42d9-ab68-a6e247ddd54f",
-                    "label": "rectangle_2",
+                    "label": "familyBG",
+                    "scope": "CLASS",
                     "components": [],
                     "scaleX": 1.872202098436922,
                     "scaleY": 1.510335750772474,

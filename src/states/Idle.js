@@ -32,6 +32,9 @@ class Idle {
 
 		// bring back shadow
 		this.fella.shadow.setVisible(this.fella.getData('shadow'));
+		
+		// no hearts
+		this.fella.heartEffect.setVisible(false);
 
 		// energy check
 		console.log(this.fella.getData('race') + this.fella.getData('energy'));

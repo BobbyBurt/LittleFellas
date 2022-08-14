@@ -13,6 +13,11 @@
                 "key": "angro"
             },
             {
+                "url": "assets/bacon.png",
+                "type": "image",
+                "key": "bacon"
+            },
+            {
                 "type": "multiatlas",
                 "url": "assets/fellas/balls.json",
                 "path": "assets/fellas",
@@ -48,6 +53,11 @@
                 "url": "assets/fellas/bull.json",
                 "path": "assets/fellas",
                 "key": "bull"
+            },
+            {
+                "url": "assets/chicken.png",
+                "type": "image",
+                "key": "chicken"
             },
             {
                 "type": "multiatlas",
@@ -251,6 +261,11 @@
                 "url": "assets/stat-animations.json",
                 "type": "animation",
                 "key": "stat-animations"
+            },
+            {
+                "url": "assets/steak.png",
+                "type": "image",
+                "key": "steak"
             },
             {
                 "url": [

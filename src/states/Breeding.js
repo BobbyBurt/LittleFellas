@@ -20,43 +20,29 @@ class Breeding {
 
 	enter() {
 
-		this.fella.play(this.fella.getData('sprite') + '-walk');
+		this.duration = 500;
 		
-		this.timeForNewHearts = false;
-		this.makeHearts();
+		this.fella.play(this.fella.getData('sprite') + '-walk');
 
 		// bring back shadow
 		this.fella.shadow.setVisible(this.fella.getData('shadow'));
 
-		// this.scene.matter.setVelocityX(this.fella.body, -this.fella.x);
+		this.fella.heartEffect.setVisible(true);
 	}
 	
 	update() {
 		
-		// this.scene.matter.setVelocityX(this.fella.body, (-this.fella.x * .05));
-		// this.scene.matter.setVelocityY(this.fella.body, (-this.fella.y * .05));
-
 		this.fella.setVelocity((-this.fella.x * .05), (-this.fella.y * .05));
-		
-		this.hearts.setPosition(this.fella.x, this.fella.y);
 
-		// if (this.timeForNewHearts) {
+		this.fella.heartEffect.setPosition(this.fella.x, this.fella.y);
 
-		// 	this.makeHearts();
-		// }
-	}
+		this.duration--;
 
-	makeHearts() {
-
-		this.timeForNewHearts = false;
-
-		this.hearts = this.scene.add.sprite(this.fella.x, this.fella.y - 100, 'fella');
-		this.hearts.play('hearts');
-		this.heartsRemove = this.scene.time.delayedCall(500, () => {
-
-			this.hearts.destroy();
+		if (this.duration <= 0) {
 			
-			this.timeForNewHearts = true;
-		});
+			this.fella.heartEffect.setVisible(false);
+			
+			this.stateControl.setState('idle');
+		}
 	}
 }

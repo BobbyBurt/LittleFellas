@@ -21,7 +21,6 @@ I should do this in order
   - I can zoom, just make sure tank aspect ratio works on mobile & desktop
 
 - [x] refactor Level.js, separate chunks into functions
-- [ ] use timer events in states
 
 - [x] Set consistent tank size, NG window resolution, zoom levels
 - [x] temp tank BG
@@ -29,7 +28,7 @@ I should do this in order
 - [ ] impact effect animation
 - [x] fix heart destory
 
-- [ ] horny timer
+- [x] horny timer
 
 - [ ] change size of cloud
 - [ ] character flip
@@ -42,7 +41,7 @@ I should do this in order
 
 - [ ] process bg as smaller image
 
-- [ ] food fadeout
+- [ ] food sprites
 
 - [x] Set up Newgrounds.io
 

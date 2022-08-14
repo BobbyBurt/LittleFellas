@@ -33,6 +33,9 @@ class RandomWalk {
 
 		this.fella.play(this.fella.getData('sprite') + '-walk');
 
+		// no hearts
+		this.fella.heartEffect.setVisible(false);
+
 		// this.fella.setData('energy', this.fella.getData('energy') - .1);
 	}
 	
