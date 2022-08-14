@@ -1,0 +1,398 @@
+{
+	"textures": [
+		{
+			"image": "crumbs.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 217,
+				"h": 65
+			},
+			"scale": 0.5,
+			"frames": [
+				{
+					"filename": "crumbs0004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 426,
+						"y": 222,
+						"w": 76,
+						"h": 59
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 76,
+						"h": 59
+					}
+				},
+				{
+					"filename": "crumbs0005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 426,
+						"y": 222,
+						"w": 76,
+						"h": 59
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 76,
+						"h": 59
+					}
+				},
+				{
+					"filename": "crumbs0006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 426,
+						"y": 222,
+						"w": 76,
+						"h": 59
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 76,
+						"h": 59
+					}
+				},
+				{
+					"filename": "crumbs0007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 426,
+						"y": 222,
+						"w": 76,
+						"h": 59
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 76,
+						"h": 59
+					}
+				},
+				{
+					"filename": "crumbs0000.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 427,
+						"y": 215,
+						"w": 68,
+						"h": 57
+					},
+					"frame": {
+						"x": 79,
+						"y": 1,
+						"w": 68,
+						"h": 57
+					}
+				},
+				{
+					"filename": "crumbs0001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 427,
+						"y": 215,
+						"w": 68,
+						"h": 57
+					},
+					"frame": {
+						"x": 79,
+						"y": 1,
+						"w": 68,
+						"h": 57
+					}
+				},
+				{
+					"filename": "crumbs0002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 427,
+						"y": 215,
+						"w": 68,
+						"h": 57
+					},
+					"frame": {
+						"x": 79,
+						"y": 1,
+						"w": 68,
+						"h": 57
+					}
+				},
+				{
+					"filename": "crumbs0003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 427,
+						"y": 215,
+						"w": 68,
+						"h": 57
+					},
+					"frame": {
+						"x": 79,
+						"y": 1,
+						"w": 68,
+						"h": 57
+					}
+				},
+				{
+					"filename": "crumbs0008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				},
+				{
+					"filename": "crumbs0017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 960,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 429,
+						"y": 218,
+						"w": 67,
+						"h": 63
+					},
+					"frame": {
+						"x": 149,
+						"y": 1,
+						"w": 67,
+						"h": 63
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:be5549ef9406825f946d814b9f22d19b:cf8b3a5533ac8aa942e95994be5a7d31:cd991dcd456aed2443f798202c829eb0$"
+	}
+}

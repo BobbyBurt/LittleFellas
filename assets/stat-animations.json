@@ -380,6 +380,222 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "yoyo": true
+        },
+        {
+            "key": "crumbs",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0015.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0016.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "crumbs",
+                    "frame": "crumbs0017.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "impact",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "impact_1",
+                    "frame": "impact0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0006.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0007.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0008.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0009.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0010.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0011.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0012.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0013.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "impact_1",
+                    "frame": "impact0014.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

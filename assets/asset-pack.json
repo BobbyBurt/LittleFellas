@@ -50,6 +50,12 @@
                 "key": "bull"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/effects/crumbs.json",
+                "path": "assets/effects",
+                "key": "crumbs"
+            },
+            {
                 "url": "assets/Damage.png",
                 "type": "image",
                 "key": "Damage"
@@ -147,6 +153,12 @@
                 "key": "impact"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/effects/impact.json",
+                "path": "assets/effects",
+                "key": "impact_1"
+            },
+            {
                 "url": "src/InputWrapper.js",
                 "type": "script",
                 "key": "InputWrapper"
@@ -202,6 +214,11 @@
                 "key": "shadow"
             },
             {
+                "url": "assets/shop.png",
+                "type": "image",
+                "key": "shop"
+            },
+            {
                 "url": "src/components/SimpleButton.js",
                 "type": "script",
                 "key": "SimpleButton"
@@ -253,6 +270,11 @@
                 "url": "assets/fellas/tod.json",
                 "path": "assets/fellas",
                 "key": "tod"
+            },
+            {
+                "url": "assets/tree.png",
+                "type": "image",
+                "key": "tree"
             },
             {
                 "type": "multiatlas",

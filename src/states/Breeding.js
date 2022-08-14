@@ -26,7 +26,7 @@ class Breeding {
 		this.makeHearts();
 
 		// bring back shadow
-		this.fella.shadow.setVisible(true);
+		this.fella.shadow.setVisible(this.fella.getData('shadow'));
 
 		// this.scene.matter.setVelocityX(this.fella.body, -this.fella.x);
 	}

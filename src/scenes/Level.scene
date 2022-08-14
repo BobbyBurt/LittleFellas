@@ -182,7 +182,7 @@
                     "text": "Please flip \nyour phone to \nlandscape orientation",
                     "lineSpacing": 15,
                     "align": "center",
-                    "fontFamily": "arial",
+                    "fontFamily": "verdana",
                     "fontSize": "70px"
                 },
                 {
@@ -211,43 +211,20 @@
             "y": -450,
             "list": [
                 {
-                    "type": "Rectangle",
-                    "id": "55df9712-2144-4a52-aa4b-ca94215ec242",
-                    "label": "familyButton",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 80,
-                    "y": 40,
-                    "originX": 0,
-                    "originY": 0,
-                    "isFilled": true,
-                    "width": 125,
-                    "height": 125
-                },
-                {
                     "type": "Text",
                     "id": "4c0f4742-9fd0-47c9-942d-d0532042e36d",
                     "label": "fellaCountText",
                     "scope": "PUBLIC",
                     "components": [],
-                    "x": 379,
+                    "x": 390,
                     "y": 40,
                     "text": "x 0",
-                    "fontFamily": "arial",
-                    "fontSize": "80px"
-                },
-                {
-                    "type": "Text",
-                    "id": "896e590c-a675-46a8-b6ee-ac0236aecd75",
-                    "label": "text_3",
-                    "components": [],
-                    "x": 90,
-                    "y": 80,
-                    "text": "TREE",
-                    "fontFamily": "ARIAL",
-                    "fontSize": "40px",
+                    "fontFamily": "verdana",
+                    "fontSize": "80px",
                     "fontStyle": "bold",
-                    "color": "#3d3d3dff"
+                    "color": "#ffffffff",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 7
                 },
                 {
                     "type": "Image",
@@ -258,22 +235,27 @@
                         "key": "fella_1",
                         "frame": "fella/0000"
                     },
-                    "x": 318,
-                    "y": 79,
-                    "scaleX": 0.4669736556768917,
-                    "scaleY": 0.4669736556768917
+                    "x": 337,
+                    "y": 40,
+                    "scaleX": 0.6,
+                    "scaleY": 0.6,
+                    "originY": 0
                 },
                 {
-                    "type": "Ellipse",
-                    "id": "e9c06be6-1332-441b-99fa-cc6cee149027",
-                    "label": "ellipse_1",
+                    "type": "Image",
+                    "id": "10b1689d-c93b-44d6-afdc-80818dafeaef",
+                    "label": "familyButton",
+                    "scope": "CLASS",
                     "components": [],
+                    "texture": {
+                        "key": "tree"
+                    },
                     "x": 80,
                     "y": 40,
-                    "isFilled": true,
-                    "fillColor": "#e93d3d",
-                    "width": 35,
-                    "height": 35
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "originX": 0,
+                    "originY": 0
                 }
             ]
         },
@@ -287,44 +269,37 @@
             "y": 430,
             "list": [
                 {
-                    "type": "Rectangle",
-                    "id": "d7de4347-0e3f-486e-9382-656109b650d1",
-                    "label": "shopButton",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 80,
-                    "y": -40,
-                    "originX": 0,
-                    "originY": 1,
-                    "isFilled": true,
-                    "width": 125,
-                    "height": 125
-                },
-                {
                     "type": "Text",
                     "id": "ef433fce-02de-4c3e-bffe-8f051004bbd1",
                     "label": "moneyText",
                     "scope": "PUBLIC",
                     "components": [],
-                    "x": 301,
-                    "y": -40,
+                    "x": 250,
+                    "y": -62,
                     "originY": 1,
                     "text": "$ 428",
-                    "fontFamily": "arial",
-                    "fontSize": "80px"
+                    "fontFamily": "verdana",
+                    "fontSize": "80px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 7
                 },
                 {
-                    "type": "Text",
-                    "id": "bb9152e8-29de-4e80-9fb5-087bc4e24630",
-                    "label": "text_4",
+                    "type": "Image",
+                    "id": "684ed966-62d0-4b82-b8bf-6a1cb1285235",
+                    "label": "shopButton",
+                    "scope": "CLASS",
                     "components": [],
-                    "x": 86,
-                    "y": -122,
-                    "text": "SHOP",
-                    "fontFamily": "ARIAL",
-                    "fontSize": "40px",
-                    "fontStyle": "bold",
-                    "color": "#3d3d3dff"
+                    "texture": {
+                        "key": "shop"
+                    },
+                    "x": 80,
+                    "y": -40,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "originX": 0,
+                    "originY": 1
                 }
             ]
         },
@@ -344,12 +319,10 @@
                     "id": "ba336469-69a1-4fd2-b5cf-99801348b804",
                     "label": "rectangle",
                     "components": [],
-                    "scaleX": 1.5672471108996504,
-                    "scaleY": 0.7005699229611766,
                     "alpha": 0.9,
                     "isFilled": true,
                     "fillColor": "#ffffff",
-                    "width": 800,
+                    "width": 1200,
                     "height": 600
                 },
                 {

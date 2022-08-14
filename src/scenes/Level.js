@@ -94,7 +94,7 @@ class Level extends Phaser.Scene {
 		const text_1 = this.add.text(0, -121, "", {});
 		text_1.setOrigin(0.5, 0.5);
 		text_1.text = "Please flip \nyour phone to \nlandscape orientation";
-		text_1.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "70px" });
+		text_1.setStyle({ "align": "center", "fontFamily": "verdana", "fontSize": "70px" });
 		text_1.setLineSpacing(15);
 		orientationPrompt.add(text_1);
 
@@ -109,65 +109,48 @@ class Level extends Phaser.Scene {
 		// fellaUI
 		const fellaUI = this.add.container(-910, -450);
 
-		// familyButton
-		const familyButton = this.add.rectangle(80, 40, 125, 125);
-		familyButton.setOrigin(0, 0);
-		familyButton.isFilled = true;
-		fellaUI.add(familyButton);
-
 		// fellaCountText
-		const fellaCountText = this.add.text(379, 40, "", {});
+		const fellaCountText = this.add.text(390, 40, "", {});
 		fellaCountText.text = "x 0";
-		fellaCountText.setStyle({ "fontFamily": "arial", "fontSize": "80px" });
+		fellaCountText.setStyle({ "color": "#ffffffff", "fontFamily": "verdana", "fontSize": "80px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":7});
 		fellaUI.add(fellaCountText);
 
-		// text_3
-		const text_3 = this.add.text(90, 80, "", {});
-		text_3.text = "TREE";
-		text_3.setStyle({ "color": "#3d3d3dff", "fontFamily": "ARIAL", "fontSize": "40px", "fontStyle": "bold" });
-		fellaUI.add(text_3);
-
 		// fella_0000
-		const fella_0000 = this.add.image(318, 79, "fella_1", "fella/0000");
-		fella_0000.scaleX = 0.4669736556768917;
-		fella_0000.scaleY = 0.4669736556768917;
+		const fella_0000 = this.add.image(337, 40, "fella_1", "fella/0000");
+		fella_0000.scaleX = 0.6;
+		fella_0000.scaleY = 0.6;
+		fella_0000.setOrigin(0.5, 0);
 		fellaUI.add(fella_0000);
 
-		// ellipse_1
-		const ellipse_1 = this.add.ellipse(80, 40, 35, 35);
-		ellipse_1.isFilled = true;
-		ellipse_1.fillColor = 15285565;
-		fellaUI.add(ellipse_1);
+		// familyButton
+		const familyButton = this.add.image(80, 40, "tree");
+		familyButton.scaleX = 1.2;
+		familyButton.scaleY = 1.2;
+		familyButton.setOrigin(0, 0);
+		fellaUI.add(familyButton);
 
 		// moneyUI
 		const moneyUI = this.add.container(-910, 430);
 
-		// shopButton
-		const shopButton = this.add.rectangle(80, -40, 125, 125);
-		shopButton.setOrigin(0, 1);
-		shopButton.isFilled = true;
-		moneyUI.add(shopButton);
-
 		// moneyText
-		const moneyText = this.add.text(301, -40, "", {});
+		const moneyText = this.add.text(250, -62, "", {});
 		moneyText.setOrigin(0, 1);
 		moneyText.text = "$ 428";
-		moneyText.setStyle({ "fontFamily": "arial", "fontSize": "80px" });
+		moneyText.setStyle({ "color": "#ffffffff", "fontFamily": "verdana", "fontSize": "80px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":7});
 		moneyUI.add(moneyText);
 
-		// text_4
-		const text_4 = this.add.text(86, -122, "", {});
-		text_4.text = "SHOP";
-		text_4.setStyle({ "color": "#3d3d3dff", "fontFamily": "ARIAL", "fontSize": "40px", "fontStyle": "bold" });
-		moneyUI.add(text_4);
+		// shopButton
+		const shopButton = this.add.image(80, -40, "shop");
+		shopButton.scaleX = 1.2;
+		shopButton.scaleY = 1.2;
+		shopButton.setOrigin(0, 1);
+		moneyUI.add(shopButton);
 
 		// shopMenu
 		const shopMenu = this.add.container(0, 1166);
 
 		// rectangle
-		const rectangle = this.add.rectangle(0, 0, 800, 600);
-		rectangle.scaleX = 1.5672471108996504;
-		rectangle.scaleY = 0.7005699229611766;
+		const rectangle = this.add.rectangle(0, 0, 1200, 600);
 		rectangle.alpha = 0.9;
 		rectangle.isFilled = true;
 		shopMenu.add(rectangle);
@@ -345,11 +328,11 @@ class Level extends Phaser.Scene {
 		this.zoomText = zoomText;
 		this.orientationPrompt = orientationPrompt;
 		this.fellaUI = fellaUI;
-		this.familyButton = familyButton;
 		this.fellaCountText = fellaCountText;
+		this.familyButton = familyButton;
 		this.moneyUI = moneyUI;
-		this.shopButton = shopButton;
 		this.moneyText = moneyText;
+		this.shopButton = shopButton;
 		this.shopMenu = shopMenu;
 		this.fellaPreview1 = fellaPreview1;
 		this.fellaPreview2 = fellaPreview2;
@@ -393,16 +376,16 @@ class Level extends Phaser.Scene {
 	orientationPrompt;
 	/** @type {Phaser.GameObjects.Container} */
 	fellaUI;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	familyButton;
 	/** @type {Phaser.GameObjects.Text} */
 	fellaCountText;
+	/** @type {Phaser.GameObjects.Image} */
+	familyButton;
 	/** @type {Phaser.GameObjects.Container} */
 	moneyUI;
-	/** @type {Phaser.GameObjects.Rectangle} */
-	shopButton;
 	/** @type {Phaser.GameObjects.Text} */
 	moneyText;
+	/** @type {Phaser.GameObjects.Image} */
+	shopButton;
 	/** @type {Phaser.GameObjects.Container} */
 	shopMenu;
 	/** @type {Phaser.GameObjects.Image} */
@@ -475,7 +458,7 @@ class Level extends Phaser.Scene {
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
-			unlocked: false
+			meat: 'steak'
 		}],
 		['purple', {
 			breeding: { with: 'blue', makes: 'girl' },
@@ -484,7 +467,7 @@ class Level extends Phaser.Scene {
 			circleRadius: 50,
 			shadow: true,
 			mass: 10,
-			unlocked: false
+			meat: 'bacon'
 		}],
 		['blue', {
 			breeding: { with: 'cyan', makes: 'boyo' },
@@ -492,7 +475,8 @@ class Level extends Phaser.Scene {
 			tint: 0x7078dc,
 			circleRadius: 50,
 			shadow: true,
-			mass: 10
+			mass: 10,
+			meat: 'chicken'
 		}],
 		['cyan', {
 			breeding: { with: 'green', makes: 'ufo' },
@@ -500,7 +484,8 @@ class Level extends Phaser.Scene {
 			tint: 0x86ebea,
 			circleRadius: 50,
 			shadow: true,
-			mass: 10
+			mass: 10,
+			meat: 'steak'
 		}],
 		['green', {
 			breeding: { with: 'yellow', makes: 'mango' },
@@ -508,7 +493,8 @@ class Level extends Phaser.Scene {
 			tint: 0x77e482,
 			circleRadius: 50,
 			shadow: true,
-			mass: 10
+			mass: 10,
+			meat: 'bacon'
 		}],
 		['yellow', {
 			breeding: { with: 'red', makes: 'nothing' },
@@ -516,7 +502,8 @@ class Level extends Phaser.Scene {
 			tint: 0xefdd51,
 			circleRadius: 50,
 			shadow: true,
-			mass: 10
+			mass: 10,
+			meat: 'chicken'
 		}],
 
 		// tier 2
@@ -526,6 +513,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 80,
 			shadow: true,
+			meat: 'chicken',
 			mass: 20
 		}],
 		['girl', {
@@ -534,6 +522,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: true,
+			meat: 'bacon',
 			mass: 20
 		}],
 		['boyo', {
@@ -542,6 +531,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 80,
 			shadow: true,
+			meat: 'chicken',
 			mass: 20
 		}],
 		['ufo', {
@@ -550,6 +540,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: false,
+			meat: 'steak',
 			mass: 20
 		}],
 		['mango', {
@@ -558,6 +549,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
+			meat: 'chicken',
 			mass: 20
 		}],
 
@@ -568,6 +560,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 120,
 			shadow: false,
+			meat: 'bacon',
 			mass: 20
 		}],
 		['pixie', {
@@ -576,6 +569,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 50,
 			shadow: true,
+			meat: 'bacon',
 			mass: 20
 		}], 
 		['smarto', {
@@ -584,6 +578,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 100,
 			shadow: true,
+			meat: 'steak',
 			mass: 20
 		}], 
 		['bull', {
@@ -592,6 +587,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: true,
+			meat: 'steak',
 			mass: 20
 		}], 
 
@@ -602,6 +598,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
+			meat: 'bacon',
 			mass: 20
 		}], 
 		['bee', {
@@ -610,6 +607,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 50,
 			shadow: false,
+			meat: 'chicken',
 			mass: 20
 		}],
 		['weird', {
@@ -618,24 +616,27 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 100,
 			shadow: true,
+			meat: 'steak',
 			mass: 20
 		}],
 
 		// tier 5
-		['mom', {
-			breeding: { with: 'dad', makes: 'ultimate' },
-			sprite: 'reg',
-			tint: 0xff0000,
-			circleRadius: 80,
-			shadow: true,
-			mass: 20
-		}], 
 		['tod', {
-			breeding: { with: 'mom', makes: 'nothing' },
+			breeding: { with: 'nectar', makes: 'ultimate' },
 			sprite: 'tod',
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
+			meat: 'chicken',
+			mass: 20
+		}], 
+		['nectar', {
+			breeding: { with: 'tod', makes: 'nothing' },
+			sprite: 'reg',
+			tint: 0xffffff,
+			circleRadius: 80,
+			shadow: false,
+			meat: 'bacon',
 			mass: 20
 		}], 
 
@@ -646,6 +647,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 120,
 			shadow: false,
+			meat: 'chicken',
 			mass: 20
 		}], 
 
@@ -656,6 +658,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 25,
 			shadow: true,
+			meat: 'steak',
 			mass: 20
 		}]
 
@@ -735,23 +738,23 @@ class Level extends Phaser.Scene {
 		this.addFella('purple');
 		this.addFella('blue');
 		this.addFella('cyan');
-		this.addFella('yellow');
-		this.addFella('boyo');
-		this.addFella('girl');
-		this.addFella('mango');
-		this.addFella('balls');
-		this.addFella('bee');
-		this.addFella('weird');
-		this.addFella('gremlin');
-		this.addFella('bull');
-		this.addFella('mom');
-		this.addFella('tod');
-		this.addFella('ufo');
-		this.addFella('scooper');
-		this.addFella('pixie');
-		this.addFella('smarto');
-		this.addFella('ultimate');
-		this.addFella('angro');
+		// this.addFella('yellow');
+		// this.addFella('boyo');
+		// this.addFella('girl');
+		// this.addFella('mango');
+		// this.addFella('balls');
+		// this.addFella('bee');
+		// this.addFella('weird');
+		// this.addFella('gremlin');
+		// this.addFella('bull');
+		// this.addFella('nectar');
+		// this.addFella('tod');
+		// this.addFella('ufo');
+		// this.addFella('scooper');
+		// this.addFella('pixie');
+		// this.addFella('smarto');
+		// this.addFella('ultimate');
+		// this.addFella('angro');
 
 		// setup all fella states
 		// for (let i = 0; i < this.fellasList.length; i++) {
@@ -798,9 +801,9 @@ class Level extends Phaser.Scene {
 			fella.status.update();
 
 			if (fella.active) {
-	
+
 				fella.setDepth(fella.y);
-	
+
 				// hunger effect
 				fella.hungerEffect.setPosition(fella.x - (fella.body.circleRadius * .7), fella.y - fella.body.circleRadius);
 				fella.hungerEffect.setDepth(fella.y + 1);
@@ -808,7 +811,7 @@ class Level extends Phaser.Scene {
 				// heart effect
 				fella.heartEffect.setPosition(fella.x, fella.y - (fella.body.circleRadius + 40));
 				fella.heartEffect.setDepth(fella.y + 1);
-	
+
 				// shadow
 				fella.shadow.setPosition(fella.x, fella.y + fella.body.circleRadius + 20);
 				fella.shadow.setDepth(fella.y - 100);
@@ -854,14 +857,13 @@ class Level extends Phaser.Scene {
 		fella.setData('race', race);
 		fella.setData('regular', (race == 'white' || race == 'yellow' || race == 'green' || race == 'cyan' || race == 'blue' || race == 'purple'));
 		fella.setData('sprite', raceData.sprite);
-		fella.setData('radius', raceData.circleRadius);
+		fella.setData('shadow', raceData.shadow);
 		fella.setData('alive', true);
 		fella.setData('energy', 1);
 		fella.setData('totalVelocity', 0);
 
 		fella.type = 'fella';
 		// used to distinguish bodies
-
 
 		// update count
 		this.fellaCountText.setText('x ' + this.fellas.getLength());
@@ -898,9 +900,9 @@ class Level extends Phaser.Scene {
 
 	/**
 	 * 
-	 * @param {number} fella gameobject
+	 * @param {} fella gameobject
 	 * @param {number} amount 0-1, 1 being full energy
-	 * @param {number} add add amount to current energy. Otherwise, energy will be set to amount
+	 * @param {Boolean} add add amount to current energy. Otherwise, energy will be set to amount
 	 */
 	setEnergy(fella, amount, add) {
 
@@ -913,6 +915,15 @@ class Level extends Phaser.Scene {
 		else {
 
 			newEnergy = amount;
+		}
+
+		if (newEnergy <= .3) {
+
+			fella.hungerEffect.setVisible(true);
+		}
+		else {
+
+			fella.hungerEffect.setVisible(false);
 		}
 
 		fella.setData('energy', newEnergy);
@@ -1138,6 +1149,8 @@ class Level extends Phaser.Scene {
 
 					_this.setEnergy(intersect[0].gameObject, .3, true);
 
+					_this.add.sprite(intersect[0].gameObject.x, intersect[0].gameObject.y).play('crumbs');
+
 					body.gameObject.destroy(); 
 
 					_this.sound.play('munch');
@@ -1207,12 +1220,23 @@ class Level extends Phaser.Scene {
 		// example of using events for inputs
 		this.controls.onPress('left', () => {
 
-			this.addFella('red');
-			this.addFella('purple');
-			this.addFella('blue');
-			this.addFella('cyan');
-			this.addFella('green');
 			this.addFella('yellow');
+			this.addFella('boyo');
+			this.addFella('girl');
+			this.addFella('mango');
+			this.addFella('balls');
+			this.addFella('bee');
+			this.addFella('weird');
+			this.addFella('gremlin');
+			this.addFella('bull');
+			this.addFella('nectar');
+			this.addFella('tod');
+			this.addFella('ufo');
+			this.addFella('scooper');
+			this.addFella('pixie');
+			this.addFella('smarto');
+			this.addFella('ultimate');
+			this.addFella('angro');
 		});
 
 		// spawning sprites
@@ -1341,6 +1365,15 @@ class Level extends Phaser.Scene {
 
 		this.money += amount;
 		this.moneyText.setText('$ ' + this.money)
+	}
+
+	loadFont(name, url) {
+		var newFont = new FontFace(name, `url(${url})`);
+		newFont.load().then(function (loaded) {
+			document.fonts.add(loaded);
+		}).catch(function (error) {
+			return error;
+		});
 	}
 
 	/** incrementally zoom the camera out until necessary elements aren't cropped out */

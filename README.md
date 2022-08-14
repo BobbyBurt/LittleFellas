@@ -31,6 +31,11 @@ I should do this in order
 
 - [ ] horny timer
 
+- [ ] change size of cloud
+- [ ] character flip
+
+- [ ] hover over UI feedback
+
 - [ ] process bg as smaller image
 
 - [ ] food fadeout

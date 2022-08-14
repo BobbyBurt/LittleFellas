@@ -22,8 +22,14 @@ class RandomWalk {
 		// this.xMove = Phaser.Math.RND.normal();
 		// this.yMove = Phaser.Math.RND.normal();
 		this.target = {x: this.fella.x + (Phaser.Math.RND.normal() * 150), y: this.fella.y + (Phaser.Math.RND.normal() * 150)}
-	
+		
 		this.duration = Phaser.Math.RND.between(20, 100);
+		
+		if (this.fella.getData('race') == 'gremlin') {
+
+			this.target = {x: this.fella.x + (Phaser.Math.RND.normal() * 400), y: this.fella.y + (Phaser.Math.RND.normal() * 400)}
+			this.duration = Phaser.Math.RND.between(20, 30);
+		}
 
 		this.fella.play(this.fella.getData('sprite') + '-walk');
 
@@ -44,6 +50,10 @@ class RandomWalk {
 
 		if (this.duration <= 0) {
 
+			// decrease energy
+			if (Phaser.Math.RND.normal() < 0)
+			this.scene.setEnergy(this.fella, -.05, true);
+			
 			this.stateControl.setState('idle');
 		}
 	}
