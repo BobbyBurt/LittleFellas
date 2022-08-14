@@ -22,12 +22,13 @@
             "components": [
                 "PreloadText"
             ],
-            "y": 136,
+            "y": 244,
             "originX": 0.5,
             "originY": 0.5,
             "text": "0%",
             "fontFamily": "Arial",
-            "fontSize": "30px"
+            "fontSize": "30px",
+            "color": "#424242ff"
         },
         {
             "type": "Text",
@@ -36,14 +37,15 @@
             "components": [
                 "OnLoadAppear"
             ],
-            "y": 192,
+            "y": 300,
             "originX": 0.5,
             "originY": 0.5,
             "visible": false,
             "text": "Click / tap to start",
             "align": "center",
             "fontFamily": "Arial",
-            "fontSize": "30px"
+            "fontSize": "30px",
+            "color": "#424242ff"
         }
     ],
     "plainObjects": [],

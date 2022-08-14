@@ -202,6 +202,12 @@
                 "key": "smarto"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/start.json",
+                "path": "assets",
+                "key": "start"
+            },
+            {
                 "url": "assets/stat-animations.json",
                 "type": "animation",
                 "key": "stat-animations"

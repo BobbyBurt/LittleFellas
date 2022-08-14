@@ -746,6 +746,10 @@ class Level extends Phaser.Scene {
 
 		this.setupUI();
 
+		// this.startUI = this.add.sprite(0, 0, 'guapen');
+		// this.startUI.play('start-mission')
+		// TODO: start animation is really broken
+
 		// starting money
 		this.money = 0;
 		this.setMoney(999999);

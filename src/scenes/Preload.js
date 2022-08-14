@@ -25,17 +25,17 @@ class Preload extends Phaser.Scene {
 	editorCreate() {
 
 		// progress
-		const progress = this.add.text(0, 136, "", {});
+		const progress = this.add.text(0, 244, "", {});
 		progress.setOrigin(0.5, 0.5);
 		progress.text = "0%";
-		progress.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
+		progress.setStyle({ "color": "#424242ff", "fontFamily": "Arial", "fontSize": "30px" });
 
 		// startText
-		const startText = this.add.text(0, 192, "", {});
+		const startText = this.add.text(0, 300, "", {});
 		startText.setOrigin(0.5, 0.5);
 		startText.visible = false;
 		startText.text = "Click / tap to start";
-		startText.setStyle({ "align": "center", "fontFamily": "Arial", "fontSize": "30px" });
+		startText.setStyle({ "align": "center", "color": "#424242ff", "fontFamily": "Arial", "fontSize": "30px" });
 
 		// progress (components)
 		new PreloadText(progress);
@@ -65,8 +65,12 @@ class Preload extends Phaser.Scene {
 		// this needs to be done at every scene's creation
 		this.cameras.main.setViewport(0, 0, this.scale.width, this.scale.height);
 		this.cameras.main.setRoundPixels(true);
+		this.cameras.main.setBackgroundColor(0xffffff);
 
 		this.resize();
+
+		this.loading = this.add.sprite(0, 0).play('loading')
+		this.loading = this.add.sprite(0, 0).play('loading-2')
 
 		// click / touch input events will inform registry if player is on mobile or desktop
 		window.addEventListener('touchstart', this.onPointer);

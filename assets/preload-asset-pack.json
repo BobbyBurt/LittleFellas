@@ -7,9 +7,20 @@
                 "key": "guapen"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/loading.json",
+                "path": "assets",
+                "key": "loading"
+            },
+            {
                 "url": "src/components/OnLoadAppear.js",
                 "type": "script",
                 "key": "OnLoadAppear"
+            },
+            {
+                "url": "assets/UI-animations.json",
+                "type": "animation",
+                "key": "UI-animations"
             }
         ]
     },
