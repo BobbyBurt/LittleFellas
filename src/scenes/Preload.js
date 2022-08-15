@@ -50,7 +50,7 @@ class Preload extends Phaser.Scene {
 		const creditsText = this.add.text(0, 0, "", {});
 		creditsText.setOrigin(0.5, 0.5);
 		creditsText.visible = false;
-		creditsText.text = "BobbyBurt\nMrPakoMan\nOrkOrk\nRedAndrew\n0chin\nCryptospore";
+		creditsText.text = "BobbyBurt\nMrPakoMan\nOrkOrk\nRedAndrew\n0chin\nCryptospore\nDry";
 		creditsText.setStyle({ "align": "center", "color": "#ffffffff", "fontFamily": "verdana", "fontSize": "40px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":5});
 
 		// presentText
@@ -64,7 +64,7 @@ class Preload extends Phaser.Scene {
 		const startText2 = this.add.text(0, 272, "", {});
 		startText2.setOrigin(0.5, 0.5);
 		startText2.visible = false;
-		startText2.text = "Click / tap the screen!";
+		startText2.text = "Click / tap to begin";
 		startText2.setStyle({ "align": "center", "color": "#ffffffff", "fontFamily": "verdana", "fontSize": "40px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":5});
 
 		// progressText (components)
@@ -164,7 +164,7 @@ class Preload extends Phaser.Scene {
 			this.music.play();
 
 			// DEBUG
-			this.start();
+			// this.start();
 
 
 			this.time.delayedCall(500, () => {

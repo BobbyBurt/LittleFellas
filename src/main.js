@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 		// tint doesn't work on canvas
 		// TODO: require webgl unless I can get tint working on canvas
 		// I can catch when webgl isn't available: https://github.com/samme/phaser3-faq/wiki/Game
-        backgroundColor: "#969fa3",
+        backgroundColor: "#D7F2FC",
 		pixelArt: false,
 		title: 'Little Fellas',
 		version: '2.0',
@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
 		physics: {
 			default: 'matter',
 			matter: {
-				debug: true,
+				// debug: true,
 				gravity: {
 					y: 0
 				}

@@ -165,14 +165,14 @@
                     "id": "bd66ecf0-dd86-49dd-9363-10a5b310fd13",
                     "label": "rectangle_1",
                     "components": [],
-                    "y": 96,
-                    "scaleX": 0.6053836952683058,
-                    "scaleY": 0.7964192422836547,
+                    "y": 285,
+                    "scaleX": 0.6606997074656922,
+                    "scaleY": 0.4588090776043341,
                     "isFilled": true,
-                    "fillColor": "#000000",
+                    "fillColor": "#ffffff",
                     "fillAlpha": 0.8,
                     "strokeColor": "#000000",
-                    "lineWidth": 10,
+                    "lineWidth": 6,
                     "isStroked": true,
                     "width": 800,
                     "height": 600
@@ -182,25 +182,26 @@
                     "id": "e69656da-c688-416f-b623-2464dc7eff9d",
                     "label": "text",
                     "components": [],
-                    "y": 208,
+                    "y": 280,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "You may need to use \nthe default browser \nto change orientation",
                     "lineSpacing": 15,
                     "align": "center",
                     "fontFamily": "verdana",
-                    "fontSize": "40px"
+                    "fontSize": "40px",
+                    "color": "#000000ff"
                 },
                 {
                     "type": "Image",
-                    "id": "da17d3f6-4d84-49a6-b6bb-97140593b5ed",
+                    "id": "0621edc4-9718-44fa-b684-e6efbe7f2a88",
                     "label": "tilt_prompt",
                     "components": [],
                     "texture": {
                         "key": "tilt-prompt"
                     },
-                    "y": -122,
-                    "angle": 5
+                    "x": -24,
+                    "y": -304
                 }
             ]
         },
@@ -1096,7 +1097,7 @@
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
-                    "x": -81,
+                    "x": -246,
                     "y": -434,
                     "scaleX": 0.8,
                     "scaleY": 0.8,
@@ -1115,7 +1116,7 @@
                         "key": "reg",
                         "frame": "idle0000.png"
                     },
-                    "x": -241,
+                    "x": -76,
                     "y": -434,
                     "scaleX": 0.8,
                     "scaleY": 0.8,
@@ -1419,7 +1420,7 @@
                         "key": "nectar",
                         "frame": "fly0000.png"
                     },
-                    "x": 69,
+                    "x": -86,
                     "y": 257,
                     "scaleX": 0.6083258755900969,
                     "scaleY": 0.6083258755900969,
@@ -1438,7 +1439,7 @@
                         "key": "tod",
                         "frame": "idle0000.png"
                     },
-                    "x": -83,
+                    "x": 70,
                     "y": 272,
                     "scaleX": 0.47276694764437455,
                     "scaleY": 0.47276694764437455,
@@ -1530,9 +1531,14 @@
                     "label": "tutorialBG",
                     "scope": "CLASS",
                     "components": [],
+                    "scaleX": 1.7641763143678528,
+                    "scaleY": 1.0890201660962189,
                     "isFilled": true,
-                    "fillColor": "#000000",
+                    "fillColor": "#ffffff",
                     "fillAlpha": 0.8,
+                    "strokeColor": "#000000",
+                    "strokeAlpha": 6,
+                    "isStroked": true,
                     "width": 800,
                     "height": 600
                 },
@@ -1541,14 +1547,33 @@
                     "id": "47d8013e-8ede-48c8-8768-73c92db87ed7",
                     "label": "text_7",
                     "components": [],
-                    "y": -6,
+                    "y": -220,
+                    "originX": 0.5,
+                    "text": "Drag and shake around fellas to encourage them to breed.\nThe breeding chart (upper left button) shows which fellas are compatible.\nEarn money by discovering special new breeds.\nSpend it wisely! You can purchase regular fellas in the shop.\nYour fellas will get hungry from breeding for being around awhile.\nFellas won't survive being thrown violently against a wall...\nbut killed fellas become food for the others.\nDrag and drop food over a fella to feed it.\nCan you manage your tank and discover every special breed?",
+                    "lineSpacing": 15,
+                    "align": "center",
+                    "fontFamily": "verdana",
+                    "fontSize": "35px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "40b3a9d6-3f78-450d-b2e6-831c259ef90c",
+                    "label": "text_1",
+                    "components": [],
+                    "x": 19,
+                    "y": -278,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "This is the tutorial text. \nLorem ipsum indesid \nglonkin ishta ongol",
+                    "text": "Instructions",
                     "lineSpacing": 15,
                     "align": "center",
                     "fontFamily": "arial",
-                    "fontSize": "50px"
+                    "fontSize": "50px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 6
                 }
             ]
         },
@@ -1567,10 +1592,36 @@
             },
             "x": 802,
             "y": 342,
-            "scaleX": 1.2,
-            "scaleY": 1.2,
             "originX": 1,
             "originY": 1
+        },
+        {
+            "type": "Container",
+            "id": "7d03fadf-55d2-4a2d-b132-d16bb490e694",
+            "label": "gameOverUI",
+            "scope": "CLASS",
+            "components": [],
+            "x": -5,
+            "y": -1808,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "a2bc7c38-730e-4a34-bc99-80616c0d4e58",
+                    "label": "text_3",
+                    "components": [],
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "GAME OVER",
+                    "lineSpacing": 15,
+                    "align": "center",
+                    "fontFamily": "arial",
+                    "fontSize": "100px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 6
+                }
+            ]
         }
     ],
     "plainObjects": [],
@@ -1628,7 +1679,8 @@
                 "55bc1d27-f694-46f5-9d9b-28a4dda45fd2",
                 "85187573-31ce-499d-988d-f1a17beb2c09",
                 "fc9bb987-570d-4bb1-9472-5459b292f20d",
-                "66538ec8-f518-4fea-83d4-b6b2d5d4602d"
+                "66538ec8-f518-4fea-83d4-b6b2d5d4602d",
+                "7d03fadf-55d2-4a2d-b132-d16bb490e694"
             ]
         },
         {
@@ -1638,7 +1690,8 @@
                 "55bc1d27-f694-46f5-9d9b-28a4dda45fd2",
                 "85187573-31ce-499d-988d-f1a17beb2c09",
                 "fc9bb987-570d-4bb1-9472-5459b292f20d",
-                "66538ec8-f518-4fea-83d4-b6b2d5d4602d"
+                "66538ec8-f518-4fea-83d4-b6b2d5d4602d",
+                "7d03fadf-55d2-4a2d-b132-d16bb490e694"
             ]
         },
         {

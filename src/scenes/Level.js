@@ -84,28 +84,26 @@ class Level extends Phaser.Scene {
 		const orientationPrompt = this.add.container(0, 0);
 
 		// rectangle_1
-		const rectangle_1 = this.add.rectangle(0, 96, 800, 600);
-		rectangle_1.scaleX = 0.6053836952683058;
-		rectangle_1.scaleY = 0.7964192422836547;
+		const rectangle_1 = this.add.rectangle(0, 285, 800, 600);
+		rectangle_1.scaleX = 0.6606997074656922;
+		rectangle_1.scaleY = 0.4588090776043341;
 		rectangle_1.isFilled = true;
-		rectangle_1.fillColor = 0;
 		rectangle_1.fillAlpha = 0.8;
 		rectangle_1.isStroked = true;
 		rectangle_1.strokeColor = 0;
-		rectangle_1.lineWidth = 10;
+		rectangle_1.lineWidth = 6;
 		orientationPrompt.add(rectangle_1);
 
 		// text
-		const text = this.add.text(0, 208, "", {});
+		const text = this.add.text(0, 280, "", {});
 		text.setOrigin(0.5, 0.5);
 		text.text = "You may need to use \nthe default browser \nto change orientation";
-		text.setStyle({ "align": "center", "fontFamily": "verdana", "fontSize": "40px" });
+		text.setStyle({ "align": "center", "color": "#000000ff", "fontFamily": "verdana", "fontSize": "40px" });
 		text.setLineSpacing(15);
 		orientationPrompt.add(text);
 
 		// tilt_prompt
-		const tilt_prompt = this.add.image(0, -122, "tilt-prompt");
-		tilt_prompt.angle = 5;
+		const tilt_prompt = this.add.image(-24, -304, "tilt-prompt");
 		orientationPrompt.add(tilt_prompt);
 
 		// fellaUI
@@ -529,7 +527,7 @@ class Level extends Phaser.Scene {
 		fellaMenu.add(fellaIcon);
 
 		// fellaIcon2
-		const fellaIcon2 = this.add.image(-81, -434, "reg", "idle0000.png");
+		const fellaIcon2 = this.add.image(-246, -434, "reg", "idle0000.png");
 		fellaIcon2.scaleX = 0.8;
 		fellaIcon2.scaleY = 0.8;
 		fellaIcon2.tintTopLeft = 13077742;
@@ -539,7 +537,7 @@ class Level extends Phaser.Scene {
 		fellaMenu.add(fellaIcon2);
 
 		// fellaIcon3
-		const fellaIcon3 = this.add.image(-241, -434, "reg", "idle0000.png");
+		const fellaIcon3 = this.add.image(-76, -434, "reg", "idle0000.png");
 		fellaIcon3.scaleX = 0.8;
 		fellaIcon3.scaleY = 0.8;
 		fellaIcon3.tintTopLeft = 7370972;
@@ -699,7 +697,7 @@ class Level extends Phaser.Scene {
 		fellaMenu.add(idle0000_png_10);
 
 		// fly0000_png
-		const fly0000_png = this.add.image(69, 257, "nectar", "fly0000.png");
+		const fly0000_png = this.add.image(-86, 257, "nectar", "fly0000.png");
 		fly0000_png.scaleX = 0.6083258755900969;
 		fly0000_png.scaleY = 0.6083258755900969;
 		fly0000_png.tintTopLeft = 0;
@@ -709,7 +707,7 @@ class Level extends Phaser.Scene {
 		fellaMenu.add(fly0000_png);
 
 		// idle0000_png_11
-		const idle0000_png_11 = this.add.image(-83, 272, "tod", "idle0000.png");
+		const idle0000_png_11 = this.add.image(70, 272, "tod", "idle0000.png");
 		idle0000_png_11.scaleX = 0.47276694764437455;
 		idle0000_png_11.scaleY = 0.47276694764437455;
 		idle0000_png_11.tintTopLeft = 0;
@@ -753,24 +751,45 @@ class Level extends Phaser.Scene {
 
 		// tutorialBG
 		const tutorialBG = this.add.rectangle(0, 0, 800, 600);
+		tutorialBG.scaleX = 1.7641763143678528;
+		tutorialBG.scaleY = 1.0890201660962189;
 		tutorialBG.isFilled = true;
-		tutorialBG.fillColor = 0;
 		tutorialBG.fillAlpha = 0.8;
+		tutorialBG.isStroked = true;
+		tutorialBG.strokeColor = 0;
+		tutorialBG.strokeAlpha = 6;
 		tutorialUI.add(tutorialBG);
 
 		// text_7
-		const text_7 = this.add.text(0, -6, "", {});
-		text_7.setOrigin(0.5, 0.5);
-		text_7.text = "This is the tutorial text. \nLorem ipsum indesid \nglonkin ishta ongol";
-		text_7.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "50px" });
+		const text_7 = this.add.text(0, -220, "", {});
+		text_7.setOrigin(0.5, 0);
+		text_7.text = "Drag and shake around fellas to encourage them to breed.\nThe breeding chart (upper left button) shows which fellas are compatible.\nEarn money by discovering special new breeds.\nSpend it wisely! You can purchase regular fellas in the shop.\nYour fellas will get hungry from breeding for being around awhile.\nFellas won't survive being thrown violently against a wall...\nbut killed fellas become food for the others.\nDrag and drop food over a fella to feed it.\nCan you manage your tank and discover every special breed?";
+		text_7.setStyle({ "align": "center", "color": "#000000ff", "fontFamily": "verdana", "fontSize": "35px" });
 		text_7.setLineSpacing(15);
 		tutorialUI.add(text_7);
 
+		// text_1
+		const text_1 = this.add.text(19, -278, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.text = "Instructions";
+		text_1.setStyle({ "align": "center", "color": "#ffffffff", "fontFamily": "arial", "fontSize": "50px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":6});
+		text_1.setLineSpacing(15);
+		tutorialUI.add(text_1);
+
 		// helpButton
 		const helpButton = this.add.image(802, 342, "help");
-		helpButton.scaleX = 1.2;
-		helpButton.scaleY = 1.2;
 		helpButton.setOrigin(1, 1);
+
+		// gameOverUI
+		const gameOverUI = this.add.container(-5, -1808);
+
+		// text_3
+		const text_3 = this.add.text(0, 0, "", {});
+		text_3.setOrigin(0.5, 0.5);
+		text_3.text = "GAME OVER";
+		text_3.setStyle({ "align": "center", "color": "#ffffffff", "fontFamily": "arial", "fontSize": "100px", "fontStyle": "bold", "stroke": "#000000ff", "strokeThickness":6});
+		text_3.setLineSpacing(15);
+		gameOverUI.add(text_3);
 
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, buttonTest, moneyUI, fellaUI];
@@ -778,8 +797,8 @@ class Level extends Phaser.Scene {
 		const alignToCameraTop = [mobileTextcontainer, fellaUI];
 		const alignToCameraBottom = [buttonTest2, buttonTest, moneyUI, helpButton];
 		const resizeScale = [];
-		const alignToCameraMiddle = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
-		const alignToCameraCenter = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
+		const alignToCameraMiddle = [orientationPrompt, shopMenu, fellaMenu, tutorialUI, gameOverUI];
+		const alignToCameraCenter = [orientationPrompt, shopMenu, fellaMenu, tutorialUI, gameOverUI];
 		const pantsTest = [];
 		const fellasList = [];
 		const buyButtons = [fellaPreview1, fellaPreview2, fellaPreview3, fellaPreview4, fellaPreview5, fellaPreview6];
@@ -861,6 +880,7 @@ class Level extends Phaser.Scene {
 		this.tutorialUI = tutorialUI;
 		this.tutorialBG = tutorialBG;
 		this.helpButton = helpButton;
+		this.gameOverUI = gameOverUI;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -973,6 +993,8 @@ class Level extends Phaser.Scene {
 	tutorialBG;
 	/** @type {Phaser.GameObjects.Image} */
 	helpButton;
+	/** @type {Phaser.GameObjects.Container} */
+	gameOverUI;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
 	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Image>} */
@@ -1302,6 +1324,9 @@ class Level extends Phaser.Scene {
 	/** abstracted because tier 1 will likely change */
 	tier1Races = ['red', 'purple', 'blue', 'cyan', 'green', 'yellow'];
 
+	/** debug */
+	purchaseCount = 0;
+
 	create() {
 
 		this.editorCreate();
@@ -1326,7 +1351,6 @@ class Level extends Phaser.Scene {
 		// fellas group
 		this.fellas = this.add.group();
 		this.fellas.maxSize = 100;
-		// TODO: set max
 
 		/** group of 2 fellas to breed */
 		this.hornyFellas = this.add.group();
@@ -1347,7 +1371,7 @@ class Level extends Phaser.Scene {
 		this.sound.add('hungry', {volume: 1});
 		this.sound.add('puffdienoise', {volume: 1});
 		this.sound.add('purchase', {volume: 1});
-		this.sound.add('squeak', {volume: 1});
+		this.sound.add('squeak', {volume: .6});
 		this.sound.add('select', {volume: .4});
 
 		this.setupInput();
@@ -1355,7 +1379,6 @@ class Level extends Phaser.Scene {
 		// orientation
 		this.orientationPrompt.setDepth(1000);
 		this.orientationPrompt.setAlpha(0);
-		// TODO: parallel UI scene isn't set up yet. This needs to be there
 
 		// debug UI
 		this.mobileText.setText('mobile: ' + this.registry.get('mobile'));
@@ -1439,13 +1462,13 @@ class Level extends Phaser.Scene {
 
 		this.setupUI();
 
-		// this.startUI = this.add.sprite(0, 0, 'guapen');
+		// this.startUI = this.add.sprite(0, 0);
 		// this.startUI.play('start-mission')
 		// TODO: start animation is really broken
 
 		// starting money
 		this.money = 0;
-		this.setMoney(3500);
+		this.setMoney(1000);
 
 		// resize
 		this.resize();
@@ -1501,9 +1524,10 @@ class Level extends Phaser.Scene {
 	 * 
 	 * @param {String} race
 	 */
-	addFella(race) {
+	addFella(race, purchase) {
 
-		const fella = this.add.sprite(0, -200, "fella");
+		this.offY = (purchase? -200 : 0);
+		const fella = this.add.sprite(0, this.offY, "fella");
 		const raceData = this.races.get(race);
 
 		// tier 1 colours
@@ -1578,6 +1602,7 @@ class Level extends Phaser.Scene {
 		if (newEnergy <= .3) {
 
 			fella.hungerEffect.setVisible(true);
+			this.sound.play('hungry');
 		}
 		else {
 
@@ -1653,17 +1678,37 @@ class Level extends Phaser.Scene {
 		let race2Data = this.races.get(race2.getData('race'));
 		if (race1Data.breeding.with == race2.getData('race') && race1Data.breeding.makes != 'nothing') {
 
-			this.addFella(race1Data.breeding.makes);
+			this.addFella(race1Data.breeding.makes, false);
+
+			if (race1Data.breeding.makes == 'gremlin') {
+
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+			}
 
 			// first time unlocking?
 			if (!this.registry.get(race1Data.breeding.makes + '-unlocked')) {
 
-				this.unlockRaceTree(race1Data.breeding.makes);
+				this.unlockRaceTree(race1Data.breeding.makes, false);
 			}
 		}
 		else if (race2Data.breeding.with == race1.getData('race') && race2Data.breeding.makes != 'nothing') {
 
 			this.addFella(race2Data.breeding.makes);
+
+			if (race2Data.breeding.makes == 'gremlin') {
+
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+				this.addFella(race1Data.breeding.makes, false);
+			}
 
 			// first time unlocking?
 			if (!this.registry.get(race2Data.breeding.makes + '-unlocked')) {
@@ -1677,6 +1722,8 @@ class Level extends Phaser.Scene {
 			// incompatible pair
 			race1.status.setState('walk');
 			race2.status.setState('walk');
+			race1.setData('horny', false);
+			race2.setData('horny', false);
 			return;
 		}
 
@@ -1691,20 +1738,27 @@ class Level extends Phaser.Scene {
 				});
 		}
 
-		// get rid of parents
-		race1.setData('alive', false);
-		race1.shadow.destroy();
-		race1.hungerEffect.destroy();
-		race1.heartEffect.destroy();
-		race1.status = null;
-		race1.destroy();
+		race1.status.setState('walk');
+		race2.status.setState('walk');
+		race1.setData('horny', false);
+		race2.setData('horny', false);
+		this.setEnergy(race1, .3, false);
+		this.setEnergy(race2, .3, false);
 
-		race2.setData('alive', false);
-		race2.shadow.destroy();
-		race2.hungerEffect.destroy();
-		race2.heartEffect.destroy();
-		race2.status = null;
-		race2.destroy();
+		// get rid of parents
+		// race1.setData('alive', false);
+		// race1.shadow.destroy();
+		// race1.hungerEffect.destroy();
+		// race1.heartEffect.destroy();
+		// race1.status = null;
+		// race1.destroy();
+
+		// race2.setData('alive', false);
+		// race2.shadow.destroy();
+		// race2.hungerEffect.destroy();
+		// race2.heartEffect.destroy();
+		// race2.status = null;
+		// race2.destroy();
 
 		this.fellaCountText.setText('x ' + this.fellas.getLength());
 	}
@@ -1889,7 +1943,6 @@ class Level extends Phaser.Scene {
 		this.mouseConstraint = this.matter.add.mouseSpring();
 		// NOTE: apparently I can use stopDrag()
 		// https://newdocs.phaser.io/docs/3.54.0/focus/Phaser.Physics.Matter.Factory-mouseSpring
-		// TODO: how do I know when / what is being dragged so I can set a state?
 
 		let _scene = this
 		this.matter.world.on('dragstart', function(body) { 
@@ -1902,6 +1955,8 @@ class Level extends Phaser.Scene {
 
 				return;
 			}
+
+			_scene.sound.play('squeak');
 
 			// hide shadow
 			body.gameObject.shadow.setVisible(false);
@@ -1951,7 +2006,7 @@ class Level extends Phaser.Scene {
 				let intersect = _this.matter.intersectBody(body, _this.fellas.getChildren());
 				if(intersect[0] != null) {
 
-					_this.setEnergy(intersect[0].gameObject, .3, true);
+					_this.setEnergy(intersect[0].gameObject, 1, true);
 
 					intersect[0].gameObject.status.setState('idle');
 
@@ -1971,11 +2026,7 @@ class Level extends Phaser.Scene {
 					body.gameObject.destroy(); 
 
 					_this.sound.play('eating');
-
-					// TODO: visual effect
 				}
-
-				// TODO: visual feedback
 
 				return;
 			}
@@ -2038,23 +2089,24 @@ class Level extends Phaser.Scene {
 		// example of using events for inputs
 		this.controls.onPress('left', () => {
 
-			this.addFella('yellow');
-			this.addFella('boyo');
-			this.addFella('girl');
-			this.addFella('mango');
-			this.addFella('balls');
-			this.addFella('bee');
-			this.addFella('weird');
-			this.addFella('gremlin');
-			this.addFella('bull');
-			this.addFella('nectar');
-			this.addFella('tod');
-			this.addFella('ufo');
-			this.addFella('scooper');
-			this.addFella('pixie');
-			this.addFella('smarto');
-			this.addFella('ultimate');
-			this.addFella('angro');
+			// DEBUG
+			// this.addFella('yellow');
+			// this.addFella('boyo');
+			// this.addFella('girl');
+			// this.addFella('mango');
+			// this.addFella('balls');
+			// this.addFella('bee');
+			// this.addFella('weird');
+			// this.addFella('gremlin');
+			// this.addFella('bull');
+			// this.addFella('nectar');
+			// this.addFella('tod');
+			// this.addFella('ufo');
+			// this.addFella('scooper');
+			// this.addFella('pixie');
+			// this.addFella('smarto');
+			// this.addFella('ultimate');
+			// this.addFella('angro');
 		});
 
 		// spawning sprites
@@ -2111,11 +2163,15 @@ class Level extends Phaser.Scene {
 		this.shopButton.setInteractive();
 		this.shopButton.on('pointerdown', () => {
 
-			// TODO: check if other menu is open
-			this.shopMenu.setVisible(!this.shopMenu.visible);
-			this.sound.play('select');
+			if (!this.fellaMenu.visible && !this.tutorialUI.visible) {
+
+				this.shopMenu.setVisible(!this.shopMenu.visible);
+				this.sound.play('select');
+			}
 
 		});
+
+		this.gameOverUI.setVisible(false);
 
 		// buy buttons
 		let _this = this;
@@ -2126,10 +2182,18 @@ class Level extends Phaser.Scene {
 
 				if (_this.money >= 100) {
 
-					_this.addFella(_this.tier1Races[index]);
-					_this.addFella(_this.tier1Races[index]);
+					_this.addFella(_this.tier1Races[index], true);
 
 					_this.setMoney(-100);
+
+					_this.purchaseCount++;
+
+					if (_this.money == 0)
+						_this.gameOverUI.setVisible(true);
+
+					console.log('purchases: ' + _this.purchaseCount);
+
+					_this.sound.play('purchase');
 				}
 			});
 		});
@@ -2141,8 +2205,11 @@ class Level extends Phaser.Scene {
 		this.familyButton.setInteractive();
 		this.familyButton.on('pointerdown', () => {
 
-			this.fellaMenu.setVisible(!this.fellaMenu.visible);
-			this.sound.play('select');
+			if (!this.shopMenu.visible && !this.tutorialUI.visible) {
+
+				this.fellaMenu.setVisible(!this.fellaMenu.visible);
+				this.sound.play('select');
+			}
 
 
 		});
@@ -2153,8 +2220,11 @@ class Level extends Phaser.Scene {
 		this.helpButton.setInteractive();
 		this.helpButton.on('pointerdown', () => {
 
-			this.tutorialUI.setVisible(!this.tutorialUI.visible);
-			this.sound.play('select');
+			if (!this.fellaMenu.visible && !this.shopMenu.visible) {
+
+				this.tutorialUI.setVisible(!this.tutorialUI.visible);
+				this.sound.play('select');
+			}
 		});
 
 
@@ -2187,6 +2257,7 @@ class Level extends Phaser.Scene {
 		// click / tap anywhere else to hide
 		this.shopBG.setInteractive();
 		this.familyBG.setInteractive();
+		this.tutorialBG.setInteractive();
 		let __this = this;
 		this.input.on('pointerdown', function(pointer, over) {
 
@@ -2194,6 +2265,7 @@ class Level extends Phaser.Scene {
 
 				__this.shopMenu.setVisible(false);
 				__this.fellaMenu.setVisible(false);
+				__this.tutorialUI.setVisible(false);
 			}
 		});
 	}
@@ -2235,8 +2307,6 @@ class Level extends Phaser.Scene {
 
 		this.money += amount;
 		this.moneyText.setText('$ ' + this.money)
-
-		this.sound.play('purchase');
 	}
 
 	loadFont(name, url) {
@@ -2387,7 +2457,9 @@ class Level extends Phaser.Scene {
 			this.orientationPrompt.setAlpha(1);
 			this.input.enabled = false;
 
-			// TODO: hide shop or family UI
+			this.shopMenu.setVisible(false);
+			this.fellaMenu.setVisible(false);
+			this.tutorialUI.setVisible(false);
 		}
 		else {
 
