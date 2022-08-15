@@ -13,6 +13,11 @@
                 "key": "angro"
             },
             {
+                "url": "assets/arrow.png",
+                "type": "image",
+                "key": "arrow"
+            },
+            {
                 "url": "assets/bacon.png",
                 "type": "image",
                 "key": "bacon"
@@ -55,6 +60,18 @@
                 "key": "bull"
             },
             {
+                "url": "assets/buy.png",
+                "type": "image",
+                "key": "buy"
+            },
+            {
+                "url": [
+                    "assets/audio/cheering.mp3"
+                ],
+                "type": "audio",
+                "key": "cheering"
+            },
+            {
                 "url": "assets/chicken.png",
                 "type": "image",
                 "key": "chicken"
@@ -64,6 +81,11 @@
                 "url": "assets/effects/crumbs.json",
                 "path": "assets/effects",
                 "key": "crumbs"
+            },
+            {
+                "url": "assets/curtain.png",
+                "type": "image",
+                "key": "curtain"
             },
             {
                 "url": "assets/Damage.png",
@@ -87,11 +109,6 @@
                 "type": "image"
             },
             {
-                "url": "assets/dustforce-SS-5.png",
-                "type": "image",
-                "key": "dustforce-SS-5"
-            },
-            {
                 "type": "multiatlas",
                 "url": "assets/dustpants.json",
                 "path": "assets",
@@ -103,9 +120,11 @@
                 "key": "dustpants-animations"
             },
             {
-                "url": "assets/family-tree.png",
-                "type": "image",
-                "key": "family-tree"
+                "url": [
+                    "assets/audio/eating.mp3"
+                ],
+                "type": "audio",
+                "key": "eating"
             },
             {
                 "url": "assets/fella.png",
@@ -150,10 +169,22 @@
                 "key": "hearts"
             },
             {
+                "url": "assets/help.png",
+                "type": "image",
+                "key": "help"
+            },
+            {
                 "type": "multiatlas",
                 "url": "assets/effects/hunger.json",
                 "path": "assets/effects",
                 "key": "hunger"
+            },
+            {
+                "url": [
+                    "assets/audio/hungry.mp3"
+                ],
+                "type": "audio",
+                "key": "hungry"
             },
             {
                 "url": [
@@ -175,6 +206,17 @@
             },
             {
                 "type": "multiatlas",
+                "url": "assets/kicking.json",
+                "path": "assets",
+                "key": "kicking"
+            },
+            {
+                "url": "assets/logo.png",
+                "type": "image",
+                "key": "logo"
+            },
+            {
+                "type": "multiatlas",
                 "url": "assets/fellas/mango.json",
                 "path": "assets/fellas",
                 "key": "mango"
@@ -193,10 +235,29 @@
                 "key": "munch"
             },
             {
+                "url": [
+                    "assets/audio/music.mp3"
+                ],
+                "type": "audio",
+                "key": "music"
+            },
+            {
                 "type": "multiatlas",
                 "url": "assets/fellas/nectar.json",
                 "path": "assets/fellas",
                 "key": "nectar"
+            },
+            {
+                "url": [
+                    "assets/audio/overgrowth.mp3"
+                ],
+                "type": "audio",
+                "key": "overgrowth"
+            },
+            {
+                "url": "assets/pedestal.png",
+                "type": "image",
+                "key": "pedestal"
             },
             {
                 "url": "src/components/PlayAnimation.js",
@@ -204,14 +265,18 @@
                 "key": "PlayAnimation"
             },
             {
-                "url": "assets/poof.png",
-                "type": "image",
-                "key": "poof"
+                "url": [
+                    "assets/audio/puffdienoise.mp3"
+                ],
+                "type": "audio",
+                "key": "puffdienoise"
             },
             {
-                "url": "assets/practice-dustman.png",
-                "type": "image",
-                "key": "practice-dustman"
+                "url": [
+                    "assets/audio/purchase.mp3"
+                ],
+                "type": "audio",
+                "key": "purchase"
             },
             {
                 "url": "src/components/randomMove.js",
@@ -225,10 +290,22 @@
                 "key": "reg"
             },
             {
+                "url": "assets/rod.png",
+                "type": "image",
+                "key": "rod"
+            },
+            {
                 "type": "multiatlas",
                 "url": "assets/fellas/scooper.json",
                 "path": "assets/fellas",
                 "key": "scooper"
+            },
+            {
+                "url": [
+                    "assets/audio/select.mp3"
+                ],
+                "type": "audio",
+                "key": "select"
             },
             {
                 "url": "assets/effects/shadow.png",
@@ -252,6 +329,20 @@
                 "key": "smarto"
             },
             {
+                "url": [
+                    "assets/audio/smushing.mp3"
+                ],
+                "type": "audio",
+                "key": "smushing"
+            },
+            {
+                "url": [
+                    "assets/audio/squeak.mp3"
+                ],
+                "type": "audio",
+                "key": "squeak"
+            },
+            {
                 "type": "multiatlas",
                 "url": "assets/start.json",
                 "path": "assets",
@@ -268,11 +359,9 @@
                 "key": "steak"
             },
             {
-                "url": [
-                    "assets/audio/tank-2.mp3"
-                ],
-                "type": "audio",
-                "key": "tank-2"
+                "url": "assets/store-corner.png",
+                "type": "image",
+                "key": "store-corner"
             },
             {
                 "url": "assets/tankBG.png",
@@ -291,6 +380,11 @@
                 "url": "assets/fellas/temp-reg.json",
                 "path": "assets/fellas",
                 "key": "temp-reg"
+            },
+            {
+                "url": "assets/tilt_prompt.png",
+                "type": "image",
+                "key": "tilt-prompt"
             },
             {
                 "type": "multiatlas",
@@ -320,11 +414,6 @@
                 "url": "assets/fellas/weird.json",
                 "path": "assets/fellas",
                 "key": "weird"
-            },
-            {
-                "url": "assets/wings.png",
-                "type": "image",
-                "key": "wings"
             },
             {
                 "type": "multiatlas",

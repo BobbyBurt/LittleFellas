@@ -21,6 +21,11 @@
                 "url": "assets/UI-animations.json",
                 "type": "animation",
                 "key": "UI-animations"
+            },
+            {
+                "url": "assets/white.png",
+                "type": "image",
+                "key": "white"
             }
         ]
     },

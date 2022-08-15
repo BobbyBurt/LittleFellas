@@ -19,9 +19,9 @@ class Level extends Phaser.Scene {
 	editorCreate() {
 
 		// tankBG
-		const tankBG = this.add.image(21, -12, "tankBG");
-		tankBG.scaleX = 0.6168902370241159;
-		tankBG.scaleY = 0.6168902370241159;
+		const tankBG = this.add.image(21, -9, "tankBG");
+		tankBG.scaleX = 0.8716858393617378;
+		tankBG.scaleY = 0.8716858393617378;
 
 		// buttonTest2
 		const buttonTest2 = this.add.rectangle(2472, 962, 128, 128);
@@ -84,27 +84,29 @@ class Level extends Phaser.Scene {
 		const orientationPrompt = this.add.container(0, 0);
 
 		// rectangle_1
-		const rectangle_1 = this.add.rectangle(0, 0, 800, 600);
+		const rectangle_1 = this.add.rectangle(0, 96, 800, 600);
+		rectangle_1.scaleX = 0.6053836952683058;
+		rectangle_1.scaleY = 0.7964192422836547;
 		rectangle_1.isFilled = true;
 		rectangle_1.fillColor = 0;
 		rectangle_1.fillAlpha = 0.8;
+		rectangle_1.isStroked = true;
+		rectangle_1.strokeColor = 0;
+		rectangle_1.lineWidth = 10;
 		orientationPrompt.add(rectangle_1);
 
-		// text_1
-		const text_1 = this.add.text(0, -121, "", {});
-		text_1.setOrigin(0.5, 0.5);
-		text_1.text = "Please flip \nyour phone to \nlandscape orientation";
-		text_1.setStyle({ "align": "center", "fontFamily": "verdana", "fontSize": "70px" });
-		text_1.setLineSpacing(15);
-		orientationPrompt.add(text_1);
-
 		// text
-		const text = this.add.text(0, 186, "", {});
+		const text = this.add.text(0, 208, "", {});
 		text.setOrigin(0.5, 0.5);
-		text.text = "You may need to use \nthe default browser";
-		text.setStyle({ "align": "center", "fontFamily": "arial", "fontSize": "50px" });
+		text.text = "You may need to use \nthe default browser \nto change orientation";
+		text.setStyle({ "align": "center", "fontFamily": "verdana", "fontSize": "40px" });
 		text.setLineSpacing(15);
 		orientationPrompt.add(text);
+
+		// tilt_prompt
+		const tilt_prompt = this.add.image(0, -122, "tilt-prompt");
+		tilt_prompt.angle = 5;
+		orientationPrompt.add(tilt_prompt);
 
 		// fellaUI
 		const fellaUI = this.add.container(-910, -450);
@@ -150,29 +152,48 @@ class Level extends Phaser.Scene {
 		const shopMenu = this.add.container(0, 1166);
 
 		// shopBG
-		const shopBG = this.add.rectangle(0, 0, 1200, 400);
+		const shopBG = this.add.rectangle(0, 0, 1200, 300);
+		shopBG.scaleX = 0.9597753066187042;
+		shopBG.scaleY = 1.1541161145482117;
 		shopBG.alpha = 0.9;
 		shopBG.isFilled = true;
+		shopBG.fillColor = 5126971;
 		shopMenu.add(shopBG);
 
-		// text_2
-		const text_2 = this.add.text(0, -146, "", {});
-		text_2.setOrigin(0.5, 0.5);
-		text_2.text = "SHOP";
-		text_2.setStyle({ "align": "center", "color": "#3e3e3eff", "fontFamily": "arial", "fontSize": "70px", "fontStyle": "bold italic" });
-		text_2.setLineSpacing(15);
-		shopMenu.add(text_2);
+		// pedestal_1
+		const pedestal_1 = this.add.image(89, 146, "pedestal");
+		shopMenu.add(pedestal_1);
+
+		// pedestal_2
+		const pedestal_2 = this.add.image(239, 146, "pedestal");
+		shopMenu.add(pedestal_2);
+
+		// pedestal_3
+		const pedestal_3 = this.add.image(410, 146, "pedestal");
+		shopMenu.add(pedestal_3);
+
+		// pedestal_4
+		const pedestal_4 = this.add.image(-232, 146, "pedestal");
+		shopMenu.add(pedestal_4);
+
+		// pedestal_5
+		const pedestal_5 = this.add.image(-394, 146, "pedestal");
+		shopMenu.add(pedestal_5);
+
+		// pedestal
+		const pedestal = this.add.image(-66, 146, "pedestal");
+		shopMenu.add(pedestal);
 
 		// price
-		const price = this.add.text(-3, -51, "", {});
+		const price = this.add.text(130, -85, "", {});
 		price.setOrigin(0.5, 0.5);
-		price.text = "$ 100 each !";
-		price.setStyle({ "align": "center", "color": "#3e3e3eff", "fontFamily": "arial", "fontSize": "50px" });
+		price.text = "100 $ for two!";
+		price.setStyle({ "align": "center", "color": "#9b0e0eff", "fontFamily": "verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#e8d772ff", "strokeThickness":4});
 		price.setLineSpacing(15);
 		shopMenu.add(price);
 
 		// fellaPreview1
-		const fellaPreview1 = this.add.image(-394, 64, "reg", "idle0000.png");
+		const fellaPreview1 = this.add.image(-394, 31, "reg", "idle0000.png");
 		fellaPreview1.tintTopLeft = 15495537;
 		fellaPreview1.tintTopRight = 15495537;
 		fellaPreview1.tintBottomLeft = 15495537;
@@ -180,7 +201,7 @@ class Level extends Phaser.Scene {
 		shopMenu.add(fellaPreview1);
 
 		// fellaPreview2
-		const fellaPreview2 = this.add.image(-234, 64, "reg", "idle0000.png");
+		const fellaPreview2 = this.add.image(-234, 31, "reg", "idle0000.png");
 		fellaPreview2.tintTopLeft = 13077742;
 		fellaPreview2.tintTopRight = 13077742;
 		fellaPreview2.tintBottomLeft = 13077742;
@@ -188,7 +209,7 @@ class Level extends Phaser.Scene {
 		shopMenu.add(fellaPreview2);
 
 		// fellaPreview3
-		const fellaPreview3 = this.add.image(-74, 64, "reg", "idle0000.png");
+		const fellaPreview3 = this.add.image(-74, 31, "reg", "idle0000.png");
 		fellaPreview3.tintTopLeft = 7370972;
 		fellaPreview3.tintTopRight = 7370972;
 		fellaPreview3.tintBottomLeft = 7370972;
@@ -196,7 +217,7 @@ class Level extends Phaser.Scene {
 		shopMenu.add(fellaPreview3);
 
 		// fellaPreview4
-		const fellaPreview4 = this.add.image(86, 64, "reg", "idle0000.png");
+		const fellaPreview4 = this.add.image(86, 31, "reg", "idle0000.png");
 		fellaPreview4.tintTopLeft = 8842218;
 		fellaPreview4.tintTopRight = 8842218;
 		fellaPreview4.tintBottomLeft = 8842218;
@@ -204,7 +225,7 @@ class Level extends Phaser.Scene {
 		shopMenu.add(fellaPreview4);
 
 		// fellaPreview5
-		const fellaPreview5 = this.add.image(246, 64, "reg", "idle0000.png");
+		const fellaPreview5 = this.add.image(246, 31, "reg", "idle0000.png");
 		fellaPreview5.tintTopLeft = 7857282;
 		fellaPreview5.tintTopRight = 7857282;
 		fellaPreview5.tintBottomLeft = 7857282;
@@ -212,68 +233,530 @@ class Level extends Phaser.Scene {
 		shopMenu.add(fellaPreview5);
 
 		// fellaPreview6
-		const fellaPreview6 = this.add.image(406, 64, "reg", "idle0000.png");
+		const fellaPreview6 = this.add.image(406, 31, "reg", "idle0000.png");
 		fellaPreview6.tintTopLeft = 15719761;
 		fellaPreview6.tintTopRight = 15719761;
 		fellaPreview6.tintBottomLeft = 15719761;
 		fellaPreview6.tintBottomRight = 15719761;
 		shopMenu.add(fellaPreview6);
 
+		// buy
+		const buy = this.add.image(-149, -88, "buy");
+		shopMenu.add(buy);
+
+		// rod
+		const rod = this.add.image(0, -167, "rod");
+		rod.scaleX = 1.5534091410872721;
+		rod.scaleY = 1.0999291599090095;
+		shopMenu.add(rod);
+
+		// curtain
+		const curtain = this.add.image(-509, 1, "curtain");
+		shopMenu.add(curtain);
+
+		// curtain_1
+		const curtain_1 = this.add.image(509, -1, "curtain");
+		curtain_1.flipX = true;
+		shopMenu.add(curtain_1);
+
 		// fellaMenu
 		const fellaMenu = this.add.container(0, 2032);
 
 		// familyBG
 		const familyBG = this.add.rectangle(0, 0, 800, 600);
-		familyBG.scaleX = 1.872202098436922;
-		familyBG.scaleY = 1.510335750772474;
-		familyBG.alpha = 0.9;
+		familyBG.scaleX = 1.3482378326492772;
+		familyBG.scaleY = 1.8342785057727995;
 		familyBG.isFilled = true;
 		fellaMenu.add(familyBG);
 
-		// text_5
-		const text_5 = this.add.text(-474, -302, "", {});
-		text_5.setOrigin(0.5, 0.5);
-		text_5.text = "BREEDING \nCHART";
-		text_5.setStyle({ "align": "center", "color": "#3e3e3eff", "fontFamily": "arial", "fontSize": "70px", "fontStyle": "bold italic" });
-		text_5.setLineSpacing(15);
-		fellaMenu.add(text_5);
+		// ellipse_11
+		const ellipse_11 = this.add.ellipse(-226.9988555908203, -58, 128, 128);
+		ellipse_11.scaleX = 0.8385369514530041;
+		ellipse_11.scaleY = 0.8385369514530041;
+		ellipse_11.isFilled = true;
+		ellipse_11.fillColor = 14803425;
+		fellaMenu.add(ellipse_11);
 
-		// family_tree
-		const family_tree = this.add.image(324, -29, "family-tree");
-		fellaMenu.add(family_tree);
+		// ellipse_12
+		const ellipse_12 = this.add.ellipse(-77.00497436523438, -58, 128, 128);
+		ellipse_12.scaleX = 0.8385369514530041;
+		ellipse_12.scaleY = 0.8385369514530041;
+		ellipse_12.isFilled = true;
+		ellipse_12.fillColor = 14803425;
+		fellaMenu.add(ellipse_12);
 
-		// rectangle_5
-		const rectangle_5 = this.add.rectangle(-335, 107, 600, 400);
-		rectangle_5.isStroked = true;
-		rectangle_5.strokeColor = 4079166;
-		rectangle_5.lineWidth = 5;
-		fellaMenu.add(rectangle_5);
+		// ellipse_13
+		const ellipse_13 = this.add.ellipse(72, -58, 128, 128);
+		ellipse_13.scaleX = 0.8385369514530041;
+		ellipse_13.scaleY = 0.8385369514530041;
+		ellipse_13.isFilled = true;
+		ellipse_13.fillColor = 14803425;
+		fellaMenu.add(ellipse_13);
 
-		// text_6
-		const text_6 = this.add.text(-334, -27, "", {});
-		text_6.setOrigin(0.5, 0.5);
-		text_6.text = "current mission:";
-		text_6.setStyle({ "align": "center", "color": "#3e3e3eff", "fontFamily": "arial", "fontSize": "50px", "fontStyle": "bold italic" });
-		text_6.setLineSpacing(15);
-		fellaMenu.add(text_6);
+		// ellipse_14
+		const ellipse_14 = this.add.ellipse(226.4710235595703, -58, 128, 128);
+		ellipse_14.scaleX = 0.8385369514530041;
+		ellipse_14.scaleY = 0.8385369514530041;
+		ellipse_14.isFilled = true;
+		ellipse_14.fillColor = 14803425;
+		fellaMenu.add(ellipse_14);
 
-		// text_8
-		const text_8 = this.add.text(-315, 142, "", {});
-		text_8.setOrigin(0.5, 0.5);
-		text_8.text = "Lorem ipsum dora\n imbidi onso kalahan \nbobbo";
-		text_8.setStyle({ "color": "#3e3e3eff", "fontFamily": "arial", "fontSize": "30px" });
-		text_8.setLineSpacing(15);
-		fellaMenu.add(text_8);
+		// ellipse_15
+		const ellipse_15 = this.add.ellipse(-158.00497436523438, 116, 128, 128);
+		ellipse_15.scaleX = 0.8385369514530041;
+		ellipse_15.scaleY = 0.8385369514530041;
+		ellipse_15.isFilled = true;
+		ellipse_15.fillColor = 14803425;
+		fellaMenu.add(ellipse_15);
+
+		// ellipse_16
+		const ellipse_16 = this.add.ellipse(-3.36011004447937, 116, 128, 128);
+		ellipse_16.scaleX = 0.8385369514530041;
+		ellipse_16.scaleY = 0.8385369514530041;
+		ellipse_16.isFilled = true;
+		ellipse_16.fillColor = 14803425;
+		fellaMenu.add(ellipse_16);
+
+		// ellipse_17
+		const ellipse_17 = this.add.ellipse(148.95925903320312, 116, 128, 128);
+		ellipse_17.scaleX = 0.8385369514530041;
+		ellipse_17.scaleY = 0.8385369514530041;
+		ellipse_17.isFilled = true;
+		ellipse_17.fillColor = 14803425;
+		fellaMenu.add(ellipse_17);
+
+		// ellipse_18
+		const ellipse_18 = this.add.ellipse(-84.89134216308594, 280, 128, 128);
+		ellipse_18.scaleX = 0.8385369514530041;
+		ellipse_18.scaleY = 0.8385369514530041;
+		ellipse_18.isFilled = true;
+		ellipse_18.fillColor = 14803425;
+		fellaMenu.add(ellipse_18);
+
+		// ellipse_19
+		const ellipse_19 = this.add.ellipse(67, 280, 128, 128);
+		ellipse_19.scaleX = 0.8385369514530041;
+		ellipse_19.scaleY = 0.8385369514530041;
+		ellipse_19.isFilled = true;
+		ellipse_19.fillColor = 14803425;
+		fellaMenu.add(ellipse_19);
+
+		// ellipse_20
+		const ellipse_20 = this.add.ellipse(-8.150286674499512, 446.003173828125, 128, 128);
+		ellipse_20.scaleX = 0.8385369514530041;
+		ellipse_20.scaleY = 0.8385369514530041;
+		ellipse_20.isFilled = true;
+		ellipse_20.fillColor = 14803425;
+		fellaMenu.add(ellipse_20);
+
+		// ellipse_5
+		const ellipse_5 = this.add.ellipse(-402, -421, 128, 128);
+		ellipse_5.scaleX = 0.8385369514530041;
+		ellipse_5.scaleY = 0.8385369514530041;
+		ellipse_5.isFilled = true;
+		ellipse_5.fillColor = 14803425;
+		fellaMenu.add(ellipse_5);
+
+		// ellipse_6
+		const ellipse_6 = this.add.ellipse(-241.9712371826172, -421, 128, 128);
+		ellipse_6.scaleX = 0.8385369514530041;
+		ellipse_6.scaleY = 0.8385369514530041;
+		ellipse_6.isFilled = true;
+		ellipse_6.fillColor = 14803425;
+		fellaMenu.add(ellipse_6);
+
+		// ellipse_7
+		const ellipse_7 = this.add.ellipse(-79.18717956542969, -421, 128, 128);
+		ellipse_7.scaleX = 0.8385369514530041;
+		ellipse_7.scaleY = 0.8385369514530041;
+		ellipse_7.isFilled = true;
+		ellipse_7.fillColor = 14803425;
+		fellaMenu.add(ellipse_7);
+
+		// ellipse_8
+		const ellipse_8 = this.add.ellipse(80.10865020751953, -421, 128, 128);
+		ellipse_8.scaleX = 0.8385369514530041;
+		ellipse_8.scaleY = 0.8385369514530041;
+		ellipse_8.isFilled = true;
+		ellipse_8.fillColor = 14803425;
+		fellaMenu.add(ellipse_8);
+
+		// ellipse_9
+		const ellipse_9 = this.add.ellipse(238.2417449951172, -421, 128, 128);
+		ellipse_9.scaleX = 0.8385369514530041;
+		ellipse_9.scaleY = 0.8385369514530041;
+		ellipse_9.isFilled = true;
+		ellipse_9.fillColor = 14803425;
+		fellaMenu.add(ellipse_9);
+
+		// ellipse_10
+		const ellipse_10 = this.add.ellipse(402.18853759765625, -421, 128, 128);
+		ellipse_10.scaleX = 0.8385369514530041;
+		ellipse_10.scaleY = 0.8385369514530041;
+		ellipse_10.isFilled = true;
+		ellipse_10.fillColor = 14803425;
+		fellaMenu.add(ellipse_10);
+
+		// ellipse
+		const ellipse = this.add.ellipse(-1.2322267293930054, -237, 128, 128);
+		ellipse.scaleX = 0.8385369514530041;
+		ellipse.scaleY = 0.8385369514530041;
+		ellipse.isFilled = true;
+		ellipse.fillColor = 14803425;
+		fellaMenu.add(ellipse);
+
+		// ellipse_2
+		const ellipse_2 = this.add.ellipse(154.57537841796875, -237, 128, 128);
+		ellipse_2.scaleX = 0.8385369514530041;
+		ellipse_2.scaleY = 0.8385369514530041;
+		ellipse_2.isFilled = true;
+		ellipse_2.fillColor = 14803425;
+		fellaMenu.add(ellipse_2);
+
+		// ellipse_3
+		const ellipse_3 = this.add.ellipse(322.0104064941406, -237, 128, 128);
+		ellipse_3.scaleX = 0.8385369514530041;
+		ellipse_3.scaleY = 0.8385369514530041;
+		ellipse_3.isFilled = true;
+		ellipse_3.fillColor = 14803425;
+		fellaMenu.add(ellipse_3);
+
+		// ellipse_4
+		const ellipse_4 = this.add.ellipse(-312.8474426269531, -237, 128, 128);
+		ellipse_4.scaleX = 0.8385369514530041;
+		ellipse_4.scaleY = 0.8385369514530041;
+		ellipse_4.isFilled = true;
+		ellipse_4.fillColor = 14803425;
+		fellaMenu.add(ellipse_4);
+
+		// ellipse_1
+		const ellipse_1 = this.add.ellipse(-159, -237, 128, 128);
+		ellipse_1.scaleX = 0.8385369514530041;
+		ellipse_1.scaleY = 0.8385369514530041;
+		ellipse_1.isFilled = true;
+		ellipse_1.fillColor = 14803425;
+		fellaMenu.add(ellipse_1);
+
+		// arrow_14
+		const arrow_14 = this.add.image(-4, 357, "arrow");
+		arrow_14.scaleX = 1.300870416321801;
+		arrow_14.flipX = true;
+		fellaMenu.add(arrow_14);
+
+		// arrow_12
+		const arrow_12 = this.add.image(71, 196, "arrow");
+		arrow_12.scaleX = 1.300870416321801;
+		arrow_12.flipX = true;
+		fellaMenu.add(arrow_12);
+
+		// arrow_13
+		const arrow_13 = this.add.image(-89, 195, "arrow");
+		arrow_13.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_13);
+
+		// arrow_9
+		const arrow_9 = this.add.image(151, 27, "arrow");
+		arrow_9.scaleX = 1.300870416321801;
+		arrow_9.flipX = true;
+		fellaMenu.add(arrow_9);
+
+		// arrow_10
+		const arrow_10 = this.add.image(-9, 26, "arrow");
+		arrow_10.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_10);
+
+		// arrow_11
+		const arrow_11 = this.add.image(-159, 26, "arrow");
+		arrow_11.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_11);
+
+		// arrow_5
+		const arrow_5 = this.add.image(-228, -151, "arrow");
+		arrow_5.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_5);
+
+		// arrow_6
+		const arrow_6 = this.add.image(-78, -150, "arrow");
+		arrow_6.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_6);
+
+		// arrow_7
+		const arrow_7 = this.add.image(82, -150, "arrow");
+		arrow_7.scaleX = 1.300870416321801;
+		arrow_7.flipX = true;
+		fellaMenu.add(arrow_7);
+
+		// arrow_8
+		const arrow_8 = this.add.image(235, -150, "arrow");
+		arrow_8.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_8);
+
+		// arrow_1
+		const arrow_1 = this.add.image(-158, -334, "arrow");
+		arrow_1.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_1);
+
+		// arrow_2
+		const arrow_2 = this.add.image(3, -334, "arrow");
+		arrow_2.scaleX = 1.300870416321801;
+		arrow_2.flipX = true;
+		fellaMenu.add(arrow_2);
+
+		// arrow_3
+		const arrow_3 = this.add.image(153, -334, "arrow");
+		arrow_3.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow_3);
+
+		// arrow_4
+		const arrow_4 = this.add.image(310, -334, "arrow");
+		arrow_4.scaleX = 1.300870416321801;
+		arrow_4.flipX = true;
+		fellaMenu.add(arrow_4);
+
+		// arrow
+		const arrow = this.add.image(-316, -334, "arrow");
+		arrow.scaleX = 1.300870416321801;
+		fellaMenu.add(arrow);
+
+		// fellaIcon
+		const fellaIcon = this.add.image(-401, -434, "reg", "idle0000.png");
+		fellaIcon.scaleX = 0.8;
+		fellaIcon.scaleY = 0.8;
+		fellaIcon.tintTopLeft = 15495537;
+		fellaIcon.tintTopRight = 15495537;
+		fellaIcon.tintBottomLeft = 15495537;
+		fellaIcon.tintBottomRight = 15495537;
+		fellaMenu.add(fellaIcon);
+
+		// fellaIcon2
+		const fellaIcon2 = this.add.image(-81, -434, "reg", "idle0000.png");
+		fellaIcon2.scaleX = 0.8;
+		fellaIcon2.scaleY = 0.8;
+		fellaIcon2.tintTopLeft = 13077742;
+		fellaIcon2.tintTopRight = 13077742;
+		fellaIcon2.tintBottomLeft = 13077742;
+		fellaIcon2.tintBottomRight = 13077742;
+		fellaMenu.add(fellaIcon2);
+
+		// fellaIcon3
+		const fellaIcon3 = this.add.image(-241, -434, "reg", "idle0000.png");
+		fellaIcon3.scaleX = 0.8;
+		fellaIcon3.scaleY = 0.8;
+		fellaIcon3.tintTopLeft = 7370972;
+		fellaIcon3.tintTopRight = 7370972;
+		fellaIcon3.tintBottomLeft = 7370972;
+		fellaIcon3.tintBottomRight = 7370972;
+		fellaMenu.add(fellaIcon3);
+
+		// fellaIcon4
+		const fellaIcon4 = this.add.image(79, -434, "reg", "idle0000.png");
+		fellaIcon4.scaleX = 0.8;
+		fellaIcon4.scaleY = 0.8;
+		fellaIcon4.tintTopLeft = 8842218;
+		fellaIcon4.tintTopRight = 8842218;
+		fellaIcon4.tintBottomLeft = 8842218;
+		fellaIcon4.tintBottomRight = 8842218;
+		fellaMenu.add(fellaIcon4);
+
+		// fellaIcon5
+		const fellaIcon5 = this.add.image(239, -434, "reg", "idle0000.png");
+		fellaIcon5.scaleX = 0.8;
+		fellaIcon5.scaleY = 0.8;
+		fellaIcon5.tintTopLeft = 7857282;
+		fellaIcon5.tintTopRight = 7857282;
+		fellaIcon5.tintBottomLeft = 7857282;
+		fellaIcon5.tintBottomRight = 7857282;
+		fellaMenu.add(fellaIcon5);
+
+		// fellaIcon6
+		const fellaIcon6 = this.add.image(399, -434, "reg", "idle0000.png");
+		fellaIcon6.scaleX = 0.8;
+		fellaIcon6.scaleY = 0.8;
+		fellaIcon6.tintTopLeft = 15719761;
+		fellaIcon6.tintTopRight = 15719761;
+		fellaIcon6.tintBottomLeft = 15719761;
+		fellaIcon6.tintBottomRight = 15719761;
+		fellaMenu.add(fellaIcon6);
+
+		// idle0000_png
+		const idle0000_png = this.add.image(-315, -247, "angro", "idle0000.png");
+		idle0000_png.scaleX = 0.49439352316384505;
+		idle0000_png.scaleY = 0.49439352316384505;
+		idle0000_png.tintTopLeft = 0;
+		idle0000_png.tintTopRight = 0;
+		idle0000_png.tintBottomLeft = 0;
+		idle0000_png.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png);
+
+		// idle0004_png
+		const idle0004_png = this.add.image(-156, -242, "girl", "idle0004.png");
+		idle0004_png.scaleX = 0.5392299166208796;
+		idle0004_png.scaleY = 0.5392299166208796;
+		idle0004_png.tintTopLeft = 0;
+		idle0004_png.tintTopRight = 0;
+		idle0004_png.tintBottomLeft = 0;
+		idle0004_png.tintBottomRight = 0;
+		fellaMenu.add(idle0004_png);
+
+		// idle0000_png_1
+		const idle0000_png_1 = this.add.image(2, -237, "boyo_1", "idle0000.png");
+		idle0000_png_1.scaleX = 0.42657651270243335;
+		idle0000_png_1.scaleY = 0.42657651270243335;
+		idle0000_png_1.tintTopLeft = 0;
+		idle0000_png_1.tintTopRight = 0;
+		idle0000_png_1.tintBottomLeft = 0;
+		idle0000_png_1.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_1);
+
+		// idle0000_png_2
+		const idle0000_png_2 = this.add.image(153, -232, "ufo", "idle0000.png");
+		idle0000_png_2.scaleX = 0.6279408840066942;
+		idle0000_png_2.scaleY = 0.6279408840066942;
+		idle0000_png_2.tintTopLeft = 0;
+		idle0000_png_2.tintTopRight = 0;
+		idle0000_png_2.tintBottomLeft = 0;
+		idle0000_png_2.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_2);
+
+		// idle0000_png_3
+		const idle0000_png_3 = this.add.image(320, -242, "mango", "idle0000.png");
+		idle0000_png_3.scaleX = 0.5395452269089056;
+		idle0000_png_3.scaleY = 0.5395452269089056;
+		idle0000_png_3.tintTopLeft = 0;
+		idle0000_png_3.tintTopRight = 0;
+		idle0000_png_3.tintBottomLeft = 0;
+		idle0000_png_3.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_3);
+
+		// idle0000_png_4
+		const idle0000_png_4 = this.add.image(-226, -60, "scooper", "idle0000.png");
+		idle0000_png_4.scaleX = 0.38219912264535677;
+		idle0000_png_4.scaleY = 0.38219912264535677;
+		idle0000_png_4.tintTopLeft = 0;
+		idle0000_png_4.tintTopRight = 0;
+		idle0000_png_4.tintBottomLeft = 0;
+		idle0000_png_4.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_4);
+
+		// idle0000_png_5
+		const idle0000_png_5 = this.add.image(-75, -56, "yellow", "idle0000.png");
+		idle0000_png_5.scaleX = 0.6206829248977125;
+		idle0000_png_5.scaleY = 0.6206829248977125;
+		idle0000_png_5.tintTopLeft = 0;
+		idle0000_png_5.tintTopRight = 0;
+		idle0000_png_5.tintBottomLeft = 0;
+		idle0000_png_5.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_5);
+
+		// idle0000_png_6
+		const idle0000_png_6 = this.add.image(76, -62, "smarto", "idle0000.png");
+		idle0000_png_6.scaleX = 0.38544575090769395;
+		idle0000_png_6.scaleY = 0.38544575090769395;
+		idle0000_png_6.tintTopLeft = 0;
+		idle0000_png_6.tintTopRight = 0;
+		idle0000_png_6.tintBottomLeft = 0;
+		idle0000_png_6.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_6);
+
+		// idle0000_png_7
+		const idle0000_png_7 = this.add.image(229, -63, "bull", "idle0000.png");
+		idle0000_png_7.scaleX = 0.48406201620019945;
+		idle0000_png_7.scaleY = 0.48406201620019945;
+		idle0000_png_7.tintTopLeft = 0;
+		idle0000_png_7.tintTopRight = 0;
+		idle0000_png_7.tintBottomLeft = 0;
+		idle0000_png_7.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_7);
+
+		// idle0000_png_8
+		const idle0000_png_8 = this.add.image(-157, 124, "balls", "idle0000.png");
+		idle0000_png_8.scaleX = 0.43260440745919987;
+		idle0000_png_8.scaleY = 0.43260440745919987;
+		idle0000_png_8.tintTopLeft = 0;
+		idle0000_png_8.tintTopRight = 0;
+		idle0000_png_8.tintBottomLeft = 0;
+		idle0000_png_8.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_8);
+
+		// idle0000_png_9
+		const idle0000_png_9 = this.add.image(-6, 100, "bee", "idle0000.png");
+		idle0000_png_9.scaleX = 0.7256617241915264;
+		idle0000_png_9.scaleY = 0.7256617241915264;
+		idle0000_png_9.tintTopLeft = 0;
+		idle0000_png_9.tintTopRight = 0;
+		idle0000_png_9.tintBottomLeft = 0;
+		idle0000_png_9.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_9);
+
+		// idle0000_png_10
+		const idle0000_png_10 = this.add.image(146, 116, "weird", "idle0000.png");
+		idle0000_png_10.scaleX = 0.4100612666224214;
+		idle0000_png_10.scaleY = 0.4100612666224214;
+		idle0000_png_10.tintTopLeft = 0;
+		idle0000_png_10.tintTopRight = 0;
+		idle0000_png_10.tintBottomLeft = 0;
+		idle0000_png_10.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_10);
+
+		// fly0000_png
+		const fly0000_png = this.add.image(69, 257, "nectar", "fly0000.png");
+		fly0000_png.scaleX = 0.6083258755900969;
+		fly0000_png.scaleY = 0.6083258755900969;
+		fly0000_png.tintTopLeft = 0;
+		fly0000_png.tintTopRight = 0;
+		fly0000_png.tintBottomLeft = 0;
+		fly0000_png.tintBottomRight = 0;
+		fellaMenu.add(fly0000_png);
+
+		// idle0000_png_11
+		const idle0000_png_11 = this.add.image(-83, 272, "tod", "idle0000.png");
+		idle0000_png_11.scaleX = 0.47276694764437455;
+		idle0000_png_11.scaleY = 0.47276694764437455;
+		idle0000_png_11.tintTopLeft = 0;
+		idle0000_png_11.tintTopRight = 0;
+		idle0000_png_11.tintBottomLeft = 0;
+		idle0000_png_11.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_11);
+
+		// idle0000_png_12
+		const idle0000_png_12 = this.add.image(8, 449, "ultimate", "idle0000.png");
+		idle0000_png_12.scaleX = 0.35944188489900636;
+		idle0000_png_12.scaleY = 0.35944188489900636;
+		idle0000_png_12.tintTopLeft = 0;
+		idle0000_png_12.tintTopRight = 0;
+		idle0000_png_12.tintBottomLeft = 0;
+		idle0000_png_12.tintBottomRight = 0;
+		fellaMenu.add(idle0000_png_12);
+
+		// store_corner
+		const store_corner = this.add.image(-469, 491, "store-corner");
+		fellaMenu.add(store_corner);
+
+		// store_corner_1
+		const store_corner_1 = this.add.image(471, 487, "store-corner");
+		store_corner_1.flipX = true;
+		fellaMenu.add(store_corner_1);
+
+		// store_corner_2
+		const store_corner_2 = this.add.image(473, -484, "store-corner");
+		store_corner_2.flipX = true;
+		store_corner_2.flipY = true;
+		fellaMenu.add(store_corner_2);
+
+		// store_corner_3
+		const store_corner_3 = this.add.image(-468, -488, "store-corner");
+		store_corner_3.flipY = true;
+		fellaMenu.add(store_corner_3);
 
 		// tutorialUI
 		const tutorialUI = this.add.container(0, -1018);
 
-		// rectangle_4
-		const rectangle_4 = this.add.rectangle(0, 0, 800, 600);
-		rectangle_4.isFilled = true;
-		rectangle_4.fillColor = 0;
-		rectangle_4.fillAlpha = 0.8;
-		tutorialUI.add(rectangle_4);
+		// tutorialBG
+		const tutorialBG = this.add.rectangle(0, 0, 800, 600);
+		tutorialBG.isFilled = true;
+		tutorialBG.fillColor = 0;
+		tutorialBG.fillAlpha = 0.8;
+		tutorialUI.add(tutorialBG);
 
 		// text_7
 		const text_7 = this.add.text(0, -6, "", {});
@@ -283,11 +766,17 @@ class Level extends Phaser.Scene {
 		text_7.setLineSpacing(15);
 		tutorialUI.add(text_7);
 
+		// helpButton
+		const helpButton = this.add.image(802, 342, "help");
+		helpButton.scaleX = 1.2;
+		helpButton.scaleY = 1.2;
+		helpButton.setOrigin(1, 1);
+
 		// lists
 		const alignToCameraLeft = [mobileTextcontainer, buttonTest, moneyUI, fellaUI];
-		const alignToCameraRight = [buttonTest2];
+		const alignToCameraRight = [buttonTest2, helpButton];
 		const alignToCameraTop = [mobileTextcontainer, fellaUI];
-		const alignToCameraBottom = [buttonTest2, buttonTest, moneyUI];
+		const alignToCameraBottom = [buttonTest2, buttonTest, moneyUI, helpButton];
 		const resizeScale = [];
 		const alignToCameraMiddle = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
 		const alignToCameraCenter = [orientationPrompt, shopMenu, fellaMenu, tutorialUI];
@@ -316,7 +805,12 @@ class Level extends Phaser.Scene {
 
 		// shopMenu (components)
 		const shopMenuAlignOffsets = new AlignOffsets(shopMenu);
-		shopMenuAlignOffsets.y = 300;
+		shopMenuAlignOffsets.y = 250;
+
+		// helpButton (components)
+		const helpButtonAlignOffsets = new AlignOffsets(helpButton);
+		helpButtonAlignOffsets.x = -80;
+		helpButtonAlignOffsets.y = -40;
 
 		this.tankBG = tankBG;
 		this.buttonTest2 = buttonTest2;
@@ -343,7 +837,30 @@ class Level extends Phaser.Scene {
 		this.fellaPreview6 = fellaPreview6;
 		this.fellaMenu = fellaMenu;
 		this.familyBG = familyBG;
+		this.fellaIcon = fellaIcon;
+		this.fellaIcon2 = fellaIcon2;
+		this.fellaIcon3 = fellaIcon3;
+		this.fellaIcon4 = fellaIcon4;
+		this.fellaIcon5 = fellaIcon5;
+		this.fellaIcon6 = fellaIcon6;
+		this.idle0000_png = idle0000_png;
+		this.idle0004_png = idle0004_png;
+		this.idle0000_png_1 = idle0000_png_1;
+		this.idle0000_png_2 = idle0000_png_2;
+		this.idle0000_png_3 = idle0000_png_3;
+		this.idle0000_png_4 = idle0000_png_4;
+		this.idle0000_png_5 = idle0000_png_5;
+		this.idle0000_png_6 = idle0000_png_6;
+		this.idle0000_png_7 = idle0000_png_7;
+		this.idle0000_png_8 = idle0000_png_8;
+		this.idle0000_png_9 = idle0000_png_9;
+		this.idle0000_png_10 = idle0000_png_10;
+		this.fly0000_png = fly0000_png;
+		this.idle0000_png_11 = idle0000_png_11;
+		this.idle0000_png_12 = idle0000_png_12;
 		this.tutorialUI = tutorialUI;
+		this.tutorialBG = tutorialBG;
+		this.helpButton = helpButton;
 		this.alignToCameraLeft = alignToCameraLeft;
 		this.alignToCameraRight = alignToCameraRight;
 		this.alignToCameraTop = alignToCameraTop;
@@ -408,15 +925,61 @@ class Level extends Phaser.Scene {
 	fellaMenu;
 	/** @type {Phaser.GameObjects.Rectangle} */
 	familyBG;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaIcon;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaIcon2;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaIcon3;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaIcon4;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaIcon5;
+	/** @type {Phaser.GameObjects.Image} */
+	fellaIcon6;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0004_png;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_1;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_2;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_3;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_4;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_5;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_6;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_7;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_8;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_9;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_10;
+	/** @type {Phaser.GameObjects.Image} */
+	fly0000_png;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_11;
+	/** @type {Phaser.GameObjects.Image} */
+	idle0000_png_12;
 	/** @type {Phaser.GameObjects.Container} */
 	tutorialUI;
+	/** @type {Phaser.GameObjects.Rectangle} */
+	tutorialBG;
+	/** @type {Phaser.GameObjects.Image} */
+	helpButton;
 	/** @type {Array<Phaser.GameObjects.Container|Phaser.GameObjects.Rectangle>} */
 	alignToCameraLeft;
-	/** @type {Phaser.GameObjects.Rectangle[]} */
+	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Image>} */
 	alignToCameraRight;
 	/** @type {Phaser.GameObjects.Container[]} */
 	alignToCameraTop;
-	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container>} */
+	/** @type {Array<Phaser.GameObjects.Rectangle|Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
 	alignToCameraBottom;
 	/** @type {Array<any>} */
 	resizeScale;
@@ -644,7 +1207,7 @@ class Level extends Phaser.Scene {
 
 		// tier 4
 		['balls', {
-			breeding: { with: 'bee', makes: 'mom' },
+			breeding: { with: 'bee', makes: 'nectar' },
 			sprite: 'balls',
 			name: 'Threeballs',
 			desc: "",
@@ -737,13 +1300,28 @@ class Level extends Phaser.Scene {
 	]);
 
 	/** abstracted because tier 1 will likely change */
-	racesUnlocked = [false, false, true, true, false, false];
-	racesUnlocked = [true, true, true, true, true, true];
 	tier1Races = ['red', 'purple', 'blue', 'cyan', 'green', 'yellow'];
 
 	create() {
 
 		this.editorCreate();
+
+		this.registry.set('angro-unlocked', false);
+		this.registry.set('boyo-unlocked', false);
+		this.registry.set('girl-unlocked', false);
+		this.registry.set('ufo-unlocked', false);
+		this.registry.set('mango-unlocked', false);
+		this.registry.set('pixie-unlocked', false);
+		this.registry.set('smarto-unlocked', false);
+		this.registry.set('bull-unlocked', false);
+		this.registry.set('balls-unlocked', false);
+		this.registry.set('bee-unlocked', false);
+		this.registry.set('weird-unlocked', false);
+		this.registry.set('tod-unlocked', false);
+		this.registry.set('nextar-unlocked', false);
+		this.registry.set('ultimate-unlocked', false);
+
+		this.cameras.main.setBackgroundColor(0x20150f);
 
 		// fellas group
 		this.fellas = this.add.group();
@@ -757,12 +1335,20 @@ class Level extends Phaser.Scene {
 		// tank bg needs depth below all fellas
 		this.tankBG.setDepth(-1000);
 
+		// music
+		this.music = this.sound.add('music').play({loop: true});
+
 		//audio
 		this.sound.setVolume(1);
-		this.music = this.sound.add('tank-2').play();
-		this.sound.add('impact');
-		this.sound.add('munch');
-		this.sound.add('tap', {volume: 0.3});
+		// this.music = this.sound.add('tank-2').play();
+		this.sound.add('smushing', {volume: 1});
+		this.sound.add('eating', {volume: 1});
+		this.sound.add('cheering', {volume: 1});
+		this.sound.add('hungry', {volume: 1});
+		this.sound.add('puffdienoise', {volume: 1});
+		this.sound.add('purchase', {volume: 1});
+		this.sound.add('squeak', {volume: 1});
+		this.sound.add('select', {volume: .4});
 
 		this.setupInput();
 
@@ -859,7 +1445,7 @@ class Level extends Phaser.Scene {
 
 		// starting money
 		this.money = 0;
-		this.setMoney(999999);
+		this.setMoney(3500);
 
 		// resize
 		this.resize();
@@ -917,7 +1503,7 @@ class Level extends Phaser.Scene {
 	 */
 	addFella(race) {
 
-		const fella = this.add.sprite(0, 0, "fella");
+		const fella = this.add.sprite(0, -200, "fella");
 		const raceData = this.races.get(race);
 
 		// tier 1 colours
@@ -941,6 +1527,7 @@ class Level extends Phaser.Scene {
 		fella.setData('sprite', raceData.sprite);
 		fella.setData('shadow', raceData.shadow);
 		fella.setData('meat', raceData.meat);
+		fella.setData('facingLeft', raceData.facingLeft);
 		fella.setData('alive', true);
 		fella.setData('energy', 1);
 		fella.setData('totalVelocity', 0);
@@ -1007,7 +1594,7 @@ class Level extends Phaser.Scene {
 	 */
 	fellaImpact(_fellaBody, side) {
 
-		this.sound.play('impact');
+		this.sound.play('smushing');
 		_fellaBody.gameObject.setData('alive', false);
 		_fellaBody.gameObject.setData('drop-food', true);
 		// sliding state will check this at the end
@@ -1067,10 +1654,23 @@ class Level extends Phaser.Scene {
 		if (race1Data.breeding.with == race2.getData('race') && race1Data.breeding.makes != 'nothing') {
 
 			this.addFella(race1Data.breeding.makes);
+
+			// first time unlocking?
+			if (!this.registry.get(race1Data.breeding.makes + '-unlocked')) {
+
+				this.unlockRaceTree(race1Data.breeding.makes);
+			}
 		}
 		else if (race2Data.breeding.with == race1.getData('race') && race2Data.breeding.makes != 'nothing') {
 
 			this.addFella(race2Data.breeding.makes);
+
+			// first time unlocking?
+			if (!this.registry.get(race2Data.breeding.makes + '-unlocked')) {
+
+				this.unlockRaceTree(race2Data.breeding.makes);
+			}
+
 		}
 		else {
 
@@ -1109,16 +1709,73 @@ class Level extends Phaser.Scene {
 		this.fellaCountText.setText('x ' + this.fellas.getLength());
 	}
 
+	unlockRaceTree(race) {
+
+		this.registry.set(race + '-unlocked', true);
+		this.sound.play('cheering');
+		this.setMoney(500);
+
+		switch(race) {
+			case 'angro': 
+				this.idle0000_png.setTint(0xffffff);
+				break;
+			case 'girl': 
+				this.idle0004_png.setTint(0xffffff);
+				break;
+			case 'boyo': 
+				this.idle0000_png_1.setTint(0xffffff);
+				break;
+			case 'ufo': 
+				this.idle0000_png_2.setTint(0xffffff);
+				break;
+			case 'mango': 
+				this.idle0000_png_3.setTint(0xffffff);
+				break;
+			case 'scooper': 
+				this.idle0000_png_4.setTint(0xffffff);
+				break;
+			case 'pixie': 
+				this.idle0000_png_5.setTint(0xffffff);
+				break;
+			case 'smarto': 
+				this.idle0000_png_6.setTint(0xffffff);
+				break;
+			case 'bull': 
+				this.idle0000_png_7.setTint(0xffffff);
+				break;
+			case 'balls': 
+				this.idle0000_png_8.setTint(0xffffff);
+				break;
+			case 'bee': 
+				this.idle0000_png_9.setTint(0xffffff);
+				break;
+			case 'weird': 
+				this.idle0000_png_10.setTint(0xffffff);
+				break;
+			case 'tod': 
+				this.idle0000_png_11.setTint(0xffffff);
+				break;
+			case 'nectar': 
+				this.fly0000_png.setTint(0xffffff);
+				break;
+			case 'ultimate': 
+				this.idle0000_png_12.setTint(0xffffff);
+				break;
+
+
+		}
+	}
+
 	/**
 	 * 
 	 * @param {*} x 
 	 * @param {*} y 
 	 * @param {*} meat steak bacon or chicken
 	 */
-	addFood(x, y, meat) {
+	addFood(x, y, meat, depth) {
 
 		const food = this.add.image(x, y, meat);
-		food.setDepth(800);
+		food.setDepth(depth);
 
 		this.matter.add.gameObject(food, { inertia: Infinity, isSensor: true, shape: {type: 'circle', radius: 40}}).setFrictionAir(.3).type = 'food';
 
@@ -1296,11 +1953,7 @@ class Level extends Phaser.Scene {
 
 					_this.setEnergy(intersect[0].gameObject, .3, true);
 
-					console.log(intersect[0].gameObject.status.currentState.constructor.name);
-					if (intersect[0].gameObject.status.currentState.constructor.name != 'Slidding') {
-
-						intersect[0].gameObject.status.setState('idle');
-					}
+					intersect[0].gameObject.status.setState('idle');
 
 					console.log(_this.eatingEffect);
 					if (!_this.eatingEffect.active)
@@ -1317,7 +1970,7 @@ class Level extends Phaser.Scene {
 
 					body.gameObject.destroy(); 
 
-					_this.sound.play('munch');
+					_this.sound.play('eating');
 
 					// TODO: visual effect
 				}
@@ -1329,7 +1982,8 @@ class Level extends Phaser.Scene {
 
 			// shaken = horny
 			// only if velocity > terminal and fella is alive
-			if(((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) && body.gameObject.getData('alive')) {
+			if(((body.gameObject.getData('totalVelocity') > _this.velocityToBreed) || body.gameObject.getData('horny')) 
+			&& body.gameObject.getData('alive') && body.gameObject.getData('energy') > .3) {
 
 				body.gameObject.setData('horny', true);
 				body.gameObject.status.setState('breeding');
@@ -1459,6 +2113,7 @@ class Level extends Phaser.Scene {
 
 			// TODO: check if other menu is open
 			this.shopMenu.setVisible(!this.shopMenu.visible);
+			this.sound.play('select');
 
 		});
 
@@ -1469,8 +2124,9 @@ class Level extends Phaser.Scene {
 			item.setInteractive();
 			item.on('pointerdown', () => {
 
-				if (_this.racesUnlocked[index] && _this.money >= 100) {
+				if (_this.money >= 100) {
 
+					_this.addFella(_this.tier1Races[index]);
 					_this.addFella(_this.tier1Races[index]);
 
 					_this.setMoney(-100);
@@ -1486,8 +2142,21 @@ class Level extends Phaser.Scene {
 		this.familyButton.on('pointerdown', () => {
 
 			this.fellaMenu.setVisible(!this.fellaMenu.visible);
+			this.sound.play('select');
+
 
 		});
+
+		// help UI
+		this.tutorialUI.setDepth(999);
+		this.tutorialUI.setVisible(false);
+		this.helpButton.setInteractive();
+		this.helpButton.on('pointerdown', () => {
+
+			this.tutorialUI.setVisible(!this.tutorialUI.visible);
+			this.sound.play('select');
+		});
+
 
 		// mouse hover feeback
 		this.familyButton.on('pointerover', () => {
@@ -1506,6 +2175,14 @@ class Level extends Phaser.Scene {
 
 			this.shopButton.setTint(0xffffff);
 		});
+		this.helpButton.on('pointerover', () => {
+
+			this.helpButton.setTint(0xd9d9d9);
+		});
+		this.helpButton.on('pointerout', () => {
+
+			this.helpButton.setTint(0xffffff);
+		});
 
 		// click / tap anywhere else to hide
 		this.shopBG.setInteractive();
@@ -1519,8 +2196,6 @@ class Level extends Phaser.Scene {
 				__this.fellaMenu.setVisible(false);
 			}
 		});
-
-		this.tutorialUI.setVisible(false);
 	}
 
 	/**
@@ -1560,6 +2235,8 @@ class Level extends Phaser.Scene {
 
 		this.money += amount;
 		this.moneyText.setText('$ ' + this.money)
+
+		this.sound.play('purchase');
 	}
 
 	loadFont(name, url) {

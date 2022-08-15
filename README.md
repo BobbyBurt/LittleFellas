@@ -25,23 +25,23 @@ I should do this in order
 - [x] Set consistent tank size, NG window resolution, zoom levels
 - [x] temp tank BG
 
-- [ ] impact effect animation
+- [x] impact effect animation
 - [x] fix heart destory
 
 - [x] horny timer
 
-- [ ] change size of cloud
-- [ ] character flip
+- [x] change size of cloud
+- [x] character flip
 
 - [ ] fellas can be in a forever slide state. seems to happen when theres a lot on screen
 
 - [ ] investigate memory leaks. It seems like destroy() doesn't remove the reference, so no garbage collection
 
-- [ ] hover over UI feedback
+- [x] hover over UI feedback
 
-- [ ] process bg as smaller image
+- [x] process bg as smaller image
 
-- [ ] food sprites
+- [x] food sprites
 
 - [x] Set up Newgrounds.io
 

@@ -31,6 +31,17 @@ class RandomWalk {
 			this.duration = Phaser.Math.RND.between(20, 30);
 		}
 
+		// face right
+		if (this.target.x > this.fella.x) {
+
+			this.fella.setFlipX(this.fella.getData('facingLeft'));
+		}
+		// face left
+		if (this.target.x < this.fella.x) {
+
+			this.fella.setFlipX(!this.fella.getData('facingLeft'));
+		}
+
 		this.fella.play(this.fella.getData('sprite') + '-walk');
 
 		// no hearts

@@ -20,24 +20,24 @@ class Dead {
 		// set animation frame
 		// TODO: set to first frame of idle, or death frame is one exists
 		this.fella.stop();
+
+		this.scene.sound.play('puffdienoise')
 		
 		if (this.fella.getData('drop-food')) {
 
-			this.scene.addFood(this.fella.x, this.fella.y, this.fella.getData('meat'));
+			this.scene.addFood(this.fella.x, this.fella.y, this.fella.getData('meat'), this.fella.depth - 2);
 		}
 
 		
 		// add poof
-		this.poof = this.scene.add.sprite(this.fella.x, this.fella.y, 'poof');
-		this.poof.play('poof');
-		this.poof.setScale(1.5, 1.5);
-		// this.poof.setAlpha(.7);
-		this.poof.setDepth(this.fella.depth + 1);
-		// TODO: set scale according to fella type
-		this.poofRemove = this.scene.time.delayedCall(1000, () => {
+		this.poofEffect = this.scene.add.sprite(this.fella.x, this.fella.y)
+			.play('poof')
+			.setDepth(this.fella.depth + 1)
+			.setScale(this.fella.body.circleRadius / 60)
+			.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
 
-			// this.poof.destroy();
-		});
+				this.poofEffect.destroy();
+			});
 		
 		this.fella.setData('alive', false);
 		

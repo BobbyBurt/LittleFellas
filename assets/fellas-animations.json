@@ -3625,6 +3625,51 @@
             "frameRate": 24,
             "skipMissedFrames": true,
             "repeat": -1
+        },
+        {
+            "key": "kicking",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "kicking",
+                    "frame": "kicking0000.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "kicking",
+                    "frame": "kicking0001.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "kicking",
+                    "frame": "kicking0002.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "kicking",
+                    "frame": "kicking0003.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "kicking",
+                    "frame": "kicking0004.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "kicking",
+                    "frame": "kicking0005.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1
         }
     ],
     "globalTimeScale": 1,

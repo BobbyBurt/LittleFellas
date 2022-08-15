@@ -60,7 +60,7 @@ class Boot extends Phaser.Scene {
 
 		window.addEventListener('resize', this.resize.bind(this));
 
-		this.scene.launch("newgroundsio");
+		
 		this.scene.start("preload");
 	}
 
