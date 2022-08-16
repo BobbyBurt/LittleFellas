@@ -403,11 +403,11 @@
                     "id": "1bcd9cc7-489d-473e-8f39-2e5724e27a2d",
                     "label": "price",
                     "components": [],
-                    "x": 130,
+                    "x": 106,
                     "y": -85,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "100 $ for two!",
+                    "text": "200 $ for two!",
                     "lineSpacing": 15,
                     "align": "center",
                     "fontFamily": "verdana",
@@ -527,7 +527,7 @@
                     "texture": {
                         "key": "buy"
                     },
-                    "x": -149,
+                    "x": -173,
                     "y": -88
                 },
                 {
@@ -1549,7 +1549,7 @@
                     "components": [],
                     "y": -220,
                     "originX": 0.5,
-                    "text": "Drag and shake around fellas to encourage them to breed.\nThe breeding chart (upper left button) shows which fellas are compatible.\nEarn money by discovering special new breeds.\nSpend it wisely! You can purchase regular fellas in the shop.\nYour fellas will get hungry from breeding for being around awhile.\nFellas won't survive being thrown violently against a wall...\nbut killed fellas become food for the others.\nDrag and drop food over a fella to feed it.\nCan you manage your tank and discover every special breed?",
+                    "text": "Drag and shake around fellas to encourage them to breed.\nThe breeding chart (upper left button) shows which fellas are compatible.\nEarn money by discovering new special breeds.\nSpend it wisely! You can purchase regular fellas in the shop.\nYour fellas will get hungry and eventually starve.\nFellas won't survive being thrown violently against a wall...\nbut killed fellas become food for the others.\nDrag and drop food over a fella to feed it.\nCan you manage your tank and discover every special breed?",
                     "lineSpacing": 15,
                     "align": "center",
                     "fontFamily": "verdana",

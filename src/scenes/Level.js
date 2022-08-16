@@ -183,9 +183,9 @@ class Level extends Phaser.Scene {
 		shopMenu.add(pedestal);
 
 		// price
-		const price = this.add.text(130, -85, "", {});
+		const price = this.add.text(106, -85, "", {});
 		price.setOrigin(0.5, 0.5);
-		price.text = "100 $ for two!";
+		price.text = "200 $ for two!";
 		price.setStyle({ "align": "center", "color": "#9b0e0eff", "fontFamily": "verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#e8d772ff", "strokeThickness":4});
 		price.setLineSpacing(15);
 		shopMenu.add(price);
@@ -239,7 +239,7 @@ class Level extends Phaser.Scene {
 		shopMenu.add(fellaPreview6);
 
 		// buy
-		const buy = this.add.image(-149, -88, "buy");
+		const buy = this.add.image(-173, -88, "buy");
 		shopMenu.add(buy);
 
 		// rod
@@ -763,7 +763,7 @@ class Level extends Phaser.Scene {
 		// text_7
 		const text_7 = this.add.text(0, -220, "", {});
 		text_7.setOrigin(0.5, 0);
-		text_7.text = "Drag and shake around fellas to encourage them to breed.\nThe breeding chart (upper left button) shows which fellas are compatible.\nEarn money by discovering special new breeds.\nSpend it wisely! You can purchase regular fellas in the shop.\nYour fellas will get hungry from breeding for being around awhile.\nFellas won't survive being thrown violently against a wall...\nbut killed fellas become food for the others.\nDrag and drop food over a fella to feed it.\nCan you manage your tank and discover every special breed?";
+		text_7.text = "Drag and shake around fellas to encourage them to breed.\nThe breeding chart (upper left button) shows which fellas are compatible.\nEarn money by discovering new special breeds.\nSpend it wisely! You can purchase regular fellas in the shop.\nYour fellas will get hungry and eventually starve.\nFellas won't survive being thrown violently against a wall...\nbut killed fellas become food for the others.\nDrag and drop food over a fella to feed it.\nCan you manage your tank and discover every special breed?";
 		text_7.setStyle({ "align": "center", "color": "#000000ff", "fontFamily": "verdana", "fontSize": "35px" });
 		text_7.setLineSpacing(15);
 		tutorialUI.add(text_7);
@@ -1028,8 +1028,8 @@ class Level extends Phaser.Scene {
 	// the number being double represents the amount of space we want at least on both sides
 
 	/** how much total velocity of drag does it take to make fella want to breed */
-	velocityToBreed = 2000;
-	terminalVelocity = 70;
+	velocityToBreed = 1500;
+	terminalVelocity = 100;
 
 	/** max frames to be considered a tap */
 	tapDownTime = 70;
@@ -1052,7 +1052,7 @@ class Level extends Phaser.Scene {
 			shadow: true,
 			mass: 10,
 			facingLeft: false,
-			meat: 'steak'
+			meat: 'bacon'
 		}],
 		['purple', {
 			breeding: { with: 'blue', makes: 'girl' },
@@ -1076,7 +1076,7 @@ class Level extends Phaser.Scene {
 			shadow: true,
 			mass: 10,
 			facingLeft: false,
-			meat: 'chicken'
+			meat: 'bacon'
 		}],
 		['cyan', {
 			breeding: { with: 'green', makes: 'ufo' },
@@ -1088,7 +1088,7 @@ class Level extends Phaser.Scene {
 			shadow: true,
 			mass: 10,
 			facingLeft: false,
-			meat: 'steak'
+			meat: 'bacon'
 		}],
 		['green', {
 			breeding: { with: 'yellow', makes: 'mango' },
@@ -1112,7 +1112,7 @@ class Level extends Phaser.Scene {
 			shadow: true,
 			mass: 10,
 			facingLeft: false,
-			meat: 'chicken'
+			meat: 'bacon'
 		}],
 
 		// tier 2
@@ -1136,7 +1136,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: true,
-			meat: 'bacon',
+			meat: 'chicken',
 			facingLeft: true,
 			mass: 20
 		}],
@@ -1160,7 +1160,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 60,
 			shadow: false,
-			meat: 'steak',
+			meat: 'chicken',
 			facingLeft: false,
 			mass: 20
 		}],
@@ -1186,7 +1186,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 120,
 			shadow: false,
-			meat: 'bacon',
+			meat: 'steak',
 			facingLeft: true,
 			mass: 20
 		}],
@@ -1198,7 +1198,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 50,
 			shadow: true,
-			meat: 'bacon',
+			meat: 'steak',
 			facingLeft: false,
 			mass: 20
 		}], 
@@ -1236,7 +1236,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
-			meat: 'bacon',
+			meat: 'steak',
 			facingLeft: false,
 			mass: 20
 		}], 
@@ -1248,7 +1248,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 50,
 			shadow: false,
-			meat: 'chicken',
+			meat: 'steak',
 			facingLeft: false,
 			mass: 20
 		}],
@@ -1274,7 +1274,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 70,
 			shadow: true,
-			meat: 'chicken',
+			meat: 'steak',
 			facingLeft: false,
 			mass: 20
 		}], 
@@ -1286,7 +1286,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 40,
 			shadow: false,
-			meat: 'bacon',
+			meat: 'steak',
 			facingLeft: true,
 			mass: 20
 		}], 
@@ -1300,7 +1300,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 120,
 			shadow: false,
-			meat: 'chicken',
+			meat: 'steak',
 			facingLeft: false,
 			mass: 20
 		}], 
@@ -1314,7 +1314,7 @@ class Level extends Phaser.Scene {
 			tint: 0xffffff,
 			circleRadius: 25,
 			shadow: true,
-			meat: 'steak',
+			meat: 'bacon',
 			facingLeft: false,
 			mass: 20
 		}]
@@ -1371,7 +1371,7 @@ class Level extends Phaser.Scene {
 		this.sound.add('hungry', {volume: 1});
 		this.sound.add('puffdienoise', {volume: 1});
 		this.sound.add('purchase', {volume: 1});
-		this.sound.add('squeak', {volume: .6});
+		this.sound.add('squeak', {volume: 0});
 		this.sound.add('select', {volume: .4});
 
 		this.setupInput();
@@ -1592,7 +1592,7 @@ class Level extends Phaser.Scene {
 		if (add) {
 
 			newEnergy = fella.getData('energy') + amount;
-			if (newEnergy > 1) newEnergy = 1;
+			if (newEnergy > 2) newEnergy = 2;
 		}
 		else {
 
@@ -1656,7 +1656,7 @@ class Level extends Phaser.Scene {
 		this.impactEffect.get(impactEffectPosition.x, impactEffectPosition.y + 40)
 			.setActive(true)
 			.setFlipX(Phaser.Math.RND.normal() > 0)
-			.setDepth(-400)
+			.setDepth(-999)
 			.play('impact');
 
 		// effect group max manage
@@ -1682,12 +1682,18 @@ class Level extends Phaser.Scene {
 
 			if (race1Data.breeding.makes == 'gremlin') {
 
-				this.addFella(race1Data.breeding.makes, false);
-				this.addFella(race1Data.breeding.makes, false);
-				this.addFella(race1Data.breeding.makes, false);
-				this.addFella(race1Data.breeding.makes, false);
-				this.addFella(race1Data.breeding.makes, false);
-				this.addFella(race1Data.breeding.makes, false);
+				if (this.fellas.getLength() < this.fellas.maxSize)
+					this.addFella(race1Data.breeding.makes, false);
+				if (this.fellas.getLength() < this.fellas.maxSize)
+					this.addFella(race1Data.breeding.makes, false);
+				if (this.fellas.getLength() < this.fellas.maxSize)
+					this.addFella(race1Data.breeding.makes, false);
+				if (this.fellas.getLength() < this.fellas.maxSize)
+					this.addFella(race1Data.breeding.makes, false);
+				if (this.fellas.getLength() < this.fellas.maxSize)
+					this.addFella(race1Data.breeding.makes, false);
+				if (this.fellas.getLength() < this.fellas.maxSize)
+					this.addFella(race1Data.breeding.makes, false);
 			}
 
 			// first time unlocking?
@@ -1738,27 +1744,28 @@ class Level extends Phaser.Scene {
 				});
 		}
 
-		race1.status.setState('walk');
-		race2.status.setState('walk');
-		race1.setData('horny', false);
-		race2.setData('horny', false);
-		this.setEnergy(race1, .3, false);
-		this.setEnergy(race2, .3, false);
+		// parents are set to normal
+		// race1.status.setState('walk');
+		// race2.status.setState('walk');
+		// race1.setData('horny', false);
+		// race2.setData('horny', false);
+		// this.setEnergy(race1, .3, false);
+		// this.setEnergy(race2, .3, false);
 
 		// get rid of parents
-		// race1.setData('alive', false);
-		// race1.shadow.destroy();
-		// race1.hungerEffect.destroy();
-		// race1.heartEffect.destroy();
-		// race1.status = null;
-		// race1.destroy();
+		race1.setData('alive', false);
+		race1.shadow.destroy();
+		race1.hungerEffect.destroy();
+		race1.heartEffect.destroy();
+		race1.status = null;
+		race1.destroy();
 
-		// race2.setData('alive', false);
-		// race2.shadow.destroy();
-		// race2.hungerEffect.destroy();
-		// race2.heartEffect.destroy();
-		// race2.status = null;
-		// race2.destroy();
+		race2.setData('alive', false);
+		race2.shadow.destroy();
+		race2.hungerEffect.destroy();
+		race2.heartEffect.destroy();
+		race2.status = null;
+		race2.destroy();
 
 		this.fellaCountText.setText('x ' + this.fellas.getLength());
 	}
@@ -1767,7 +1774,14 @@ class Level extends Phaser.Scene {
 
 		this.registry.set(race + '-unlocked', true);
 		this.sound.play('cheering');
-		this.setMoney(500);
+		if (race == 'ultimate') {
+
+			this.setMoney(999999);
+		}
+		else {
+
+			this.setMoney(600);
+		}
 
 		switch(race) {
 			case 'angro': 
@@ -1956,7 +1970,7 @@ class Level extends Phaser.Scene {
 				return;
 			}
 
-			_scene.sound.play('squeak');
+			_scene.sound.play('squeak', {volume: .3});
 
 			// hide shadow
 			body.gameObject.shadow.setVisible(false);
@@ -2006,11 +2020,15 @@ class Level extends Phaser.Scene {
 				let intersect = _this.matter.intersectBody(body, _this.fellas.getChildren());
 				if(intersect[0] != null) {
 
-					_this.setEnergy(intersect[0].gameObject, 1, true);
+					// set energy according to meat type
+					this.energyToSet = 0;
+					if (body.gameObject.texture.key == 'bacon') this.energyToSet = .3;
+					if (body.gameObject.texture.key == 'chicken') this.energyToSet = .7;
+					if (body.gameObject.texture.key == 'steak') this.energyToSet = 1.5;
+					_this.setEnergy(intersect[0].gameObject, this.energyToSet, true, body.gameObject.texture.key);
 
 					intersect[0].gameObject.status.setState('idle');
 
-					console.log(_this.eatingEffect);
 					if (!_this.eatingEffect.active)
 					{
 
@@ -2163,11 +2181,11 @@ class Level extends Phaser.Scene {
 		this.shopButton.setInteractive();
 		this.shopButton.on('pointerdown', () => {
 
-			if (!this.fellaMenu.visible && !this.tutorialUI.visible) {
+			this.shopMenu.setVisible(!this.shopMenu.visible);
+			this.sound.play('select', {volume: .6});
 
-				this.shopMenu.setVisible(!this.shopMenu.visible);
-				this.sound.play('select');
-			}
+			this.fellaMenu.setVisible(false);
+			this.tutorialUI.setVisible(false);
 
 		});
 
@@ -2180,16 +2198,16 @@ class Level extends Phaser.Scene {
 			item.setInteractive();
 			item.on('pointerdown', () => {
 
-				if (_this.money >= 100) {
+				if (_this.money >= 200) {
 
-					_this.addFella(_this.tier1Races[index], true);
+					if (_this.fellas.getLength() < _this.fellas.maxSize)
+						_this.addFella(_this.tier1Races[index], true);
+					if (_this.fellas.getLength() < _this.fellas.maxSize)
+						_this.addFella(_this.tier1Races[index], true);
 
-					_this.setMoney(-100);
+					_this.setMoney(-200);
 
 					_this.purchaseCount++;
-
-					if (_this.money == 0)
-						_this.gameOverUI.setVisible(true);
 
 					console.log('purchases: ' + _this.purchaseCount);
 
@@ -2205,11 +2223,11 @@ class Level extends Phaser.Scene {
 		this.familyButton.setInteractive();
 		this.familyButton.on('pointerdown', () => {
 
-			if (!this.shopMenu.visible && !this.tutorialUI.visible) {
+			this.fellaMenu.setVisible(!this.fellaMenu.visible);
+			this.sound.play('select', {volume: .6});
 
-				this.fellaMenu.setVisible(!this.fellaMenu.visible);
-				this.sound.play('select');
-			}
+			this.shopMenu.setVisible(false);
+			this.tutorialUI.setVisible(false);
 
 
 		});
@@ -2220,11 +2238,11 @@ class Level extends Phaser.Scene {
 		this.helpButton.setInteractive();
 		this.helpButton.on('pointerdown', () => {
 
-			if (!this.fellaMenu.visible && !this.shopMenu.visible) {
+			this.tutorialUI.setVisible(!this.tutorialUI.visible);
+			this.sound.play('select', {volume: .6});
 
-				this.tutorialUI.setVisible(!this.tutorialUI.visible);
-				this.sound.play('select');
-			}
+			this.fellaMenu.setVisible(false);
+			this.shopMenu.setVisible(false);
 		});
 
 

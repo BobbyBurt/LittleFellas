@@ -37,7 +37,7 @@ class Idle {
 		this.fella.heartEffect.setVisible(false);
 
 		// energy check
-		console.log(this.fella.getData('race') + this.fella.getData('energy'));
+		console.log(this.fella.getData('race') + ' ' + this.fella.getData('energy'));
 		if (this.fella.getData('energy') <= 0) {
 
 			this.stateControl.setState('dead');
